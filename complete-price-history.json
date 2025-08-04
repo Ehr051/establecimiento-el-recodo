@@ -1,0 +1,902 @@
+[
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T22:50:22.430Z",
+    "prices": {
+      "alfalfa": 4518,
+      "beer": 1170,
+      "cabin": 25707,
+      "rural_tourism": 42554,
+      "firewood": 6969
+    },
+    "credit_rates": {
+      "cfi": 91.1,
+      "banco_nacion": 100.7
+    },
+    "projections": {
+      "total_investment": 54945390,
+      "annual_revenue": 37317548.7,
+      "net_result": -16031819.118,
+      "roi_percentage": -29.2,
+      "payback_years": -3.4272710785708105,
+      "infrastructure_costs": {
+        "pool": 10573750,
+        "decks": 11996400,
+        "roads": 4229400,
+        "domos": 26145840
+      },
+      "financing_costs": 42154103.208000004,
+      "avg_credit_rate": 95.9
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T22:55:15.411Z",
+    "prices": {
+      "alfalfa": 4559,
+      "beer": 1123,
+      "cabin": 28948,
+      "rural_tourism": 40104,
+      "firewood": 6788
+    },
+    "credit_rates": {
+      "cfi": 85.4,
+      "banco_nacion": 93.8
+    },
+    "projections": {
+      "total_investment": 56742160,
+      "annual_revenue": 40225086.8,
+      "net_result": -12515219.527999997,
+      "roi_percentage": -22.1,
+      "payback_years": -4.533852552330556,
+      "infrastructure_costs": {
+        "pool": 10932500,
+        "decks": 12403440,
+        "roads": 4373100,
+        "domos": 27033120
+      },
+      "financing_costs": 40672780.287999995,
+      "avg_credit_rate": 89.6
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:00:15.400Z",
+    "prices": {
+      "alfalfa": 4263,
+      "beer": 1300,
+      "cabin": 26336,
+      "rural_tourism": 37290,
+      "firewood": 7475
+    },
+    "credit_rates": {
+      "cfi": 91.6,
+      "banco_nacion": 93.1
+    },
+    "projections": {
+      "total_investment": 58192330,
+      "annual_revenue": 36987777.599999994,
+      "net_result": -17101049.084000003,
+      "roi_percentage": -29.4,
+      "payback_years": -3.4028514691794913,
+      "infrastructure_costs": {
+        "pool": 11222150,
+        "decks": 12732000,
+        "roads": 4488900,
+        "domos": 27749280
+      },
+      "financing_costs": 42992493.404,
+      "avg_credit_rate": 92.4
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:05:22.437Z",
+    "prices": {
+      "alfalfa": 4349,
+      "beer": 1189,
+      "cabin": 26350,
+      "rural_tourism": 34494,
+      "firewood": 6655
+    },
+    "credit_rates": {
+      "cfi": 90.1,
+      "banco_nacion": 94.4
+    },
+    "projections": {
+      "total_investment": 54696900,
+      "annual_revenue": 37292135,
+      "net_result": -14261817.700000003,
+      "roi_percentage": -26.1,
+      "payback_years": -3.8351983702610353,
+      "infrastructure_costs": {
+        "pool": 10524100,
+        "decks": 11940000,
+        "roads": 4209600,
+        "domos": 26023200
+      },
+      "financing_costs": 40366312.2,
+      "avg_credit_rate": 92.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:10:22.432Z",
+    "prices": {
+      "alfalfa": 4568,
+      "beer": 1295,
+      "cabin": 25414,
+      "rural_tourism": 39182,
+      "firewood": 6455
+    },
+    "credit_rates": {
+      "cfi": 84.5,
+      "banco_nacion": 97.8
+    },
+    "projections": {
+      "total_investment": 56499030,
+      "annual_revenue": 37237297.4,
+      "net_result": -15132984.496000007,
+      "roi_percentage": -26.8,
+      "payback_years": -3.7335021399733797,
+      "infrastructure_costs": {
+        "pool": 10883950,
+        "decks": 12348360,
+        "roads": 4353600,
+        "domos": 26913120
+      },
+      "financing_costs": 41199092.67600001,
+      "avg_credit_rate": 91.2
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:15:22.434Z",
+    "prices": {
+      "alfalfa": 4342,
+      "beer": 1132,
+      "cabin": 28527,
+      "rural_tourism": 35878,
+      "firewood": 6602
+    },
+    "credit_rates": {
+      "cfi": 91.5,
+      "banco_nacion": 104
+    },
+    "projections": {
+      "total_investment": 53699760,
+      "annual_revenue": 39127710.7,
+      "net_result": -14603814.829999998,
+      "roi_percentage": -27.2,
+      "payback_years": -3.677104963676125,
+      "infrastructure_costs": {
+        "pool": 10324900,
+        "decks": 11714040,
+        "roads": 4130100,
+        "domos": 25530720
+      },
+      "financing_costs": 41993212.32,
+      "avg_credit_rate": 97.8
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:20:15.423Z",
+    "prices": {
+      "alfalfa": 4489,
+      "beer": 1169,
+      "cabin": 27308,
+      "rural_tourism": 39514,
+      "firewood": 6433
+    },
+    "credit_rates": {
+      "cfi": 84.1,
+      "banco_nacion": 96.1
+    },
+    "projections": {
+      "total_investment": 56112580,
+      "annual_revenue": 38586362.8,
+      "net_result": -13435493.703999996,
+      "roi_percentage": -23.9,
+      "payback_years": -4.176443473997106,
+      "infrastructure_costs": {
+        "pool": 10806800,
+        "decks": 12260760,
+        "roads": 4322700,
+        "domos": 26722320
+      },
+      "financing_costs": 40445947.664,
+      "avg_credit_rate": 90.1
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:25:22.430Z",
+    "prices": {
+      "alfalfa": 4243,
+      "beer": 1181,
+      "cabin": 24316,
+      "rural_tourism": 42109,
+      "firewood": 7283
+    },
+    "credit_rates": {
+      "cfi": 90.5,
+      "banco_nacion": 93.7
+    },
+    "projections": {
+      "total_investment": 57823140,
+      "annual_revenue": 35194495.6,
+      "net_result": -17967942.63199999,
+      "roi_percentage": -31.1,
+      "payback_years": -3.2181280397133465,
+      "infrastructure_costs": {
+        "pool": 11148400,
+        "decks": 12648360,
+        "roads": 4459500,
+        "domos": 27566880
+      },
+      "financing_costs": 42604089.55199999,
+      "avg_credit_rate": 92.1
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:30:15.417Z",
+    "prices": {
+      "alfalfa": 4561,
+      "beer": 1289,
+      "cabin": 29045,
+      "rural_tourism": 35744,
+      "firewood": 6355
+    },
+    "credit_rates": {
+      "cfi": 89.1,
+      "banco_nacion": 101.6
+    },
+    "projections": {
+      "total_investment": 53595780,
+      "annual_revenue": 40314734.5,
+      "net_result": -12662546.833999999,
+      "roi_percentage": -23.6,
+      "payback_years": -4.2326224497026805,
+      "infrastructure_costs": {
+        "pool": 10304200,
+        "decks": 11690520,
+        "roads": 4121700,
+        "domos": 25479360
+      },
+      "financing_costs": 40882860.984,
+      "avg_credit_rate": 95.4
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:35:15.410Z",
+    "prices": {
+      "alfalfa": 4650,
+      "beer": 1169,
+      "cabin": 24783,
+      "rural_tourism": 41123,
+      "firewood": 6848
+    },
+    "credit_rates": {
+      "cfi": 91.5,
+      "banco_nacion": 104.5
+    },
+    "projections": {
+      "total_investment": 56510390,
+      "annual_revenue": 36977160.3,
+      "net_result": -18420133.549999997,
+      "roi_percentage": -32.6,
+      "payback_years": -3.067859950450794,
+      "infrastructure_costs": {
+        "pool": 10886250,
+        "decks": 12351000,
+        "roads": 4354500,
+        "domos": 26918640
+      },
+      "financing_costs": 44304145.76,
+      "avg_credit_rate": 98
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:40:15.420Z",
+    "prices": {
+      "alfalfa": 4577,
+      "beer": 1258,
+      "cabin": 29109,
+      "rural_tourism": 40535,
+      "firewood": 6299
+    },
+    "credit_rates": {
+      "cfi": 85.6,
+      "banco_nacion": 99.1
+    },
+    "projections": {
+      "total_investment": 56292190,
+      "annual_revenue": 40423796.9,
+      "net_result": -13292012.142000005,
+      "roi_percentage": -23.6,
+      "payback_years": -4.235039014306069,
+      "infrastructure_costs": {
+        "pool": 10842650,
+        "decks": 12301560,
+        "roads": 4337100,
+        "domos": 26810880
+      },
+      "financing_costs": 41588669.972,
+      "avg_credit_rate": 92.4
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:45:15.427Z",
+    "prices": {
+      "alfalfa": 4504,
+      "beer": 1267,
+      "cabin": 27807,
+      "rural_tourism": 35593,
+      "firewood": 7047
+    },
+    "credit_rates": {
+      "cfi": 89.3,
+      "banco_nacion": 97.8
+    },
+    "projections": {
+      "total_investment": 57342830,
+      "annual_revenue": 39063558.7,
+      "net_result": -15570882.882,
+      "roi_percentage": -27.2,
+      "payback_years": -3.6826961216366563,
+      "infrastructure_costs": {
+        "pool": 11052450,
+        "decks": 12539520,
+        "roads": 4421100,
+        "domos": 27329760
+      },
+      "financing_costs": 42915373.972,
+      "avg_credit_rate": 93.6
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:50:15.424Z",
+    "prices": {
+      "alfalfa": 4276,
+      "beer": 1265,
+      "cabin": 28398,
+      "rural_tourism": 36614,
+      "firewood": 6338
+    },
+    "credit_rates": {
+      "cfi": 85.7,
+      "banco_nacion": 95.6
+    },
+    "projections": {
+      "total_investment": 56731310,
+      "annual_revenue": 38793131.8,
+      "net_result": -13986353.752000004,
+      "roi_percentage": -24.7,
+      "payback_years": -4.056190126886188,
+      "infrastructure_costs": {
+        "pool": 10930350,
+        "decks": 12400920,
+        "roads": 4372200,
+        "domos": 27027840
+      },
+      "financing_costs": 41141546.012,
+      "avg_credit_rate": 90.7
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-28T23:55:15.430Z",
+    "prices": {
+      "alfalfa": 4487,
+      "beer": 1126,
+      "cabin": 24884,
+      "rural_tourism": 39771,
+      "firewood": 6799
+    },
+    "credit_rates": {
+      "cfi": 84.3,
+      "banco_nacion": 95.5
+    },
+    "projections": {
+      "total_investment": 58358490,
+      "annual_revenue": 36509224.4,
+      "net_result": -16414968.928000003,
+      "roi_percentage": -28.1,
+      "payback_years": -3.555199541100221,
+      "infrastructure_costs": {
+        "pool": 11255350,
+        "decks": 12769680,
+        "roads": 4502100,
+        "domos": 27831360
+      },
+      "financing_costs": 41971426.008,
+      "avg_credit_rate": 89.9
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:00:22.442Z",
+    "prices": {
+      "alfalfa": 4266,
+      "beer": 1285,
+      "cabin": 27322,
+      "rural_tourism": 36401,
+      "firewood": 6559
+    },
+    "credit_rates": {
+      "cfi": 91.6,
+      "banco_nacion": 97.3
+    },
+    "projections": {
+      "total_investment": 57884350,
+      "annual_revenue": 37840120.2,
+      "net_result": -17249330.71999999,
+      "roi_percentage": -29.8,
+      "payback_years": -3.3557446917569465,
+      "infrastructure_costs": {
+        "pool": 11160650,
+        "decks": 12662280,
+        "roads": 4464300,
+        "domos": 27597120
+      },
+      "financing_costs": 43737414.85999999,
+      "avg_credit_rate": 94.4
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:05:15.435Z",
+    "prices": {
+      "alfalfa": 4403,
+      "beer": 1155,
+      "cabin": 29100,
+      "rural_tourism": 36004,
+      "firewood": 7413
+    },
+    "credit_rates": {
+      "cfi": 90.9,
+      "banco_nacion": 98.1
+    },
+    "projections": {
+      "total_investment": 56941430,
+      "annual_revenue": 39824510,
+      "net_result": -15170564.079999998,
+      "roi_percentage": -26.6,
+      "payback_years": -3.753415476163363,
+      "infrastructure_costs": {
+        "pool": 10972350,
+        "decks": 12448560,
+        "roads": 4389000,
+        "domos": 27131520
+      },
+      "financing_costs": 43047721.08,
+      "avg_credit_rate": 94.5
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:10:15.439Z",
+    "prices": {
+      "alfalfa": 4340,
+      "beer": 1291,
+      "cabin": 25473,
+      "rural_tourism": 40689,
+      "firewood": 6866
+    },
+    "credit_rates": {
+      "cfi": 84.1,
+      "banco_nacion": 101.7
+    },
+    "projections": {
+      "total_investment": 54465890,
+      "annual_revenue": 36512489.3,
+      "net_result": -14920306.938000001,
+      "roi_percentage": -27.4,
+      "payback_years": -3.650453722321406,
+      "infrastructure_costs": {
+        "pool": 10477950,
+        "decks": 11887680,
+        "roads": 4191300,
+        "domos": 25908960
+      },
+      "financing_costs": 40479049.448,
+      "avg_credit_rate": 92.9
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:15:15.426Z",
+    "prices": {
+      "alfalfa": 4560,
+      "beer": 1150,
+      "cabin": 28359,
+      "rural_tourism": 33776,
+      "firewood": 6372
+    },
+    "credit_rates": {
+      "cfi": 85.1,
+      "banco_nacion": 100.6
+    },
+    "projections": {
+      "total_investment": 56079570,
+      "annual_revenue": 39725421.9,
+      "net_result": -13848109.266000003,
+      "roi_percentage": -24.7,
+      "payback_years": -4.049619260131565,
+      "infrastructure_costs": {
+        "pool": 10800250,
+        "decks": 12253320,
+        "roads": 4320000,
+        "domos": 26706000
+      },
+      "financing_costs": 41655904.596,
+      "avg_credit_rate": 92.9
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:20:22.438Z",
+    "prices": {
+      "alfalfa": 4340,
+      "beer": 1270,
+      "cabin": 28455,
+      "rural_tourism": 41434,
+      "firewood": 7194
+    },
+    "credit_rates": {
+      "cfi": 90.1,
+      "banco_nacion": 100.4
+    },
+    "projections": {
+      "total_investment": 55816710,
+      "annual_revenue": 39059415.5,
+      "net_result": -15190742.170000002,
+      "roi_percentage": -27.2,
+      "payback_years": -3.6743899261374926,
+      "infrastructure_costs": {
+        "pool": 10747750,
+        "decks": 12193800,
+        "roads": 4299000,
+        "domos": 26576160
+      },
+      "financing_costs": 42532333.02,
+      "avg_credit_rate": 95.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:25:22.438Z",
+    "prices": {
+      "alfalfa": 4239,
+      "beer": 1117,
+      "cabin": 29738,
+      "rural_tourism": 35505,
+      "firewood": 6727
+    },
+    "credit_rates": {
+      "cfi": 84.5,
+      "banco_nacion": 102
+    },
+    "projections": {
+      "total_investment": 54849110,
+      "annual_revenue": 39811825.8,
+      "net_result": -13049158.000000004,
+      "roi_percentage": -23.8,
+      "payback_years": -4.203268134235174,
+      "infrastructure_costs": {
+        "pool": 10554450,
+        "decks": 11974440,
+        "roads": 4221900,
+        "domos": 26098320
+      },
+      "financing_costs": 40917436.06,
+      "avg_credit_rate": 93.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:30:15.407Z",
+    "prices": {
+      "alfalfa": 4265,
+      "beer": 1240,
+      "cabin": 28826,
+      "rural_tourism": 37178,
+      "firewood": 6317
+    },
+    "credit_rates": {
+      "cfi": 86.4,
+      "banco_nacion": 94.1
+    },
+    "projections": {
+      "total_investment": 55619000,
+      "annual_revenue": 39121286.599999994,
+      "net_result": -12772017.380000003,
+      "roi_percentage": -23,
+      "payback_years": -4.354754487501331,
+      "infrastructure_costs": {
+        "pool": 10708200,
+        "decks": 12148920,
+        "roads": 4283400,
+        "domos": 26478480
+      },
+      "financing_costs": 40156918,
+      "avg_credit_rate": 90.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:35:22.411Z",
+    "prices": {
+      "alfalfa": 4393,
+      "beer": 1215,
+      "cabin": 24336,
+      "rural_tourism": 34853,
+      "firewood": 7329
+    },
+    "credit_rates": {
+      "cfi": 86.9,
+      "banco_nacion": 96
+    },
+    "projections": {
+      "total_investment": 53828880,
+      "annual_revenue": 35721577.6,
+      "net_result": -14376104.288000003,
+      "roi_percentage": -26.7,
+      "payback_years": -3.744330099561948,
+      "infrastructure_costs": {
+        "pool": 10350700,
+        "decks": 11743320,
+        "roads": 4140300,
+        "domos": 25594560
+      },
+      "financing_costs": 39381208.608,
+      "avg_credit_rate": 91.5
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:40:15.399Z",
+    "prices": {
+      "alfalfa": 4319,
+      "beer": 1205,
+      "cabin": 27014,
+      "rural_tourism": 40567,
+      "firewood": 7328
+    },
+    "credit_rates": {
+      "cfi": 88,
+      "banco_nacion": 100.6
+    },
+    "projections": {
+      "total_investment": 54101720,
+      "annual_revenue": 37757257.4,
+      "net_result": -14384257.387999997,
+      "roi_percentage": -26.6,
+      "payback_years": -3.761175745168056,
+      "infrastructure_costs": {
+        "pool": 10405200,
+        "decks": 11805120,
+        "roads": 4162200,
+        "domos": 25729200
+      },
+      "financing_costs": 40814337.567999996,
+      "avg_credit_rate": 94.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:45:15.380Z",
+    "prices": {
+      "alfalfa": 4398,
+      "beer": 1252,
+      "cabin": 29316,
+      "rural_tourism": 36190,
+      "firewood": 7464
+    },
+    "credit_rates": {
+      "cfi": 88.5,
+      "banco_nacion": 100.1
+    },
+    "projections": {
+      "total_investment": 56812370,
+      "annual_revenue": 39991995.599999994,
+      "net_result": -14864855.008000001,
+      "roi_percentage": -26.2,
+      "payback_years": -3.8219256070391934,
+      "infrastructure_costs": {
+        "pool": 10946550,
+        "decks": 12419400,
+        "roads": 4378500,
+        "domos": 27067920
+      },
+      "financing_costs": 42859251.927999996,
+      "avg_credit_rate": 94.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:50:15.373Z",
+    "prices": {
+      "alfalfa": 4476,
+      "beer": 1198,
+      "cabin": 27243,
+      "rural_tourism": 35030,
+      "firewood": 7116
+    },
+    "credit_rates": {
+      "cfi": 85.8,
+      "banco_nacion": 93.4
+    },
+    "projections": {
+      "total_investment": 56383690,
+      "annual_revenue": 38486646.3,
+      "net_result": -13475176.582000002,
+      "roi_percentage": -23.9,
+      "payback_years": -4.18426353501866,
+      "infrastructure_costs": {
+        "pool": 10860950,
+        "decks": 12322200,
+        "roads": 4344300,
+        "domos": 26856240
+      },
+      "financing_costs": 40415828.992,
+      "avg_credit_rate": 89.6
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T00:55:15.367Z",
+    "prices": {
+      "alfalfa": 4586,
+      "beer": 1227,
+      "cabin": 26159,
+      "rural_tourism": 34922,
+      "firewood": 6671
+    },
+    "credit_rates": {
+      "cfi": 88.1,
+      "banco_nacion": 97.1
+    },
+    "projections": {
+      "total_investment": 56623470,
+      "annual_revenue": 37934801.9,
+      "net_result": -15392305.246,
+      "roi_percentage": -27.2,
+      "payback_years": -3.678686791552211,
+      "infrastructure_costs": {
+        "pool": 10908850,
+        "decks": 12376560,
+        "roads": 4363500,
+        "domos": 26974560
+      },
+      "financing_costs": 41946666.576,
+      "avg_credit_rate": 92.6
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T01:00:15.372Z",
+    "prices": {
+      "alfalfa": 4356,
+      "beer": 1130,
+      "cabin": 26052,
+      "rural_tourism": 40094,
+      "firewood": 6446
+    },
+    "credit_rates": {
+      "cfi": 85.6,
+      "banco_nacion": 102.8
+    },
+    "projections": {
+      "total_investment": 58293470,
+      "annual_revenue": 37061413.2,
+      "net_result": -17986969.75199999,
+      "roi_percentage": -30.9,
+      "payback_years": -3.240872187129702,
+      "infrastructure_costs": {
+        "pool": 11242350,
+        "decks": 12754920,
+        "roads": 4497000,
+        "domos": 27799200
+      },
+      "financing_costs": 43929958.99199999,
+      "avg_credit_rate": 94.2
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T01:05:15.364Z",
+    "prices": {
+      "alfalfa": 4494,
+      "beer": 1194,
+      "cabin": 27277,
+      "rural_tourism": 41960,
+      "firewood": 6830
+    },
+    "credit_rates": {
+      "cfi": 86.8,
+      "banco_nacion": 99.7
+    },
+    "projections": {
+      "total_investment": 56709900,
+      "annual_revenue": 38576885.7,
+      "net_result": -15301765.409999996,
+      "roi_percentage": -27,
+      "payback_years": -3.706101778487533,
+      "infrastructure_costs": {
+        "pool": 10926100,
+        "decks": 12396120,
+        "roads": 4370400,
+        "domos": 27017280
+      },
+      "financing_costs": 42305585.4,
+      "avg_credit_rate": 93.3
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T01:10:15.273Z",
+    "prices": {
+      "alfalfa": 4518,
+      "beer": 1135,
+      "cabin": 26586,
+      "rural_tourism": 35880,
+      "firewood": 7484
+    },
+    "credit_rates": {
+      "cfi": 84.1,
+      "banco_nacion": 102.3
+    },
+    "projections": {
+      "total_investment": 57950880,
+      "annual_revenue": 38068302.599999994,
+      "net_result": -16560364.308000002,
+      "roi_percentage": -28.6,
+      "payback_years": -3.4993722917076777,
+      "infrastructure_costs": {
+        "pool": 11173900,
+        "decks": 12677280,
+        "roads": 4469700,
+        "domos": 27630000
+      },
+      "financing_costs": 43208176.128,
+      "avg_credit_rate": 93.2
+    }
+  },
+  {
+    "date": "28/7/2025",
+    "timestamp": "2025-07-29T01:15:15.253Z",
+    "prices": {
+      "alfalfa": 4459,
+      "beer": 1213,
+      "cabin": 28904,
+      "rural_tourism": 36716,
+      "firewood": 7228
+    },
+    "credit_rates": {
+      "cfi": 86.2,
+      "banco_nacion": 93.4
+    },
+    "projections": {
+      "total_investment": 54756680,
+      "annual_revenue": 39847506.4,
+      "net_result": -11443944.432000011,
+      "roi_percentage": -20.9,
+      "payback_years": -4.784773320542103,
+      "infrastructure_costs": {
+        "pool": 10536000,
+        "decks": 11953560,
+        "roads": 4214400,
+        "domos": 26052720
+      },
+      "financing_costs": 39337198.91200001,
+      "avg_credit_rate": 89.8
+    }
+  }
+]

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a7c59;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5016;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="#e8f5e8" rx="20"/>
+  
+  <!-- Título -->
+  <text x="300" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#2d5016">
+    El Recodo - San Luis, Argentina
+  </text>
+  
+  <!-- Contorno del terreno -->
+  <path d="M100 120 Q150 100 200 110 Q250 105 300 115 Q350 120 400 125 Q450 130 500 140 
+           L480 200 Q450 220 400 210 Q350 200 300 205 Q250 210 200 200 Q150 190 100 180 Z" 
+        fill="url(#mapGrad)" 
+        opacity="0.8" 
+        stroke="#2d5016" 
+        stroke-width="2"/>
+  
+  <!-- Ubicación de domos -->
+  <circle cx="180" cy="160" r="6" fill="#ff6b35"/>
+  <circle cx="250" cy="170" r="6" fill="#ff6b35"/>
+  <circle cx="320" cy="165" r="6" fill="#ff6b35"/>
+  
+  <!-- Club House -->
+  <rect x="290" y="145" width="20" height="15" fill="#4a7c59" rx="2"/>
+  
+  <!-- Caminos -->
+  <path d="M100 200 Q200 190 300 185 Q400 180 500 175" 
+        stroke="#8b4513" 
+        stroke-width="3" 
+        fill="none" 
+        stroke-dasharray="8,4"/>
+  
+  <!-- Vegetación -->
+  <circle cx="140" cy="140" r="12" fill="#228B22" opacity="0.6"/>
+  <circle cx="160" cy="135" r="8" fill="#228B22" opacity="0.6"/>
+  <circle cx="380" cy="150" r="15" fill="#228B22" opacity="0.6"/>
+  <circle cx="420" cy="145" r="10" fill="#228B22" opacity="0.6"/>
+  
+  <!-- Leyenda -->
+  <rect x="50" y="250" width="180" height="120" fill="white" fill-opacity="0.9" rx="10" stroke="#2d5016"/>
+  <text x="60" y="270" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2d5016">
+    UBICACIÓN
+  </text>
+  
+  <!-- Domos -->
+  <circle cx="70" cy="285" r="4" fill="#ff6b35"/>
+  <text x="85" y="290" font-family="sans-serif" font-size="12" fill="#666">
+    Domos (3 unidades)
+  </text>
+  
+  <!-- Club House -->
+  <rect x="66" y="300" width="8" height="6" fill="#4a7c59" rx="1"/>
+  <text x="85" y="308" font-family="sans-serif" font-size="12" fill="#666">
+    Club House
+  </text>
+  
+  <!-- Vegetación -->
+  <circle cx="70" cy="320" r="4" fill="#228B22" opacity="0.6"/>
+  <text x="85" y="325" font-family="sans-serif" font-size="12" fill="#666">
+    Vegetación nativa
+  </text>
+  
+  <!-- Coordenadas -->
+  <text x="60" y="345" font-family="sans-serif" font-size="10" fill="#666">
+    San Luis, Argentina
+  </text>
+  <text x="60" y="360" font-family="sans-serif" font-size="10" fill="#666">
+    Sierras Centrales
+  </text>
+  
+  <!-- Brújula -->
+  <circle cx="520" cy="320" r="25" fill="white" fill-opacity="0.9" stroke="#2d5016" stroke-width="2"/>
+  <line x1="520" y1="300" x2="520" y2="310" stroke="#2d5016" stroke-width="2"/>
+  <text x="520" y="305" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#2d5016">
+    N
+  </text>
+  
+  <!-- Escala -->
+  <line x1="450" y1="370" x2="500" y2="370" stroke="#2d5016" stroke-width="2"/>
+  <line x1="450" y1="365" x2="450" y2="375" stroke="#2d5016" stroke-width="2"/>
+  <line x1="500" y1="365" x2="500" y2="375" stroke="#2d5016" stroke-width="2"/>
+  <text x="475" y="360" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666">
+    100m
+  </text>
+</svg>

@@ -1,0 +1,14 @@
+# Archivos innecesarios para GitHub Pages
+node_modules/
+.env
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Archivos de desarrollo
+backup/
+temp/
+draft/
+test/
+debug/

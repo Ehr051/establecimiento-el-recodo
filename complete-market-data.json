@@ -1,0 +1,39 @@
+{
+  "alfalfa_price": 4459,
+  "beer_price": 1213,
+  "cabin_price": 28904,
+  "rural_tourism_price": 36716,
+  "firewood_price": 7228,
+  "cfi_rate": 86.2,
+  "banco_nacion_rate": 93.4,
+  "reference_rate": 119.6,
+  "pool_cost_per_m2": 210720,
+  "deck_cost_per_m2": 99613,
+  "road_cost_per_m": 14048,
+  "general_construction_cost": 108553,
+  "last_updated": "2025-07-29T01:15:15.253Z",
+  "scraping_date": "28/7/2025",
+  "market_conditions": {
+    "tourism_demand": "low",
+    "seasonal_factor": "low_season",
+    "weekend_premium": "high",
+    "inflation_factor": 1.15,
+    "credit_availability": "moderate",
+    "construction_material_availability": "limited"
+  },
+  "financial_projections": {
+    "total_investment": 54756680,
+    "annual_revenue": 39847506.4,
+    "net_result": -11443944.432000011,
+    "roi_percentage": -20.9,
+    "payback_years": -4.784773320542103,
+    "infrastructure_costs": {
+      "pool": 10536000,
+      "decks": 11953560,
+      "roads": 4214400,
+      "domos": 26052720
+    },
+    "financing_costs": 39337198.91200001,
+    "avg_credit_rate": 89.8
+  }
+}
