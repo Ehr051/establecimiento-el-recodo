@@ -62,11 +62,40 @@
 
 ## 📁 ARCHIVOS INCLUIDOS
 
-- **`index.html`** - Sitio web completo con funcionalidades dinámicas
+### 🌐 Sitio Web Principal
+- **`index.html`** - Sitio web interactivo completo con presentación ejecutiva
+
+### 📊 Documentación Financiera
 - **`PLAN-NEGOCIO-COMPLETO-EL-RECODO.md`** - Plan detallado (60+ páginas)
-- **`RESUMEN-EJECUTIVO-PARA-HERMANOS.md`** - Presentación familiar
+- **`MODELO-FINANCIERO-EL-RECODO.csv`** - Proyecciones 5 años
+- **`MODELO-FINANCIERO-EXCEL-EL-RECODO.md`** - Documentación del modelo Excel
+- **`FLUJO-CAJA-MENSUAL-EL-RECODO.csv`** - Análisis mensual detallado
+- **`RESUMEN-EJECUTIVO-PARA-HERMANOS.md`** - Presentación ejecutiva
+
+### 📋 Informes y Reportes
+- **`informe-el-recodo.html`** - Informe integral ejecutivo
+- **`REPORTE-TESTING-COMPLETO.md`** - Reporte de testing del sistema
+- **`EL-RECODO-DOCUMENTOS-COMPLETOS.zip`** - 📦 Paquete completo descargable
+
+### 🔧 Herramientas Funcionales
+- **`complete-scraper.js`** - Scraper de datos de mercado
+- **`complete-market-scraper.js`** - Scraper específico de mercado
+- **`complete-server.js`** - Servidor backend para funcionalidades dinámicas
+- **`package.json`** / **`package-lock.json`** - Dependencias del proyecto
+
+### 🧪 Testing y Validación
+- **`advanced-testing-suite.html`** - Suite completa de testing
+- **`test-functions.html`** - Tests de funciones específicas
+
+### 📊 Datos de Mercado
+- **`complete-market-data.json`** - Datos completos de mercado
+- **`complete-price-history.json`** - Historial de precios
+- **`market-data.json`** - Datos actuales de mercado
+- **`price-history.json`** - Historial básico de precios
+- **`salarios-personal.json`** - Datos de salarios actualizados
+
+### 🖼️ Recursos Visuales
 - **`images/`** - Galería completa del proyecto (24 imágenes)
-- **`package.json`** - Configuración de dependencias Node.js
 
 ---
 
