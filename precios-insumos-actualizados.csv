@@ -1,0 +1,21 @@
+PRECIOS INSUMOS AGRÍCOLAS - EL RECODO
+Fecha: 2025-08-06
+
+CATEGORÍA,PRODUCTO,PRECIO,UNIDAD
+Semillas,Alfalfa Monarca kg,8500,ARS
+Semillas,Alfalfa W350 kg,9200,ARS
+Semillas,Cantidad por hectárea,25,ARS
+Semillas,Costo siembra por hectárea,220000,ARS
+Semillas,Total 25 hectáreas,5500000,ARS
+Fertilizantes,Urea 50kg,42000,ARS
+Fertilizantes,Fosfato diamónico 50kg,55000,ARS
+Fertilizantes,Sulfato de potasio 50kg,38000,ARS
+Fertilizantes,Cloruro de potasio 50kg,35000,ARS
+Fertilizantes,Cal agrícola tonelada,45000,ARS
+
+COSTOS PRODUCCIÓN POR HECTÁREA
+semillas,220000
+fertilizantes,409000
+fitosanitarios,8500
+combustible_labor,1470
+total_por_hectarea,638970

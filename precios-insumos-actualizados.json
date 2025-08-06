@@ -1,0 +1,80 @@
+{
+  "fecha": "2025-08-06",
+  "precios_insumos": {
+    "semillas": {
+      "Alfalfa Monarca kg": 8500,
+      "Alfalfa W350 kg": 9200,
+      "Cantidad por hectárea": 25,
+      "Costo siembra por hectárea": 220000,
+      "Total 25 hectáreas": 5500000
+    },
+    "fertilizantes": {
+      "Urea 50kg": 42000,
+      "Fosfato diamónico 50kg": 55000,
+      "Sulfato de potasio 50kg": 38000,
+      "Cloruro de potasio 50kg": 35000,
+      "Cal agrícola tonelada": 45000,
+      "Dosis por hectárea/año": {
+        "Urea": 200,
+        "Fosfato": 150,
+        "Potasio": 100
+      }
+    },
+    "insecticidas": {
+      "Glifosato 20L": 85000,
+      "2,4-D 20L": 65000,
+      "Cipermetrina 1L": 12000,
+      "Lambdacialotrina 1L": 15000,
+      "Aplicaciones anuales": 3,
+      "Costo por hectárea/año": 8500
+    },
+    "herramientas": {
+      "Tractor 75HP usado": 12500000,
+      "Arado de discos": 1800000,
+      "Rastra de discos": 1200000,
+      "Sembradora grano fino": 2800000,
+      "Rotoenfardadora": 8500000,
+      "Pala frontal tractor": 850000,
+      "Herramientas menores": 450000
+    },
+    "combustibles": {
+      "Gasoil común litro": 980,
+      "Nafta super litro": 1150,
+      "GLP 45kg": 8500,
+      "Consumo tractor/año": 4000,
+      "Consumo vehículos/año": 2400
+    },
+    "maquinaria": {},
+    "salarios": {
+      "Peón rural categoría I": 891530,
+      "Encargado/Capataz": 1200000,
+      "Tractorista": 950000,
+      "Personal temporario día": 18000,
+      "Cargas sociales %": 30.5
+    },
+    "fecha_actualizacion": "2025-08-06"
+  },
+  "costos_produccion_por_hectarea": {
+    "semillas": 220000,
+    "fertilizantes": 409000,
+    "fitosanitarios": 8500,
+    "combustible_labor": 1470,
+    "total_por_hectarea": 638970
+  },
+  "costos_totales_25_hectareas": {
+    "semillas_anuales": 5500000,
+    "fertilizantes_anuales": 10225000,
+    "fitosanitarios_anuales": 212500,
+    "combustible_anuales": 36750,
+    "total_anual": 15974250
+  },
+  "gastos_fijos_anuales": {
+    "salarios_base": 21396720,
+    "cargas_sociales": 6525999.6,
+    "encargado": 14400000,
+    "mantenimiento_maquinaria": 850000,
+    "seguros": 450000,
+    "impuestos": 680000,
+    "total_gastos_fijos": 44302719.6
+  }
+}
