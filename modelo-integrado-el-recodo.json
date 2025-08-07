@@ -1,0 +1,506 @@
+{
+  "resumenProyecto": {
+    "nombre": "Establecimiento El Recodo - Modelo Integrado",
+    "inversionTotal24Meses": 4400000,
+    "inversionPorHermano": 650000,
+    "roiPorHermano24Meses": 1868.6,
+    "dividendosPromedio24Meses": 12146136,
+    "paybackMeses": 2,
+    "capitalDisponibleMes24": 144005280.39999998
+  },
+  "estructuraSocios": {
+    "hermano1": {
+      "nombre": "Hermano A",
+      "inversion": 650000,
+      "participacion": 0.25
+    },
+    "hermano2": {
+      "nombre": "Hermano B (Cervecero)",
+      "inversion": 650000,
+      "participacion": 0.25
+    },
+    "hermano3": {
+      "nombre": "Hermano C",
+      "inversion": 650000,
+      "participacion": 0.25
+    },
+    "hermano4": {
+      "nombre": "Hermano D",
+      "inversion": 650000,
+      "participacion": 0.25
+    }
+  },
+  "planCultivos": {
+    "alfalfa": {
+      "hectareas": 15,
+      "cicloMeses": 12,
+      "ingresoHa": 285000
+    },
+    "maiz": {
+      "hectareas": 8,
+      "cicloMeses": 6,
+      "ingresoHa": 420000
+    },
+    "cebada": {
+      "hectareas": 5,
+      "cicloMeses": 6,
+      "ingresoHa": 380000
+    },
+    "sorgoForrajero": {
+      "hectareas": 2,
+      "cicloMeses": 4,
+      "ingresoHa": 320000
+    },
+    "aromaticas": {
+      "hectareas": 5,
+      "tipos": [
+        "Enebro",
+        "Cardamomo",
+        "Cilantro",
+        "Angélica"
+      ],
+      "cicloMeses": 8,
+      "ingresoHa": 680000
+    },
+    "pasturas": {
+      "hectareas": 15,
+      "uso": "Ganadería extensiva"
+    }
+  },
+  "cerveceriaIntegrada": {
+    "operador": "Hermano cervecero con know-how",
+    "inversionInicial": 800000,
+    "capacidadInicial": 2000,
+    "mes1a6": {
+      "descripcion": "Insumos comprados (transición)",
+      "costoInsumos": 180000,
+      "precioVenta": 1200,
+      "ingresoMensual": 2400000
+    },
+    "mes7a12": {
+      "descripcion": "50% insumos propios (cebada)",
+      "costoInsumos": 90000,
+      "precioVenta": 1200,
+      "ingresoMensual": 2400000
+    },
+    "mes13plus": {
+      "descripcion": "80% insumos propios (cebada + aromáticas)",
+      "costoInsumos": 36000,
+      "precioVenta": 1200,
+      "ingresoMensual": 2400000,
+      "expansion": {
+        "capacidad": 3500,
+        "ingresoMensual": 4200000
+      }
+    }
+  },
+  "ginArtesanal": {
+    "desarrolloMes": 8,
+    "capacidadInicial": 200,
+    "precioVenta": 8500,
+    "costoProduccion": 2800,
+    "ingresoMensual": 1700000,
+    "margen": 0.67
+  },
+  "etapas": {
+    "etapa1": {
+      "nombre": "Arranque Integrado Campo + Cervecería",
+      "meses": "1-12",
+      "objetivos": [
+        "Cervecería funcionando desde mes 1",
+        "15 ha alfalfa, 8 ha maíz, 5 ha cebada para cerveza",
+        "Setup infraestructura básica",
+        "Primer dividendo en mes 12"
+      ],
+      "inversion": 2600000,
+      "productos": [
+        "Cerveza (insumos comprados→propios)",
+        "Alfalfa",
+        "Maíz",
+        "Cebada"
+      ],
+      "personal": "1 peón rural + cervecero"
+    },
+    "etapa2": {
+      "nombre": "Consolidación + Aromáticas + Gin",
+      "meses": "13-24",
+      "objetivos": [
+        "5 ha aromáticas para gin funcionando",
+        "Gin artesanal en producción",
+        "Ganadería extensiva (15 ha pasturas)",
+        "DIVIDENDOS REGULARES cada 3 meses"
+      ],
+      "inversion": 1800000,
+      "productos": [
+        "Cerveza (80% insumos propios)",
+        "Gin artesanal",
+        "Todos los cultivos",
+        "Ganadería"
+      ],
+      "personal": "1 peón rural + cervecero + estacional"
+    },
+    "etapa3": {
+      "nombre": "Diversificación Turística (OPCIONAL)",
+      "meses": "25-36",
+      "objetivos": [
+        "Solo si los dividendos del campo ya son suficientes",
+        "Club House + 2-3 domos",
+        "Tours cervecería + degustación gin"
+      ],
+      "inversion": 8000000,
+      "productos": [
+        "Campo completo (continuo)",
+        "Turismo experiencial",
+        "Productos premium"
+      ],
+      "personal": "Equipo campo + personal turismo part-time"
+    }
+  },
+  "cashFlow": [
+    {
+      "mes": 1,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 0,
+      "costos": 4563446.65,
+      "resultado": -4563446.65,
+      "capitalAcumulado": -4563446.65,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Inversión inicial + setup cervecería"
+    },
+    {
+      "mes": 2,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 2400000,
+      "costos": 1623446.65,
+      "resultado": 776553.3500000001,
+      "capitalAcumulado": -3786893.3000000003,
+      "reinversion": 776553.3500000001,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Parciales)"
+    },
+    {
+      "mes": 3,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 2400000,
+      "costos": 1623446.65,
+      "resultado": 776553.3500000001,
+      "capitalAcumulado": -3010339.95,
+      "reinversion": 776553.3500000001,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Parciales)"
+    },
+    {
+      "mes": 4,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 3040000,
+      "costos": 1623446.65,
+      "resultado": 1416553.35,
+      "capitalAcumulado": -1593786.6,
+      "reinversion": 1416553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Parciales)"
+    },
+    {
+      "mes": 5,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 3040000,
+      "costos": 1623446.65,
+      "resultado": 1416553.35,
+      "capitalAcumulado": -177233.25,
+      "reinversion": 1416553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Parciales)"
+    },
+    {
+      "mes": 6,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 4180000,
+      "costos": 1773446.65,
+      "resultado": 2406553.35,
+      "capitalAcumulado": 2229320.1,
+      "reinversion": 1684587.345,
+      "dividendos": {
+        "Hermano A": 180492,
+        "Hermano B (Cervecero)": 180492,
+        "Hermano C": 180492,
+        "Hermano D": 180492
+      },
+      "descripcion": "Cerveza + Cultivos (Parciales) + DIVIDENDO TRIMESTRAL"
+    },
+    {
+      "mes": 7,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 5860000,
+      "costos": 1683446.65,
+      "resultado": 4176553.35,
+      "capitalAcumulado": 6405873.45,
+      "reinversion": 4176553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Parciales)"
+    },
+    {
+      "mes": 8,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 6810000,
+      "costos": 1683446.65,
+      "resultado": 5126553.35,
+      "capitalAcumulado": 11532426.8,
+      "reinversion": 5126553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Completos)"
+    },
+    {
+      "mes": 9,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 6810000,
+      "costos": 1683446.65,
+      "resultado": 5126553.35,
+      "capitalAcumulado": 16658980.15,
+      "reinversion": 3588587.3449999997,
+      "dividendos": {
+        "Hermano A": 384492,
+        "Hermano B (Cervecero)": 384492,
+        "Hermano C": 384492,
+        "Hermano D": 384492
+      },
+      "descripcion": "Cerveza + Cultivos (Completos) + DIVIDENDO TRIMESTRAL"
+    },
+    {
+      "mes": 10,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 6810000,
+      "costos": 1683446.65,
+      "resultado": 5126553.35,
+      "capitalAcumulado": 21785533.5,
+      "reinversion": 5126553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Completos)"
+    },
+    {
+      "mes": 11,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 6810000,
+      "costos": 1683446.65,
+      "resultado": 5126553.35,
+      "capitalAcumulado": 26912086.85,
+      "reinversion": 5126553.35,
+      "dividendos": {},
+      "descripcion": "Cerveza + Cultivos (Completos)"
+    },
+    {
+      "mes": 12,
+      "etapa": "1 - Arranque Integrado",
+      "ingresos": 6810000,
+      "costos": 1683446.65,
+      "resultado": 5126553.35,
+      "capitalAcumulado": 32038640.200000003,
+      "reinversion": 3588587.3449999997,
+      "dividendos": {
+        "Hermano A": 384492,
+        "Hermano B (Cervecero)": 384492,
+        "Hermano C": 384492,
+        "Hermano D": 384492
+      },
+      "descripcion": "Cerveza + Cultivos (Completos) + DIVIDENDO TRIMESTRAL"
+    },
+    {
+      "mes": 13,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 8510000,
+      "costos": 1619446.65,
+      "resultado": 6890553.35,
+      "capitalAcumulado": 38929193.550000004,
+      "reinversion": 4134332.01,
+      "dividendos": {
+        "Hermano A": 689055,
+        "Hermano B (Cervecero)": 689055,
+        "Hermano C": 689055,
+        "Hermano D": 689055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Sin ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 14,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 10210000,
+      "costos": 2179446.65,
+      "resultado": 8030553.35,
+      "capitalAcumulado": 46959746.900000006,
+      "reinversion": 4818332.01,
+      "dividendos": {
+        "Hermano A": 803055,
+        "Hermano B (Cervecero)": 803055,
+        "Hermano C": 803055,
+        "Hermano D": 803055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Sin ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 15,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 10930000,
+      "costos": 2179446.65,
+      "resultado": 8750553.35,
+      "capitalAcumulado": 55710300.25000001,
+      "reinversion": 5250332.01,
+      "dividendos": {
+        "Hermano A": 875055,
+        "Hermano B (Cervecero)": 875055,
+        "Hermano C": 875055,
+        "Hermano D": 875055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 16,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 10930000,
+      "costos": 2179446.65,
+      "resultado": 8750553.35,
+      "capitalAcumulado": 64460853.60000001,
+      "reinversion": 5250332.01,
+      "dividendos": {
+        "Hermano A": 875055,
+        "Hermano B (Cervecero)": 875055,
+        "Hermano C": 875055,
+        "Hermano D": 875055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 17,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 10930000,
+      "costos": 2179446.65,
+      "resultado": 8750553.35,
+      "capitalAcumulado": 73211406.95,
+      "reinversion": 5250332.01,
+      "dividendos": {
+        "Hermano A": 875055,
+        "Hermano B (Cervecero)": 875055,
+        "Hermano C": 875055,
+        "Hermano D": 875055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 18,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 10930000,
+      "costos": 2359446.65,
+      "resultado": 8570553.35,
+      "capitalAcumulado": 81781960.3,
+      "reinversion": 5142332.01,
+      "dividendos": {
+        "Hermano A": 857055,
+        "Hermano B (Cervecero)": 857055,
+        "Hermano C": 857055,
+        "Hermano D": 857055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 19,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 92152513.64999999,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 20,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 102523066.99999999,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 21,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 112893620.34999998,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 22,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 123264173.69999997,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 23,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 133634727.04999997,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    },
+    {
+      "mes": 24,
+      "etapa": "2 - Consolidación + Gin",
+      "ingresos": 12730000,
+      "costos": 2359446.65,
+      "resultado": 10370553.35,
+      "capitalAcumulado": 144005280.39999998,
+      "reinversion": 6222332.01,
+      "dividendos": {
+        "Hermano A": 1037055,
+        "Hermano B (Cervecero)": 1037055,
+        "Hermano C": 1037055,
+        "Hermano D": 1037055
+      },
+      "descripcion": "Cerveza + Gin + Cultivos + Ganadería + DIVIDENDO MENSUAL"
+    }
+  ],
+  "dividendosTotales": {
+    "Hermano A": 12146136,
+    "Hermano B (Cervecero)": 12146136,
+    "Hermano C": 12146136,
+    "Hermano D": 12146136
+  }
+}

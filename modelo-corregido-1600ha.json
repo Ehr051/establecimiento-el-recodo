@@ -1,0 +1,102 @@
+{
+  "superficie": {
+    "campoTotal": 1600,
+    "monteNativo": 1584.78,
+    "chacrones": {
+      "principal": 12.36,
+      "aledano": 2.86,
+      "total": 15.22
+    }
+  },
+  "capacidadCarga": {
+    "hectareasPorCabeza": 8,
+    "cabezasMaximas": 200,
+    "sobrepastoreoRiesgo": "Alto riesgo si se excede la capacidad",
+    "recomendacionConservadora": 160
+  },
+  "produccionLena": {
+    "superficieAprovechable": 1584.78,
+    "metodoExtraccion": "Poda + material caído + hasta 2m altura",
+    "sinDesmonte": true,
+    "bolsasPorHectareaMes": 3,
+    "bolsasMensuales": 4754,
+    "precioVenta": 1800,
+    "ingresoMensual": 8557200,
+    "rotacionAnos": 3,
+    "sectoresRotacion": 3
+  },
+  "usoChacrones": {
+    "pasturasMejoradas": {
+      "hectareas": 10,
+      "proposito": "Suplemento ganadería + reserva sequía",
+      "capacidadAdicional": "10-15 cabezas en épocas críticas"
+    },
+    "alfalfa": {
+      "hectareas": 3,
+      "proposito": "Forraje + venta (50/50)",
+      "ingresoHaAnual": 285000
+    },
+    "cebada": {
+      "hectareas": 1.5,
+      "proposito": "Venta a hermano cervecero",
+      "ingresoHaAnual": 380000,
+      "descuentoFamiliar": 0.15
+    },
+    "infraestructura": {
+      "hectareas": 0.72,
+      "proposito": "Corrales, aguadas, galpones"
+    }
+  },
+  "modeloGanadero": {
+    "ganaderiaCampo": {
+      "cabezas": 160,
+      "superficie": 1600,
+      "tipoCria": "Extensiva - cría natural",
+      "ingresoAnualPorCabeza": 180000
+    },
+    "suplementoPasturas": {
+      "cabezas": 12,
+      "superficie": 10,
+      "uso": "Recría + épocas críticas",
+      "ingresoAnualPorCabeza": 200000
+    }
+  },
+  "ingresos": {
+    "ganaderia": 31200000,
+    "lena": 102686400,
+    "alfalfa": 427500,
+    "cebadaCervecero": 484500
+  },
+  "totalIngresosAnuales": 134798400,
+  "inversionAjustada": {
+    "ganado": 17200000,
+    "corralesBasicos": 800000,
+    "aguadas": 600000,
+    "alambrados": 1200000,
+    "tractorUsado": 1500000,
+    "herramientasBasicas": 400000,
+    "semillasPasturas": 300000,
+    "semillasAlfalfa": 200000,
+    "capitalTrabajo": 1000000,
+    "total": 23200000
+  },
+  "inversionPorHermano": 5800000,
+  "costosOperativos": {
+    "personal": 300000,
+    "combustible": 180000,
+    "veterinario": 120000,
+    "alimentos": 150000,
+    "mantenimiento": 120000,
+    "impuestos": 200000,
+    "seguros": 100000,
+    "varios": 150000
+  },
+  "totalCostosOperativos": 1320000,
+  "proyeccion24Meses": {
+    "ganancia24Meses": 237916800,
+    "ganancia24MesesPorHermano": 59479200,
+    "roi24Meses": 1025.5,
+    "paybackMeses": 3
+  },
+  "viabilidad": true
+}

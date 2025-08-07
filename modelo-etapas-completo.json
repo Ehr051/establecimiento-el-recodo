@@ -1,0 +1,632 @@
+{
+  "sistemaParticipaciones": {
+    "descripcion": "Sistema de acciones/cuotas proporcional a la inversión",
+    "etapa1_2025": {
+      "inversion_total": 8250000,
+      "inversion_por_hermano": 2062500,
+      "participacion_base": 25
+    },
+    "etapa2_2026": {
+      "inversion_total": 29500000,
+      "inversion_por_hermano": 7375000,
+      "participacion_acumulada": "Depende de inversión real vs proyectada"
+    },
+    "ejemplo_escenarios": {
+      "escenario_equitativo": {
+        "etapa1": {
+          "h1": 2062500,
+          "h2": 2062500,
+          "h3": 2062500,
+          "h4": 2062500
+        },
+        "etapa2": {
+          "h1": 7375000,
+          "h2": 7375000,
+          "h3": 7375000,
+          "h4": 7375000
+        },
+        "resultado": "25% participación cada hermano"
+      },
+      "escenario_desigual": {
+        "etapa1": {
+          "h1": 4125000,
+          "h2": 2062500,
+          "h3": 2062500,
+          "h4": 0
+        },
+        "etapa2": {
+          "h1": 14750000,
+          "h2": 7375000,
+          "h3": 7375000,
+          "h4": 0
+        },
+        "resultado": "H1: 50%, H2: 25%, H3: 25%, H4: 0%"
+      },
+      "escenario_mixto": {
+        "etapa1": {
+          "h1": 3093750,
+          "h2": 2062500,
+          "h3": 2062500,
+          "h4": 1031250
+        },
+        "etapa2": {
+          "h1": 11062500,
+          "h2": 7375000,
+          "h3": 7375000,
+          "h4": 3687500
+        },
+        "resultado": "H1: 37.5%, H2: 25%, H3: 25%, H4: 12.5%"
+      }
+    }
+  },
+  "cashFlowEtapas": {
+    "etapa1_2025": {
+      "año": 2025,
+      "descripcion": "Infraestructura y Validación",
+      "duracion": "12 meses",
+      "trimestre1": {
+        "periodo": "Ene-Mar 2025",
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "cultivos": 264100,
+          "serviciosDron": 400000
+        },
+        "egresos": {
+          "ayudaTemporal": 75000,
+          "operativos": 2400000,
+          "combustible": 600000,
+          "mantenimiento": 450000,
+          "insumos": 300000
+        },
+        "inversion": {
+          "reparacionTractor": 1200000,
+          "bascula": 150000,
+          "bolsas": 900000,
+          "dron": 2500000
+        }
+      },
+      "trimestre2": {
+        "periodo": "Abr-Jun 2025",
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "alfalfaPrimerCorte": 300000,
+          "serviciosDron": 640000
+        },
+        "egresos": {
+          "ayudaTemporal": 120000,
+          "operativos": 2700000,
+          "combustible": 540000,
+          "mantenimiento": 360000,
+          "insumos": 250000
+        },
+        "inversion": {
+          "partidorHidraulico": 800000,
+          "motosierraAdicional": 400000,
+          "herramientasVarias": 300000
+        }
+      },
+      "trimestre3": {
+        "periodo": "Jul-Sep 2025",
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "alfalfaSegundoCorte": 400000,
+          "cebadaCosecha": 280000,
+          "serviciosDron": 800000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "operativos": 2100000,
+          "combustible": 450000,
+          "mantenimiento": 540000,
+          "insumos": 200000
+        },
+        "inversion": {
+          "capitalTrabajo": 1000000,
+          "infraestructura": 500000
+        }
+      },
+      "trimestre4": {
+        "periodo": "Oct-Dic 2025",
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "alfalfaTercerCorte": 350000,
+          "serviciosDron": 960000,
+          "ventaNovillos": 3600000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "operativos": 1950000,
+          "combustible": 420000,
+          "mantenimiento": 600000,
+          "insumos": 150000
+        },
+        "inversion": {
+          "preparacionEtapa2": 2000000
+        }
+      }
+    },
+    "etapa2_2026": {
+      "año": 2026,
+      "descripcion": "Escalamiento y Maquinaria",
+      "duracion": "12 meses",
+      "trimestre1": {
+        "periodo": "Ene-Mar 2026",
+        "ingresos": {
+          "leña": 4680000,
+          "ganaderia": 6000000,
+          "cultivos": 350000,
+          "serviciosDron": 1200000,
+          "turismoRural": 500000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "empleadoAdicional": 3000000,
+          "operativos": 3600000,
+          "combustible": 900000,
+          "mantenimiento": 1200000,
+          "insumos": 500000
+        },
+        "inversion": {
+          "tractorNuevo": 24000000,
+          "entregaTractorDeutz": -8000000,
+          "procesadoraLeña": 3500000
+        }
+      },
+      "trimestre2": {
+        "periodo": "Abr-Jun 2026",
+        "ingresos": {
+          "leña": 4680000,
+          "ganaderia": 6000000,
+          "alfalfaMejorada": 500000,
+          "serviciosDron": 1440000,
+          "turismoRural": 800000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "empleadoAdicional": 3000000,
+          "operativos": 3300000,
+          "combustible": 840000,
+          "mantenimiento": 1050000,
+          "insumos": 400000
+        },
+        "inversion": {
+          "implementosAgricolas": 4000000,
+          "infraestructuraTurismo": 2000000
+        }
+      },
+      "trimestre3": {
+        "periodo": "Jul-Sep 2026",
+        "ingresos": {
+          "leña": 4680000,
+          "ganaderia": 6000000,
+          "cultivosExpandidos": 600000,
+          "serviciosDron": 1600000,
+          "turismoRural": 1200000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "empleadoAdicional": 3000000,
+          "operativos": 3000000,
+          "combustible": 750000,
+          "mantenimiento": 900000,
+          "insumos": 350000
+        },
+        "inversion": {
+          "implementosAdicionales": 2000000,
+          "infraestructuraAdicional": 1000000
+        }
+      },
+      "trimestre4": {
+        "periodo": "Oct-Dic 2026",
+        "ingresos": {
+          "leña": 4680000,
+          "ganaderia": 6000000,
+          "cosechaMejorada": 800000,
+          "serviciosDron": 1760000,
+          "turismoRural": 1500000,
+          "ventaNovillos": 6000000
+        },
+        "egresos": {
+          "empleadoRural": 3490341,
+          "empleadoAdicional": 3000000,
+          "operativos": 2700000,
+          "combustible": 600000,
+          "mantenimiento": 750000,
+          "insumos": 300000
+        },
+        "inversion": {
+          "preparacionEtapa3": 2000000
+        }
+      }
+    },
+    "etapa3_2027": {
+      "año": 2027,
+      "descripcion": "Consolidación y Expansión Turística",
+      "duracion": "12 meses",
+      "resumenAnual": {
+        "ingresos": {
+          "leña": 24960000,
+          "ganaderia": 9000000,
+          "cultivos": 4000000,
+          "serviciosDron": 2400000,
+          "turismoRural": 8000000,
+          "ventaNovillos": 8800000
+        },
+        "egresos": {
+          "empleados": 35561364,
+          "operativos": 9600000,
+          "combustible": 1800000,
+          "mantenimiento": 2400000,
+          "insumos": 3600000
+        },
+        "inversion": {
+          "expansionTuristica": 5000000,
+          "mejorasContinuas": 2000000
+        }
+      }
+    },
+    "etapa4_2028": {
+      "año": 2028,
+      "descripcion": "Operación Optimizada",
+      "duracion": "12 meses",
+      "resumenAnual": {
+        "ingresos": {
+          "leña": 31200000,
+          "ganaderia": 12600000,
+          "cultivos": 5000000,
+          "serviciosDron": 3200000,
+          "turismoRural": 12000000,
+          "ventaNovillos": 12500000
+        },
+        "egresos": {
+          "empleados": 35561364,
+          "operativos": 8400000,
+          "combustible": 1440000,
+          "mantenimiento": 2160000,
+          "insumos": 3000000
+        },
+        "inversion": {
+          "mantenimientoEquipos": 1000000,
+          "reservaEmergencia": 1000000
+        }
+      }
+    }
+  },
+  "resultadosCompletos": {
+    "etapa1_2025": {
+      "año": 2025,
+      "descripcion": "Infraestructura y Validación",
+      "tipo": "trimestral",
+      "trimestres": [
+        {
+          "periodo": "Ene-Mar 2025",
+          "ingresos": {
+            "leña": 3120000,
+            "ganaderia": 4500000,
+            "cultivos": 264100,
+            "serviciosDron": 400000
+          },
+          "egresos": {
+            "ayudaTemporal": 75000,
+            "operativos": 2400000,
+            "combustible": 600000,
+            "mantenimiento": 450000,
+            "insumos": 300000
+          },
+          "inversiones": {
+            "reparacionTractor": 1200000,
+            "bascula": 150000,
+            "bolsas": 900000,
+            "dron": 2500000
+          },
+          "totales": {
+            "ingresos": 8284100,
+            "egresos": 3825000,
+            "inversiones": 4750000,
+            "flujoNeto": -290900,
+            "porHermano": -72725
+          }
+        },
+        {
+          "periodo": "Abr-Jun 2025",
+          "ingresos": {
+            "leña": 3120000,
+            "ganaderia": 4500000,
+            "alfalfaPrimerCorte": 300000,
+            "serviciosDron": 640000
+          },
+          "egresos": {
+            "ayudaTemporal": 120000,
+            "operativos": 2700000,
+            "combustible": 540000,
+            "mantenimiento": 360000,
+            "insumos": 250000
+          },
+          "inversiones": {
+            "partidorHidraulico": 800000,
+            "motosierraAdicional": 400000,
+            "herramientasVarias": 300000
+          },
+          "totales": {
+            "ingresos": 8560000,
+            "egresos": 3970000,
+            "inversiones": 1500000,
+            "flujoNeto": 3090000,
+            "porHermano": 772500
+          }
+        },
+        {
+          "periodo": "Jul-Sep 2025",
+          "ingresos": {
+            "leña": 3120000,
+            "ganaderia": 4500000,
+            "alfalfaSegundoCorte": 400000,
+            "cebadaCosecha": 280000,
+            "serviciosDron": 800000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "operativos": 2100000,
+            "combustible": 450000,
+            "mantenimiento": 540000,
+            "insumos": 200000
+          },
+          "inversiones": {
+            "capitalTrabajo": 1000000,
+            "infraestructura": 500000
+          },
+          "totales": {
+            "ingresos": 9100000,
+            "egresos": 6780341,
+            "inversiones": 1500000,
+            "flujoNeto": 819659,
+            "porHermano": 204914.75
+          }
+        },
+        {
+          "periodo": "Oct-Dic 2025",
+          "ingresos": {
+            "leña": 3120000,
+            "ganaderia": 4500000,
+            "alfalfaTercerCorte": 350000,
+            "serviciosDron": 960000,
+            "ventaNovillos": 3600000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "operativos": 1950000,
+            "combustible": 420000,
+            "mantenimiento": 600000,
+            "insumos": 150000
+          },
+          "inversiones": {
+            "preparacionEtapa2": 2000000
+          },
+          "totales": {
+            "ingresos": 12530000,
+            "egresos": 6610341,
+            "inversiones": 2000000,
+            "flujoNeto": 3919659,
+            "porHermano": 979914.75
+          }
+        }
+      ],
+      "totales": {
+        "ingresos": 38474100,
+        "egresos": 21185682,
+        "inversiones": 9750000,
+        "flujoNeto": 7538418,
+        "porHermano": 1884604.5
+      }
+    },
+    "etapa2_2026": {
+      "año": 2026,
+      "descripcion": "Escalamiento y Maquinaria",
+      "tipo": "trimestral",
+      "trimestres": [
+        {
+          "periodo": "Ene-Mar 2026",
+          "ingresos": {
+            "leña": 4680000,
+            "ganaderia": 6000000,
+            "cultivos": 350000,
+            "serviciosDron": 1200000,
+            "turismoRural": 500000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "empleadoAdicional": 3000000,
+            "operativos": 3600000,
+            "combustible": 900000,
+            "mantenimiento": 1200000,
+            "insumos": 500000
+          },
+          "inversiones": {
+            "tractorNuevo": 24000000,
+            "entregaTractorDeutz": -8000000,
+            "procesadoraLeña": 3500000
+          },
+          "totales": {
+            "ingresos": 12730000,
+            "egresos": 12690341,
+            "inversiones": 19500000,
+            "flujoNeto": -19460341,
+            "porHermano": -4865085.25
+          }
+        },
+        {
+          "periodo": "Abr-Jun 2026",
+          "ingresos": {
+            "leña": 4680000,
+            "ganaderia": 6000000,
+            "alfalfaMejorada": 500000,
+            "serviciosDron": 1440000,
+            "turismoRural": 800000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "empleadoAdicional": 3000000,
+            "operativos": 3300000,
+            "combustible": 840000,
+            "mantenimiento": 1050000,
+            "insumos": 400000
+          },
+          "inversiones": {
+            "implementosAgricolas": 4000000,
+            "infraestructuraTurismo": 2000000
+          },
+          "totales": {
+            "ingresos": 13420000,
+            "egresos": 12080341,
+            "inversiones": 6000000,
+            "flujoNeto": -4660341,
+            "porHermano": -1165085.25
+          }
+        },
+        {
+          "periodo": "Jul-Sep 2026",
+          "ingresos": {
+            "leña": 4680000,
+            "ganaderia": 6000000,
+            "cultivosExpandidos": 600000,
+            "serviciosDron": 1600000,
+            "turismoRural": 1200000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "empleadoAdicional": 3000000,
+            "operativos": 3000000,
+            "combustible": 750000,
+            "mantenimiento": 900000,
+            "insumos": 350000
+          },
+          "inversiones": {
+            "implementosAdicionales": 2000000,
+            "infraestructuraAdicional": 1000000
+          },
+          "totales": {
+            "ingresos": 14080000,
+            "egresos": 11490341,
+            "inversiones": 3000000,
+            "flujoNeto": -410341,
+            "porHermano": -102585.25
+          }
+        },
+        {
+          "periodo": "Oct-Dic 2026",
+          "ingresos": {
+            "leña": 4680000,
+            "ganaderia": 6000000,
+            "cosechaMejorada": 800000,
+            "serviciosDron": 1760000,
+            "turismoRural": 1500000,
+            "ventaNovillos": 6000000
+          },
+          "egresos": {
+            "empleadoRural": 3490341,
+            "empleadoAdicional": 3000000,
+            "operativos": 2700000,
+            "combustible": 600000,
+            "mantenimiento": 750000,
+            "insumos": 300000
+          },
+          "inversiones": {
+            "preparacionEtapa3": 2000000
+          },
+          "totales": {
+            "ingresos": 20740000,
+            "egresos": 10840341,
+            "inversiones": 2000000,
+            "flujoNeto": 7899659,
+            "porHermano": 1974914.75
+          }
+        }
+      ],
+      "totales": {
+        "ingresos": 60970000,
+        "egresos": 47101364,
+        "inversiones": 30500000,
+        "flujoNeto": -16631364,
+        "porHermano": -4157841
+      }
+    },
+    "etapa3_2027": {
+      "año": 2027,
+      "descripcion": "Consolidación y Expansión Turística",
+      "tipo": "anual",
+      "totales": {
+        "ingresos": 57160000,
+        "egresos": 52961364,
+        "inversiones": 7000000,
+        "flujoNeto": -2801364,
+        "porHermano": -700341
+      },
+      "detalles": {
+        "ingresos": {
+          "leña": 24960000,
+          "ganaderia": 9000000,
+          "cultivos": 4000000,
+          "serviciosDron": 2400000,
+          "turismoRural": 8000000,
+          "ventaNovillos": 8800000
+        },
+        "egresos": {
+          "empleados": 35561364,
+          "operativos": 9600000,
+          "combustible": 1800000,
+          "mantenimiento": 2400000,
+          "insumos": 3600000
+        },
+        "inversion": {
+          "expansionTuristica": 5000000,
+          "mejorasContinuas": 2000000
+        }
+      }
+    },
+    "etapa4_2028": {
+      "año": 2028,
+      "descripcion": "Operación Optimizada",
+      "tipo": "anual",
+      "totales": {
+        "ingresos": 76500000,
+        "egresos": 50561364,
+        "inversiones": 2000000,
+        "flujoNeto": 23938636,
+        "porHermano": 5984659
+      },
+      "detalles": {
+        "ingresos": {
+          "leña": 31200000,
+          "ganaderia": 12600000,
+          "cultivos": 5000000,
+          "serviciosDron": 3200000,
+          "turismoRural": 12000000,
+          "ventaNovillos": 12500000
+        },
+        "egresos": {
+          "empleados": 35561364,
+          "operativos": 8400000,
+          "combustible": 1440000,
+          "mantenimiento": 2160000,
+          "insumos": 3000000
+        },
+        "inversion": {
+          "mantenimientoEquipos": 1000000,
+          "reservaEmergencia": 1000000
+        }
+      }
+    }
+  },
+  "resumenTotal": {
+    "ingresos": 233104100,
+    "egresos": 171809774,
+    "inversiones": 49250000,
+    "flujoNeto": 12044326,
+    "porHermano": 3011081.5
+  },
+  "fechaGeneracion": "2025-08-07T14:51:09.497Z"
+}

@@ -1,0 +1,342 @@
+{
+  "resumenProyecto": {
+    "nombre": "Establecimiento El Recodo - Modelo Real 15.22 ha",
+    "hectareasDisponibles": {
+      "chacronPrincipal": 12.36,
+      "chacronAledano": 2.86,
+      "totalDisponible": 15.22
+    },
+    "inversionTotal": 1800000,
+    "inversionPorHermano": 450000,
+    "roiPorHermano24Meses": 0,
+    "dividendosPromedio24Meses": 0,
+    "capitalDisponibleMes24": -28381119.599999983
+  },
+  "estructuraSocios": {
+    "hermano1": {
+      "nombre": "Hermano A",
+      "inversion": 450000,
+      "participacion": 0.25
+    },
+    "hermano2": {
+      "nombre": "Hermano B",
+      "inversion": 450000,
+      "participacion": 0.25
+    },
+    "hermano3": {
+      "nombre": "Hermano C",
+      "inversion": 450000,
+      "participacion": 0.25
+    },
+    "hermano4": {
+      "nombre": "Hermano D",
+      "inversion": 450000,
+      "participacion": 0.25
+    }
+  },
+  "planCultivos": {
+    "alfalfa": {
+      "hectareas": 6,
+      "ubicacion": "Chacrón principal (parcela 1)",
+      "cicloMeses": 12,
+      "ingresoHa": 285000,
+      "sembradoEnero": true
+    },
+    "maiz": {
+      "hectareas": 3,
+      "ubicacion": "Chacrón principal (parcela 2)",
+      "cicloMeses": 6,
+      "ingresoHa": 420000,
+      "sembradoOctubre": true
+    },
+    "cebada": {
+      "hectareas": 2.36,
+      "ubicacion": "Chacrón principal (parcela 3)",
+      "cicloMeses": 6,
+      "ingresoHa": 380000,
+      "clienteHermano": "Para venta a cervecería del hermano",
+      "sembradoMayo": true
+    },
+    "sorgoForrajero": {
+      "hectareas": 1,
+      "ubicacion": "Chacrón principal (parcela 4)",
+      "cicloMeses": 4,
+      "ingresoHa": 320000,
+      "rotacionRapida": true
+    },
+    "aromaticas": {
+      "hectareas": 2.86,
+      "ubicacion": "Chacrón aledaño (completo)",
+      "tipos": [
+        "Enebro",
+        "Cardamomo",
+        "Cilantro",
+        "Angélica"
+      ],
+      "cicloMeses": 8,
+      "ingresoHa": 680000,
+      "usoGinArtesanal": "Para venta a destilerías",
+      "sembradoMarzo": true
+    }
+  },
+  "cerveceriaExterna": {
+    "propietario": "Hermano cervecero (negocio independiente)",
+    "relacionComercial": "Cliente comprador de cebada",
+    "demandaCebada": 2.36,
+    "precioCompra": 450000,
+    "ventajas": [
+      "Cliente fijo garantizado",
+      "Precio premium por proximidad",
+      "Sin costos de logística",
+      "Pago contado"
+    ]
+  },
+  "cashFlow": [
+    {
+      "mes": 1,
+      "ingresos": 0,
+      "costos": 3143446.65,
+      "resultado": -3143446.65,
+      "capitalAcumulado": -3143446.65,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Inversión inicial + preparación campo + Siembra alfalfa"
+    },
+    {
+      "mes": 2,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -4486893.3,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 2"
+    },
+    {
+      "mes": 3,
+      "ingresos": 0,
+      "costos": 1543446.65,
+      "resultado": -1543446.65,
+      "capitalAcumulado": -6030339.949999999,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 3 + Siembra aromáticas"
+    },
+    {
+      "mes": 4,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -7373786.6,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 4"
+    },
+    {
+      "mes": 5,
+      "ingresos": 0,
+      "costos": 1463446.65,
+      "resultado": -1463446.65,
+      "capitalAcumulado": -8837233.25,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 5 + Siembra cebada"
+    },
+    {
+      "mes": 6,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -10180679.9,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 6"
+    },
+    {
+      "mes": 7,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -11524126.55,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 7"
+    },
+    {
+      "mes": 8,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -12867573.200000001,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 8"
+    },
+    {
+      "mes": 9,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -14211019.850000001,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 9"
+    },
+    {
+      "mes": 10,
+      "ingresos": 0,
+      "costos": 1493446.65,
+      "resultado": -1493446.65,
+      "capitalAcumulado": -15704466.500000002,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 10 + Siembra maíz, sorgo"
+    },
+    {
+      "mes": 11,
+      "ingresos": 896800,
+      "costos": 1343446.65,
+      "resultado": -446646.6499999999,
+      "capitalAcumulado": -16151113.150000002,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 11 + Cosecha cebada"
+    },
+    {
+      "mes": 12,
+      "ingresos": 320000,
+      "costos": 1343446.65,
+      "resultado": -1023446.6499999999,
+      "capitalAcumulado": -17174559.8,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 12 + Cosecha sorgo"
+    },
+    {
+      "mes": 13,
+      "ingresos": 1710000,
+      "costos": 1343446.65,
+      "resultado": 366553.3500000001,
+      "capitalAcumulado": -16808006.45,
+      "reinversion": 366553.3500000001,
+      "dividendos": {},
+      "descripcion": "Mes 13 + Cosecha alfalfa"
+    },
+    {
+      "mes": 14,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -18151453.099999998,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 14"
+    },
+    {
+      "mes": 15,
+      "ingresos": 1260000,
+      "costos": 1343446.65,
+      "resultado": -83446.6499999999,
+      "capitalAcumulado": -18234899.749999996,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 15 + Cosecha maíz"
+    },
+    {
+      "mes": 16,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -19578346.399999995,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 16"
+    },
+    {
+      "mes": 17,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -20921793.049999993,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 17"
+    },
+    {
+      "mes": 18,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -22265239.69999999,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 18"
+    },
+    {
+      "mes": 19,
+      "ingresos": 1944800,
+      "costos": 1343446.65,
+      "resultado": 601353.3500000001,
+      "capitalAcumulado": -21663886.34999999,
+      "reinversion": 601353.3500000001,
+      "dividendos": {},
+      "descripcion": "Mes 19 + Cosecha aromáticas"
+    },
+    {
+      "mes": 20,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -23007332.99999999,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 20"
+    },
+    {
+      "mes": 21,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -24350779.649999987,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 21"
+    },
+    {
+      "mes": 22,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -25694226.299999986,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 22"
+    },
+    {
+      "mes": 23,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -27037672.949999984,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 23"
+    },
+    {
+      "mes": 24,
+      "ingresos": 0,
+      "costos": 1343446.65,
+      "resultado": -1343446.65,
+      "capitalAcumulado": -28381119.599999983,
+      "reinversion": 0,
+      "dividendos": {},
+      "descripcion": "Mes 24"
+    }
+  ],
+  "dividendosTotales": {
+    "Hermano A": 0,
+    "Hermano B": 0,
+    "Hermano C": 0,
+    "Hermano D": 0
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "presupuesto": {
+    "totalDisponible": 10000000,
+    "distribucion": {
+      "etapa1_validacion": 6000000,
+      "etapa2_crecimiento": 4000000,
+      "reservaEmergencia": 500000
+    }
+  },
+  "etapa1": {
+    "nombre": "Etapa 1: Validación y Arranque",
+    "presupuesto": 6000000,
+    "objetivo": "Validar modelo 400 bolsas/mes con inversión mínima",
+    "duracion": "12 meses",
+    "inversiones": {
+      "reparacionTractorDeutz": 1200000,
+      "implementosUsados": {
+        "aradoUsado": 800000,
+        "rastraUsada": 600000,
+        "sembradoraUsada": 1200000
+      },
+      "maquinariaLeña": {
+        "partidorHidraulico": 800000,
+        "motosierraProfesional": 400000,
+        "basculaPesar": 150000
+      },
+      "infraestructura": {
+        "galponBasico": 800000,
+        "cercadosBasicos": 500000
+      },
+      "capitalTrabajo": 1000000,
+      "totalImplementos": 2600000,
+      "totalMaquinariaLeña": 1350000,
+      "totalInfraestructura": 1300000,
+      "total": 7450000
+    },
+    "resultadosEsperados": {
+      "produccionLeñaMensual": 400,
+      "superficieCultivada": 25,
+      "serviciosExternos": 10,
+      "empleados": 1,
+      "ingresosMensuales": {
+        "leña": 1040000,
+        "cultivos": 104166.66666666667,
+        "servicios": 80000
+      },
+      "costosMensuales": {
+        "empleado": 1163447,
+        "operativos": 800000,
+        "combustible": 120000,
+        "mantenimiento": 80000
+      }
+    }
+  },
+  "etapa2": {
+    "nombre": "Etapa 2: Crecimiento y Mecanización",
+    "presupuestoInicial": 4000000,
+    "gananciosEtapa1": -11271364,
+    "objetivo": "Tractor Agrofy 50hp + mecanización completa",
+    "inversiones": {
+      "tractorAgrofy50hp": 15390000,
+      "ventaDeutz": -3000000,
+      "implementosNuevos": {
+        "aradoNuevo3surcos": 2500000,
+        "rastraNueva": 1800000,
+        "sembradoraNueva": 3500000
+      },
+      "dronGJI100": 2500000,
+      "infraestructuraMejorada": {
+        "galponCompleto": 2000000,
+        "sistemaRiegoBasico": 1500000
+      },
+      "totalImplementosNuevos": 7800000,
+      "totalInfraestructuraMejorada": 3500000,
+      "total": 26190000
+    },
+    "resultadosEsperados": {
+      "produccionLeñaMensual": 600,
+      "superficieCultivada": 60,
+      "serviciosExternos": 40,
+      "empleados": 2,
+      "ingresosMensuales": {
+        "leña": 1560000,
+        "cultivos": 250000,
+        "serviciosTractor": 300000,
+        "serviciosDron": 80000
+      },
+      "costosMensuales": {
+        "empleados": 2326894,
+        "operativos": 1200000,
+        "combustible": 200000,
+        "mantenimiento": 150000
+      }
+    }
+  },
+  "beneficios": {
+    "mensual_e1": -939280.3333333333,
+    "mensual_e2": -1686894,
+    "por_hermano_e1": -234820.0833333333,
+    "por_hermano_e2": -421723.5
+  },
+  "roi_tractor_agrofy": {
+    "inversion_neta": 12390000,
+    "payback_meses": -16.6,
+    "viable": true
+  },
+  "recomendacion": "Plan gradual - Deutz primero, Agrofy en etapa 2",
+  "fecha_analisis": "2025-08-07T00:29:39.627Z"
+}

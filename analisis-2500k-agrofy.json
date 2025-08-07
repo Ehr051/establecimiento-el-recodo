@@ -1,0 +1,128 @@
+{
+  "presupuestoFamiliar": {
+    "hermanos": 4,
+    "aportePorHermano": 2500000,
+    "totalDisponible": 10000000,
+    "estrategia": "Maximizar eficiencia con maquinaria usada de calidad"
+  },
+  "opcionesTractores": {
+    "Opción Premium - Hanomag TR85 4x4": {
+      "precio_usd": 37525,
+      "precio_pesos": 45030000,
+      "caracteristicas": [
+        "85hp",
+        "4x4",
+        "3 puntos",
+        "Nuevo"
+      ],
+      "ventajas": "Máxima capacidad, 4x4 para terreno difícil",
+      "desventajas": "Usa 75% del presupuesto total",
+      "recomendacion": "Para operación intensiva"
+    },
+    "Opción Equilibrada - Tractor 50hp": {
+      "precio_usd": 12825,
+      "precio_pesos": 15390000,
+      "caracteristicas": [
+        "50hp",
+        "Usado excelente",
+        "Mecánico"
+      ],
+      "ventajas": "Excelente relación precio/potencia",
+      "desventajas": "Usado, puede requerir mantenimiento",
+      "recomendacion": "RECOMENDADA - Balance perfecto"
+    },
+    "Opción Reparación - Deutz Actual": {
+      "precio_pesos": 1200000,
+      "caracteristicas": [
+        "Funcional",
+        "Necesita ruedas",
+        "Ya disponible"
+      ],
+      "ventajas": "Mínima inversión inicial",
+      "desventajas": "Limitado para crecimiento",
+      "recomendacion": "Solo para validar modelo"
+    }
+  },
+  "planRecomendado": {
+    "nombre": "Plan Equilibrio - Tractor 50hp Agrofy",
+    "tractor": {
+      "precio_usd": 12825,
+      "precio_pesos": 15390000,
+      "caracteristicas": [
+        "50hp",
+        "Usado excelente",
+        "Mecánico"
+      ],
+      "ventajas": "Excelente relación precio/potencia",
+      "desventajas": "Usado, puede requerir mantenimiento",
+      "recomendacion": "RECOMENDADA - Balance perfecto"
+    },
+    "presupuestoRestante": -5390000,
+    "inversionesEsenciales": {
+      "tractorAgrofy50hp": 15390000,
+      "implementosBasicos": 3000000,
+      "dronGJI100": 2500000,
+      "maquinariaLeña": {
+        "partidorHidraulico20ton": 800000,
+        "motosierraProfesional": 400000,
+        "basculaPesar": 150000
+      },
+      "infraestructura": {
+        "galponMaquinaria": 1500000,
+        "sistemaRiego": 1000000,
+        "cercadosCampo": 800000
+      },
+      "capitalTrabajo": 1500000,
+      "total": 27040000
+    }
+  },
+  "proyeccionConTractor50hp": {
+    "capacidadMejorada": {
+      "superficieCultivable": "Hasta 50 hectáreas eficientemente",
+      "velocidadTrabajo": "3x más rápido que Deutz reparado",
+      "serviciosExternos": "Puede ofrecer servicios a vecinos",
+      "confiabilidad": "Usado pero certificado - menos paradas"
+    },
+    "ingresosAdicionales": {
+      "cultivosMasSemillas": 15,
+      "serviciosAradoraVecinos": 20,
+      "serviciosSembradoraVecinos": 15,
+      "serviciosAradora": 160000,
+      "serviciosSembradora": 180000,
+      "cultivosAdicionales": 62500,
+      "totalMensual": 402500,
+      "totalAnual": 4830000
+    },
+    "costosAdicionales": {
+      "combustibleExtra": 80000,
+      "mantenimientoTractor": 120000,
+      "seguroTractor": 50000,
+      "totalMensual": 250000,
+      "totalAnual": 3000000
+    }
+  },
+  "comparacionEscenarios": {
+    "Solo Deutz reparado": {
+      "inversion": 1200000,
+      "capacidad": "Limitada - solo cultivos propios",
+      "ingresosMensuales": 0,
+      "payback": "N/A"
+    },
+    "Tractor 50hp Agrofy": {
+      "inversion": 15390000,
+      "capacidad": "Media - cultivos + servicios",
+      "ingresosMensuales": 152500,
+      "payback": "100.9 meses"
+    },
+    "Hanomag TR85 Premium": {
+      "inversion": 45030000,
+      "capacidad": "Máxima - gran escala",
+      "ingresosMensuales": 228750,
+      "payback": "196.9 meses"
+    }
+  },
+  "recomendacion": "Tractor 50hp Agrofy - Balance perfecto",
+  "roi_meses": 100.9,
+  "beneficio_anual": 1830000,
+  "fecha_analisis": "2025-08-07T00:17:37.149Z"
+}

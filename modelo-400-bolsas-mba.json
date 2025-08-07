@@ -1,0 +1,211 @@
+{
+  "parametrosReales": {
+    "superficie": {
+      "campoTotal": 1600,
+      "monteNativo": 1584.78,
+      "chacrones": 15.22
+    },
+    "produccionLeña": {
+      "objetivoMensual": 400,
+      "objetivoSemanal": 100,
+      "objetivoDiario": 20,
+      "horasDiarias": 8,
+      "bolsasPorHora": 2.5,
+      "diasTrabajo": 20,
+      "precioVenta": {
+        "retail": 4000,
+        "mayorista": 1200,
+        "promedio": 2600
+      }
+    },
+    "maquinariaEspecializada": {
+      "bascula": {
+        "descripcion": "Báscula para pesar bolsas",
+        "precio": 150000,
+        "importancia": "Esencial para estandarización"
+      },
+      "bolsas": {
+        "descripcion": "Bolsas de leña estándar",
+        "costo": 180,
+        "precio_venta": 2600,
+        "cantidad": 5000,
+        "total_inversion": 900000
+      },
+      "dronGji100": {
+        "descripcion": "Dron GJI 100 para cultivos",
+        "cobertura": "34 ha/hora",
+        "precio": 2500000,
+        "servicioExterno": 8000,
+        "potencialIngreso": "Servicio a otros campos"
+      }
+    },
+    "tractorExistente": {
+      "marca": "Deutz",
+      "estado": "Para reparar",
+      "problemaPrincipal": "Ruedas cortadas",
+      "costoReparacion": 1200000,
+      "usoEtapa1": "Siembra y trabajos básicos",
+      "valorPartePago": 8000000,
+      "distribuidor": "San Luis - acepta usados"
+    }
+  },
+  "cashFlowMBA": {
+    "año1": {
+      "trimestre1": {
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "cultivos": 264100,
+          "serviciosDron": 400000
+        },
+        "egresos": {
+          "ayudaTemporal": 75000,
+          "operativos": 2400000,
+          "combustible": 600000,
+          "mantenimiento": 450000,
+          "insumos": 300000
+        },
+        "inversion": {
+          "reparacionTractor": 1200000,
+          "bascula": 150000,
+          "bolsas": 900000,
+          "dron": 2500000
+        }
+      },
+      "trimestre2": {
+        "ingresos": {
+          "leña": 3120000,
+          "ganaderia": 4500000,
+          "alfalfaPrimerCorte": 300000,
+          "serviciosDron": 640000
+        },
+        "egresos": {
+          "ayudaTemporal": 120000,
+          "operativos": 2700000,
+          "combustible": 540000,
+          "mantenimiento": 360000
+        },
+        "inversion": {
+          "mejoraMaquinaria": 500000
+        }
+      }
+    }
+  },
+  "produccion400Bolsas": {
+    "distribuccionTiempo": {
+      "empleadoPrincipal": {
+        "leñaCorte": "6 horas/día",
+        "leñaEmbolsado": "2 horas/día",
+        "totalLeña": "8 horas/día dedicadas 100% a leña",
+        "produccionDiaria": "20 bolsas/día",
+        "produccionSemanal": "100 bolsas/semana",
+        "produccionMensual": "400 bolsas/mes"
+      },
+      "ganado": {
+        "responsable": "Hermano cervecería + empleado fines de semana",
+        "tiempo": "4 horas sábado + 4 horas domingo",
+        "justificacion": "Ganadería extensiva requiere poco manejo diario"
+      },
+      "cultivos": {
+        "siembra": "Diciembre-Enero con tractor reparado",
+        "mantenimiento": "Dron GJI 100 - 1 hora cubre todo",
+        "corte": "Una vez por temporada por terceros",
+        "tiempoTotal": "Mínimo después de siembra"
+      }
+    },
+    "maquinariaOptima": {
+      "procesadoraLeña": {
+        "descripcion": "Procesadora semi-automática",
+        "precio": 3500000,
+        "beneficio": "Triplica velocidad de procesado",
+        "etapa": "Etapa 2 - después de validar demanda"
+      },
+      "partidorHidraulico": {
+        "descripcion": "Partidor hidráulico 20 ton",
+        "precio": 800000,
+        "beneficio": "Facilita trabajo + calidad uniforme",
+        "etapa": "Etapa 1 - inmediato"
+      },
+      "motosierraAdicional": {
+        "descripcion": "Motosierra profesional backup",
+        "precio": 400000,
+        "beneficio": "Sin paradas por mantenimiento",
+        "etapa": "Etapa 1 - inmediato"
+      }
+    }
+  },
+  "planInversion": {
+    "etapa1": {
+      "nombre": "Infraestructura y Validación",
+      "duracion": "6 meses",
+      "inversion": {
+        "reparacionTractorDeutz": 1200000,
+        "basculaPesar": 150000,
+        "bolsasStock": 900000,
+        "partidorHidraulico": 800000,
+        "motosierraAdicional": 400000,
+        "dronGJI100": 2500000,
+        "herramientasVarias": 300000,
+        "capitalTrabajo": 2000000
+      },
+      "objetivos": [
+        "Alcanzar 400 bolsas/mes sostenido",
+        "Validar demanda local",
+        "Optimizar procesos",
+        "Generar servicios con dron"
+      ],
+      "total": 8250000
+    },
+    "etapa2": {
+      "nombre": "Escalamiento y Maquinaria",
+      "duracion": "12 meses",
+      "inversion": {
+        "tractorNuevo": 24000000,
+        "entregaTractorDeutz": -8000000,
+        "procesadoraLeña": 3500000,
+        "implementosAgricolas": 8000000,
+        "infraestructuraAdicional": 2000000
+      },
+      "objetivos": [
+        "Mecanizar producción leña",
+        "Expandir superficie cultivada",
+        "Aumentar capacidad ganadera",
+        "Consolidar servicios externos"
+      ],
+      "total": 29500000
+    }
+  },
+  "analisisViabilidad": {
+    "ingresosAnuales": {
+      "leña": 12480000,
+      "ganaderia": 18000000,
+      "cultivos": 2350000,
+      "serviciosDron": 1600000,
+      "total": 33136400
+    },
+    "costosAnuales": {
+      "empleadoRural": 13961364,
+      "operativos": 9600000,
+      "combustible": 1800000,
+      "mantenimiento": 2160000,
+      "insumos": 600000,
+      "total": 28121364
+    }
+  },
+  "analisisEmpleadoUnico": {
+    "salarioMensual": 1163447,
+    "gananciasPorBolsa": 2420,
+    "bolsasParaCubrirSalario": 481,
+    "metaMensualBolsas": 400
+  },
+  "hectareasOptimas": 47,
+  "resultados": {
+    "resultadoAnual": 5015036,
+    "resultadoPorHermano": 1253759,
+    "beneficioMensual": 417919.6666666665,
+    "roi24Meses": 26.6,
+    "paybackMeses": 90.3,
+    "viable": true,
+    "empleadoViable": false
+  }
+}

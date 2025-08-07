@@ -1,0 +1,93 @@
+{
+  "hectareas": {
+    "chacronPrincipal": 12.36,
+    "chacronAledano": 2.86,
+    "total": 15.22
+  },
+  "distribucion": {
+    "pasturas": {
+      "hectareas": 10,
+      "uso": "Ganadería extensiva - cría",
+      "capacidad": "40-50 cabezas",
+      "ingresoPorCabeza": 180000,
+      "cabezas": 45
+    },
+    "alfalfa": {
+      "hectareas": 3,
+      "cicloMeses": 12,
+      "ingresoHaAnual": 285000,
+      "usoInterno": "50% consumo propio ganado"
+    },
+    "cebada": {
+      "hectareas": 1.5,
+      "cicloMeses": 6,
+      "ingresoHaAnual": 380000,
+      "destinoCervecero": "Venta preferencial a hermano"
+    },
+    "monteNativo": {
+      "hectareas": 0.72,
+      "produccionMensual": 400,
+      "precioVenta": 1800,
+      "ingresoMensual": 720000
+    }
+  },
+  "ingresos": {
+    "ganaderia": 8100000,
+    "alfalfa": 427500,
+    "cebada": 570000,
+    "lena": 8640000
+  },
+  "totalIngresosAnuales": 17737500,
+  "opcionesPersonal": {
+    "opcion1": {
+      "nombre": "Peón part-time + hermano ocasional",
+      "costoMensual": 581723.325,
+      "descripcion": "Peón 20 horas/semana + hermano fines de semana"
+    },
+    "opcion2": {
+      "nombre": "Solo hermanos + eventual",
+      "costoMensual": 300000,
+      "descripcion": "Hermanos trabajan el campo + ayuda puntual"
+    },
+    "opcion3": {
+      "nombre": "Hermano dedicado + peón estacional",
+      "costoMensual": 349033.99499999994,
+      "descripcion": "1 hermano full-time + peón épocas pico"
+    }
+  },
+  "opcionRecomendada": "opcion2",
+  "costosOperativos": {
+    "combustible": 150000,
+    "veterinario": 80000,
+    "alimentos": 120000,
+    "mantenimiento": 100000,
+    "semillas": 50000,
+    "impuestos": 80000,
+    "seguros": 60000,
+    "varios": 80000
+  },
+  "inversionInicial": {
+    "mejoraPasturas": 800000,
+    "equipamientoBasico": 1200000,
+    "ganado": 4500000,
+    "infraestructura": 1500000,
+    "capitalTrabajo": 1000000,
+    "total": 9000000
+  },
+  "inversionPorHermano": 2250000,
+  "proyeccion24Meses": {
+    "gananciaMensual": 458125,
+    "gananciaAnual": 5497500,
+    "ganancia24Meses": 10995000,
+    "ganancia24MesesPorHermano": 2748750,
+    "roi24Meses": 122.2,
+    "paybackMeses": 20
+  },
+  "integracionCerveceria": {
+    "ventaCebada": 570000,
+    "descuentoHermano": 0.85,
+    "ingresoAdicional": 484500,
+    "beneficioHermano": 85500
+  },
+  "viabilidad": true
+}

@@ -1,0 +1,204 @@
+{
+  "maquinaria": {
+    "tractores": {
+      "Hanomag 50hp 2024": {
+        "precio": 24000000,
+        "vendedor": "Concesionario San Luis",
+        "condicion": "Nuevo",
+        "url": "https://mercadolibre.com.ar/hanomag-50hp",
+        "fecha_precio": "2025-08-06T23:54:00.493Z"
+      },
+      "Chery 45hp 2024": {
+        "precio": 17500000,
+        "vendedor": "Maquinarias del Centro",
+        "condicion": "Nuevo",
+        "url": "https://mercadolibre.com.ar/chery-45hp",
+        "fecha_precio": "2025-08-06T23:54:00.493Z"
+      },
+      "Deutz Fahr Usado": {
+        "precio": 8000000,
+        "vendedor": "Particular San Luis",
+        "condicion": "Usado - Para reparar",
+        "detalles": "Motor ok, ruedas a cambiar",
+        "url": "https://mercadolibre.com.ar/deutz-usado",
+        "fecha_precio": "2025-08-06T23:54:00.493Z"
+      }
+    },
+    "procesadoras_leña": {
+      "Procesadora Semi-automática": {
+        "precio": 3500000,
+        "capacidad": "5 bolsas/hora",
+        "vendedor": "Maquinarias Forestales",
+        "url": "https://mercadolibre.com.ar/procesadora-leña"
+      },
+      "Partidor Hidráulico 20 ton": {
+        "precio": 800000,
+        "capacidad": "1 bolsa cada 5 min",
+        "vendedor": "Herramientas San Luis",
+        "url": "https://mercadolibre.com.ar/partidor-hidraulico"
+      }
+    },
+    "drones": {
+      "DJI Agras T20": {
+        "precio": 2500000,
+        "cobertura": "34 hectáreas/hora",
+        "autonomia": "15 km",
+        "vendedor": "DJI Argentina",
+        "url": "https://mercadolibre.com.ar/dji-agras"
+      }
+    }
+  },
+  "insumos": {
+    "semillas": {
+      "Alfalfa Monarca kg": {
+        "precio": 8500,
+        "proveedor": "Semillería Central",
+        "rendimiento": "25 kg/hectárea",
+        "total_25ha": 5312500
+      },
+      "Cebada Cervecera kg": {
+        "precio": 450,
+        "proveedor": "Maltería Argentina",
+        "rendimiento": "120 kg/hectárea",
+        "total_25ha": 1350000
+      }
+    },
+    "fertilizantes": {
+      "Urea 50kg": {
+        "precio": 42000,
+        "dosis_hectarea": 200,
+        "costo_por_hectarea": 168000
+      },
+      "Fosfato Diamónico 50kg": {
+        "precio": 55000,
+        "dosis_hectarea": 150,
+        "costo_por_hectarea": 165000
+      }
+    },
+    "herramientas": {
+      "Báscula Digital 500kg": {
+        "precio": 150000,
+        "marca": "Systel",
+        "precision": "100g",
+        "esencial": true
+      },
+      "Motosierra Profesional": {
+        "precio": 400000,
+        "marca": "Stihl MS 261",
+        "potencia": "50cc",
+        "backup_necesario": true
+      },
+      "Bolsas de Leña x1000": {
+        "precio": 180000,
+        "capacidad": "30kg c/u",
+        "proveedor": "Envases San Luis",
+        "stock_minimo": 5000
+      }
+    }
+  },
+  "precios_leña": {
+    "Retail directo": {
+      "precio_bolsa": 4000,
+      "cliente": "Consumidor final",
+      "margen": "Alto",
+      "volumen": "Hasta 50 bolsas/mes"
+    },
+    "Mayorista local": {
+      "precio_bolsa": 1200,
+      "cliente": "Almacenes, distribuidores",
+      "margen": "Bajo pero volumen",
+      "volumen": "200+ bolsas/mes"
+    },
+    "Precio promedio ponderado": {
+      "precio_bolsa": 2600,
+      "mix": "60% mayorista + 40% retail",
+      "objetivo_mensual": 400,
+      "ingreso_mensual": 1040000
+    }
+  },
+  "salarios": {
+    "Peón rural especializado": {
+      "sueldo_mensual": 1163447,
+      "categoria": "Especializado en leña y cultivos",
+      "sindicato": "UATRE",
+      "incluye": "Sueldo básico + aportes + ART",
+      "dedicacion": "8 horas leña + mantenimiento general"
+    },
+    "Encargado turismo rural": {
+      "sueldo_mensual": 1450000,
+      "categoria": "Atención huéspedes + mantenimiento",
+      "necesario_desde": "20 noches/mes ocupación",
+      "tareas": "Check-in, limpieza, mantenimiento básico"
+    },
+    "Peón estacional": {
+      "jornal_diario": 25000,
+      "categoria": "Cosecha, siembra, trabajos específicos",
+      "periodo": "Temporadas altas",
+      "estimado_mensual": 375000
+    }
+  },
+  "mercado_inmobiliario": {},
+  "ultima_actualizacion": "2025-08-06T23:54:00.410Z",
+  "fecha_legible": "6 de agosto de 2025, 08:54 p. m.",
+  "escalabilidad": {
+    "Fase 1 - Básica": {
+      "empleados": 1,
+      "produccion_bolsas_mes": 400,
+      "superficie_activa": "25 hectáreas",
+      "ingresos_anuales": 33136400,
+      "resultado_neto": 1055036
+    },
+    "Fase 2 - Ampliación": {
+      "empleados": 3,
+      "empleados_detalle": {
+        "Peón rural especializado": 1,
+        "Encargado turismo": 1,
+        "Peón estacional": 1
+      },
+      "produccion_bolsas_mes": 800,
+      "superficie_activa": "50 hectáreas",
+      "nuevos_productos": [
+        "Cerveza artesanal",
+        "Gin"
+      ],
+      "ingresos_estimados": 65000000,
+      "turismo_noches_mes": 60
+    },
+    "Fase 3 - Consolidación": {
+      "empleados": 10,
+      "empleados_detalle": {
+        "Gerente general": 1,
+        "Encargado producción": 1,
+        "Maestro cervecero": 1,
+        "Jefe turismo": 1,
+        "Recepcionistas": 2,
+        "Peones rurales": 3,
+        "Mantenimiento": 1
+      },
+      "produccion_bolsas_mes": 1500,
+      "superficie_activa": "100 hectáreas",
+      "domos_operativos": 8,
+      "cerveceria_litros_mes": 5000,
+      "gin_litros_mes": 1000,
+      "ingresos_estimados": 150000000,
+      "turismo_noches_mes": 180,
+      "economia_escala": "Costos reducidos 30%"
+    }
+  },
+  "resumen_ejecutivo": {
+    "viabilidad": "✅ PROYECTO VIABLE",
+    "roi_24_meses": "5.6%",
+    "payback_meses": 429.4,
+    "resultado_anual_por_hermano": 263759,
+    "inversion_inicial_por_hermano": 2062500,
+    "produccion_objetivo": "400 bolsas/mes",
+    "empleados_fase_1": 1,
+    "empleados_objetivo_final": 10
+  },
+  "cronograma_empleados": {
+    "Mes 1-12": "1 empleado (peón rural)",
+    "Mes 13-24": "3 empleados (+ turismo + estacional)",
+    "Mes 25-36": "5 empleados (+ cervecería)",
+    "Año 3+": "10 empleados (operación completa)"
+  }
+}

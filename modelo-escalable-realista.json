@@ -1,0 +1,156 @@
+{
+  "superficie": {
+    "campoTotal": 1600,
+    "monteNativo": 1584.78,
+    "chacrones": {
+      "principal": 12.36,
+      "aledano": 2.86,
+      "total": 15.22
+    }
+  },
+  "produccionLena": {
+    "horasDiariasPorEmpleado": 2,
+    "bolsasPorHora": 1.8,
+    "bolsasDiarias": 3.6,
+    "diasTrabajo": 22,
+    "bolsasMensuales1Empleado": 79,
+    "bolsasObjetivo": {
+      "semanal": 100,
+      "mensual": 430
+    },
+    "empleadosNecesarios": 6,
+    "estrategiaRealista": {
+      "empleado1Base": {
+        "horasLeña": 2,
+        "bolsasMes": 79,
+        "otrasActividades": 6
+      },
+      "empleado1Extendido": {
+        "horasLeña": 5,
+        "bolsasMes": 198,
+        "otrasActividades": 3
+      },
+      "empleado2": {
+        "momento": "Cuando lleguemos a 200+ bolsas/mes demanda",
+        "horasLeña": 4,
+        "bolsasMes": 158,
+        "otrasActividades": 4
+      }
+    },
+    "precioVenta": {
+      "retail": 4000,
+      "mayorista": 1100,
+      "promedio": 2550
+    }
+  },
+  "ganaderia": {
+    "cabezasOptimas": 100,
+    "ingresoGanaderia": 18000000
+  },
+  "cultivos": {
+    "pasturasMejoradas": {
+      "hectareas": 9.22,
+      "proposito": "Pasturas mejoradas + reserva",
+      "beneficio": "Suplemento ganado épocas críticas"
+    },
+    "alfalfa": {
+      "hectareas": 4,
+      "ingresoHaAnual": 171000,
+      "ventaPorcentaje": 0.6,
+      "ingresoAnual": 410400
+    },
+    "cebada": {
+      "hectareas": 2,
+      "ingresoHaAnual": 323000,
+      "descuentoHermano": 0.15,
+      "ingresoAnual": 646000
+    },
+    "infraestructura": {
+      "hectareas": 0,
+      "proposito": "Corrales móviles, aguadas existentes"
+    }
+  },
+  "empleados": {
+    "empleado1": {
+      "tipoContrato": "Rural permanente",
+      "funciones": [
+        "2h leña",
+        "6h ganado/cultivos/mantenimiento"
+      ],
+      "salarioMensual": 1163447,
+      "distribucionTiempo": {
+        "leña": "2 horas/día → 79 bolsas/mes",
+        "ganado": "4 horas/día → manejo 100 cabezas",
+        "cultivos": "1 hora/día → mantenimiento 6 ha",
+        "mantenimiento": "1 hora/día → alambrados/aguadas"
+      },
+      "capacidadMaxima": "198 bolsas/mes (5h leña) antes de segundo empleado"
+    },
+    "hermanos": {
+      "participacion": "Control remoto + visitas esporádicas",
+      "funciones": [
+        "Supervisión",
+        "Ventas",
+        "Administración"
+      ],
+      "aclaracion": "NO son empleados, viven lejos del campo",
+      "hermanoControl": "Hermano cervecería: control ocasional",
+      "costoMensual": 150000
+    },
+    "criteriosSegundoEmpleado": {
+      "produccionLeña": "Cuando superemos 200 bolsas/mes demanda",
+      "ganado": "Cuando superemos 120 cabezas",
+      "cultivos": "Cuando ampliemos a más de 8 ha",
+      "momentoOptimo": "Año 2-3 del proyecto"
+    },
+    "empleado2": {
+      "perfil": "Rural con experiencia ganadera",
+      "funciones": [
+        "4h leña",
+        "4h ganado especializado"
+      ],
+      "distribucionTiempo": {
+        "leña": "4 horas/día → 158 bolsas/mes",
+        "ganado": "4 horas/día → manejo técnico"
+      },
+      "totalProduccion": "198 + 158 = 356 bolsas/mes con 2 empleados"
+    }
+  },
+  "ingresosTotales": {
+    "leña": 2417400,
+    "ganaderia": 18000000,
+    "cultivos": 1056400,
+    "total": 21473800
+  },
+  "costosOperativos": {
+    "empleado": 13961364,
+    "hermanos": 1800000,
+    "combustible": 1800000,
+    "veterinario": 1200000,
+    "alimentos": 1440000,
+    "mantenimiento": 1200000,
+    "impuestos": 2160000,
+    "seguros": 960000,
+    "varios": 1200000,
+    "total": 25721364
+  },
+  "inversionInicial": {
+    "ganado": 10000000,
+    "infraestructuraBasica": 2000000,
+    "tractorReparacion": 800000,
+    "herramientasEquipos": 600000,
+    "estudiosSubelo": 3136000,
+    "granosPrimerSiembra": 450000,
+    "mejoraPasturas": 400000,
+    "capitalTrabajo": 1200000,
+    "total": 18586000
+  },
+  "inversionPorHermano": 4646500,
+  "proyeccion24Meses": {
+    "ganancia24Meses": -8495128,
+    "ganancia24MesesPorHermano": -2123782,
+    "roi24Meses": -45.7,
+    "paybackMeses": -52
+  },
+  "viabilidad": false
+}

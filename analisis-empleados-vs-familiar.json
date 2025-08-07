@@ -1,0 +1,130 @@
+{
+  "salariosReales": {
+    "empleadoRural": {
+      "salarioBasico": 710000,
+      "aguinaldo": 59166.666666666664,
+      "aportes": 120700.00000000001,
+      "arl": 8520,
+      "vacaciones": 59166.666666666664
+    },
+    "empleadoGeneral": {
+      "salarioMinimo": 1163447,
+      "aportes": 197785.99000000002,
+      "arl": 13961.364,
+      "aguinaldo": 96953.91666666667,
+      "vacaciones": 96953.91666666667
+    }
+  },
+  "puntosEquilibrio": {
+    "empleadoRural": {
+      "costoMensual": 957553.3333333333,
+      "bolsasNecesarias": 369,
+      "produccionMinima": 369,
+      "margenSeguridad": 479
+    },
+    "empleadoGeneral": {
+      "costoMensual": 1569102.1873333335,
+      "bolsasNecesarias": 604,
+      "produccionMinima": 604,
+      "margenSeguridad": 785
+    }
+  },
+  "alternativasRealistas": {
+    "trabajoFamiliar": {
+      "descripcion": "Solo hermanos trabajando",
+      "ventajas": [
+        "Sin costos laborales fijos",
+        "100% margen para la familia",
+        "Flexibilidad total horarios",
+        "Reinversión completa ganancias"
+      ],
+      "desventajas": [
+        "Limitado por tiempo disponible",
+        "Dependiente presencia hermanos",
+        "Crecimiento más lento"
+      ],
+      "produccionRealista": 300,
+      "ingresoNeto": 780000
+    },
+    "trabajoFamiliar_temporada": {
+      "descripcion": "Hermanos + ayuda temporal",
+      "ventajas": [
+        "Flexibilidad contratar solo cuando necesario",
+        "Sin cargas sociales permanentes",
+        "Pagos por tarea/día",
+        "Control total costos"
+      ],
+      "modalidades": {
+        "jornal": 25000,
+        "porTarea": 100,
+        "temporada": 400000
+      },
+      "produccionRealista": 400,
+      "costoVariable": 40000
+    },
+    "cooperativismo": {
+      "descripcion": "Cooperativa familiar + vecinos",
+      "ventajas": [
+        "Compartir costos y riesgos",
+        "Mayor escala producción",
+        "Beneficios impositivos",
+        "Economías de escala"
+      ],
+      "estructura": {
+        "familias": 3,
+        "aporteInicial": 3000000,
+        "produccionConjunta": 800,
+        "distribucionGanancias": "33% cada familia"
+      }
+    }
+  },
+  "modeloHibrido": {
+    "nombre": "Modelo Híbrido Inteligente",
+    "filosofia": "Combinar trabajo familiar con ayuda estratégica",
+    "fases": {
+      "arranque": {
+        "duracion": "6 meses",
+        "estrategia": "Solo trabajo familiar",
+        "objetivo": "Validar demanda y procesos",
+        "produccion": 250,
+        "empleados": 0,
+        "ingresoNeto": 650000,
+        "porHermano": 162500
+      },
+      "crecimiento": {
+        "duracion": "6-18 meses",
+        "estrategia": "Trabajo familiar + ayuda por tareas",
+        "objetivo": "Alcanzar 400 bolsas/mes",
+        "produccion": 400,
+        "ayudaTemporal": "2 días/semana",
+        "costoAyuda": 50000,
+        "ingresoNeto": 990000,
+        "porHermano": 247500
+      },
+      "consolidacion": {
+        "duracion": "18+ meses",
+        "estrategia": "Evaluar empleado según números",
+        "objetivo": "Eficiencia y crecimiento sostenible",
+        "decision": "Solo si se supera punto equilibrio consistentemente"
+      }
+    }
+  },
+  "analisisAnual": {
+    "fase1_6meses": {
+      "produccion": 1500,
+      "ingresos": 3900000,
+      "costos": 0,
+      "neto": 3900000
+    },
+    "fase2_6meses": {
+      "produccion": 2400,
+      "ingresos": 6240000,
+      "costos": 300000,
+      "neto": 5940000
+    }
+  },
+  "recomendacion": "Trabajo familiar + ayuda temporal",
+  "viable": true,
+  "ingresoAnualFamiliar": 9840000,
+  "fecha": "2025-08-07T00:31:27.520Z"
+}

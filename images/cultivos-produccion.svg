@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="fieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cebadaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cielo -->
+  <rect x="0" y="0" width="400" height="150" fill="#87CEEB"/>
+  
+  <!-- Montañas lejanas -->
+  <path d="M 0 120 Q 100 90 200 110 Q 300 80 400 100 L 400 150 L 0 150 Z" fill="#4682B4" opacity="0.5"/>
+  
+  <!-- Campo de Alfalfa (izquierda) -->
+  <rect x="0" y="150" width="200" height="150" fill="url(#fieldGradient)"/>
+  
+  <!-- Campo de Cebada (derecha) -->
+  <rect x="200" y="150" width="200" height="150" fill="url(#cebadaGradient)"/>
+  
+  <!-- División entre campos -->
+  <line x1="200" y1="150" x2="200" y2="300" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Plantas de Alfalfa -->
+  <g transform="translate(0,150)">
+    <!-- Filas de alfalfa -->
+    <g>
+      <rect x="20" y="20" width="2" height="15" fill="#228B22"/>
+      <rect x="25" y="18" width="2" height="17" fill="#228B22"/>
+      <rect x="30" y="22" width="2" height="13" fill="#228B22"/>
+      <rect x="35" y="19" width="2" height="16" fill="#228B22"/>
+      <rect x="40" y="21" width="2" height="14" fill="#228B22"/>
+      
+      <!-- Flores pequeñas -->
+      <circle cx="21" cy="17" r="1" fill="#9370DB"/>
+      <circle cx="26" cy="15" r="1" fill="#9370DB"/>
+      <circle cx="31" cy="19" r="1" fill="#9370DB"/>
+      <circle cx="36" cy="16" r="1" fill="#9370DB"/>
+      <circle cx="41" cy="18" r="1" fill="#9370DB"/>
+    </g>
+    
+    <g transform="translate(0,30)">
+      <rect x="20" y="20" width="2" height="15" fill="#228B22"/>
+      <rect x="25" y="18" width="2" height="17" fill="#228B22"/>
+      <rect x="30" y="22" width="2" height="13" fill="#228B22"/>
+      <rect x="35" y="19" width="2" height="16" fill="#228B22"/>
+      <rect x="40" y="21" width="2" height="14" fill="#228B22"/>
+      
+      <circle cx="21" cy="17" r="1" fill="#9370DB"/>
+      <circle cx="26" cy="15" r="1" fill="#9370DB"/>
+      <circle cx="31" cy="19" r="1" fill="#9370DB"/>
+      <circle cx="36" cy="16" r="1" fill="#9370DB"/>
+      <circle cx="41" cy="18" r="1" fill="#9370DB"/>
+    </g>
+    
+    <!-- Más filas repetidas -->
+    <g transform="translate(50,10)">
+      <rect x="20" y="20" width="2" height="15" fill="#228B22"/>
+      <rect x="25" y="18" width="2" height="17" fill="#228B22"/>
+      <rect x="30" y="22" width="2" height="13" fill="#228B22"/>
+      <rect x="35" y="19" width="2" height="16" fill="#228B22"/>
+      <rect x="40" y="21" width="2" height="14" fill="#228B22"/>
+      
+      <circle cx="21" cy="17" r="1" fill="#9370DB"/>
+      <circle cx="26" cy="15" r="1" fill="#9370DB"/>
+      <circle cx="31" cy="19" r="1" fill="#9370DB"/>
+      <circle cx="36" cy="16" r="1" fill="#9370DB"/>
+      <circle cx="41" cy="18" r="1" fill="#9370DB"/>
+    </g>
+    
+    <g transform="translate(50,40)">
+      <rect x="20" y="20" width="2" height="15" fill="#228B22"/>
+      <rect x="25" y="18" width="2" height="17" fill="#228B22"/>
+      <rect x="30" y="22" width="2" height="13" fill="#228B22"/>
+      <rect x="35" y="19" width="2" height="16" fill="#228B22"/>
+      <rect x="40" y="21" width="2" height="14" fill="#228B22"/>
+      
+      <circle cx="21" cy="17" r="1" fill="#9370DB"/>
+      <circle cx="26" cy="15" r="1" fill="#9370DB"/>
+      <circle cx="31" cy="19" r="1" fill="#9370DB"/>
+      <circle cx="36" cy="16" r="1" fill="#9370DB"/>
+      <circle cx="41" cy="18" r="1" fill="#9370DB"/>
+    </g>
+  </g>
+  
+  <!-- Plantas de Cebada -->
+  <g transform="translate(210,160)">
+    <!-- Tallos de cebada con espigas -->
+    <rect x="20" y="10" width="3" height="25" fill="#B8860B"/>
+    <ellipse cx="21.5" cy="8" rx="2" ry="4" fill="#DAA520"/>
+    
+    <rect x="30" y="12" width="3" height="23" fill="#B8860B"/>
+    <ellipse cx="31.5" cy="10" rx="2" ry="4" fill="#DAA520"/>
+    
+    <rect x="40" y="8" width="3" height="27" fill="#B8860B"/>
+    <ellipse cx="41.5" cy="6" rx="2" ry="4" fill="#DAA520"/>
+    
+    <rect x="50" y="14" width="3" height="21" fill="#B8860B"/>
+    <ellipse cx="51.5" cy="12" rx="2" ry="4" fill="#DAA520"/>
+    
+    <rect x="60" y="11" width="3" height="24" fill="#B8860B"/>
+    <ellipse cx="61.5" cy="9" rx="2" ry="4" fill="#DAA520"/>
+    
+    <!-- Segunda fila -->
+    <g transform="translate(0,40)">
+      <rect x="20" y="10" width="3" height="25" fill="#B8860B"/>
+      <ellipse cx="21.5" cy="8" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="30" y="12" width="3" height="23" fill="#B8860B"/>
+      <ellipse cx="31.5" cy="10" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="40" y="8" width="3" height="27" fill="#B8860B"/>
+      <ellipse cx="41.5" cy="6" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="50" y="14" width="3" height="21" fill="#B8860B"/>
+      <ellipse cx="51.5" cy="12" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="60" y="11" width="3" height="24" fill="#B8860B"/>
+      <ellipse cx="61.5" cy="9" rx="2" ry="4" fill="#DAA520"/>
+    </g>
+    
+    <!-- Más filas -->
+    <g transform="translate(80,-10)">
+      <rect x="20" y="10" width="3" height="25" fill="#B8860B"/>
+      <ellipse cx="21.5" cy="8" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="30" y="12" width="3" height="23" fill="#B8860B"/>
+      <ellipse cx="31.5" cy="10" rx="2" ry="4" fill="#DAA520"/>
+      
+      <rect x="40" y="8" width="3" height="27" fill="#B8860B"/>
+      <ellipse cx="41.5" cy="6" rx="2" ry="4" fill="#DAA520"/>
+    </g>
+  </g>
+  
+  <!-- Etiquetas -->
+  <text x="100" y="280" text-anchor="middle" fill="#2d5016" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ALFALFA - 6 hectáreas
+  </text>
+  
+  <text x="300" y="280" text-anchor="middle" fill="#2d5016" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    CEBADA - 7.4 hectáreas
+  </text>
+  
+  <!-- Título general -->
+  <text x="200" y="295" text-anchor="middle" fill="#2d5016" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Producción Agrícola Sustentable
+  </text>
+</svg>

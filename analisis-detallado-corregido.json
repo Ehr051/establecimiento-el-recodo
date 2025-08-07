@@ -1,0 +1,222 @@
+{
+  "superficieDetallada": {
+    "campoTotal": 1600,
+    "monteNativo": 1584.78,
+    "chacrones": {
+      "alfalfa": 4,
+      "cebadaHermano": 2,
+      "subtotal": 6,
+      "restante": 9.22
+    }
+  },
+  "costosAdicionales": {
+    "tractorReparacion": {
+      "estimado": 2500000,
+      "descripcion": "Reparación completa + service",
+      "urgencia": "Crítico antes de siembra"
+    },
+    "granosPrimerSiembra": {
+      "alfalfa": 180000,
+      "avena": 75000,
+      "pasturas": 210000,
+      "total": 465000
+    },
+    "estudiosSubelo": {
+      "costo": 3136000,
+      "descripcion": "Análisis completo del suelo",
+      "importancia": "Esencial para planificación"
+    }
+  },
+  "maquinariaPrecios": {
+    "tractores": {
+      "hanomag25hp": {
+        "precio": 8100,
+        "moneda": "USD",
+        "descripcion": "Hanomag Stark 25hp Parquero"
+      },
+      "hanomag50hp": {
+        "precio": 15300,
+        "moneda": "USD",
+        "descripcion": "Hanomag Stark 50hp 4x4"
+      },
+      "hanomag80hp": {
+        "precio": 28200,
+        "moneda": "USD",
+        "descripcion": "Hanomag 80hp 4x4 Nuevo"
+      },
+      "chery45hp": {
+        "precio": 17500,
+        "moneda": "USD",
+        "descripcion": "Chery 45hp 4x4 tipo John Deere"
+      },
+      "usados": {
+        "massey75hp": {
+          "precio": 25000,
+          "moneda": "USD",
+          "año": 1988,
+          "descripcion": "Massey Ferguson 75hp"
+        },
+        "johnDeere": {
+          "precio": 27000,
+          "moneda": "USD",
+          "año": 1992,
+          "descripcion": "John Deere 2850"
+        }
+      }
+    },
+    "implementos": {
+      "araDiscosUsado": {
+        "precio": 3500000,
+        "moneda": "ARS",
+        "descripcion": "Arado de discos usado"
+      },
+      "sembradoraUsada": {
+        "precio": 6500000,
+        "moneda": "ARS",
+        "descripción": "Sembradora usada"
+      },
+      "rastra": {
+        "precio": 2500000,
+        "moneda": "ARS",
+        "descripción": "Rastra de discos"
+      }
+    }
+  },
+  "calendarioAgricola": {
+    "diciembre": {
+      "actividad": "Siembra alfalfa",
+      "condiciones": "Temperatura ideal, humedad crítica",
+      "primer_corte": "Marzo (90-100 días después)"
+    },
+    "enero": {
+      "actividad": "Siembra cebada",
+      "condiciones": "Época límite para cebada",
+      "cosecha": "Mayo-Junio (120-140 días después)"
+    },
+    "marzo": {
+      "actividad": "Primer corte alfalfa",
+      "rendimiento": "50-60% del rendimiento anual",
+      "frecuencia": "Cada 45-60 días después"
+    }
+  },
+  "analisisLenaRealista": {
+    "horasDiarias": 2,
+    "bolsasPorHora": 1.8,
+    "bolsasDiarias": 3.6,
+    "diasMensuales": 22,
+    "bolsasMensuales": 79,
+    "objetivo": {
+      "semanal": 100,
+      "mensual": 430,
+      "deficitMensual": 351
+    },
+    "horasExtrasNecesarias": 195
+  },
+  "distribucionHoraria": {
+    "jornadaCompleta": 8,
+    "distribuciones": {
+      "conservadora": {
+        "leña": 2,
+        "ganado": 4,
+        "cultivos": 1,
+        "mantenimiento": 1,
+        "total": 8,
+        "bolsasMes": 79
+      },
+      "intensiva": {
+        "leña": 4,
+        "ganado": 3,
+        "cultivos": 0.5,
+        "mantenimiento": 0.5,
+        "total": 8,
+        "bolsasMes": 158
+      },
+      "objetivo": {
+        "leña": 5.5,
+        "ganado": 2,
+        "cultivos": 0.5,
+        "mantenimiento": 0,
+        "total": 8,
+        "bolsasMes": 217
+      }
+    }
+  },
+  "criteriosSegundoEmpleado": {
+    "produccionLeña": {
+      "limite1Empleado": 217,
+      "objetivoTotal": 430,
+      "momentoCritico": "Cuando la demanda supere 217 bolsas/mes"
+    },
+    "ganado": {
+      "limite1Empleado": 120,
+      "siguienteNivel": 150,
+      "momentoCritico": "Cuando superemos 120 cabezas"
+    },
+    "cultivos": {
+      "limite1Empleado": 10,
+      "siguienteNivel": 15,
+      "momentoCritico": "Cuando cultivemos más de 10 ha"
+    },
+    "ingresos": {
+      "minimoViabilidad": 2000000,
+      "costoSegundoEmpleado": 1200000
+    }
+  },
+  "modeloCorregido": {
+    "inversionInicial": {
+      "ganado": 10000000,
+      "tractorReparacion": 2500000,
+      "implementos": 8000000,
+      "infraestructura": 3000000,
+      "estudiosSubelo": 3136000,
+      "semillas": 465000,
+      "herramientas": 800000,
+      "capitalTrabajo": 2000000,
+      "total": 29901000
+    },
+    "ingresosAnuales": {
+      "leña": 2417400,
+      "ganaderia": 18000000,
+      "alfalfa": 410400,
+      "cebada": 646000,
+      "total": 21473800
+    },
+    "costosAnuales": {
+      "empleado": 13961364,
+      "combustible": 2400000,
+      "veterinario": 1440000,
+      "alimentos": 1800000,
+      "mantenimiento": 2160000,
+      "impuestos": 2400000,
+      "seguros": 1200000,
+      "semillas": 300000,
+      "varios": 1800000,
+      "total": 27461364
+    }
+  },
+  "resultados": {
+    "inversionTotal": 29901000,
+    "inversionPorHermano": 7475250,
+    "resultadoAnual": -5987564,
+    "resultadoPorHermano": -1496891,
+    "viable": false
+  },
+  "opcionesMejora": {
+    "produccionLeña": {
+      "actual": 79,
+      "objetivo": 200,
+      "metodo": "Empleado 4-5h/día + mejor organización",
+      "impacto": 3702600
+    },
+    "preciosPremium": {
+      "lenaActual": 2550,
+      "lenaPremium": 3500,
+      "impacto": 900600
+    },
+    "serviciosAdicionales": {
+      "corteLenaClientes": 150000,
+      "alquilerTractor": 80000,
+      "impactoAnual": 2760000
+    }
+  }
+}

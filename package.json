@@ -1,0 +1,18 @@
+{
+  "name": "el-recodo-analysis",
+  "version": "1.0.0",
+  "description": "Análisis financiero y scraping para Establecimiento El Recodo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scraper-dinamico-completo.js",
+    "scraper": "node scraper-dinamico-completo.js",
+    "modelo": "node modelo-400-bolsas-mba.cjs"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "https": "^1.0.0",
+    "fs": "^0.0.1-security"
+  },
+  "author": "El Recodo Team",
+  "license": "ISC"
+}
