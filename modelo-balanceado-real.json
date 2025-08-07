@@ -1,0 +1,102 @@
+{
+  "superficieReal": {
+    "campoTotal": 1600,
+    "monteNativo": 1584.78,
+    "chacrones": 15.22,
+    "distribucionCultivos": {
+      "alfalfa": 6,
+      "cebada": 4,
+      "maiz": 3,
+      "sorgo": 2.22,
+      "total": 15.22
+    }
+  },
+  "cultivosInvestigacion": {
+    "alfalfa": {
+      "hectareas": 6,
+      "rendimientoAnual": 8000,
+      "precioKg": 600
+    },
+    "cebada": {
+      "hectareas": 4,
+      "rendimientoAnual": 3500,
+      "precioKg": 450
+    },
+    "maiz": {
+      "hectareas": 3,
+      "rendimientoAnual": 8000,
+      "precioKg": 350
+    },
+    "sorgo": {
+      "hectareas": 2.22,
+      "rendimientoAnual": 6000,
+      "precioKg": 320
+    }
+  },
+  "analisisEmpleadoDiversificado": {
+    "salarioMensual": 1163447,
+    "ingresosMensuales": {
+      "leña": 968000,
+      "cultivos": 3980200,
+      "ganaderia": 1500000,
+      "serviciosDron": 133333.33333333334,
+      "total": 6581533.333333333
+    },
+    "costosMensuales": {
+      "empleadoRural": 1163447,
+      "operativos": 800000,
+      "combustible": 150000,
+      "mantenimiento": 180000,
+      "insumos": 50000,
+      "total": 2343447
+    },
+    "beneficioMensual": 4238086.333333333,
+    "esViable": true,
+    "coberturaSalario": 83.20103966918991
+  },
+  "planInversionAjustado": {
+    "etapa1": {
+      "nombre": "Validación con superficie real",
+      "inversion": {
+        "reparacionTractorDeutz": 1200000,
+        "basculaPesar": 150000,
+        "bolsasStock": 900000,
+        "partidorHidraulico": 800000,
+        "motosierraAdicional": 400000,
+        "semillasCultivos": 300000,
+        "herramientasVarias": 250000,
+        "capitalTrabajo": 1500000
+      },
+      "resultadosEsperados": {
+        "beneficioMensual": 4238086.333333333,
+        "porHermano": 1059521.5833333333
+      }
+    },
+    "etapa2": {
+      "nombre": "Escalamiento con tractor Agrofy",
+      "presupuestoDisponible": 4000000,
+      "masGanancias": 50857036,
+      "inversion": {
+        "tractorAgrofy50hp": 15390000,
+        "ventaDeutz": -3000000,
+        "implementosNuevos": 3000000,
+        "dronGJI100": 2500000,
+        "mejorasInfraestructura": 1000000
+      }
+    }
+  },
+  "presupuesto": {
+    "porHermano": 2500000,
+    "total": 10000000,
+    "viable": true
+  },
+  "resultados": {
+    "beneficioMensual": 4238086.333333333,
+    "porHermano": 1059521.5833333333,
+    "paybackMeses": 1.2977555357335415,
+    "viable": true,
+    "totalIngresosCultivos": 47762400,
+    "superficieUsada": 15.22
+  },
+  "fecha_analisis": "2025-08-07T01:06:34.189Z"
+}
