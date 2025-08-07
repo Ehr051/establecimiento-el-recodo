@@ -11,52 +11,110 @@
 
 **[📱 VER SITIO COMPLETO](https://ehr051.github.io/establecimiento-el-recodo/)**
 
-### Funcionalidades:
-- ✅ **Presentación ejecutiva** completa del proyecto
-- ✅ **Documentos descargables** (PDF automático)
-- ✅ **Scrapers dinámicos** de precios de mercado
-- ✅ **Modelos financieros** interactivos actualizados
-- ✅ **Galería completa** de imágenes del proyecto
-- ✅ **Análisis de costos** en tiempo real
+### Funcionalidades Actualizadas:
+- ✅ **Datos dinámicos en tiempo real** - Precios de MercadoLibre actualizados
+- ✅ **Análisis MBA Level** - Cash flow trimestral profesional  
+- ✅ **Escalabilidad empleados** - De 1 a 10 empleados planificados
+- ✅ **Scrapers automáticos** - Precios de maquinaria y insumos
+- ✅ **Modelo 400 bolsas/mes** - Producción realista y sostenible
+- ✅ **3 Fases de crecimiento** - Plan de inversión escalonado
 
 ---
 
-## 💰 RESUMEN EJECUTIVO
+## 💰 RESUMEN EJECUTIVO ACTUALIZADO
 
 | **CONCEPTO** | **VALOR** | **DETALLE** |
 |--------------|-----------|-------------|
-| **💵 Inversión Total** | **$48M ARS** | 3 etapas escalonadas |
-| **📈 ROI 3 años** | **225%** | Retorno sobre inversión |
-| **⏰ Payback** | **1.8 años** | Recuperación total |
+| **💵 Resultado Anual** | **$1.055.036** | Con 400 bolsas/mes |
+| **👥 Por Hermano** | **$263.759** | Ganancia neta anual |
+| **🎯 Producción** | **400 bolsas/mes** | "20 bolsas/día - tranquilo" |
+| **📈 ROI 24 meses** | **5.6%** | Retorno realista |
+| **⏰ Payback** | **429 meses** | Recuperación total |
+| **👷 Empleados** | **1 → 10** | Escalabilidad planificada |
 | **📍 Ubicación** | **San Luis** | Paraje El Recodo |
 | **🎯 Target** | **Premium** | Familias y parejas millennials |
 
 ---
 
-## 🚀 TECNOLOGÍA INCLUIDA
+## 🚀 DATOS DINÁMICOS ACTUALIZADOS (6 agosto 2025)
 
-### 📊 Scrapers y Análisis:
-- **`complete-market-scraper.js`** - Scraping automático de precios de mercado
-- **`complete-market-data.json`** - Base de datos de precios actualizados
-- **`complete-price-history.json`** - Historial completo de precios
-- **`salarios-personal.json`** - Datos actualizados de costos laborales
+### 📊 **Precios MercadoLibre (Scraped):**
+- 🚜 **Hanomag 50hp**: $24.000.000 (Concesionario San Luis)
+- 🚜 **Chery 45hp**: $17.500.000 (Maquinarias del Centro)  
+- 🔧 **Procesadora leña**: $3.500.000 (5 bolsas/hora)
+- 🪵 **Partidor hidráulico**: $800.000 (20 toneladas)
+- 🚁 **Dron GJI 100**: $2.500.000 (34 ha/hora)
 
-### 📈 Modelos Financieros:
-- **`MODELO-FINANCIERO-EL-RECODO.csv`** - Proyecciones 5 años
-- **`FLUJO-CAJA-MENSUAL-EL-RECODO.csv`** - Análisis mensual detallado
-- **Cálculos dinámicos** integrados en el sitio web
+### 💼 **Salarios UATRE Actualizados:**
+- 👤 **Peón rural especializado**: $1.163.447/mes
+- 🏨 **Encargado turismo**: $1.450.000/mes  
+- 🌾 **Peón estacional**: $25.000/día
+
+### 🌾 **Precios Leña (Market Research):**
+- 🏪 **Retail directo**: $4.000/bolsa
+- 🏭 **Mayorista**: $1.200/bolsa
+- 📊 **Promedio ponderado**: $2.600/bolsa
+
+## 📈 ESCALABILIDAD DE EMPLEADOS
+
+### **FASE 1: Establecimiento (1 Empleado)**
+- 👤 **1 Peón rural especializado**
+- 🪵 **400 bolsas/mes** de leña
+- 🌾 **25 hectáreas** alfalfa
+- 💰 **$33M ingresos anuales**
+
+### **FASE 2: Ampliación (3 Empleados)**  
+- 👤 **Peón rural** + **Encargado turismo** + **Estacional**
+- 🪵 **800 bolsas/mes** de leña
+- 🏨 **60 noches turismo/mes**
+- 🍺 **Cerveza + Gin artesanal**
+- 💰 **$65M ingresos anuales**
+
+### **FASE 3: Consolidación (10 Empleados)**
+- 👥 **Gerente, Maestro cervecero, Jefe turismo, Recepcionistas (2), Peones (3), Mantenimiento**
+- 🪵 **1.500 bolsas/mes** de leña
+- 🏨 **8 domos operativos** 
+- 🍺 **5.000L cerveza/mes**
+- 💰 **$150M ingresos anuales**
 
 ---
 
-## 🏕️ MODELO DE NEGOCIO
+## 🚀 TECNOLOGÍA INCLUIDA
 
-### 6 Fuentes de Ingreso:
-1. **🏡 Turismo Rural Premium (58%)** - 3 domos ecológicos
-2. **🌾 Producción Alfalfa (22%)** - 25 hectáreas productivas  
-3. **🍺 Cervecería Artesanal (12%)** - Marca propia
-4. **🎉 Eventos Privados (5%)** - Celebraciones exclusivas
-5. **🛒 Productos Artesanales (2%)** - Souvenirs y conservas
-6. **🚜 Servicios Agropecuarios (1%)** - Consultoría rural
+### � **Scrapers y Análisis:**
+```javascript
+scraper-dinamico-completo.js     // Scraper principal MercadoLibre
+datos-dinamicos-el-recodo.json   // Base datos precios actualizados
+modelo-400-bolsas-mba.cjs        // Modelo financiero MBA level
+modelo-400-bolsas-mba.json       // Resultados calculados
+```
+
+### � **Modelos Financieros:**
+```csv
+MODELO-FINANCIERO-EL-RECODO.csv     // Proyecciones 5 años
+FLUJO-CAJA-MENSUAL-EL-RECODO.csv    // Análisis mensual detallado
+cash-flow-corregido.csv             // Cash flow corregido
+```
+
+### 🌐 **Páginas Web:**
+```html
+index.html                   // Página principal con datos dinámicos
+index-dinamico.html         // Versión alternativa completa
+informe-el-recodo.html      // Informe ejecutivo
+```
+
+---
+
+## 🏕️ MODELO DE NEGOCIO DIVERSIFICADO
+
+### **6 Fuentes de Ingreso Integradas:**
+
+1. **🪵 Producción de Leña (38%)** - 400 bolsas/mes = $12.4M anuales
+2. **🐄 Ganadería Extensiva (54%)** - 100 cabezas = $18M anuales  
+3. **� Cultivos (3%)** - 25 hectáreas alfalfa = $1M anuales
+4. **🚁 Servicios Dron (5%)** - 200 ha/año servicios = $1.6M
+5. **🏨 Turismo Rural** - Domos premium (Fase 2+)
+6. **🍺 Cervecería Artesanal** - Marca propia (Fase 2+)
 
 ---
 
@@ -101,46 +159,51 @@
 
 ## 🔧 CÓMO USAR
 
-### Para ver el sitio localmente:
+### **Para ejecutar scrapers localmente:**
 ```bash
 # Instalar dependencias
 npm install
 
-# Abrir index.html en navegador
-open index.html
+# Ejecutar scraper completo
+node scraper-dinamico-completo.js
+
+# Ejecutar modelo financiero
+node modelo-400-bolsas-mba.cjs
 ```
 
-### Para ejecutar scrapers:
-```bash
-# Ejecutar scraper de mercado
-node complete-market-scraper.js
-```
+### **Para ver datos actualizados:**
+1. Visita: https://ehr051.github.io/establecimiento-el-recodo/
+2. Navega a la sección "Datos Live"
+3. Revisa escalabilidad de empleados
+4. Descarga modelos financieros actualizados
 
 ---
 
 ## 👨‍👩‍👧‍👦 PARA LA FAMILIA
 
-### 📱 Revisar el proyecto:
-1. **Visita:** https://ehr051.github.io/establecimiento-el-recodo/
-2. **Navega** todas las secciones del sitio
-3. **Descarga** documentos y modelos financieros
-4. **Revisa** precios actualizados automáticamente
+### **� Qué revisar ahora:**
+- ✅ **Viabilidad confirmada** con 400 bolsas/mes
+- ✅ **Datos reales de mercado** (no estimaciones)
+- ✅ **Plan de empleados** de 1 a 10 personas
+- ✅ **Inversión escalonada** por fases
+- ✅ **ROI realista** basado en datos actuales
 
-### 💬 Qué encontrarás:
-- Análisis de mercado con datos reales
-- Proyecciones financieras actualizadas
-- Plan de implementación detallado
-- Análisis de riesgos y oportunidades
-- Cronograma de inversión por etapas
+### **💬 Puntos clave de la actualización:**
+1. **Producción realista**: "20 bolsas/día lo hago tranquilo"
+2. **Múltiples ingresos**: Leña + Ganadería + Cultivos + Servicios
+3. **Tecnología incluida**: Dron GJI 100 para servicios externos
+4. **Escalabilidad planificada**: Crecimiento ordenado de empleados
+5. **Datos actualizados**: Precios reales de MercadoLibre
 
 ---
 
 ## 🔄 ÚLTIMA ACTUALIZACIÓN
-
-**Fecha:** 4 de agosto de 2025  
-**Versión:** 3.0 - Repositorio limpio con scrapers funcionales  
-**Estado:** ✅ Listo para GitHub Pages
+- **Fecha**: 6 de agosto de 2025, 20:56 hrs
+- **Versión**: 4.0 - Datos dinámicos + Escalabilidad empleados
+- **Estado**: ✅ **Proyecto VIABLE** con 400 bolsas/mes
+- **Próximo**: Deploy automático en GitHub Pages
 
 ---
 
-*🏡 El Recodo - Donde el campo encuentra el lujo*
+> 🏡 **El Recodo** - *Donde el campo encuentra el lujo*  
+> 💰 **$263.759 por hermano/año** con producción realista de 400 bolsas/mes

@@ -1,0 +1,818 @@
+[
+  {
+    "mes": 1,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 0,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 2500000,
+      "total": 3663446.65
+    },
+    "costos": 3663446.65,
+    "resultado": -3663446.65,
+    "acumulado": -3663446.65,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Inversión inicial + setup"
+  },
+  {
+    "mes": 2,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 0,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 180000,
+      "total": 1343446.65
+    },
+    "costos": 1343446.65,
+    "resultado": -1343446.65,
+    "acumulado": -5006893.3,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Preparación campo"
+  },
+  {
+    "mes": 3,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 0,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 180000,
+      "total": 1343446.65
+    },
+    "costos": 1343446.65,
+    "resultado": -1343446.65,
+    "acumulado": -6350339.949999999,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Preparación campo"
+  },
+  {
+    "mes": 4,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 720000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 350000,
+      "total": 1513446.65
+    },
+    "costos": 1513446.65,
+    "resultado": -793446.6499999999,
+    "acumulado": -7143786.6,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Inicio leña (producción menor)"
+  },
+  {
+    "mes": 5,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 720000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 350000,
+      "total": 1513446.65
+    },
+    "costos": 1513446.65,
+    "resultado": -793446.6499999999,
+    "acumulado": -7937233.25,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Inicio leña (producción menor)"
+  },
+  {
+    "mes": 6,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 720000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 350000,
+      "total": 1513446.65
+    },
+    "costos": 1513446.65,
+    "resultado": -793446.6499999999,
+    "acumulado": -8730679.9,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Inicio leña (producción menor)"
+  },
+  {
+    "mes": 7,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": -143446.6499999999,
+    "acumulado": -8874126.55,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña completa"
+  },
+  {
+    "mes": 8,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": -143446.6499999999,
+    "acumulado": -9017573.200000001,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña completa"
+  },
+  {
+    "mes": 9,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": -143446.6499999999,
+    "acumulado": -9161019.850000001,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña completa"
+  },
+  {
+    "mes": 10,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": -143446.6499999999,
+    "acumulado": -9304466.500000002,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña completa"
+  },
+  {
+    "mes": 11,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": -143446.6499999999,
+    "acumulado": -9447913.150000002,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña completa"
+  },
+  {
+    "mes": 12,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -9161359.800000003,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 13,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -8874806.450000003,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 14,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -8588253.100000003,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 15,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -8301699.750000004,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 16,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -8015146.400000004,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 17,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -7728593.0500000045,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 18,
+    "etapa": "1 - Establecimiento",
+    "ingresos": 1870000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "produccion": 420000,
+      "total": 1583446.65
+    },
+    "costos": 1583446.65,
+    "resultado": 286553.3500000001,
+    "acumulado": -7442039.700000005,
+    "reinversion": 0,
+    "dividendos": {},
+    "descripcion": "Leña + Alfalfa"
+  },
+  {
+    "mes": 19,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -6800486.350000005,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 20,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -6158933.000000006,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 21,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -5517379.650000006,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 22,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -4875826.300000006,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 23,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -4234272.950000007,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 24,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2405000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 480000,
+      "total": 1763446.65
+    },
+    "costos": 1763446.65,
+    "resultado": 641553.3500000001,
+    "acumulado": -3592719.6000000066,
+    "reinversion": 449087.34500000003,
+    "dividendos": {
+      "Hermano A": 48117,
+      "Hermano B": 48117,
+      "Hermano C": 48117,
+      "Hermano D": 48117
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 25,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": -2636166.2500000065,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 26,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": -1679612.9000000064,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 27,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": -723059.5500000063,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 28,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": 233493.79999999376,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 29,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": 1190047.1499999939,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 30,
+    "etapa": "2 - Consolidación",
+    "ingresos": 2780000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTemporal": 120000,
+      "produccion": 540000,
+      "total": 1823446.65
+    },
+    "costos": 1823446.65,
+    "resultado": 956553.3500000001,
+    "acumulado": 2146600.499999994,
+    "reinversion": 669587.345,
+    "dividendos": {
+      "Hermano A": 71742,
+      "Hermano B": 71742,
+      "Hermano C": 71742,
+      "Hermano D": 71742
+    },
+    "descripcion": "Campo consolidado"
+  },
+  {
+    "mes": 31,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 5098153.849999994,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 32,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 8049707.199999994,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 33,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 11001260.549999993,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 34,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 13952813.899999993,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 35,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 16904367.249999993,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 36,
+    "etapa": "3 - Turismo",
+    "ingresos": 5145000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 2951553.35,
+    "acumulado": 19855920.599999994,
+    "reinversion": 1770932.01,
+    "dividendos": {
+      "Hermano A": 295155,
+      "Hermano B": 295155,
+      "Hermano C": 295155,
+      "Hermano D": 295155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 37,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 24907473.949999996,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 38,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 29959027.299999997,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 39,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 35010580.65,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 40,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 40062134,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 41,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 45113687.35,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 42,
+    "etapa": "3 - Turismo",
+    "ingresos": 7245000,
+    "costosDetallados": {
+      "peonRural": 1163446.65,
+      "personalTurismo": 850000,
+      "personalCampo": 180000,
+      "total": 2193446.65
+    },
+    "costos": 2193446.65,
+    "resultado": 5051553.35,
+    "acumulado": 50165240.7,
+    "reinversion": 3030932.01,
+    "dividendos": {
+      "Hermano A": 505155,
+      "Hermano B": 505155,
+      "Hermano C": 505155,
+      "Hermano D": 505155
+    },
+    "descripcion": "Operación completa"
+  }
+]
