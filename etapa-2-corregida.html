@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETAPA 2: Primeros Domos | El Recodo</title>
+    <style>
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --accent-gold: #d4af37;
+            --warm-beige: #f5f2e8;
+            --forest-green: #1a3d0c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #f0ede4 100%);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .nav {
+            background: rgba(45, 80, 22, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+        }
+
+        .calculator {
+            background: linear-gradient(135deg, var(--warm-beige), #f0ede4);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            border: 2px solid var(--accent-gold);
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .input-group input, .input-group select {
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .domo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .domo-card {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #2196f3;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            color: var(--forest-green);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🏕️ ETAPA 2: PRIMEROS DOMOS</h1>
+            <p>Construcción de 4 Domos Premium + Servicios Turísticos</p>
+            <p><strong>Entrada al mercado turístico rural</strong></p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div style="text-align: center;">
+            <a href="index-renovado.html">🏠 Inicio</a>
+            <a href="etapa-1-corregida.html">⬅️ Etapa 1</a>
+            <a href="etapa-3.html">➡️ Etapa 3</a>
+            <a href="#simulador">🧮 Simulador</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- RESUMEN FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">💰 Resumen Financiero Etapa 2</h2>
+                
+                <div class="financial-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$320M</div>
+                        <div>Inversión Nueva</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">12</div>
+                        <div>Meses Construcción</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$17.9M</div>
+                        <div>Ingresos Mensuales Turismo</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">78</div>
+                        <div>Noches Ocupadas/Mes</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #007bff, #6610f2); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin: 2rem 0;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">🎯 Cálculo de Ocupación Corregido</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div>
+                            <strong>4 Domos</strong><br>
+                            <small>Capacidad máxima</small>
+                        </div>
+                        <div>
+                            <strong>× 30 días</strong><br>
+                            <small>Mes promedio</small>
+                        </div>
+                        <div>
+                            <strong>× 65% ocupación</strong><br>
+                            <small>Tasa promedio anual</small>
+                        </div>
+                        <div>
+                            <strong>= 78 noches</strong><br>
+                            <small>Ocupadas por mes</small>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 1.1rem;">
+                        <strong>El cálculo original era correcto: 4 domos × 30 días × 65% = 78 noches/mes</strong>
+                    </p>
+                </div>
+            </section>
+
+            <!-- DISEÑO DE DOMOS -->
+            <section class="section">
+                <h2 class="section-title">🏠 Diseño de Domos</h2>
+                
+                <div class="domo-grid">
+                    <div class="domo-card">
+                        <h3 style="color: #2196f3; margin-bottom: 1rem;">🌟 Domo Standard</h3>
+                        <ul style="margin: 1rem 0;">
+                            <li><strong>Diámetro:</strong> 6 metros (28 m²)</li>
+                            <li><strong>Capacidad:</strong> 2-4 personas (configuración flexible)</li>
+                            <li><strong>Configuración A:</strong> Cama queen (parejas/familias)</li>
+                            <li><strong>Configuración B:</strong> Cama doble + cucheta (grupos/empresas)</li>
+                            <li><strong>Estructura:</strong> Acero galvanizado + madera</li>
+                            <li><strong>Baño:</strong> Completo con ducha</li>
+                            <li><strong>Precio:</strong> $25,000/noche</li>
+                            <li><strong>Cantidad:</strong> 2 unidades</li>
+                        </ul>
+                        <div style="background: #2196f3; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Target: Turismo familiar y corporativo</strong>
+                        </div>
+                    </div>
+
+                    <div class="domo-card">
+                        <h3 style="color: #2196f3; margin-bottom: 1rem;">✨ Domo Premium</h3>
+                        <ul style="margin: 1rem 0;">
+                            <li><strong>Diámetro:</strong> 8 metros (50 m²)</li>
+                            <li><strong>Capacidad:</strong> 2-4 personas (configuración modular)</li>
+                            <li><strong>Configuración A:</strong> Suite ejecutiva (cama king + living)</li>
+                            <li><strong>Configuración B:</strong> Familiar/grupal (doble + cuchetas)</li>
+                            <li><strong>Estructura:</strong> Acero + madera premium</li>
+                            <li><strong>Living:</strong> Área de estar + mesa trabajo</li>
+                            <li><strong>Baño:</strong> Bañera + ducha separada</li>
+                            <li><strong>Precio:</strong> $40,000/noche</li>
+                            <li><strong>Cantidad:</strong> 2 unidades</li>
+                        </ul>
+                        <div style="background: #ff5722; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Target: Ejecutivos y grupos premium</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🏗️ Especificaciones Técnicas</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h4>🔧 Estructura</h4>
+                            <ul>
+                                <li>Fundación: Pilotes de hormigón</li>
+                                <li>Marco: Acero galvanizado</li>
+                                <li>Cubierta: Chapa termoacústica</li>
+                                <li>Piso: Deck de quebracho</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>⚡ Servicios</h4>
+                            <ul>
+                                <li>Electricidad: Panel solar + grid</li>
+                                <li>Agua: Pozo + bomba solar</li>
+                                <li>Calefacción: Estufa a leña</li>
+                                <li>Internet: Starlink rural</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>🌿 Sustentabilidad</h4>
+                            <ul>
+                                <li>Aguas grises: Sistema tratamiento</li>
+                                <li>Residuos: Compostaje + reciclado</li>
+                                <li>Energía: 70% renovable</li>
+                                <li>Materiales: 60% locales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRONOGRAMA CONSTRUCCIÓN -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronograma de Construcción</h2>
+                
+                <div style="display: grid; gap: 2rem; margin: 2rem 0;">
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #007bff;">
+                        <div style="background: #007bff; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold;">
+                            <div>Meses</div>
+                            <div>1-3</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #007bff;">🗺️ Diseño y Permisos</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Proyecto ejecutivo:</strong> Arquitectura + estructura + instalaciones</li>
+                                <li><strong>Habilitaciones:</strong> Municipal + bomberos + SENASA</li>
+                                <li><strong>Infraestructura:</strong> Mejora acceso + área común</li>
+                                <li><strong>Servicios:</strong> Ampliación eléctrica + comunicaciones</li>
+                            </ul>
+                            <div style="background: #e3f2fd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $45M
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #28a745;">
+                        <div style="background: #28a745; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold;">
+                            <div>Meses</div>
+                            <div>4-8</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🏗️ Construcción Domos</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Fundaciones:</strong> 4 bases de pilotes + instalaciones</li>
+                                <li><strong>Estructuras:</strong> Montaje marcos + cubiertas</li>
+                                <li><strong>Instalaciones:</strong> Eléctrica + sanitaria + gas</li>
+                                <li><strong>Terminaciones:</strong> Revestimientos + pisos + pintura</li>
+                            </ul>
+                            <div style="background: #e8f5e8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $180M
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #ffc107;">
+                        <div style="background: #ffc107; color: #333; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold;">
+                            <div>Meses</div>
+                            <div>9-12</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #856404;">🎨 Equipamiento y Apertura</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Mobiliario:</strong> Camas + estar + cocina + baño</li>
+                                <li><strong>Equipos:</strong> Climatización + electrodomésticos</li>
+                                <li><strong>Paisajismo:</strong> Jardines + senderos + iluminación</li>
+                                <li><strong>Marketing:</strong> Web + redes + booking platforms</li>
+                            </ul>
+                            <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $95M | <strong>Apertura:</strong> Mes 13
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ANÁLISIS FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">📊 Análisis Financiero Combinado</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <h3 style="color: #007bff; margin-bottom: 1.5rem;">💰 Ingresos Etapa 2</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Etapa 1 (continuidad):</strong>
+                                <div style="color: #28a745; font-weight: bold;">$15.2M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Domos Standard (39 noches/mes):</strong>
+                                <div style="color: #007bff; font-weight: bold;">$9.75M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Domos Premium (39 noches/mes):</strong>
+                                <div style="color: #6610f2; font-weight: bold;">$15.6M/mes</div>
+                            </div>
+                            <div style="background: #007bff; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Total: $40.55M/mes</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #dc3545; margin-bottom: 1.5rem;">💸 Costos Totales</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Etapa 1 (operación):</strong>
+                                <div style="color: #dc3545;">$8.3M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Domos (operación + personal):</strong>
+                                <div style="color: #dc3545;">$12.8M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Marketing y administración:</strong>
+                                <div style="color: #dc3545;">$3.2M/mes</div>
+                            </div>
+                            <div style="background: #dc3545; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Total: $24.3M/mes</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #007bff, #6610f2); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 3rem 0;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 2rem; font-size: 2rem;">🎯 Resultados Etapa 2</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">$16.25M</div>
+                            <div>Utilidad Neta Mensual</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">20</div>
+                            <div>Meses Payback</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">61%</div>
+                            <div>ROI Anual</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">65%</div>
+                            <div>Ocupación Promedio</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SIMULADOR ETAPA 2 -->
+            <section class="calculator" id="simulador">
+                <h2 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem;">🧮 Simulador Domos Etapa 2</h2>
+                
+                <div class="input-group">
+                    <div>
+                        <label>Precio Domo Standard ($/noche)</label>
+                        <input type="number" id="precio-standard" value="25000" min="20000" max="30000" oninput="calcularEtapa2()">
+                    </div>
+                    <div>
+                        <label>Precio Domo Premium ($/noche)</label>
+                        <input type="number" id="precio-premium" value="40000" min="35000" max="50000" oninput="calcularEtapa2()">
+                    </div>
+                    <div>
+                        <label>Ocupación Promedio (%)</label>
+                        <input type="number" id="ocupacion" value="65" min="50" max="85" oninput="calcularEtapa2()">
+                    </div>
+                    <div>
+                        <label>Costos Operación Domos (%)</label>
+                        <input type="number" id="costos-operacion" value="32" min="25" max="40" oninput="calcularEtapa2()">
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-green); margin-bottom: 1rem;">📊 Cálculo Detallado:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                        <div>
+                            <h5>📈 Noches Ocupadas por Mes:</h5>
+                            <div style="font-size: 1.1rem; margin: 0.5rem 0;">
+                                • 4 domos × 30 días × <span id="ocupacion-display">65%</span> = <strong id="noches-totales">78 noches</strong>
+                            </div>
+                            <div style="font-size: 1rem; color: #666;">
+                                • Standard (2 domos): <span id="noches-standard">39 noches</span><br>
+                                • Premium (2 domos): <span id="noches-premium">39 noches</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>💰 Ingresos por Tipo:</h5>
+                            <div style="font-size: 1.1rem; margin: 0.5rem 0;">
+                                • Standard: <strong id="ingreso-standard-calc">$975K/mes</strong><br>
+                                • Premium: <strong id="ingreso-premium-calc">$1,560K/mes</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: #007bff; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingreso-total-domos">$2.535M</div>
+                            <div>Ingreso Total Domos</div>
+                        </div>
+                        <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingreso-total-combinado">$17.735M</div>
+                            <div>Ingreso Total (Etapa 1+2)</div>
+                        </div>
+                        <div style="background: #dc3545; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="costos-totales">$9.11M</div>
+                            <div>Costos Totales</div>
+                        </div>
+                        <div style="background: var(--accent-gold); color: var(--forest-green); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="utilidad-final">$8.625M</div>
+                            <div>Utilidad Neta Final</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESTRATEGIA DE MARKETING -->
+            <section class="section">
+                <h2 class="section-title">📱 Estrategia de Marketing</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: #e3f2fd; padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #1976d2; margin-bottom: 1rem;">🌐 Presencia Digital</h3>
+                        <ul>
+                            <li><strong>Website propio:</strong> Booking directo + experiencias</li>
+                            <li><strong>Booking.com:</strong> Alcance internacional</li>
+                            <li><strong>Airbnb:</strong> Mercado experiencial</li>
+                            <li><strong>Instagram/TikTok:</strong> Contenido visual</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-weight: bold; color: #1976d2;">
+                            Presupuesto: $2M/mes
+                        </div>
+                    </div>
+
+                    <div style="background: #e8f5e8; padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #388e3c; margin-bottom: 1rem;">🎯 Público Objetivo</h3>
+                        <ul>
+                            <li><strong>Primario:</strong> Parejas 30-50 años, nivel socioeconómico medio-alto</li>
+                            <li><strong>Secundario:</strong> Familias pequeñas (2-4 personas) buscando naturaleza</li>
+                            <li><strong>Corporativo:</strong> Empresas para retiros, team building, vacaciones grupales</li>
+                            <li><strong>Estacional:</strong> Turismo astronómico y grupos ejecutivos</li>
+                            <li><strong>Geográfico:</strong> CABA, Córdoba, Mendoza</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-weight: bold; color: #388e3c;">
+                            Target: 1,000 noches/año (mix turismo + corporativo)
+                        </div>
+                    </div>
+
+                    <div style="background: #fff3e0; padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #f57c00; margin-bottom: 1rem;">⭐ Diferenciación</h3>
+                        <ul>
+                            <li><strong>Astroturismo:</strong> Cielos limpios + telescopio</li>
+                            <li><strong>Experiencias:</strong> Cabalgatas + trekking</li>
+                            <li><strong>Gastronomía:</strong> Asado + productos locales</li>
+                            <li><strong>Sustentabilidad:</strong> Energía solar + compost</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-weight: bold; color: #f57c00;">
+                            Premium: +30% precio promedio
+                        </div>
+                    </div>
+
+                    <div style="background: #f3e5f5; padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #7b1fa2; margin-bottom: 1rem;">🏢 Mercado Corporativo</h3>
+                        <ul>
+                            <li><strong>Team Building:</strong> Actividades rurales grupales</li>
+                            <li><strong>Retiros ejecutivos:</strong> Espacios de trabajo + naturaleza</li>
+                            <li><strong>Eventos corporativos:</strong> Lanzamientos, capacitaciones</li>
+                            <li><strong>Paquetes empresariales:</strong> All-inclusive 2-3 días</li>
+                            <li><strong>Conectividad:</strong> WiFi premium, salas de reunión</li>
+                        </ul>
+                        <div style="margin-top: 1rem; font-weight: bold; color: #7b1fa2;">
+                            Premium corporativo: +50% tarifa base
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e8f5e8, #f0f4f0); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                    <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 1.5rem;">📋 Configuración Modular por Reserva</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div>
+                            <h4 style="color: #1976d2; margin-bottom: 1rem;">👥 Configuración Familiar/Pareja</h4>
+                            <ul>
+                                <li>Cama queen/king principal</li>
+                                <li>Ambiente romántico/familiar</li>
+                                <li>Mesa para 2-4 personas</li>
+                                <li>Decoración cálida</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: #7b1fa2; margin-bottom: 1rem;">🏢 Configuración Corporativa</h4>
+                            <ul>
+                                <li>Cama doble + cuchetas modulares</li>
+                                <li>Mesa de trabajo amplia</li>
+                                <li>Conectividad reforzada</li>
+                                <li>Ambiente profesional</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem; padding: 1rem; background: white; border-radius: 10px;">
+                        <strong>🔄 Tiempo de reconversión: 2-3 horas entre reservas diferentes</strong>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function calcularEtapa2() {
+            const precioStandard = document.getElementById('precio-standard').value;
+            const precioPremium = document.getElementById('precio-premium').value;
+            const ocupacion = document.getElementById('ocupacion').value / 100;
+            const costosOperacion = document.getElementById('costos-operacion').value / 100;
+            
+            // Cálculos de ocupación
+            const nochesTotales = Math.round(4 * 30 * ocupacion);
+            const nochesStandard = Math.round(nochesTotales / 2);
+            const nochesPremium = Math.round(nochesTotales / 2);
+            
+            // Ingresos
+            const ingresoStandard = (nochesStandard * precioStandard) / 1000000;
+            const ingresoPremium = (nochesPremium * precioPremium) / 1000000;
+            const ingresoTotalDomos = ingresoStandard + ingresoPremium;
+            const ingresoEtapa1 = 15.2; // De la etapa 1
+            const ingresoTotalCombinado = ingresoTotalDomos + ingresoEtapa1;
+            
+            // Costos
+            const costosDomos = ingresoTotalDomos * costosOperacion;
+            const costosEtapa1 = 8.3; // De la etapa 1
+            const costosMarketing = 3.2;
+            const costosTotales = costosDomos + costosEtapa1 + costosMarketing;
+            
+            // Utilidad
+            const utilidadFinal = ingresoTotalCombinado - costosTotales;
+            
+            // Actualizar valores
+            document.getElementById('ocupacion-display').textContent = Math.round(ocupacion * 100) + '%';
+            document.getElementById('noches-totales').textContent = nochesTotales + ' noches';
+            document.getElementById('noches-standard').textContent = nochesStandard + ' noches';
+            document.getElementById('noches-premium').textContent = nochesPremium + ' noches';
+            document.getElementById('ingreso-standard-calc').textContent = '$' + ingresoStandard.toFixed(2) + 'M/mes';
+            document.getElementById('ingreso-premium-calc').textContent = '$' + ingresoPremium.toFixed(2) + 'M/mes';
+            document.getElementById('ingreso-total-domos').textContent = '$' + ingresoTotalDomos.toFixed(2) + 'M';
+            document.getElementById('ingreso-total-combinado').textContent = '$' + ingresoTotalCombinado.toFixed(2) + 'M';
+            document.getElementById('costos-totales').textContent = '$' + costosTotales.toFixed(2) + 'M';
+            document.getElementById('utilidad-final').textContent = '$' + utilidadFinal.toFixed(2) + 'M';
+        }
+
+        // Inicializar calculadora
+        document.addEventListener('DOMContentLoaded', function() {
+            calcularEtapa2();
+        });
+    </script>
+</body>
+</html>

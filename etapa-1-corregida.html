@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETAPA 1: Base Rural - Leña y Alfalfa | El Recodo</title>
+    <style>
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --accent-gold: #d4af37;
+            --warm-beige: #f5f2e8;
+            --forest-green: #1a3d0c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #f0ede4 100%);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .nav {
+            background: rgba(45, 80, 22, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+        }
+
+        .timeline {
+            display: grid;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 4px solid #28a745;
+        }
+
+        .timeline-number {
+            background: #28a745;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            height: fit-content;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .product-card {
+            background: var(--warm-beige);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #28a745;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            color: var(--forest-green);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .calculator {
+            background: linear-gradient(135deg, var(--warm-beige), #f0ede4);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            border: 2px solid var(--accent-gold);
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .input-group input, .input-group select {
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🌲 ETAPA 1: BASE RURAL</h1>
+            <p>Leña Premium + Alfalfa + Infraestructura Básica</p>
+            <p><strong>Base sólida para el crecimiento futuro</strong></p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div style="text-align: center;">
+            <a href="index-renovado.html">🏠 Inicio</a>
+            <a href="etapa-2.html">➡️ Etapa 2</a>
+            <a href="#simulador">🧮 Simulador</a>
+            <a href="#analisis">📊 Análisis</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- RESUMEN FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">💰 Resumen Financiero Etapa 1</h2>
+                
+                <div class="financial-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$500M</div>
+                        <div>Inversión Total</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">18</div>
+                        <div>Meses Implementación</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$15.2M</div>
+                        <div>Ingresos Mensuales</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">33</div>
+                        <div>Meses Payback</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin: 2rem 0;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">🎯 Filosofía de la Etapa 1</h3>
+                    <p style="font-size: 1.2rem;">
+                        <strong>Base sólida, flujo inmediato.</strong> Comenzamos con productos rurales tradicionales 
+                        de demanda garantizada. La leña y alfalfa nos dan ingresos inmediatos mientras construimos 
+                        la infraestructura para las etapas futuras.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PRODUCTOS PRINCIPALES -->
+            <section class="section">
+                <h2 class="section-title">🌾 Productos Principales</h2>
+                
+                <div class="product-grid">
+                    <div class="product-card">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🌲 Leña Premium</h3>
+                        <ul style="margin: 1rem 0;">
+                            <li><strong>Especies:</strong> Quebracho, Algarrobo, Caldén</li>
+                            <li><strong>Producción:</strong> 3,000 m³/año</li>
+                            <li><strong>Precio:</strong> $85,000/m³ estacionada</li>
+                            <li><strong>Mercado:</strong> San Luis Capital + Villa Mercedes</li>
+                            <li><strong>Demanda:</strong> Alta todo el año (invierno pico)</li>
+                        </ul>
+                        <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Ingreso Anual: $255M</strong>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🌱 Alfalfa y Pasturas</h3>
+                        <ul style="margin: 1rem 0;">
+                            <li><strong>Superficie:</strong> 150 hectáreas productivas</li>
+                            <li><strong>Rendimiento:</strong> 8 cortes/año (12 tn/ha)</li>
+                            <li><strong>Precio:</strong> $450/kg (fardo de 500kg)</li>
+                            <li><strong>Producción:</strong> 1,800 tn/año</li>
+                            <li><strong>Mercado:</strong> Tambos zona + haras San Luis</li>
+                        </ul>
+                        <div style="background: #20c997; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Ingreso Anual: $810M</strong>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🏗️ Infraestructura</h3>
+                        <ul style="margin: 1rem 0;">
+                            <li><strong>Accesos:</strong> Mejora ruta interna 2km</li>
+                            <li><strong>Agua:</strong> Perforación + bomba solar</li>
+                            <li><strong>Electricidad:</strong> Conexión trifásica</li>
+                            <li><strong>Galpones:</strong> Almacenamiento + maquinaria</li>
+                            <li><strong>Vivienda:</strong> Casa administrativa básica</li>
+                        </ul>
+                        <div style="background: var(--primary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Base para Etapas 2-4</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRONOGRAMA DETALLADO -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronograma de Implementación</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">1-6</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🚜 Preparación del Campo</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Limpieza selectiva:</strong> Aprovechamiento leña existente (1,200 m³)</li>
+                                <li><strong>Perforación agua:</strong> 80m profundidad + bomba solar</li>
+                                <li><strong>Energía eléctrica:</strong> Conexión trifásica desde ruta</li>
+                                <li><strong>Caminos internos:</strong> Mejora y consolidación 2km</li>
+                                <li><strong>Primera siembra:</strong> 50ha de alfalfa (otoño)</li>
+                            </ul>
+                            <div style="background: #e3f2fd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $180M | <strong>Primer ingreso:</strong> Leña existente $102M
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">7-12</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🌾 Expansión Productiva</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Ampliación alfalfa:</strong> 100ha adicionales (total 150ha)</li>
+                                <li><strong>Manejo silvopastoril:</strong> Raleo monte + pasturas naturales</li>
+                                <li><strong>Infraestructura:</strong> Galpón 500m² + oficina</li>
+                                <li><strong>Maquinaria:</strong> Tractor, cortadora, acondicionadora</li>
+                                <li><strong>Primeros cortes:</strong> Inicio flujo alfalfa</li>
+                            </ul>
+                            <div style="background: #e8f5e8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $220M | <strong>Flujo:</strong> $8M/mes creciente
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">13-18</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">📈 Consolidación y Optimización</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li><strong>Producción plena:</strong> 8 cortes/año optimizados</li>
+                                <li><strong>Manejo forestal:</strong> Plan extracción sostenible</li>
+                                <li><strong>Comercialización:</strong> Contratos directos tambos</li>
+                                <li><strong>Reinversión:</strong> 70% utilidades para Etapa 2</li>
+                                <li><strong>Planificación:</strong> Diseño turístico futuro</li>
+                            </ul>
+                            <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $100M | <strong>Flujo estable:</strong> $15.2M/mes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ANÁLISIS FINANCIERO DETALLADO -->
+            <section class="section" id="analisis">
+                <h2 class="section-title">📊 Análisis Financiero Detallado</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">💰 Estructura de Ingresos</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Leña (3,000 m³/año):</strong>
+                                <div style="color: #28a745; font-weight: bold;">$255M anuales</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Alfalfa (1,800 tn/año):</strong>
+                                <div style="color: #20c997; font-weight: bold;">$810M anuales</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Pasturas naturales:</strong>
+                                <div style="color: #6c757d; font-weight: bold;">$120M anuales</div>
+                            </div>
+                            <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Total Anual: $1,185M</strong><br>
+                                <strong>Promedio Mensual: $98.8M</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #dc3545; margin-bottom: 1.5rem;">💸 Estructura de Costos</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Operación y mantenimiento:</strong>
+                                <div style="color: #dc3545;">$35M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Combustibles y insumos:</strong>
+                                <div style="color: #dc3545;">$22M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Personal (3 empleados):</strong>
+                                <div style="color: #dc3545;">$18M/mes</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Servicios y gastos generales:</strong>
+                                <div style="color: #dc3545;">$8M/mes</div>
+                            </div>
+                            <div style="background: #dc3545; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Total Costos: $83M/mes</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 3rem 0;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 2rem; font-size: 2rem;">🎯 Resultados Etapa 1</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">$15.2M</div>
+                            <div>Utilidad Neta Mensual</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">33</div>
+                            <div>Meses Payback</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">37%</div>
+                            <div>ROI Anual</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: bold;">$183M</div>
+                            <div>Utilidades Anuales</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SIMULADOR ETAPA 1 -->
+            <section class="calculator" id="simulador">
+                <h2 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem;">🧮 Simulador Financiero Etapa 1</h2>
+                
+                <div class="input-group">
+                    <div>
+                        <label>Producción Leña (m³/año)</label>
+                        <input type="number" id="produccion-lena" value="3000" min="2000" max="5000" oninput="calcularEtapa1()">
+                    </div>
+                    <div>
+                        <label>Precio Leña ($/m³)</label>
+                        <input type="number" id="precio-lena" value="85000" min="70000" max="100000" oninput="calcularEtapa1()">
+                    </div>
+                    <div>
+                        <label>Hectáreas Alfalfa</label>
+                        <input type="number" id="hectareas-alfalfa" value="150" min="100" max="200" oninput="calcularEtapa1()">
+                    </div>
+                    <div>
+                        <label>Precio Alfalfa ($/kg)</label>
+                        <input type="number" id="precio-alfalfa" value="450" min="350" max="550" oninput="calcularEtapa1()">
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-green); margin-bottom: 1rem;">📊 Resultados Simulación:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingreso-lena">$255M</div>
+                            <div>Ingreso Anual Leña</div>
+                        </div>
+                        <div style="background: #20c997; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingreso-alfalfa">$810M</div>
+                            <div>Ingreso Anual Alfalfa</div>
+                        </div>
+                        <div style="background: var(--primary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingreso-total">$1,065M</div>
+                            <div>Ingreso Total Anual</div>
+                        </div>
+                        <div style="background: var(--accent-gold); color: var(--forest-green); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="utilidad-neta">$14.2M</div>
+                            <div>Utilidad Neta Mensual</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIESGOS Y MITIGACIÓN -->
+            <section class="section">
+                <h2 class="section-title">⚠️ Análisis de Riesgos</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <h3 style="color: #dc3545; margin-bottom: 1.5rem;">🚨 Riesgos Principales</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>🌧️ Climáticos:</strong>
+                                <p>Sequías pueden reducir producción alfalfa 20-30%</p>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>💰 Precios:</strong>
+                                <p>Fluctuación precios commodities puede afectar márgenes</p>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>🚜 Operativos:</strong>
+                                <p>Dependencia maquinaria y disponibilidad personal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">🛡️ Estrategias de Mitigación</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>💧 Riego:</strong>
+                                <p>Sistema riego complementario para años secos</p>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>📊 Diversificación:</strong>
+                                <p>Múltiples productos reducen dependencia de uno solo</p>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>🤝 Contratos:</strong>
+                                <p>Acuerdos a largo plazo estabilizan precios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRANSICIÓN A ETAPA 2 -->
+            <section class="section">
+                <h2 class="section-title">🚀 Transición a Etapa 2</h2>
+                
+                <div style="background: linear-gradient(135deg, var(--warm-beige), #f0ede4); padding: 3rem; border-radius: 20px;">
+                    <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem;">
+                        🎯 Criterios para Avanzar a Etapa 2
+                    </h3>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                            <div style="font-size: 3rem;">✅</div>
+                            <h4>Flujo Estable</h4>
+                            <p>12 meses consecutivos con ingresos >$15M/mes</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                            <div style="font-size: 3rem;">💰</div>
+                            <h4>Capital Disponible</h4>
+                            <p>$300M acumulados para inversión Etapa 2</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                            <div style="font-size: 3rem;">📈</div>
+                            <h4>Mercado Favorable</h4>
+                            <p>Demanda turismo rural en crecimiento</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                            <div style="font-size: 3rem;">🏗️</div>
+                            <h4>Infraestructura Lista</h4>
+                            <p>Base construida para desarrollo turístico</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="etapa-2.html" class="btn" style="font-size: 1.2rem; padding: 1.5rem 3rem;">
+                            ➡️ Ver Plan Etapa 2: Primeros Domos
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function calcularEtapa1() {
+            const produccionLena = document.getElementById('produccion-lena').value;
+            const precioLena = document.getElementById('precio-lena').value;
+            const hectareasAlfalfa = document.getElementById('hectareas-alfalfa').value;
+            const precioAlfalfa = document.getElementById('precio-alfalfa').value;
+            
+            // Cálculos
+            const ingresoLena = (produccionLena * precioLena) / 1000000;
+            const produccionAlfalfaTon = hectareasAlfalfa * 12; // 12 tn/ha/año
+            const ingresoAlfalfa = (produccionAlfalfaTon * 1000 * precioAlfalfa) / 1000000;
+            const ingresoTotal = ingresoLena + ingresoAlfalfa + 120; // +120M pasturas
+            const costosAnuales = 996; // $83M * 12 meses
+            const utilidadAnual = ingresoTotal - costosAnuales;
+            const utilidadMensual = utilidadAnual / 12;
+            
+            // Actualizar valores
+            document.getElementById('ingreso-lena').textContent = '$' + ingresoLena.toFixed(0) + 'M';
+            document.getElementById('ingreso-alfalfa').textContent = '$' + ingresoAlfalfa.toFixed(0) + 'M';
+            document.getElementById('ingreso-total').textContent = '$' + ingresoTotal.toFixed(0) + 'M';
+            document.getElementById('utilidad-neta').textContent = '$' + utilidadMensual.toFixed(1) + 'M';
+        }
+
+        // Inicializar calculadora
+        document.addEventListener('DOMContentLoaded', function() {
+            calcularEtapa1();
+        });
+    </script>
+</body>
+</html>

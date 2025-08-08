@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establecimiento El Recodo - Turismo Rural Premium San Luis</title>
+    
+    <!-- Meta tags para SEO y redes sociales -->
+    <meta name="description" content="Establecimiento El Recodo - Turismo rural auténtico en Paraje El Recodo, San Luis. Inversión progresiva: leña → alfalfa → pasturas → domos premium. Plan 4 etapas.">
+    <meta name="keywords" content="turismo rural, san luis, el recodo, domos premium, glamping, leña, alfalfa, inversión rural, paraje el recodo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elrecodo.com">
+    <meta property="og:title" content="Establecimiento El Recodo - Turismo Rural Premium">
+    <meta property="og:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta property="og:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://elrecodo.com">
+    <meta name="twitter:title" content="Establecimiento El Recodo - Turismo Rural Premium">
+    <meta name="twitter:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta name="twitter:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --accent-gold: #d4af37;
+            --warm-beige: #f5f2e8;
+            --forest-green: #1a3d0c;
+            --sky-blue: #87ceeb;
+            --earth-brown: #8b4513;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #f0ede4 100%);
+            overflow-x: hidden;
+        }
+
+        /* Logo y Brand */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+
+        .logo::before {
+            content: "🌾";
+            font-size: 2.5rem;
+        }
+
+        /* Header Hero */
+        .hero-header {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(45, 80, 22, 0.95) 0%, 
+                rgba(74, 124, 89, 0.90) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="%23f5f2e8" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><path d="M0,400 Q300,300 600,400 T1200,400 V800 H0 V400 Z" fill="%23ffffff" opacity="0.05"/></svg>') no-repeat bottom center;
+            background-size: 100% 200px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fff, var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Navegación */
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(45, 80, 22, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .main-nav.visible {
+            transform: translateY(0);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Redes Sociales */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            color: var(--forest-green);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #f4d03f, var(--accent-gold));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-green);
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Secciones */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: var(--primary-green);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            border-radius: 2px;
+        }
+
+        /* Vision del Proyecto */
+        .vision-section {
+            background: white;
+            border-radius: 20px;
+            padding: 4rem;
+            margin: 4rem 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .vision-item {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: linear-gradient(135deg, var(--warm-beige), #f8f5ed);
+            transition: transform 0.3s ease;
+        }
+
+        .vision-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .vision-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Plan de Etapas */
+        .etapas-container {
+            position: relative;
+            margin: 4rem 0;
+        }
+
+        .etapa-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-left: 8px solid;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .etapa-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            border-radius: 0 20px 0 100px;
+        }
+
+        .etapa-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .etapa-1 { border-left-color: #28a745; }
+        .etapa-2 { border-left-color: #007bff; }
+        .etapa-3 { border-left-color: #ffc107; }
+        .etapa-4 { border-left-color: #6f42c1; }
+
+        .etapa-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .etapa-numero {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .etapa-1 .etapa-numero { background: linear-gradient(135deg, #28a745, #20c997); }
+        .etapa-2 .etapa-numero { background: linear-gradient(135deg, #007bff, #0056b3); }
+        .etapa-3 .etapa-numero { background: linear-gradient(135deg, #ffc107, #e0a800); }
+        .etapa-4 .etapa-numero { background: linear-gradient(135deg, #6f42c1, #5a32a3); }
+
+        .etapa-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .etapa-info p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Métricas financieras */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(45, 80, 22, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Simulador */
+        .simulador-container {
+            background: linear-gradient(135deg, var(--warm-beige), #f0ede4);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 4rem 0;
+            border: 2px solid var(--accent-gold);
+        }
+
+        .simulador-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .resultado-simulador {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--forest-green);
+            color: white;
+            padding: 4rem 0 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-header {
+                padding: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .etapa-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+        }
+
+        /* Loading spinner */
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">El Recodo</div>
+            <ul class="nav-links">
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#etapas">Plan 4 Etapas</a></li>
+                <li><a href="#financiero">Financiero</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="hero-content">
+            <div class="logo" style="justify-content: center; font-size: 3rem; margin-bottom: 2rem;">
+                El Recodo
+            </div>
+            <h1 class="hero-title">Turismo Rural Premium</h1>
+            <p class="hero-subtitle">Plan de Inversión Progresivo en 4 Etapas</p>
+            <p class="hero-description">
+                De la producción rural tradicional al turismo premium. 
+                Comenzamos con leña y alfalfa, evolucionamos hacia domos de lujo. 
+                Crecimiento sostenible, riesgo controlado, rentabilidad progresiva.
+            </p>
+            
+            <div style="margin: 3rem 0;">
+                <a href="#etapas" class="btn" style="margin: 0 1rem;">📊 Ver Plan Completo</a>
+                <a href="#simulador" class="btn btn-secondary" style="margin: 0 1rem;">🧮 Calcular Rentabilidad</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://instagram.com/elrecodo" class="social-link" title="Instagram">📷</a>
+                <a href="https://facebook.com/elrecodo" class="social-link" title="Facebook">📘</a>
+                <a href="https://youtube.com/elrecodo" class="social-link" title="YouTube">📺</a>
+                <a href="mailto:info@elrecodo.com" class="social-link" title="Email">📧</a>
+                <a href="https://wa.me/5492664123456" class="social-link" title="WhatsApp">📱</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visión del Proyecto -->
+    <section id="vision" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 Nuestra Visión</h2>
+            
+            <div class="vision-section fade-in">
+                <p style="font-size: 1.3rem; text-align: center; color: #666; margin-bottom: 3rem;">
+                    <strong>El Recodo</strong> combina la sabiduría rural tradicional con la innovación del turismo premium. 
+                    Nuestro enfoque progresivo minimiza riesgos mientras maximiza el potencial de crecimiento.
+                </p>
+
+                <div class="vision-grid">
+                    <div class="vision-item">
+                        <span class="vision-icon">🌾</span>
+                        <h3>Base Productiva Sólida</h3>
+                        <p>Comenzamos con leña y alfalfa - productos con demanda garantizada y flujo de caja inmediato.</p>
+                    </div>
+                    
+                    <div class="vision-item">
+                        <span class="vision-icon">🏡</span>
+                        <h3>Evolución Turística</h3>
+                        <p>Gradualmente incorporamos domos premium, aprovechando el auge del turismo rural y glamping.</p>
+                    </div>
+                    
+                    <div class="vision-item">
+                        <span class="vision-icon">💚</span>
+                        <h3>Sostenibilidad Integral</h3>
+                        <p>Cada etapa financia la siguiente, creando un ciclo de crecimiento autofinanciado y sostenible.</p>
+                    </div>
+
+                    <div class="vision-item">
+                        <span class="vision-icon">📈</span>
+                        <h3>Rentabilidad Progresiva</h3>
+                        <p>De márgenes modestos rurales a la alta rentabilidad del turismo premium en San Luis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de 4 Etapas -->
+    <section id="etapas" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">🚀 Plan de Inversión en 4 Etapas</h2>
+            
+            <div class="etapas-container">
+                <!-- ETAPA 1: BASE RURAL -->
+                <div class="etapa-card etapa-1 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">1</div>
+                        <div class="etapa-info">
+                            <h3>ETAPA 1: BASE RURAL</h3>
+                            <p>Leña, alfalfa y infraestructura básica - Flujo de caja inmediato</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">$500M</div>
+                            <div class="metric-label">Inversión Inicial</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">12-18</div>
+                            <div class="metric-label">Meses</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$15M</div>
+                            <div class="metric-label">Ingresos/Mes</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">65%</div>
+                            <div class="metric-label">Margen Neto</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌲 Productos Principales:</h4>
+                        <ul style="columns: 2; margin-left: 2rem;">
+                            <li><strong>Leña premium:</strong> Quebracho, algarrobo (3000 m³/año)</li>
+                            <li><strong>Alfalfa:</strong> 150 hectáreas productivas</li>
+                            <li><strong>Pasturas:</strong> Campo natural + implantadas</li>
+                            <li><strong>Infraestructura:</strong> Caminos, agua, electricidad</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="etapa-1-corregida.html" class="btn">📊 Ver Análisis Detallado Etapa 1</a>
+                    </div>
+                </div>
+
+                <!-- ETAPA 2: PRIMEROS DOMOS -->
+                <div class="etapa-card etapa-2 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">2</div>
+                        <div class="etapa-info">
+                            <h3>ETAPA 2: PRIMEROS DOMOS</h3>
+                            <p>4 domos premium + experiencias rurales</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">+$300M</div>
+                            <div class="metric-label">Inversión Adicional</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">8-12</div>
+                            <div class="metric-label">Meses</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$8.2M</div>
+                            <div class="metric-label">Ingresos Turismo</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">75%</div>
+                            <div class="metric-label">Ocupación Target</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                        <h4 style="color: #007bff; margin-bottom: 1rem;">🏡 Desarrollo Turístico:</h4>
+                        <ul style="columns: 2; margin-left: 2rem;">
+                            <li><strong>4 domos geodésicos</strong> de 35m² c/u (configuración flexible)</li>
+                            <li><strong>Capacidad:</strong> 2-4 personas (cama doble + cuchetas modulares)</li>
+                            <li><strong>Precio:</strong> $35,000/noche (realista mercado SL)</li>
+                            <li><strong>Target:</strong> Parejas, familias, grupos empresariales</li>
+                            <li><strong>Experiencias:</strong> Cabalgatas, fogones, productos caseros</li>
+                            <li><strong>Servicios:</strong> Desayunos, cenas, team building</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="etapa-2-corregida.html" class="btn">📊 Ver Análisis Detallado Etapa 2</a>
+                    </div>
+                </div>
+
+                <!-- ETAPA 3: EXPANSIÓN -->
+                <div class="etapa-card etapa-3 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">3</div>
+                        <div class="etapa-info">
+                            <h3>ETAPA 3: EXPANSIÓN</h3>
+                            <p>8 domos total + servicios gastronómicos</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">+$400M</div>
+                            <div class="metric-label">Inversión Adicional</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">12-15</div>
+                            <div class="metric-label">Meses</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$16.8M</div>
+                            <div class="metric-label">Ingresos/Mes</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">80%</div>
+                            <div class="metric-label">Ocupación Target</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                        <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 Servicios Premium:</h4>
+                        <ul style="columns: 2; margin-left: 2rem;">
+                            <li><strong>4 domos adicionales</strong> (8 total, configuración modular)</li>
+                            <li><strong>Capacidad flexible:</strong> Cama doble + cuchetas según reserva</li>
+                            <li><strong>Restaurante rural</strong> con especialidades locales</li>
+                            <li><strong>Área de eventos</strong> para grupos empresariales</li>
+                            <li><strong>Actividades premium:</strong> Team building, degustaciones</li>
+                            <li><strong>Servicios corporativos:</strong> Salas de reunión, WiFi premium</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="etapa-3.html" class="btn">📊 Ver Análisis Detallado Etapa 3</a>
+                    </div>
+                </div>
+
+                <!-- ETAPA 4: CONSOLIDACIÓN -->
+                <div class="etapa-card etapa-4 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">4</div>
+                        <div class="etapa-info">
+                            <h3>ETAPA 4: CONSOLIDACIÓN</h3>
+                            <p>12 domos + complejo integral + máxima rentabilidad</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">+$600M</div>
+                            <div class="metric-label">Inversión Final</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">12-18</div>
+                            <div class="metric-label">Meses</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$28.5M</div>
+                            <div class="metric-label">Ingresos/Mes</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">85%</div>
+                            <div class="metric-label">Ocupación Target</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                        <h4 style="color: #6f42c1; margin-bottom: 1rem;">🚀 Operación Completa:</h4>
+                        <ul style="columns: 2; margin-left: 2rem;">
+                            <li><strong>12 domos premium</strong> operativos (configuración flexible)</li>
+                            <li><strong>Target corporativo:</strong> Retiros empresariales, team building</li>
+                            <li><strong>Centro de eventos</strong> para 100 personas</li>
+                            <li><strong>SPA rural</strong> con tratamientos naturales</li>
+                            <li><strong>Establecimiento líder</strong> en turismo rural y corporativo SL</li>
+                            <li><strong>Servicios ejecutivos:</strong> Salas, conectividad, catering</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="etapa-4.html" class="btn">📊 Ver Análisis Detallado Etapa 4</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen Financiero Total -->
+            <div class="vision-section fade-in" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white;">
+                <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">💰 Resumen Financiero Total</h3>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">$1.800M</div>
+                        <div class="metric-label">Inversión Total 4 Etapas</div>
+                    </div>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">42.8</div>
+                        <div class="metric-label">Meses Payback Total</div>
+                    </div>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">$28.5M</div>
+                        <div class="metric-label">Ingresos Mensuales Finales</div>
+                    </div>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">68%</div>
+                        <div class="metric-label">ROI Anual Etapa 4</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#simulador" class="btn" style="background: var(--accent-gold); color: var(--forest-green);">🧮 Simular Diferentes Escenarios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador Financiero -->
+    <section id="simulador" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">🧮 Simulador Financiero</h2>
+            
+            <div class="simulador-container fade-in">
+                <h3 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem;">Calcula la Rentabilidad Según Diferentes Escenarios</h3>
+                
+                <div class="simulador-grid">
+                    <div class="input-group">
+                        <label for="ocupacion">Ocupación Promedio (%)</label>
+                        <input type="range" id="ocupacion" min="60" max="95" value="75" oninput="actualizarSimulador()">
+                        <div style="text-align: center; font-weight: bold; color: var(--primary-green);" id="ocupacion-valor">75%</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="precio-noche">Precio por Noche (ARS)</label>
+                        <input type="number" id="precio-noche" value="35000" min="25000" max="50000" oninput="actualizarSimulador()">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="temporada">Factor Estacional</label>
+                        <select id="temporada" onchange="actualizarSimulador()">
+                            <option value="1.0">Promedio Anual</option>
+                            <option value="1.25">Temporada Alta (Dic-Mar)</option>
+                            <option value="0.85">Temporada Media (Abr-Jul)</option>
+                            <option value="0.90">Temporada Baja (Ago-Nov)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="etapa-sim">Etapa a Simular</label>
+                        <select id="etapa-sim" onchange="actualizarSimulador()">
+                            <option value="2">Etapa 2 (4 domos)</option>
+                            <option value="3">Etapa 3 (8 domos)</option>
+                            <option value="4">Etapa 4 (12 domos)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="resultado-simulador">
+                    <h4 style="color: var(--primary-green); margin-bottom: 1rem;">📊 Resultados de la Simulación:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: var(--primary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="noches-mes">90</div>
+                            <div>Noches Ocupadas/Mes</div>
+                        </div>
+                        <div style="background: var(--secondary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-mes">$3.15M</div>
+                            <div>Ingresos Alojamiento/Mes</div>
+                        </div>
+                        <div style="background: var(--accent-gold); color: var(--forest-green); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-total">$4.2M</div>
+                            <div>Ingresos Totales/Mes</div>
+                        </div>
+                        <div style="background: var(--forest-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="margen-neto">$2.8M</div>
+                            <div>Margen Neto/Mes</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                        <p style="color: var(--primary-green); font-weight: bold; text-align: center;">
+                            💡 <span id="conclusion">Con estos parámetros, el proyecto genera un excelente retorno de inversión.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌾 Establecimiento El Recodo</h3>
+                    <p>Turismo Rural Premium en San Luis</p>
+                    <p>Plan de inversión progresivo en 4 etapas</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="https://instagram.com/elrecodo" class="social-link">📷</a>
+                        <a href="https://facebook.com/elrecodo" class="social-link">📘</a>
+                        <a href="mailto:info@elrecodo.com" class="social-link">📧</a>
+                        <a href="https://wa.me/5492664123456" class="social-link">📱</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>📍 Ubicación</h3>
+                    <p>Ruta 15B Km 15,5</p>
+                    <p>Paraje El Recodo</p>
+                    <p>San Luis, Argentina</p>
+                    <p>CP: 5730</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>📞 Contacto</h3>
+                    <p><a href="tel:+5492664123456">+54 9 266 4123456</a></p>
+                    <p><a href="mailto:info@elrecodo.com">info@elrecodo.com</a></p>
+                    <p><a href="mailto:inversiones@elrecodo.com">inversiones@elrecodo.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>🔗 Enlaces</h3>
+                    <p><a href="plan-maestro.html">Plan Maestro Detallado</a></p>
+                    <p><a href="simulador-completo.html">Simulador Avanzado</a></p>
+                    <p><a href="galeria.html">Galería del Proyecto</a></p>
+                    <p><a href="inversiones.html">Información para Inversores</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Establecimiento El Recodo. Todos los derechos reservados.</p>
+                <p>Plan de inversión turística rural | San Luis, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navegación sticky
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animaciones on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Simulador Financiero
+        function actualizarSimulador() {
+            const ocupacion = document.getElementById('ocupacion').value;
+            const precioNoche = document.getElementById('precio-noche').value;
+            const temporada = document.getElementById('temporada').value;
+            const etapa = document.getElementById('etapa-sim').value;
+            
+            // Actualizar valor mostrado de ocupación
+            document.getElementById('ocupacion-valor').textContent = ocupacion + '%';
+            
+            // Calcular número de domos según etapa
+            const domos = etapa == 2 ? 4 : (etapa == 3 ? 8 : 12);
+            
+            // Calcular noches máximas por mes (30 días)
+            const nochesMaximas = domos * 30;
+            const nochesOcupadas = Math.round(nochesMaximas * (ocupacion / 100));
+            
+            // Calcular ingresos base
+            const precioConTemporada = precioNoche * temporada;
+            const ingresosAlojamiento = nochesOcupadas * precioConTemporada;
+            
+            // Ingresos adicionales (servicios, comidas, actividades) - 35% promedio
+            const ingresosAdicionales = ingresosAlojamiento * 0.35;
+            const ingresosTotales = ingresosAlojamiento + ingresosAdicionales;
+            
+            // Costos operativos (35% de ingresos totales)
+            const costosOperativos = ingresosTotales * 0.35;
+            const margenNeto = ingresosTotales - costosOperativos;
+            
+            // Actualizar valores en pantalla
+            document.getElementById('noches-mes').textContent = nochesOcupadas.toLocaleString();
+            document.getElementById('ingresos-mes').textContent = '$' + (ingresosAlojamiento / 1000000).toFixed(1) + 'M';
+            document.getElementById('ingresos-total').textContent = '$' + (ingresosTotales / 1000000).toFixed(1) + 'M';
+            document.getElementById('margen-neto').textContent = '$' + (margenNeto / 1000000).toFixed(1) + 'M';
+            
+            // Actualizar conclusión
+            let conclusion = '';
+            if (ocupacion >= 80) {
+                conclusion = 'Excelente! Con esta ocupación el proyecto genera retornos excepcionales.';
+            } else if (ocupacion >= 70) {
+                conclusion = 'Muy bueno! Ocupación sólida que asegura rentabilidad atractiva.';
+            } else if (ocupacion >= 60) {
+                conclusion = 'Aceptable. Ocupación conservadora pero rentable.';
+            } else {
+                conclusion = 'Ocupación baja. Considera estrategias de marketing más agresivas.';
+            }
+            
+            document.getElementById('conclusion').textContent = conclusion;
+        }
+
+        // Inicializar simulador
+        document.addEventListener('DOMContentLoaded', function() {
+            actualizarSimulador();
+        });
+
+        // Mejorar interactividad
+        document.addEventListener('DOMContentLoaded', function() {
+            // Añadir efectos hover mejorados
+            const cards = document.querySelectorAll('.etapa-card, .vision-item, .metric-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
