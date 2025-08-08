@@ -1117,7 +1117,7 @@
                 <!-- Controles de Simulación -->
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                     <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
-                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (47 ha)</h4>
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (8 ha iniciales)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">50% - Sequía severa</option>
@@ -1127,12 +1127,12 @@
                             <option value="excelente">150% - Año excepcional</option>
                         </select>
                         <div id="alfalfa-resultado" style="margin-top: 1rem; padding: 1rem; background: #28a745; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
-                            $2.350.000/año
+                            $400.000/año
                         </div>
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff8e1, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #ffc107;">
-                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (4 ha)</h4>
+                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (3 ha iniciales)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="cebada-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">40% - Granizo/helada</option>
@@ -1142,12 +1142,12 @@
                             <option value="excelente">160% - Año excepcional</option>
                         </select>
                         <div id="cebada-resultado" style="margin-top: 1rem; padding: 1rem; background: #ffc107; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
-                            $11.200.000/año
+                            $8.400.000/año
                         </div>
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff3e0, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #fd7e14;">
-                        <h4 style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha)</h4>
+                        <h4 style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha rotación)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="maiz-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">30% - Sequía/plaga</option>
@@ -1162,7 +1162,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #f3e5f5, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #6f42c1;">
-                        <h4 style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2.22 ha)</h4>
+                        <h4 style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2 ha sequía)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="sorgo-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">60% - Condiciones adversas</option>
@@ -1172,7 +1172,7 @@
                             <option value="excelente">140% - Año excepcional</option>
                         </select>
                         <div id="sorgo-resultado" style="margin-top: 1rem; padding: 1rem; background: #6f42c1; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
-                            $4.314.000/año
+                            $3.886.000/año
                         </div>
                     </div>
                 </div>
@@ -1444,7 +1444,7 @@
         // Simulador de Rendimientos de Cultivos - Datos y Funciones
         const rendimientosCultivos = {
             alfalfa: {
-                superficie: 47,
+                superficie: 8,
                 rendimientoBase: 50000,
                 escenarios: {
                     pesimo: { factor: 0.5, descripcion: "50% - Sequía severa" },
@@ -1455,7 +1455,7 @@
                 }
             },
             cebada: {
-                superficie: 4,
+                superficie: 3,
                 rendimientoBase: 2800000,
                 escenarios: {
                     pesimo: { factor: 0.4, descripcion: "40% - Granizo/helada" },
@@ -1477,7 +1477,7 @@
                 }
             },
             sorgo: {
-                superficie: 2.22,
+                superficie: 2,
                 rendimientoBase: 1943243,
                 escenarios: {
                     pesimo: { factor: 0.6, descripcion: "60% - Condiciones adversas" },
