@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Recodo - Plan de Inversión Progresivo</title>
+    <title>Establecimiento El Recodo - Turismo Rural Premium San Luis</title>
+    
+    <!-- Meta tags para SEO y redes sociales -->
+    <meta name="description" content="Establecimiento El Recodo - Turismo rural auténtico en Paraje El Recodo, San Luis. Inversión progresiva: leña → alfalfa → pasturas → domos premium. Plan 4 etapas.">
+    <meta name="keywords" content="turismo rural, san luis, el recodo, domos premium, glamping, leña, alfalfa, inversión rural, paraje el recodo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elrecodo.com">
+    <meta property="og:title" content="Establecimiento El Recodo - Turismo Rural Premium">
+    <meta property="og:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta property="og:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://elrecodo.com">
+    <meta name="twitter:title" content="Establecimiento El Recodo - Turismo Rural Premium">
+    <meta name="twitter:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta name="twitter:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
     <style>
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --accent-gold: #d4af37;
+            --warm-beige: #f5f2e8;
+            --forest-green: #1a3d0c;
+            --sky-blue: #87ceeb;
+            --earth-brown: #8b4513;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,81 +45,299 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #f0ede4 100%);
+            overflow-x: hidden;
         }
 
+        /* Logo y Brand */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+
+        .logo::before {
+            content: "🌾";
+            font-size: 2.5rem;
+        }
+
+        /* Header Hero */
+        .hero-header {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(45, 80, 22, 0.85) 0%, 
+                rgba(74, 124, 89, 0.80) 100%),
+                url('images/vista aerea sur.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><path d="M0,400 Q300,300 600,400 T1200,400 V800 H0 V400 Z" fill="%23ffffff" opacity="0.05"/></svg>') no-repeat bottom center;
+            background-size: 100% 200px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fff, var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Navegación */
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(45, 80, 22, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .main-nav.visible {
+            transform: translateY(0);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Redes Sociales */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            color: var(--forest-green);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #f4d03f, var(--accent-gold));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-green);
+        }
+
+        /* Container principal */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
-        .header {
-            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 100%);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .nav {
-            background: rgba(45, 80, 22, 0.95);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .nav-item {
-            color: white;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .nav-item:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
-        }
-
+        /* Secciones */
         .section {
-            padding: 4rem 0;
-            margin-bottom: 2rem;
-        }
-
-        .section:nth-child(even) {
-            background: rgba(255,255,255,0.5);
+            padding: 6rem 0;
+            position: relative;
         }
 
         .section-title {
-            font-size: 2.5rem;
-            color: #2d5016;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: var(--primary-green);
             text-align: center;
             margin-bottom: 3rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--accent-gold), #f4d03f);
+            border-radius: 2px;
+        }
+
+        /* Vision del Proyecto */
+        .vision-section {
+            background: white;
+            border-radius: 20px;
+            padding: 4rem;
+            margin: 4rem 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            background: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') no-repeat;
+            background-size: cover;
+            opacity: 0.1;
+            border-radius: 0 20px 0 100px;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .vision-item {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: linear-gradient(135deg, var(--warm-beige), #f8f5ed);
+            transition: transform 0.3s ease;
+        }
+
+        .vision-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .vision-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Plan de Etapas */
+        .etapas-container {
+            position: relative;
+            margin: 4rem 0;
         }
 
         .etapa-card {
@@ -96,11 +347,25 @@
             margin-bottom: 3rem;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             border-left: 8px solid;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .etapa-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            border-radius: 0 20px 0 100px;
         }
 
         .etapa-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         }
 
         .etapa-1 { border-left-color: #28a745; }
@@ -109,12 +374,13 @@
         .etapa-4 { border-left-color: #6f42c1; }
 
         .etapa-header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
             margin-bottom: 2rem;
         }
 
         .etapa-numero {
-            display: inline-block;
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -124,547 +390,720 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
 
-        .etapa-1 .etapa-numero { background: #28a745; }
-        .etapa-2 .etapa-numero { background: #007bff; }
-        .etapa-3 .etapa-numero { background: #ffc107; }
-        .etapa-4 .etapa-numero { background: #6f42c1; }
+        .etapa-1 .etapa-numero { background: linear-gradient(135deg, #28a745, #20c997); }
+        .etapa-2 .etapa-numero { background: linear-gradient(135deg, #007bff, #0056b3); }
+        .etapa-3 .etapa-numero { background: linear-gradient(135deg, #ffc107, #e0a800); }
+        .etapa-4 .etapa-numero { background: linear-gradient(135deg, #6f42c1, #5a32a3); }
 
-        .subetapas-grid {
+        .etapa-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .etapa-info p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Métricas financieras */
+        .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin: 3rem 0;
         }
 
-        .subetapa {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 4px solid;
-        }
-
-        .etapa-1 .subetapa { border-left-color: #28a745; }
-        .etapa-2 .subetapa { border-left-color: #007bff; }
-        .etapa-3 .subetapa { border-left-color: #ffc107; }
-        .etapa-4 .subetapa { border-left-color: #6f42c1; }
-
-        .inversion-box {
-            background: linear-gradient(135deg, #2d5016, #4a7c59);
+        .metric-card {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
             color: white;
             padding: 2rem;
             border-radius: 15px;
             text-align: center;
-            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(45, 80, 22, 0.3);
+            transition: transform 0.3s ease;
         }
 
-        .metric {
-            display: inline-block;
-            margin: 0 1rem;
-            text-align: center;
+        .metric-card:hover {
+            transform: translateY(-5px);
         }
 
         .metric-value {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
         }
 
         .metric-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
+            font-size: 1rem;
+            opacity: 0.9;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            margin: 0.5rem;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
-        }
-
-        .btn-secondary {
-            background: linear-gradient(135deg, #6c757d, #495057);
-        }
-
-        .btn-info {
-            background: linear-gradient(135deg, #17a2b8, #138496);
-        }
-
-        .planes-futuros {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        /* Simulador */
+        .simulador-container {
+            background: linear-gradient(135deg, var(--warm-beige), #f0ede4);
             border-radius: 20px;
             padding: 3rem;
-            margin: 3rem 0;
-            border: 2px dashed #6c757d;
+            margin: 4rem 0;
+            border: 2px solid var(--accent-gold);
         }
 
-        .idea-card {
+        .simulador-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .resultado-simulador {
             background: white;
             padding: 2rem;
             border-radius: 15px;
-            margin: 1rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-left: 4px solid #17a2b8;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
+        /* Footer */
         .footer {
-            background: #2d5016;
+            background: var(--forest-green);
             color: white;
-            padding: 3rem 0;
-            text-align: center;
+            padding: 4rem 0 2rem;
+            margin-top: 6rem;
         }
 
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .nav-container {
+            .hero-header {
+                padding: 2rem;
+            }
+            
+            .nav-links {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 1rem;
             }
             
-            .header h1 {
-                font-size: 2rem;
+            .etapa-header {
+                flex-direction: column;
+                text-align: center;
             }
             
-            .section-title {
-                font-size: 2rem;
+            .metrics-grid {
+                grid-template-columns: 1fr;
             }
             
-            .etapa-card {
-                padding: 2rem 1rem;
+            .section {
+                padding: 4rem 0;
             }
+        }
+
+        /* Loading spinner */
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>🌾 Establecimiento El Recodo</h1>
-            <p>"Turismo Rural Premium - Plan de Inversión Progresivo"</p>
-        </div>
-    </header>
-
-    <nav class="nav">
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
         <div class="nav-container">
-            <a href="#etapa-1" class="nav-item">Etapa 1</a>
-            <a href="#etapa-2" class="nav-item">Etapa 2</a>
-            <a href="#etapa-3" class="nav-item">Etapa 3</a>
-            <a href="#etapa-4" class="nav-item">Etapa 4</a>
-            <a href="#consolidacion" class="nav-item">Consolidación</a>
-            <a href="#planes-futuros" class="nav-item">Planes Futuros</a>
+            <div class="logo">El Recodo</div>
+            <ul class="nav-links">
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#etapas">Plan 4 Etapas</a></li>
+                <li><a href="#financiero">Financiero</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main>
-        <!-- ETAPA 1: FUNDACIÓN -->
-        <section id="etapa-1" class="section">
-            <div class="container">
-                <div class="etapa-card etapa-1">
-                    <div class="etapa-header">
-                        <div class="etapa-numero">1</div>
-                        <h2>ETAPA 1: FUNDACIÓN</h2>
-                        <p>Infraestructura básica y primeros domos</p>
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="hero-content">
+            <div class="logo" style="justify-content: center; font-size: 3rem; margin-bottom: 2rem;">
+                El Recodo
+            </div>
+            <h1 class="hero-title">Plan Maestro El Recodo</h1>
+            <p class="hero-subtitle">3 FASES → 9 ETAPAS → 20 SUB-ETAPAS (2025-2035)</p>
+            <p class="hero-description">
+                <strong>FASES → ETAPAS → SUB-ETAPAS:</strong> De 1 empleado cortando leña a equipo según necesidades. 
+                Incluye aromáticas para gin, cebada cervecera, pozos, paneles solares. 
+                Crecimiento orgánico autofinanciado en 10 años.
+            </p>
+            
+            <div style="margin: 3rem 0;">
+                <a href="plan-maestro-completo.html" class="btn" style="margin: 0 1rem;">📊 Plan Maestro Completo</a>
+                <a href="#simulador" class="btn btn-secondary" style="margin: 0 1rem;">🧮 Calcular Rentabilidad</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://instagram.com/elrecodo" class="social-link" title="Instagram">📷</a>
+                <a href="https://facebook.com/elrecodo" class="social-link" title="Facebook">📘</a>
+                <a href="https://youtube.com/elrecodo" class="social-link" title="YouTube">📺</a>
+                <a href="mailto:info@elrecodo.com" class="social-link" title="Email">📧</a>
+                <a href="https://wa.me/5492664123456" class="social-link" title="WhatsApp">📱</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visión del Proyecto -->
+    <section id="vision" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 Nuestra Visión</h2>
+            
+            <div class="vision-section fade-in">
+                <p style="font-size: 1.3rem; text-align: center; color: #666; margin-bottom: 3rem;">
+                    <strong>El Recodo</strong> implementa un plan progresivo de 10 años dividido en 3 FASES principales. 
+                    Comenzamos con 1 empleado cortando leña, incorporamos personal según necesidades y fondos disponibles, 
+                    infraestructura solar, y culminamos con un equipo optimizado para complejo turístico líder.
+                </p>
+
+                <div class="vision-grid">
+                    <div class="vision-item">
+                        <span class="vision-icon">�</span>
+                        <h3>FASE I: RURAL (Años 1-3)</h3>
+                        <p>Leña → Alfalfa → Aromáticas gin → Cebada/lúpulo → Infraestructura (1 empleado)</p>
+                    </div>
+                    
+                    <div class="vision-item">
+                        <span class="vision-icon">�️</span>
+                        <h3>FASE II: TURISMO (Años 4-6)</h3>
+                        <p>2 Domos → 4 Domos → Gastronomía → Consolidación (2 empleados)</p>
+                    </div>
+                    
+                    <div class="vision-item">
+                        <span class="vision-icon">🌟</span>
+                        <h3>FASE III: INTEGRAL (Años 7-10)</h3>
+                        <p>3 Domos + Club House → 6 Domos + Club House → 8 Domos máximo (según necesidades)</p>
                     </div>
 
-                    <div class="inversion-box">
-                        <div class="metric">
-                            <span class="metric-value">$500M</span>
-                            <span class="metric-label">Inversión Inicial</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">12-18</span>
-                            <span class="metric-label">Meses</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">4</span>
-                            <span class="metric-label">Domos Premium</span>
-                        </div>
-                    </div>
-
-                    <div class="subetapas-grid">
-                        <div class="subetapa">
-                            <h4>🏗️ Subetapa 1A: Infraestructura</h4>
-                            <ul>
-                                <li>Acceso y caminos internos</li>
-                                <li>Servicios básicos (agua, electricidad)</li>
-                                <li>Sistema de tratamiento de efluentes</li>
-                                <li>Área de recepción y administración</li>
-                            </ul>
-                            <strong>Inversión: $200M</strong>
-                        </div>
-
-                        <div class="subetapa">
-                            <h4>🏡 Subetapa 1B: Primeros Domos</h4>
-                            <ul>
-                                <li>4 domos de 50m² c/u</li>
-                                <li>Equipamiento completo</li>
-                                <li>Decks y áreas exteriores</li>
-                                <li>Paisajismo básico</li>
-                            </ul>
-                            <strong>Inversión: $300M</strong>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="etapa-1.html" class="btn">📊 Ver Análisis Detallado Etapa 1</a>
+                    <div class="vision-item">
+                        <span class="vision-icon">📈</span>
+                        <h3>Autofinanciamiento Total</h3>
+                        <p>Cada fase financia la siguiente. De $18M/mes rurales a $58M/mes turísticos.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- ETAPA 2: EXPANSIÓN -->
-        <section id="etapa-2" class="section">
-            <div class="container">
-                <div class="etapa-card etapa-2">
-                    <div class="etapa-header">
-                        <div class="etapa-numero">2</div>
-                        <h2>ETAPA 2: EXPANSIÓN</h2>
-                        <p>Más domos y experiencias complementarias</p>
-                    </div>
-
-                    <div class="inversion-box">
-                        <div class="metric">
-                            <span class="metric-value">+$300M</span>
-                            <span class="metric-label">Inversión Adicional</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">8-12</span>
-                            <span class="metric-label">Meses</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">8</span>
-                            <span class="metric-label">Domos Total</span>
-                        </div>
-                    </div>
-
-                    <div class="subetapas-grid">
-                        <div class="subetapa">
-                            <h4>🏡 Subetapa 2A: Más Alojamiento</h4>
-                            <ul>
-                                <li>4 domos adicionales</li>
-                                <li>Mejoras en domos existentes</li>
-                                <li>Área de fogones común</li>
-                                <li>Senderos temáticos</li>
-                            </ul>
-                            <strong>Inversión: $200M</strong>
-                        </div>
-
-                        <div class="subetapa">
-                            <h4>🍷 Subetapa 2B: Experiencias</h4>
-                            <ul>
-                                <li>Área gastronómica</li>
-                                <li>Bodega y cava</li>
-                                <li>Zona de eventos</li>
-                                <li>Actividades rurales</li>
-                            </ul>
-                            <strong>Inversión: $100M</strong>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="etapa-2.html" class="btn">📊 Ver Análisis Detallado Etapa 2</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ETAPA 3: DIVERSIFICACIÓN -->
-        <section id="etapa-3" class="section">
-            <div class="container">
-                <div class="etapa-card etapa-3">
-                    <div class="etapa-header">
-                        <div class="etapa-numero">3</div>
-                        <h2>ETAPA 3: DIVERSIFICACIÓN</h2>
-                        <p>Complejo integral y servicios premium</p>
-                    </div>
-
-                    <div class="inversion-box">
-                        <div class="metric">
-                            <span class="metric-value">+$400M</span>
-                            <span class="metric-label">Inversión Adicional</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">12-18</span>
-                            <span class="metric-label">Meses</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">12</span>
-                            <span class="metric-label">Domos Total</span>
-                        </div>
-                    </div>
-
-                    <div class="subetapas-grid">
-                        <div class="subetapa">
-                            <h4>🏭 Subetapa 3A: Complejo Industrial</h4>
-                            <ul>
-                                <li>Nave multiuso dividida por áreas</li>
-                                <li>Procesamiento productos rurales</li>
-                                <li>Almacenamiento y logística</li>
-                                <li>Oficinas administrativas</li>
-                            </ul>
-                            <strong>Inversión: $250M</strong>
-                        </div>
-
-                        <div class="subetapa">
-                            <h4>🌟 Subetapa 3B: Premium Services</h4>
-                            <ul>
-                                <li>4 domos adicionales premium</li>
-                                <li>SPA y wellness</li>
-                                <li>Restaurante gourmet</li>
-                                <li>Centro de convenciones</li>
-                            </ul>
-                            <strong>Inversión: $150M</strong>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="etapa-3.html" class="btn">📊 Ver Análisis Detallado Etapa 3</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ETAPA 4: CONSOLIDACIÓN -->
-        <section id="etapa-4" class="section">
-            <div class="container">
-                <div class="etapa-card etapa-4">
-                    <div class="etapa-header">
-                        <div class="etapa-numero">4</div>
-                        <h2>ETAPA 4: CONSOLIDACIÓN</h2>
-                        <p>Optimización y máximo rendimiento</p>
-                    </div>
-
-                    <div class="inversion-box">
-                        <div class="metric">
-                            <span class="metric-value">+$600M</span>
-                            <span class="metric-label">Inversión Final</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">12-15</span>
-                            <span class="metric-label">Meses</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">100%</span>
-                            <span class="metric-label">Operativo</span>
-                        </div>
-                    </div>
-
-                    <div class="subetapas-grid">
-                        <div class="subetapa">
-                            <h4>🎯 Subetapa 4A: Optimización</h4>
-                            <ul>
-                                <li>Tecnología y automatización</li>
-                                <li>Sistemas de gestión integrados</li>
-                                <li>Marketing digital avanzado</li>
-                                <li>Certificaciones de calidad</li>
-                            </ul>
-                            <strong>Inversión: $300M</strong>
-                        </div>
-
-                        <div class="subetapa">
-                            <h4>🚀 Subetapa 4B: Escalamiento</h4>
-                            <ul>
-                                <li>Ampliación de capacidad</li>
-                                <li>Nuevos canales de distribución</li>
-                                <li>Alianzas estratégicas</li>
-                                <li>Preparación para expansión</li>
-                            </ul>
-                            <strong>Inversión: $300M</strong>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="etapa-4.html" class="btn">📊 Ver Análisis Detallado Etapa 4</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONSOLIDACIÓN DEL PROYECTO -->
-        <section id="consolidacion" class="section">
-            <div class="container">
-                <h2 class="section-title">🎯 Consolidación del Proyecto</h2>
+        <!-- Galería Visual del Proyecto -->
+        <div class="container">
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 3rem; border-radius: 20px; margin: 4rem 0;">
+                <h3 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem; font-size: 2rem;">📸 Visión del Proyecto</h3>
                 
-                <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin-bottom: 3rem;">
-                        <div>
-                            <h3 style="color: #2d5016; margin-bottom: 2rem;">📈 Resumen de Inversión Total</h3>
-                            <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
-                                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
-                                    <div style="text-align: center;">
-                                        <div style="font-size: 2rem; font-weight: bold; color: #28a745;">$500M</div>
-                                        <div style="color: #666;">Etapa 1</div>
-                                    </div>
-                                    <div style="text-align: center;">
-                                        <div style="font-size: 2rem; font-weight: bold; color: #007bff;">$300M</div>
-                                        <div style="color: #666;">Etapa 2</div>
-                                    </div>
-                                    <div style="text-align: center;">
-                                        <div style="font-size: 2rem; font-weight: bold; color: #ffc107;">$400M</div>
-                                        <div style="color: #666;">Etapa 3</div>
-                                    </div>
-                                    <div style="text-align: center;">
-                                        <div style="font-size: 2rem; font-weight: bold; color: #6f42c1;">$600M</div>
-                                        <div style="color: #666;">Etapa 4</div>
-                                    </div>
-                                </div>
-                                <div style="border-top: 2px solid #2d5016; padding-top: 1rem; text-align: center;">
-                                    <div style="font-size: 2.5rem; font-weight: bold; color: #2d5016;">$1.800M</div>
-                                    <div style="color: #666;">Inversión Total</div>
-                                </div>
-                            </div>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center;">
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌾 FASE I: Campo Productivo</h4>
+                        <div style="height: 200px; background: url('images/del-campo-a-la-copa.svg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <p style="margin-top: 1rem; color: #666;">Del campo a la copa - Producción aromáticas gin, cebada cervecera</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #007bff; margin-bottom: 1rem;">🏕️ FASE II: Domos Rurales</h4>
+                        <div style="height: 200px; background: url('images/domo 1.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <p style="margin-top: 1rem; color: #666;">Domos geodésicos reales - diseño y planificación</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 FASE III: Club House + Eventos</h4>
+                        <div style="height: 200px; background: url('images/club-house-domo-grande.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <p style="margin-top: 1rem; color: #666;">Club House central para eventos y actividades</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #6f42c1; margin-bottom: 1rem;">🌙 Experiencia Nocturna</h4>
+                        <div style="height: 200px; background: url('images/cielo nocturno.JPG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <p style="margin-top: 1rem; color: #666;">Cielos nocturnos únicos - turismo astronómico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div>
-                            <h3 style="color: #2d5016; margin-bottom: 2rem;">💰 Flujos y Dividendos por Etapa</h3>
-                            <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
-                                <div style="margin-bottom: 1rem;">
-                                    <strong>Etapa 1:</strong> Flujo inicial, reinversión 80%
-                                </div>
-                                <div style="margin-bottom: 1rem;">
-                                    <strong>Etapa 2:</strong> Crecimiento, dividendos limitados
-                                </div>
-                                <div style="margin-bottom: 1rem;">
-                                    <strong>Etapa 3:</strong> Diversificación, dividendos moderados
-                                </div>
-                                <div style="margin-bottom: 1rem;">
-                                    <strong>Etapa 4:</strong> Consolidación, dividendos plenos
-                                </div>
-                                <div style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 1rem; border-radius: 10px; text-align: center; margin-top: 1rem;">
-                                    <strong>Payback Total: 46.8 meses</strong>
-                                </div>
+    <!-- Plan de 4 Etapas -->
+    <section id="etapas" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">🚀 Resumen Plan Maestro 3 FASES</h2>
+            
+            <div class="etapas-container">
+                <!-- FASE I: ESTABLECIMIENTO RURAL -->
+                <div class="etapa-card etapa-1 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">I</div>
+                        <div class="etapa-info">
+                            <h3>FASE I: ESTABLECIMIENTO RURAL</h3>
+                            <p>Años 1-3: De 1 empleado a base productiva sólida</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">$650M</div>
+                            <div class="metric-label">Inversión Fase</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">3</div>
+                            <div class="metric-label">Etapas</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$18M</div>
+                            <div class="metric-label">Ingresos/Mes Final</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">1</div>
+                            <div class="metric-label">Empleado</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/actividades-rurales.jpg') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌲 Progresión Sub-etapas:</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div>
+                                <strong>1.1 - Inicio Operaciones:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>Explotación forestal (1 empleado solo)</li>
+                                    <li>Infraestructura básica (agua, luz)</li>
+                                    <li>Primera siembra alfalfa</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>1.2 - Consolidación:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>Expansión alfalfa 150ha</li>
+                                    <li><strong>Aromáticas gin:</strong> Enebro, cardamomo, cilantro</li>
+                                    <li><strong>Cebada/lúpulo:</strong> Variedades INTA</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>1.3 - Optimización:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li><strong>Paneles solares:</strong> 45kW + baterías</li>
+                                    <li><strong>Segundo pozo:</strong> 120m profundidad</li>
+                                    <li>Planta procesamiento + certificaciones</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div style="text-align: center;">
-                        <a href="simulador-completo.html" class="btn">🧮 Simulador Financiero Completo</a>
-                        <a href="plan-maestro.html" class="btn btn-info">📋 Plan Maestro Detallado</a>
+                        <a href="plan-maestro-completo.html#fase-1" class="btn">📊 Ver FASE I Completa</a>
+                    </div>
+                </div>
+
+                <!-- FASE II: TURISMO RURAL -->
+                <div class="etapa-card etapa-2 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">II</div>
+                        <div class="etapa-info">
+                            <h3>FASE II: TURISMO RURAL</h3>
+                            <p>Años 4-6: Incorporación gradual domos + experiencias (2 empleados)</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">$420M</div>
+                            <div class="metric-label">Inversión Adicional</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">3</div>
+                            <div class="metric-label">Etapas</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$31M</div>
+                            <div class="metric-label">Ingresos/Mes Final</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">2</div>
+                            <div class="metric-label">Empleados</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/domo 2.PNG') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <h4 style="color: #007bff; margin-bottom: 1rem;">🏡 Desarrollo Turístico:</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div>
+                                <strong>2.1 - Primeros Domos:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>2 domos geodésicos iniciales</li>
+                                    <li>Experiencias rurales básicas (2 empleados)</li>
+                                    <li>Configuración modular</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>2.2 - Expansión:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>4 domos operativos total</li>
+                                    <li>Servicios gastronómicos</li>
+                                    <li>Mix: 60% turismo + 40% corporativo</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>2.3 - Consolidación:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>Operación rentable estable</li>
+                                    <li>Marca posicionada en SL</li>
+                                    <li>Preparación para Fase III</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="plan-maestro-completo.html#fase-2" class="btn">📊 Ver FASE II Completa</a>
+                    </div>
+                </div>
+
+                <!-- FASE III: COMPLEJO INTEGRAL -->
+                <div class="etapa-card etapa-3 fade-in">
+                    <div class="etapa-header">
+                        <div class="etapa-numero">III</div>
+                        <div class="etapa-info">
+                            <h3>FASE III: COMPLEJO INTEGRAL</h3>
+                            <p>Años 7-10: Desarrollo completo hasta liderazgo (según necesidades)</p>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">$850M</div>
+                            <div class="metric-label">Inversión Final</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">3</div>
+                            <div class="metric-label">Etapas</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">$58M</div>
+                            <div class="metric-label">Ingresos/Mes Final</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">Flexible</div>
+                            <div class="metric-label">Personal</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/asado-estrellas.jpg') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 Operación Premium:</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div>
+                                <strong>3.1 - Expansión Mayor:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>8 domos operativos</li>
+                                    <li>Centro de eventos corporativos</li>
+                                    <li>Personal según demanda y fondos</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>3.2 - Desarrollo Completo:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>8 domos + Club House (configuración final)</li>
+                                    <li>Eventos en Club House</li>
+                                    <li>Productos propios integrados</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>3.3 - Liderazgo:</strong>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li>Referente nacional turismo rural</li>
+                                    <li>ROI 75% anual consolidado</li>
+                                    <li>$31M utilidad mensual</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="plan-maestro-completo.html#fase-3" class="btn">📊 Ver FASE III Completa</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- PLANES FUTUROS -->
-        <section id="planes-futuros" class="section">
-            <div class="container">
-                <h2 class="section-title">🚀 Planes Futuros</h2>
-                <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">
-                    Ideas y proyectos para después de la consolidación de las 4 etapas principales
-                </p>
-
-                <div class="planes-futuros">
-                    <h3 style="text-align: center; color: #2d5016; margin-bottom: 2rem;">
-                        💭 ¿Qué podríamos hacer después?
-                    </h3>
-
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        
-                        <div class="idea-card">
-                            <h4>🐎 Club Ecuestre</h4>
-                            <p>Pensionado de caballos, clases de equitación, polo, y eventos ecuestres. Aprovechando el campo natural.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Caballerizas premium</li>
-                                <li>Picadero cubierto</li>
-                                <li>Pistas de entrenamiento</li>
-                                <li>Eventos y competencias</li>
-                            </ul>
-                        </div>
-
-                        <div class="idea-card">
-                            <h4>🏘️ Desarrollo Residencial</h4>
-                            <p>Lotes familiares para construcción de casas de campo, con servicios y amenities compartidos.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Lotes de 2-5 hectáreas</li>
-                                <li>Club house común</li>
-                                <li>Acceso a todas las amenities</li>
-                                <li>Seguridad y mantenimiento</li>
-                            </ul>
-                        </div>
-
-                        <div class="idea-card">
-                            <h4>🍯 Diversificación Productiva</h4>
-                            <p>Proyectos adicionales que complementen la experiencia rural y generen ingresos extras.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Apicultura y miel orgánica</li>
-                                <li>Huerta orgánica</li>
-                                <li>Granja de aves y conejos</li>
-                                <li>Productos artesanales</li>
-                            </ul>
-                        </div>
-
-                        <div class="idea-card">
-                            <h4>🎪 Atracciones Turísticas</h4>
-                            <p>Experiencias únicas que atraigan más visitantes y generen ingresos adicionales.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Mirador panorámico</li>
-                                <li>Tirolesa y aventura</li>
-                                <li>Observatorio astronómico</li>
-                                <li>Museo rural interactivo</li>
-                            </ul>
-                        </div>
-
-                        <div class="idea-card">
-                            <h4>♻️ Sustentabilidad</h4>
-                            <p>Proyectos ecológicos que mejoren la eficiencia y la imagen del establecimiento.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Energía solar completa</li>
-                                <li>Reciclaje de aguas</li>
-                                <li>Biodigestores</li>
-                                <li>Permacultura</li>
-                            </ul>
-                        </div>
-
-                        <div class="idea-card">
-                            <h4>🚁 Tecnología Avanzada</h4>
-                            <p>Innovaciones tecnológicas para optimizar operaciones y crear nuevas experiencias.</p>
-                            <ul style="margin-top: 1rem; padding-left: 1rem;">
-                                <li>Drones para monitoreo</li>
-                                <li>Agricultura de precisión</li>
-                                <li>IoT para automatización</li>
-                                <li>Realidad virtual/aumentada</li>
-                            </ul>
-                        </div>
+            <!-- Resumen Financiero Total -->
+            <div class="vision-section fade-in" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white;">
+                <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">💰 Resumen Financiero Plan Maestro</h3>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">$1.920M</div>
+                        <div class="metric-label">Inversión Total 10 Años</div>
                     </div>
-
-                    <div style="background: #e3f2fd; padding: 2rem; border-radius: 15px; margin-top: 3rem; text-align: center;">
-                        <h4 style="color: #1976d2; margin-bottom: 1rem;">💡 ¿Tienes otras ideas?</h4>
-                        <p style="color: #333; margin-bottom: 1rem;">
-                            Estos son solo algunos ejemplos. El proyecto está diseñado para ser flexible y adaptarse a nuevas oportunidades.
-                        </p>
-                        <p style="color: #666; font-style: italic;">
-                            Una vez consolidadas las 4 etapas principales, se pueden evaluar estas y otras propuestas según el mercado y las oportunidades del momento.
-                        </p>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">120</div>
+                        <div class="metric-label">Meses Duración Total</div>
+                    </div>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">$58M</div>
+                        <div class="metric-label">Ingresos Mensuales Finales</div>
+                    </div>
+                    <div class="metric-card" style="background: rgba(255,255,255,0.1);">
+                        <div class="metric-value">75%</div>
+                        <div class="metric-label">ROI Anual Final</div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">🎯 EVOLUCIÓN CLAVE</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: left;">
+                        <div>
+                            <h5>Personal:</h5>
+                            <p>• Inicial: 1 empleado cortando leña</p>
+                            <p>• Progresivo: Según necesidades y fondos</p>
+                        </div>
+                        <div>
+                            <h5>Productos:</h5>
+                            <p>• Base: Leña + alfalfa tradicional</p>
+                            <p>• Premium: Gin + cerveza + turismo</p>
+                        </div>
+                        <div>
+                            <h5>Infraestructura:</h5>
+                            <p>• Inicial: Herramientas básicas</p>
+                            <p>• Final: Solar + pozos + domos</p>
+                        </div>
+                        <div>
+                            <h5>Mercados:</h5>
+                            <p>• Rural: Productos commodities</p>
+                            <p>• Premium: Turismo + corporativo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="plan-maestro-completo.html" class="btn" style="background: var(--accent-gold); color: var(--forest-green);">📋 Plan Maestro Detallado</a>
+                    <a href="#simulador" class="btn btn-secondary" style="margin-left: 1rem;">🧮 Simular Escenarios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador Financiero -->
+    <section id="simulador" class="section">
         <div class="container">
-            <h3>🌾 Establecimiento El Recodo</h3>
-            <p>"Turismo Rural Premium - Inversión Progresiva y Controlada"</p>
-            <p style="margin-top: 1rem; opacity: 0.8;">
-                📍 Ruta 15B Km 15,5 - Paraje El Recodo, San Luis, Argentina
-            </p>
+            <h2 class="section-title fade-in">🧮 Simulador Financiero</h2>
+            
+            <div class="simulador-container fade-in">
+                <h3 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem;">Calcula la Rentabilidad Según Diferentes Escenarios</h3>
+                
+                <div class="simulador-grid">
+                    <div class="input-group">
+                        <label for="ocupacion">Ocupación Promedio (%)</label>
+                        <input type="range" id="ocupacion" min="60" max="95" value="75" oninput="actualizarSimulador()">
+                        <div style="text-align: center; font-weight: bold; color: var(--primary-green);" id="ocupacion-valor">75%</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="precio-noche">Precio por Noche (ARS)</label>
+                        <input type="number" id="precio-noche" value="35000" min="25000" max="50000" oninput="actualizarSimulador()">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="temporada">Factor Estacional</label>
+                        <select id="temporada" onchange="actualizarSimulador()">
+                            <option value="1.0">Promedio Anual</option>
+                            <option value="1.25">Temporada Alta (Dic-Mar)</option>
+                            <option value="0.85">Temporada Media (Abr-Jul)</option>
+                            <option value="0.90">Temporada Baja (Ago-Nov)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="etapa-sim">Etapa a Simular</label>
+                        <select id="etapa-sim" onchange="actualizarSimulador()">
+                            <option value="2">Etapa 2 (4 domos)</option>
+                            <option value="3">Etapa 3 (6 domos + Club House)</option>
+                            <option value="4">Etapa 4 (8 domos + Club House)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="resultado-simulador">
+                    <h4 style="color: var(--primary-green); margin-bottom: 1rem;">📊 Resultados de la Simulación:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: var(--primary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="noches-mes">90</div>
+                            <div>Noches Ocupadas/Mes</div>
+                        </div>
+                        <div style="background: var(--secondary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-mes">$3.15M</div>
+                            <div>Ingresos Alojamiento/Mes</div>
+                        </div>
+                        <div style="background: var(--accent-gold); color: var(--forest-green); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-total">$4.2M</div>
+                            <div>Ingresos Totales/Mes</div>
+                        </div>
+                        <div style="background: var(--forest-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="margen-neto">$2.8M</div>
+                            <div>Margen Neto/Mes</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                        <p style="color: var(--primary-green); font-weight: bold; text-align: center;">
+                            💡 <span id="conclusion">Con estos parámetros, el proyecto genera un excelente retorno de inversión.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌾 Establecimiento El Recodo</h3>
+                    <p>Turismo Rural Premium en San Luis</p>
+                    <p>Plan de inversión progresivo en 4 etapas</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="https://instagram.com/elrecodo" class="social-link">📷</a>
+                        <a href="https://facebook.com/elrecodo" class="social-link">📘</a>
+                        <a href="mailto:info@elrecodo.com" class="social-link">📧</a>
+                        <a href="https://wa.me/5492664123456" class="social-link">📱</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>📍 Ubicación</h3>
+                    <p>Ruta 15B Km 15,5</p>
+                    <p>Paraje El Recodo</p>
+                    <p>San Luis, Argentina</p>
+                    <p>CP: 5730</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>📞 Contacto</h3>
+                    <p><a href="tel:+5492664123456">+54 9 266 4123456</a></p>
+                    <p><a href="mailto:info@elrecodo.com">info@elrecodo.com</a></p>
+                    <p><a href="mailto:inversiones@elrecodo.com">inversiones@elrecodo.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>🔗 Enlaces</h3>
+                    <p><a href="plan-maestro-completo.html">Plan Maestro Detallado</a></p>
+                    <p><a href="etapa-1-corregida.html">FASE I: Rural Detallada</a></p>
+                    <p><a href="etapa-2-corregida.html">FASE II: Turismo Detallada</a></p>
+                    <p><a href="#simulador">Simulador de Rentabilidad</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Establecimiento El Recodo. Todos los derechos reservados.</p>
+                <p>Plan de inversión turística rural | San Luis, Argentina</p>
+            </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        // Smooth scrolling para navegación
+        // Navegación sticky
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                nav.classList.add('visible');
+            } else {
+                nav.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll para navegación
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -687,18 +1126,82 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('visible');
                 }
             });
         }, observerOptions);
 
-        // Aplicar animaciones a las tarjetas de etapas
-        document.querySelectorAll('.etapa-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Simulador Financiero
+        function actualizarSimulador() {
+            const ocupacion = document.getElementById('ocupacion').value;
+            const precioNoche = document.getElementById('precio-noche').value;
+            const temporada = document.getElementById('temporada').value;
+            const etapa = document.getElementById('etapa-sim').value;
+            
+            // Actualizar valor mostrado de ocupación
+            document.getElementById('ocupacion-valor').textContent = ocupacion + '%';
+            
+            // Calcular número de domos según etapa (3=6 domos + club house, 4=8 domos + club house)
+            const domos = etapa == 2 ? 4 : (etapa == 3 ? 6 : 8);
+            
+            // Calcular noches máximas por mes (30 días)
+            const nochesMaximas = domos * 30;
+            const nochesOcupadas = Math.round(nochesMaximas * (ocupacion / 100));
+            
+            // Calcular ingresos base
+            const precioConTemporada = precioNoche * temporada;
+            const ingresosAlojamiento = nochesOcupadas * precioConTemporada;
+            
+            // Ingresos adicionales (servicios, comidas, actividades) - 35% promedio
+            const ingresosAdicionales = ingresosAlojamiento * 0.35;
+            const ingresosTotales = ingresosAlojamiento + ingresosAdicionales;
+            
+            // Costos operativos (35% de ingresos totales)
+            const costosOperativos = ingresosTotales * 0.35;
+            const margenNeto = ingresosTotales - costosOperativos;
+            
+            // Actualizar valores en pantalla
+            document.getElementById('noches-mes').textContent = nochesOcupadas.toLocaleString();
+            document.getElementById('ingresos-mes').textContent = '$' + (ingresosAlojamiento / 1000000).toFixed(1) + 'M';
+            document.getElementById('ingresos-total').textContent = '$' + (ingresosTotales / 1000000).toFixed(1) + 'M';
+            document.getElementById('margen-neto').textContent = '$' + (margenNeto / 1000000).toFixed(1) + 'M';
+            
+            // Actualizar conclusión
+            let conclusion = '';
+            if (ocupacion >= 80) {
+                conclusion = 'Excelente! Con esta ocupación el proyecto genera retornos excepcionales.';
+            } else if (ocupacion >= 70) {
+                conclusion = 'Muy bueno! Ocupación sólida que asegura rentabilidad atractiva.';
+            } else if (ocupacion >= 60) {
+                conclusion = 'Aceptable. Ocupación conservadora pero rentable.';
+            } else {
+                conclusion = 'Ocupación baja. Considera estrategias de marketing más agresivas.';
+            }
+            
+            document.getElementById('conclusion').textContent = conclusion;
+        }
+
+        // Inicializar simulador
+        document.addEventListener('DOMContentLoaded', function() {
+            actualizarSimulador();
+        });
+
+        // Mejorar interactividad
+        document.addEventListener('DOMContentLoaded', function() {
+            // Añadir efectos hover mejorados
+            const cards = document.querySelectorAll('.etapa-card, .vision-item, .metric-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
         });
     </script>
 </body>

@@ -140,54 +140,118 @@ const elementosFaltantes = {
             totalInversion: 100000000 // $100M
         },
         materiasPrimas: {
-            sobrantes: ["Alfalfa", "Maíz", "Sorgo forrajero", "Chauchas de algarrobo"],
+            // REALIDAD ACTUAL: Hectáreas disponibles limitadas
+            hectareasActuales: {
+                cultivable: 5, // 5ha cultivables actuales
+                pastoreo: 10,  // 10ha pastoreo
+                bosque: 1985   // resto bosque nativo
+            },
+            
+            // PLAN EXPERIMENTAL (Años 1-2)
+            experimental: {
+                alfalfa: { hectareas: 2, tonPorHa: 8, total: 16 }, // 16 ton/año
+                lavanda: { hectareas: 0.5, kgPorHa: 200, total: 100 }, // 100 kg/año (aromática + insecticida)
+                ginAromaticas: {
+                    enebro: { hectareas: 0.3, kgPorHa: 50, total: 15 }, // 15 kg/año
+                    cilantro: { hectareas: 0.2, kgPorHa: 800, total: 160 } // 160 kg/año
+                },
+                cebada: { hectareas: 2, tonPorHa: 2, total: 4 }, // 4 ton/año (experimental)
+                totalHectareasUsadas: 5 // Usando todas las hectáreas disponibles
+            },
+            
+            // PLAN DESMONTE (Años 3-4) - Requiere inversión y permisos
+            expansion: {
+                desmontePlanificado: 15, // 15ha adicionales desmonte sustentable
+                inversionDesmonte: 45000000, // $45M (desmonte + preparación + alambrado)
+                alambrado: {
+                    perimetral: 8000, // 8km perímetro total
+                    divisorio: 6000,  // 6km divisiones internas
+                    costoPorKm: 2800000, // $2.8M por km
+                    totalAlambrado: (8000 + 6000) * 2800000 / 1000 // $39.2M
+                },
+                proteccionCultivos: {
+                    alambradoAnimal: 4000000, // $4M protección específica cultivos
+                    sistemasRiego: 1800000    // $1.8M riego tecnificado
+                }
+            },
+            
+            // PRODUCCIÓN PROYECTADA POST-DESMONTE (Años 5+)
+            produccionFutura: {
+                alfalfa: { hectareas: 8, tonPorHa: 8, total: 64 }, // 64 ton/año
+                lavanda: { hectareas: 2, kgPorHa: 200, total: 400 }, // 400 kg/año
+                ginAromaticas: {
+                    enebro: { hectareas: 1, kgPorHa: 50, total: 50 }, // 50 kg/año
+                    cilantro: { hectareas: 1, kgPorHa: 800, total: 800 }, // 800 kg/año
+                    cardamomo: { hectareas: 0.5, kgPorHa: 100, total: 50 } // 50 kg/año
+                },
+                cebada: { hectareas: 5, tonPorHa: 2.5, total: 12.5 }, // 12.5 ton/año
+                pasturas: { hectareas: 2.5, mejoramiento: true }, // Pasturas mejoradas
+                totalHectareasUsadas: 20 // 5 actuales + 15 desmonte
+            },
+            
+            // DISPONIBILIDAD REALISTA PARA PELLETS
             disponibilidadAnual: {
-                alfalfa: 150, // toneladas
-                maiz: 200,
-                sorgo: 180,
-                algarroba: 120,
-                totalToneladas: 650 // toneladas anuales
+                // Solo sobrantes y subproductos
+                sobrantes: {
+                    alfalfa: 10, // 10 ton sobrantes (no todo va a pellets)
+                    cebada: 2,   // 2 ton subproductos
+                    algarroba: 8, // 8 ton recolección algarrobo nativo
+                    totalToneladas: 20 // 20 ton/año REALISTA
+                },
+                observacion: "Cantidades conservadoras - prioridad alimento animales y venta directa"
             }
         },
         ingresos: {
+            // INGRESOS REALISTAS basados en 20 toneladas anuales
             pellets: {
-                toneladasAnuales: 650 * 0.8, // 80% conversión
+                toneladasAnuales: 20 * 0.8, // 16 ton pellets/año (80% conversión)
                 precioPorTonelada: 380000, // $380K por tonelada
-                ventaExterna: 0.6, // 60% para venta, 40% uso propio
-                ingresosAnuales: (650 * 0.8) * 380000 * 0.6 // $118.56M anuales
+                ventaExterna: 0.5, // 50% para venta, 50% uso propio
+                ingresosAnuales: (20 * 0.8) * 380000 * 0.5 // $3.04M anuales
             },
             ahorroAlimento: {
-                reduccionCostos: 45000000 // $45M anuales en alimento
+                reduccionCostos: 3000000 // $3M anuales en alimento (realista)
             },
-            totalBeneficio: 118560000 + 45000000 // $163.56M anuales
+            aromáticasGin: {
+                lavanda: 400 * 15000, // 400kg × $15K/kg = $6M
+                enebro: 50 * 25000,   // 50kg × $25K/kg = $1.25M  
+                cilantro: 800 * 8000, // 800kg × $8K/kg = $6.4M
+                cardamomo: 50 * 35000, // 50kg × $35K/kg = $1.75M
+                totalAromaticas: (400 * 15000) + (50 * 25000) + (800 * 8000) + (50 * 35000) // $15.4M anuales
+            },
+            totalBeneficio: 3040000 + 3000000 + 15400000 // $21.44M anuales REALISTA
         }
     },
 
-    // CÁLCULO DE IMPACTO EN CRONOGRAMA
+    // CRONOGRAMA ACTUALIZADO CON DESMONTE Y CANTIDADES REALISTAS
     cronogramaActualizado: {
         2025: {
             inversionesOriginales: 9750000,
-            inversionesNuevas: 0,
+            inversionesNuevas: 0, // Solo experimental en hectáreas actuales
             totalInversiones: 9750000,
-            ingresosAdicionales: 0
+            ingresosAdicionales: 0,
+            observacion: "Fase experimental - 5ha disponibles"
         },
         2026: {
             inversionesOriginales: 30500000,
             inversionesNuevas: 110680000 + 239000000, // Domos + Edificio Industrial
             totalInversiones: 380180000,
-            ingresosAdicionales: 0 // Construcción
+            ingresosAdicionales: 0, // Construcción
+            observacion: "Construcción principal - mismas 5ha"
         },
         2027: {
             inversionesOriginales: 7000000,
-            inversionesNuevas: 53000000 + 100000000, // Club Ecuestre + Pellets
-            totalInversiones: 160000000,
-            ingresosAdicionales: 213000000 + 163560000 // Club + Pellets parcial
+            inversionesNuevas: 45000000 + 100000000, // Desmonte + Pellets (escala pequeña)
+            totalInversiones: 152000000,
+            ingresosAdicionales: 21440000, // Aromáticas + pellets realista
+            observacion: "Desmonte 15ha + alambrado + pellets pequeña escala"
         },
         2028: {
             inversionesOriginales: 2000000,
-            inversionesNuevas: 0,
-            totalInversiones: 2000000,
-            ingresosAdicionales: 402000000 + 213000000 + 163560000 // Todo operativo
+            inversionesNuevas: 53000000, // Club Ecuestre
+            totalInversiones: 55000000,
+            ingresosAdicionales: 213000000 + 21440000, // Club + pellets/aromáticas
+            observacion: "20ha productivas - club ecuestre operativo"
         }
     }
 };
@@ -280,14 +344,26 @@ console.log("\n3. 🏭 EDIFICIO INDUSTRIAL:");
 console.log(`   Inversión: $${(elementosFaltantes.edificioIndustrial.construccion.totalInversion/1000000).toFixed(1)}M`);
 console.log(`   Ingresos: $${(elementosFaltantes.edificioIndustrial.ingresos.totalAnual/1000000).toFixed(1)}M/año`);
 
-console.log("\n4. 🌾 PLANTA PELLETS:");
+console.log("\n4. 🌾 AROMÁTICAS + PELLETS (REALISTA):");
 console.log(`   Inversión: $${(elementosFaltantes.plantaPellets.equipamiento.totalInversion/1000000).toFixed(1)}M`);
 console.log(`   Beneficio: $${(elementosFaltantes.plantaPellets.ingresos.totalBeneficio/1000000).toFixed(1)}M/año`);
+console.log(`   📍 LIMITACIÓN: Solo 5ha actuales cultivables`);
+console.log(`   🚜 DESMONTE: $45M para 15ha adicionales (2027)`);
+console.log(`   🌿 LAVANDA: Aromática + insecticida natural`);
+console.log(`   🧱 ALAMBRADO: $39.2M protección cultivos`);
+
+console.log("\n5. 📏 REALIDAD HECTÁREAS:");
+console.log(`   Actuales cultivables: 5ha`);
+console.log(`   Desmonte planificado: 15ha (2027)`);
+console.log(`   Total futuro: 20ha cultivables`);
+console.log(`   Producción aromáticas: Lavanda, enebro, cilantro, cardamomo`);
+console.log(`   Pellets REALISTA: 20 ton/año (no 650 ton)`);
 
 console.log("\n=== MODELO FINANCIERO ACTUALIZADO ===");
 console.log(`Inversión total 4 años: $${(modeloCompleto.inversiones.total/1000000).toFixed(1)}M`);
 console.log(`Ingresos total 4 años: $${(modeloCompleto.ingresos.total/1000000).toFixed(1)}M`);
 console.log(`Nuevo payback: ${modeloCompleto.calcularPayback()}`);
+console.log(`⚠️  AJUSTADO A HECTÁREAS REALES DISPONIBLES`);
 
 console.log("\n=== PARTICIPANTES AMPLIADO (Ejemplo) ===");
 console.log(`Total inversión: $${(totalInversion/1000000).toFixed(1)}M`);
