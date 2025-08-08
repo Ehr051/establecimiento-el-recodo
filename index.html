@@ -1129,11 +1129,121 @@
                         <strong>📈 ROI desmonte:</strong> <span id="roi-desmonte">-</span>
                     </div>
                 </div>
+
+                <!-- Controles de Hectáreas Dinámicos -->
+                <div style="background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 2rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #28a745;">
+                    <h4 style="color: #2d5016; margin-bottom: 1.5rem; text-align: center;">📐 Control Dinámico de Hectáreas</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        
+                        <div style="text-align: center; background: rgba(255,255,255,0.9); padding: 1.2rem; border-radius: 10px;">
+                            <h5 style="color: #28a745; margin-bottom: 0.8rem;">🌿 Alfalfa</h5>
+                            <div style="margin-bottom: 1rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
+                                    Hectáreas: <span id="alfalfa-ha-display" style="color: #28a745; font-weight: bold;">8</span>
+                                </label>
+                                <input type="range" id="alfalfa-hectareas" min="4" max="30" value="8" step="1" 
+                                       style="width: 100%; margin-bottom: 0.5rem;" 
+                                       onchange="actualizarHectareas('alfalfa')" oninput="actualizarHectareas('alfalfa')">
+                                <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
+                                    <strong>INTA:</strong> Monarca<br>
+                                    <strong>Época:</strong> Dic-Ene (Perenne)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; background: rgba(255,255,255,0.9); padding: 1.2rem; border-radius: 10px;">
+                            <h5 style="color: #f57c00; margin-bottom: 0.8rem;">🌾 Cebada</h5>
+                            <div style="margin-bottom: 1rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
+                                    Hectáreas: <span id="cebada-ha-display" style="color: #f57c00; font-weight: bold;">3</span>
+                                </label>
+                                <input type="range" id="cebada-hectareas" min="2" max="8" value="3" step="1" 
+                                       style="width: 100%; margin-bottom: 0.5rem;" 
+                                       onchange="actualizarHectareas('cebada')" oninput="actualizarHectareas('cebada')">
+                                <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
+                                    <strong>INTA:</strong> Scarlett cervecera<br>
+                                    <strong>Época:</strong> May-Jun (Invierno)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; background: rgba(255,255,255,0.9); padding: 1.2rem; border-radius: 10px;">
+                            <h5 style="color: #e65100; margin-bottom: 0.8rem;">🌽 Maíz</h5>
+                            <div style="margin-bottom: 1rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
+                                    Hectáreas: <span id="maiz-ha-display" style="color: #e65100; font-weight: bold;">3</span>
+                                </label>
+                                <input type="range" id="maiz-hectareas" min="2" max="7" value="3" step="1" 
+                                       style="width: 100%; margin-bottom: 0.5rem;" 
+                                       onchange="actualizarHectareas('maiz')" oninput="actualizarHectareas('maiz')">
+                                <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
+                                    <strong>INTA:</strong> DK692 Dekalb<br>
+                                    <strong>Época:</strong> Oct-Nov (Verano)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; background: rgba(255,255,255,0.9); padding: 1.2rem; border-radius: 10px;">
+                            <h5 style="color: #4a148c; margin-bottom: 0.8rem;">🌾 Sorgo</h5>
+                            <div style="margin-bottom: 1rem;">
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
+                                    Hectáreas: <span id="sorgo-ha-display" style="color: #4a148c; font-weight: bold;">2</span>
+                                </label>
+                                <input type="range" id="sorgo-hectareas" min="1" max="5" value="2" step="1" 
+                                       style="width: 100%; margin-bottom: 0.5rem;" 
+                                       onchange="actualizarHectareas('sorgo')" oninput="actualizarHectareas('sorgo')">
+                                <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
+                                    <strong>INTA:</strong> Silo King granífero<br>
+                                    <strong>Época:</strong> Nov-Dic (Verano tardío)
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Resumen de Hectáreas y Rotación -->
+                    <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
+                        <div style="text-align: center; margin-bottom: 1rem;">
+                            <strong style="font-size: 1.1rem; color: #2d5016;">
+                                📊 Total Cultivado: <span id="total-hectareas" style="color: #28a745;">16</span> hectáreas
+                            </strong>
+                            <div style="font-size: 0.9rem; margin-top: 0.5rem; color: #666;">
+                                Disponibles para expansión: <span id="hectareas-disponibles" style="font-weight: bold;">0</span> ha
+                            </div>
+                        </div>
+                        
+                        <!-- Calendario Estacional -->
+                        <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); padding: 1.2rem; border-radius: 8px;">
+                            <h6 style="color: #1565c0; margin-bottom: 0.8rem; text-align: center;">📅 Rotación Estacional Optimizada</h6>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.8rem;">
+                                <div style="background: rgba(255,255,255,0.8); padding: 0.6rem; border-radius: 6px; text-align: center; font-size: 0.85rem;">
+                                    <strong style="color: #2e7d32;">🌿 Alfalfa</strong><br>
+                                    Dic-Ene • Perenne
+                                </div>
+                                <div style="background: rgba(255,255,255,0.8); padding: 0.6rem; border-radius: 6px; text-align: center; font-size: 0.85rem;">
+                                    <strong style="color: #f57c00;">🌾 Cebada</strong><br>
+                                    May-Jun • Invierno
+                                </div>
+                                <div style="background: rgba(255,255,255,0.8); padding: 0.6rem; border-radius: 6px; text-align: center; font-size: 0.85rem;">
+                                    <strong style="color: #e65100;">🌽 Maíz</strong><br>
+                                    Oct-Nov • Verano
+                                </div>
+                                <div style="background: rgba(255,255,255,0.8); padding: 0.6rem; border-radius: 6px; text-align: center; font-size: 0.85rem;">
+                                    <strong style="color: #4a148c;">🌾 Sorgo</strong><br>
+                                    Nov-Dic • V.Tardío
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin-top: 0.8rem; font-size: 0.8rem; color: #1565c0;">
+                                💡 <strong>Aprovecha las mismas hectáreas:</strong> Siembras de verano e invierno permiten doble uso del suelo
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Controles de Simulación -->
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                     <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
-                        <h4 id="titulo-alfalfa" style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (8 ha iniciales)</h4>
+                        <h4 id="titulo-alfalfa" style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (<span id="alfalfa-superficie">8</span> ha)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">50% - Sequía severa</option>
@@ -1148,7 +1258,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff8e1, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #ffc107;">
-                        <h4 id="titulo-cebada" style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (3 ha iniciales)</h4>
+                        <h4 id="titulo-cebada" style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (<span id="cebada-superficie">3</span> ha)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="cebada-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">40% - Granizo/helada</option>
@@ -1163,7 +1273,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff3e0, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #fd7e14;">
-                        <h4 id="titulo-maiz" style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha rotación)</h4>
+                        <h4 id="titulo-maiz" style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (<span id="maiz-superficie">3</span> ha)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="maiz-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">30% - Sequía/plaga</option>
@@ -1178,7 +1288,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #f3e5f5, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #6f42c1;">
-                        <h4 id="titulo-sorgo" style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2 ha sequía)</h4>
+                        <h4 id="titulo-sorgo" style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (<span id="sorgo-superficie">2</span> ha)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="sorgo-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">60% - Condiciones adversas</option>
@@ -1192,27 +1302,81 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Análisis de Rentabilidad y Recomendaciones -->
+                <div style="background: linear-gradient(135deg, #fff9c4, #fff59d); padding: 2rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #ffa000;">
+                    <h4 style="color: #e65100; text-align: center; margin-bottom: 1.5rem;">💡 Análisis Inteligente de Rentabilidad</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        
+                        <!-- Rentabilidad por Cultivo -->
+                        <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 10px;">
+                            <h5 style="color: #e65100; margin-bottom: 1rem; text-align: center;">📊 Rentabilidad por Hectárea</h5>
+                            <div id="rentabilidad-ranking" style="font-size: 0.9rem;">
+                                <!-- Se llenará dinámicamente -->
+                            </div>
+                        </div>
+
+                        <!-- Recomendaciones INTA -->
+                        <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 10px;">
+                            <h5 style="color: #e65100; margin-bottom: 1rem; text-align: center;">🎯 Recomendaciones INTA</h5>
+                            <div id="recomendaciones-inta" style="font-size: 0.9rem;">
+                                <!-- Se llenará dinámicamente -->
+                            </div>
+                        </div>
+
+                        <!-- Optimización Estacional -->
+                        <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 10px;">
+                            <h5 style="color: #e65100; margin-bottom: 1rem; text-align: center;">⏰ Optimización Temporal</h5>
+                            <div id="optimizacion-estacional" style="font-size: 0.9rem;">
+                                <!-- Se llenará dinámicamente -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 
                 <!-- Resultado Total -->
                 <div id="resultado-total-cultivos" style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
                     <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">💰 Resultado Total de Cultivos</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                         <div>
-                            <div id="total-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$27.314.000</div>
-                            <div style="font-size: 1.1rem; opacity: 0.9;">Ingresos Totales Cultivos</div>
+                            <div id="total-cultivos" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$3.440.000</div>
+                            <div style="font-size: 1rem; opacity: 0.9;">Ingresos Totales</div>
                         </div>
                         <div>
-                            <div id="variacion-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$0</div>
-                            <div style="font-size: 1.1rem; opacity: 0.9;">Variación vs Base</div>
+                            <div id="variacion-cultivos" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$0</div>
+                            <div style="font-size: 1rem; opacity: 0.9;">Variación vs Base</div>
                         </div>
                         <div>
-                            <div id="total-hermano-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$6.828.500</div>
-                            <div style="font-size: 1.1rem; opacity: 0.9;">Por Hermano</div>
+                            <div id="total-hermano-cultivos" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$860.000</div>
+                            <div style="font-size: 1rem; opacity: 0.9;">Por Hermano</div>
+                        </div>
+                        <div>
+                            <div id="promedio-hectarea" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$215.000</div>
+                            <div style="font-size: 1rem; opacity: 0.9;">Promedio/Ha</div>
+                        </div>
+                        <div>
+                            <div id="roi-total-display" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">-</div>
+                            <div style="font-size: 1rem; opacity: 0.9;">ROI Desmonte</div>
                         </div>
                     </div>
                     <div id="escenario-descripcion" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
                         <h4 style="margin-bottom: 1rem;">📊 Escenario Actual: Condiciones Normales</h4>
                         <p style="margin: 0; opacity: 0.9;">Los cultivos generan ingresos base bajo condiciones climáticas normales</p>
+                        
+                        <!-- Botones de Acción -->
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <button onclick="exportarResultados()" style="background: #28a745; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                                📊 Exportar Resultados
+                            </button>
+                            <button onclick="reiniciarSimulador()" style="background: #6c757d; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                                🔄 Reiniciar
+                            </button>
+                            <button onclick="optimizarAutomaticamente()" style="background: #007bff; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                                🎯 Auto-Optimizar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -1486,52 +1650,129 @@
             }
         };
 
+        // CALENDARIO AGRÍCOLA SAN LUIS - INTA Recomendado
+        const calendarioAgricola = {
+            alfalfa: { epoca: "Dic-Ene", ciclo: "perenne", variedad: "Monarca INTA", temporada: "establecimiento" },
+            cebada: { epoca: "May-Jun", ciclo: "anual", variedad: "Scarlett cervecera", temporada: "invierno" },
+            maiz: { epoca: "Oct-Nov", ciclo: "anual", variedad: "DK692 Dekalb", temporada: "verano" },
+            sorgo: { epoca: "Nov-Dic", ciclo: "anual", variedad: "Silo King granífero", temporada: "verano_tardio" }
+        };
+
         const rendimientosCultivos = {
             alfalfa: {
                 superficie: 8,
-                rendimientoBase: 50000,
+                rendimientoBase: 50000, // Corregido: $50k/ha más realista
+                hectareasMax: 30,
                 escenarios: {
                     pesimo: { factor: 0.5, descripcion: "50% - Sequía severa" },
                     malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
                     normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
                     bueno: { factor: 1.2, descripcion: "120% - Condiciones favorables" },
                     excelente: { factor: 1.5, descripcion: "150% - Año excepcional" }
-                }
+                },
+                calendario: calendarioAgricola.alfalfa
             },
             cebada: {
                 superficie: 3,
-                rendimientoBase: 2800000,
+                rendimientoBase: 380000, // Corregido: precio cervecera premium
+                hectareasMax: 8,
                 escenarios: {
                     pesimo: { factor: 0.4, descripcion: "40% - Granizo/helada" },
                     malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
                     normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
                     bueno: { factor: 1.3, descripcion: "130% - Condiciones favorables" },
                     excelente: { factor: 1.6, descripcion: "160% - Año excepcional" }
-                }
+                },
+                calendario: calendarioAgricola.cebada
             },
             maiz: {
                 superficie: 3,
-                rendimientoBase: 3150000,
+                rendimientoBase: 420000, // Corregido: doble propósito realista
+                hectareasMax: 7,
                 escenarios: {
                     pesimo: { factor: 0.3, descripcion: "30% - Sequía/plaga" },
                     malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
                     normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
                     bueno: { factor: 1.4, descripcion: "140% - Condiciones favorables" },
                     excelente: { factor: 1.8, descripcion: "180% - Año excepcional" }
-                }
+                },
+                calendario: calendarioAgricola.maiz
             },
             sorgo: {
                 superficie: 2,
-                rendimientoBase: 1943243,
+                rendimientoBase: 320000, // Corregido: resistente sequía
+                hectareasMax: 5,
                 escenarios: {
                     pesimo: { factor: 0.6, descripcion: "60% - Condiciones adversas" },
                     malo: { factor: 0.8, descripcion: "80% - Condiciones adversas" },
                     normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
                     bueno: { factor: 1.2, descripcion: "120% - Condiciones favorables" },
                     excelente: { factor: 1.4, descripcion: "140% - Año excepcional" }
-                }
+                },
+                calendario: calendarioAgricola.sorgo
             }
         };
+        
+        function actualizarHectareas(cultivo) {
+            const valorSlider = document.getElementById(cultivo + '-hectareas').value;
+            const superficie = parseInt(valorSlider);
+            
+            // Actualizar el objeto de rendimientos
+            rendimientosCultivos[cultivo].superficie = superficie;
+            
+            // Actualizar displays
+            document.getElementById(cultivo + '-ha-display').textContent = superficie;
+            document.getElementById(cultivo + '-superficie').textContent = superficie;
+            
+            // Calcular total de hectáreas
+            const totalHectareas = Object.values(rendimientosCultivos).reduce((sum, cultivo) => sum + cultivo.superficie, 0);
+            document.getElementById('total-hectareas').textContent = totalHectareas;
+            
+            // Calcular hectáreas disponibles para expansión (basado en escenario de desmonte actual)
+            const escenarioActual = document.getElementById('escenario-desmonte').value;
+            let hectareasMaximas = 16; // Conservador por defecto
+            if (escenarioActual === 'moderado') hectareasMaximas = 30;
+            if (escenarioActual === 'agresivo') hectareasMaximas = 50;
+            
+            const hectareasDisponibles = Math.max(0, hectareasMaximas - totalHectareas);
+            document.getElementById('hectareas-disponibles').textContent = hectareasDisponibles;
+            
+            // Actualizar simulación
+            actualizarSimulacionCultivos();
+        }
+
+        function mostrarCalendarioEstacional() {
+            return `
+                <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                    <h5 style="color: #1565c0; margin-bottom: 1rem; text-align: center;">📅 Calendario Estacional (INTA San Luis)</h5>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: rgba(255,255,255,0.8); padding: 0.8rem; border-radius: 8px; text-align: center;">
+                            <strong style="color: #2e7d32;">🌿 Alfalfa</strong><br>
+                            <span style="font-size: 0.9rem;">Dic-Ene • Perenne</span><br>
+                            <span style="font-size: 0.8rem; color: #666;">Variedad: Monarca INTA</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.8); padding: 0.8rem; border-radius: 8px; text-align: center;">
+                            <strong style="color: #f57c00;">🌾 Cebada</strong><br>
+                            <span style="font-size: 0.9rem;">May-Jun • Invierno</span><br>
+                            <span style="font-size: 0.8rem; color: #666;">Variedad: Scarlett cervecera</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.8); padding: 0.8rem; border-radius: 8px; text-align: center;">
+                            <strong style="color: #e65100;">🌽 Maíz</strong><br>
+                            <span style="font-size: 0.9rem;">Oct-Nov • Verano</span><br>
+                            <span style="font-size: 0.8rem; color: #666;">Variedad: DK692 Dekalb</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.8); padding: 0.8rem; border-radius: 8px; text-align: center;">
+                            <strong style="color: #4a148c;">🌾 Sorgo</strong><br>
+                            <span style="font-size: 0.9rem;">Nov-Dic • Verano tardío</span><br>
+                            <span style="font-size: 0.8rem; color: #666;">Variedad: Silo King</span>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: #1565c0;">
+                        💡 <strong>Rotación optimizada:</strong> Aprovecha las mismas hectáreas con siembras de verano e invierno
+                    </div>
+                </div>
+            `;
+        }
         
         function calcularRendimiento(cultivo, escenario) {
             const datos = rendimientosCultivos[cultivo];
@@ -1544,7 +1785,8 @@
                 factor: factor,
                 descripcion: datos.escenarios[escenario].descripcion,
                 ingresoTotal: Math.round(ingresoTotal),
-                ingresoPorHa: Math.round(datos.rendimientoBase * factor)
+                ingresoPorHa: Math.round(datos.rendimientoBase * factor),
+                calendario: datos.calendario
             };
         }
         
@@ -1567,11 +1809,39 @@
             rendimientosCultivos.maiz.superficie = datos.maiz.superficie;
             rendimientosCultivos.sorgo.superficie = datos.sorgo.superficie;
             
-            // Actualizar títulos de las tarjetas
-            document.getElementById('titulo-alfalfa').innerHTML = `🌿 Alfalfa (${datos.alfalfa.superficie} ha)`;
-            document.getElementById('titulo-cebada').innerHTML = `🌾 Cebada (${datos.cebada.superficie} ha)`;
-            document.getElementById('titulo-maiz').innerHTML = `🌽 Maíz (${datos.maiz.superficie} ha)`;
-            document.getElementById('titulo-sorgo').innerHTML = `🌾 Sorgo (${datos.sorgo.superficie} ha)`;
+            // Actualizar controles deslizadores y displays
+            document.getElementById('alfalfa-hectareas').value = datos.alfalfa.superficie;
+            document.getElementById('cebada-hectareas').value = datos.cebada.superficie;
+            document.getElementById('maiz-hectareas').value = datos.maiz.superficie;
+            document.getElementById('sorgo-hectareas').value = datos.sorgo.superficie;
+            
+            document.getElementById('alfalfa-ha-display').textContent = datos.alfalfa.superficie;
+            document.getElementById('cebada-ha-display').textContent = datos.cebada.superficie;
+            document.getElementById('maiz-ha-display').textContent = datos.maiz.superficie;
+            document.getElementById('sorgo-ha-display').textContent = datos.sorgo.superficie;
+            
+            // Actualizar títulos de las tarjetas y superficies
+            document.getElementById('alfalfa-superficie').textContent = datos.alfalfa.superficie;
+            document.getElementById('cebada-superficie').textContent = datos.cebada.superficie;
+            document.getElementById('maiz-superficie').textContent = datos.maiz.superficie;
+            document.getElementById('sorgo-superficie').textContent = datos.sorgo.superficie;
+            
+            // Calcular y mostrar total de hectáreas
+            const totalHectareas = datos.alfalfa.superficie + datos.cebada.superficie + datos.maiz.superficie + datos.sorgo.superficie;
+            document.getElementById('total-hectareas').textContent = totalHectareas;
+            
+            // Calcular hectáreas disponibles para expansión
+            let hectareasMaximas = 16;
+            if (escenario === 'moderado') hectareasMaximas = 30;
+            if (escenario === 'agresivo') hectareasMaximas = 50;
+            const hectareasDisponibles = Math.max(0, hectareasMaximas - totalHectareas);
+            document.getElementById('hectareas-disponibles').textContent = hectareasDisponibles;
+            
+            // Actualizar límites máximos de los sliders según el escenario
+            document.getElementById('alfalfa-hectareas').max = escenario === 'conservador' ? 15 : (escenario === 'moderado' ? 25 : 30);
+            document.getElementById('cebada-hectareas').max = escenario === 'conservador' ? 5 : 8;
+            document.getElementById('maiz-hectareas').max = escenario === 'conservador' ? 4 : 7;
+            document.getElementById('sorgo-hectareas').max = escenario === 'conservador' ? 3 : 5;
             
             // Actualizar info de costos
             document.getElementById('costo-desmonte').textContent = formatearNumero(datos.costoDesmonte);
@@ -1605,6 +1875,86 @@
             return ingresoAdicional;
         }
         
+        function generarAnalisisInteligente() {
+            // Calcular rentabilidad por hectárea para cada cultivo
+            const rentabilidadCultivos = [];
+            
+            Object.keys(rendimientosCultivos).forEach(cultivo => {
+                const escenario = document.getElementById(cultivo + '-select').value;
+                const resultado = calcularRendimiento(cultivo, escenario);
+                rentabilidadCultivos.push({
+                    nombre: cultivo,
+                    rentabilidadHa: resultado.ingresoPorHa,
+                    superficie: resultado.superficie,
+                    escenario: escenario,
+                    factor: resultado.factor,
+                    calendario: resultado.calendario
+                });
+            });
+
+            // Ordenar por rentabilidad
+            rentabilidadCultivos.sort((a, b) => b.rentabilidadHa - a.rentabilidadHa);
+
+            // Generar ranking de rentabilidad
+            let rankingHtml = '';
+            rentabilidadCultivos.forEach((cultivo, index) => {
+                const emoji = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '📊';
+                const color = index === 0 ? '#ffa000' : index === 1 ? '#757575' : index === 2 ? '#8d6e63' : '#9e9e9e';
+                
+                rankingHtml += `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; margin-bottom: 0.5rem; background: rgba(255,255,255,0.5); border-radius: 6px;">
+                        <span style="color: ${color}; font-weight: bold;">${emoji} ${cultivo.nombre.charAt(0).toUpperCase() + cultivo.nombre.slice(1)}</span>
+                        <span style="font-weight: bold; color: #2d5016;">$${formatearNumero(cultivo.rentabilidadHa)}/ha</span>
+                    </div>
+                `;
+            });
+            document.getElementById('rentabilidad-ranking').innerHTML = rankingHtml;
+
+            // Generar recomendaciones INTA
+            let recomendacionesHtml = '';
+            
+            if (rentabilidadCultivos[0].nombre === 'cebada') {
+                recomendacionesHtml += '<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(76,175,80,0.1); border-radius: 4px;">✅ <strong>Excelente:</strong> Cebada cervecera es altamente rentable para hermano cervecero</div>';
+            }
+            
+            if (rentabilidadCultivos[0].nombre === 'alfalfa') {
+                recomendacionesHtml += '<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(76,175,80,0.1); border-radius: 4px;">✅ <strong>Excelente:</strong> Alfalfa perenne asegura ingresos estables 5-7 años</div>';
+            }
+
+            // Recomendación de diversificación
+            const cultivosVulnerables = rentabilidadCultivos.filter(c => c.factor < 0.8);
+            if (cultivosVulnerables.length > 0) {
+                recomendacionesHtml += '<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(255,193,7,0.1); border-radius: 4px;">⚠️ <strong>Atención:</strong> Diversificar riesgos climáticos</div>';
+            }
+
+            // Recomendación estacional
+            recomendacionesHtml += '<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(33,150,243,0.1); border-radius: 4px;">💡 <strong>INTA:</strong> Rotación cebada (invierno) + maíz/sorgo (verano) optimiza suelo</div>';
+            
+            document.getElementById('recomendaciones-inta').innerHTML = recomendacionesHtml;
+
+            // Generar optimización estacional
+            let optimizacionHtml = '';
+            
+            // Analizar solapamiento temporal
+            const cultivosVerano = rentabilidadCultivos.filter(c => c.calendario && (c.calendario.temporada === 'verano' || c.calendario.temporada === 'verano_tardio'));
+            const cultivosInvierno = rentabilidadCultivos.filter(c => c.calendario && c.calendario.temporada === 'invierno');
+            
+            if (cultivosVerano.length > 0 && cultivosInvierno.length > 0) {
+                optimizacionHtml += '<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(76,175,80,0.1); border-radius: 4px;">🔄 <strong>Rotación Óptima:</strong> Mismas hectáreas, doble uso anual</div>';
+            }
+
+            const totalHectareas = rentabilidadCultivos.reduce((sum, c) => sum + c.superficie, 0);
+            optimizacionHtml += `<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(33,150,243,0.1); border-radius: 4px;">📊 <strong>Eficiencia:</strong> ${totalHectareas} ha generan $${formatearNumero(Math.round(rentabilidadCultivos.reduce((sum, c) => sum + (c.rentabilidadHa * c.superficie), 0) / totalHectareas))}/ha promedio</div>`;
+            
+            // Sugerencia de mejora
+            const cultivoMenosRentable = rentabilidadCultivos[rentabilidadCultivos.length - 1];
+            if (cultivoMenosRentable.factor < 1.0) {
+                optimizacionHtml += `<div style="margin-bottom: 0.8rem; padding: 0.5rem; background: rgba(255,193,7,0.1); border-radius: 4px;">💡 <strong>Mejora:</strong> ${cultivoMenosRentable.nombre} en condiciones adversas - considerar ajustar superficie</div>`;
+            }
+            
+            document.getElementById('optimizacion-estacional').innerHTML = optimizacionHtml;
+        }
+
         function actualizarSimulacionCultivos() {
             // Obtener valores seleccionados
             const alfalfaEscenario = document.getElementById('alfalfa-select').value;
@@ -1626,14 +1976,30 @@
             
             // Calcular totales
             const totalCultivos = alfalfaResult.ingresoTotal + cebadaResult.ingresoTotal + maizResult.ingresoTotal + sorgoResult.ingresoTotal;
-            const totalBase = 22136486; // Base actual: 8+3+3+2 ha
+            const totalBase = (8 * 50000) + (3 * 380000) + (3 * 420000) + (2 * 320000); // Base conservador
             const variacion = totalCultivos - totalBase;
             const totalPorHermano = totalCultivos / 4;
+            const totalHectareas = alfalfaResult.superficie + cebadaResult.superficie + maizResult.superficie + sorgoResult.superficie;
+            const promedioHectarea = Math.round(totalCultivos / totalHectareas);
             
             // Actualizar totales
             document.getElementById('total-cultivos').innerHTML = formatearNumero(totalCultivos);
             document.getElementById('variacion-cultivos').innerHTML = (variacion >= 0 ? '+' : '') + formatearNumero(variacion);
             document.getElementById('total-hermano-cultivos').innerHTML = formatearNumero(totalPorHermano);
+            document.getElementById('promedio-hectarea').innerHTML = formatearNumero(promedioHectarea);
+            
+            // Actualizar ROI de desmonte
+            const escenarioDesmonte = document.getElementById('escenario-desmonte').value;
+            const datosDesmonte = escenariosBase[escenarioDesmonte];
+            if (datosDesmonte.costoDesmonte > 0) {
+                const roiDesmonte = ((totalCultivos / datosDesmonte.costoDesmonte) * 100).toFixed(1);
+                document.getElementById('roi-total-display').innerHTML = roiDesmonte + '%';
+            } else {
+                document.getElementById('roi-total-display').innerHTML = '-';
+            }
+
+            // Generar análisis inteligente
+            generarAnalisisInteligente();
             
             // Actualizar descripción del escenario
             const escenarios = [alfalfaEscenario, cebadaEscenario, maizEscenario, sorgoEscenario];
@@ -1699,6 +2065,123 @@
             
             // Actualizar color de fondo
             document.getElementById('resultado-total-cultivos').style.background = `linear-gradient(135deg, ${colorFondo}, ${colorFondo}dd)`;
+        }
+
+        // Funciones de utilidad adicionales
+        function exportarResultados() {
+            const fecha = new Date().toLocaleDateString('es-AR');
+            const totalCultivos = document.getElementById('total-cultivos').textContent;
+            const totalHermano = document.getElementById('total-hermano-cultivos').textContent;
+            const promedioHa = document.getElementById('promedio-hectarea').textContent;
+            const roiDesmonte = document.getElementById('roi-total-display').textContent;
+            
+            const configuracion = {
+                alfalfa: `${document.getElementById('alfalfa-ha-display').textContent} ha - ${document.getElementById('alfalfa-select').value}`,
+                cebada: `${document.getElementById('cebada-ha-display').textContent} ha - ${document.getElementById('cebada-select').value}`,
+                maiz: `${document.getElementById('maiz-ha-display').textContent} ha - ${document.getElementById('maiz-select').value}`,
+                sorgo: `${document.getElementById('sorgo-ha-display').textContent} ha - ${document.getElementById('sorgo-select').value}`,
+                escenarioDesmonte: document.getElementById('escenario-desmonte').value
+            };
+            
+            const resumen = `
+🌾 SIMULACIÓN EL RECODO - ${fecha}
+
+📊 RESULTADOS FINANCIEROS:
+• Ingreso Total: ${totalCultivos}
+• Por Hermano: ${totalHermano}
+• Promedio/Ha: ${promedioHa}
+• ROI Desmonte: ${roiDesmonte}
+
+🚜 CONFIGURACIÓN:
+• Alfalfa: ${configuracion.alfalfa}
+• Cebada: ${configuracion.cebada}
+• Maíz: ${configuracion.maiz}
+• Sorgo: ${configuracion.sorgo}
+• Escenario: ${configuracion.escenarioDesmonte}
+
+🎯 RECOMENDACIONES INTA:
+${document.getElementById('recomendaciones-inta').textContent}
+
+⏰ OPTIMIZACIÓN ESTACIONAL:
+${document.getElementById('optimizacion-estacional').textContent}
+
+Generado por: Simulador El Recodo v2.0
+            `;
+            
+            // Crear enlace de descarga
+            const blob = new Blob([resumen], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `simulacion-el-recodo-${fecha.replace(/\//g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+            
+            alert('📊 Resultados exportados exitosamente!');
+        }
+
+        function reiniciarSimulador() {
+            if (confirm('¿Está seguro de reiniciar el simulador a valores por defecto?')) {
+                // Reiniciar escenario de desmonte
+                document.getElementById('escenario-desmonte').value = 'conservador';
+                
+                // Reiniciar hectáreas
+                document.getElementById('alfalfa-hectareas').value = 8;
+                document.getElementById('cebada-hectareas').value = 3;
+                document.getElementById('maiz-hectareas').value = 3;
+                document.getElementById('sorgo-hectareas').value = 2;
+                
+                // Reiniciar escenarios climáticos
+                document.getElementById('alfalfa-select').value = 'normal';
+                document.getElementById('cebada-select').value = 'normal';
+                document.getElementById('maiz-select').value = 'normal';
+                document.getElementById('sorgo-select').value = 'normal';
+                
+                // Actualizar simulación
+                actualizarEscenarioDesmonte();
+                actualizarSimulacionCultivos();
+                
+                alert('🔄 Simulador reiniciado a valores conservadores');
+            }
+        }
+
+        function optimizarAutomaticamente() {
+            // Encontrar la configuración más rentable
+            let mejorConfiguracion = {
+                escenario: 'moderado', // Balance entre inversión y retorno
+                cultivos: {
+                    alfalfa: { ha: 15, escenario: 'bueno' }, // Cultivo base estable
+                    cebada: { ha: 5, escenario: 'bueno' },  // Para hermano cervecero
+                    maiz: { ha: 6, escenario: 'normal' },   // Diversificación
+                    sorgo: { ha: 4, escenario: 'normal' }   // Resistente sequía
+                }
+            };
+            
+            if (confirm('🎯 ¿Aplicar configuración optimizada basada en análisis INTA?\\n\\n• Escenario: Moderado (30 ha)\\n• Alfalfa: 15 ha (condiciones buenas)\\n• Cebada: 5 ha (condiciones buenas)\\n• Maíz: 6 ha (condiciones normales)\\n• Sorgo: 4 ha (condiciones normales)')) {
+                
+                // Aplicar escenario de desmonte
+                document.getElementById('escenario-desmonte').value = mejorConfiguracion.escenario;
+                
+                // Aplicar hectáreas optimizadas
+                document.getElementById('alfalfa-hectareas').value = mejorConfiguracion.cultivos.alfalfa.ha;
+                document.getElementById('cebada-hectareas').value = mejorConfiguracion.cultivos.cebada.ha;
+                document.getElementById('maiz-hectareas').value = mejorConfiguracion.cultivos.maiz.ha;
+                document.getElementById('sorgo-hectareas').value = mejorConfiguracion.cultivos.sorgo.ha;
+                
+                // Aplicar escenarios climáticos optimizados
+                document.getElementById('alfalfa-select').value = mejorConfiguracion.cultivos.alfalfa.escenario;
+                document.getElementById('cebada-select').value = mejorConfiguracion.cultivos.cebada.escenario;
+                document.getElementById('maiz-select').value = mejorConfiguracion.cultivos.maiz.escenario;
+                document.getElementById('sorgo-select').value = mejorConfiguracion.cultivos.sorgo.escenario;
+                
+                // Actualizar simulación
+                actualizarEscenarioDesmonte();
+                actualizarSimulacionCultivos();
+                
+                alert('🎯 ¡Configuración optimizada aplicada!\\n\\nRevisa los resultados y el análisis inteligente.');
+            }
         }
 
         // Mejorar interactividad
