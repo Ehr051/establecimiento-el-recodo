@@ -1,0 +1,13 @@
+{
+  "alfalfa_price": 3845,
+  "beer_price": 1182,
+  "cabin_price": 35143,
+  "rural_tourism_price": 50000,
+  "firewood_price": 6300,
+  "last_updated": "2025-07-26T22:12:22.889Z",
+  "market_conditions": {
+    "tourism_demand": "low",
+    "seasonal_factor": "low_season",
+    "weekend_premium": "high"
+  }
+}

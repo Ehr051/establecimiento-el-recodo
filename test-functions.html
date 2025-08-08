@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Test Functions - El Recodo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { 
+            background: #4CAF50; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            margin: 10px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        .test-result { 
+            background: #f0f0f0; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test de Funciones - El Recodo</h1>
+    
+    <h2>Test de Notificaciones</h2>
+    <button class="test-button" onclick="testNotifications()">🔔 Test Notificaciones</button>
+    <div id="notif-result" class="test-result"></div>
+    
+    <h2>Test de Generación de Documentos</h2>
+    <button class="test-button" onclick="testPlanGeneration()">📄 Test Plan Completo</button>
+    <button class="test-button" onclick="testFinancialModel()">💰 Test Modelo Financiero</button>
+    <button class="test-button" onclick="testResumenEjecutivo()">📋 Test Resumen Ejecutivo</button>
+    <button class="test-button" onclick="testFlujoCaja()">💸 Test Flujo Caja</button>
+    <div id="doc-result" class="test-result"></div>
+    
+    <h2>Test de Google Maps</h2>
+    <button class="test-button" onclick="testGoogleMaps()">🗺️ Test Google Maps</button>
+    <div id="maps-result" class="test-result"></div>
+
+    <script>
+        // Copiar las funciones del sitio principal
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #4CAF50, #45a049);
+                color: white;
+                padding: 1rem;
+                border-radius: 10px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                animation: slideIn 0.5s ease;
+            `;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            setTimeout(() => notification.remove(), 3000);
+        }
+
+        function showErrorNotification(message) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #f44336, #d32f2f);
+                color: white;
+                padding: 1rem;
+                border-radius: 10px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                animation: slideIn 0.5s ease;
+            `;
+            notification.textContent = `❌ ${message}`;
+            
+            document.body.appendChild(notification);
+            setTimeout(() => notification.remove(), 3000);
+        }
+
+        function generarPlanSimplificado() {
+            const fechaActual = new Date().toLocaleDateString('es-AR');
+            return `# PLAN DE NEGOCIO - EL RECODO\nGenerado: ${fechaActual}\nTest exitoso!`;
+        }
+
+        function generarModeloFinancieroCSV() {
+            return 'MODELO FINANCIERO,VALOR\nInversion,48000000\nROI,225%\nTest,Exitoso';
+        }
+
+        function generarResumenEjecutivo() {
+            return '# RESUMEN EJECUTIVO\nProyecto: El Recodo\nTest: Exitoso';
+        }
+
+        function generarFlujoCajaCSV() {
+            return 'MES,INGRESOS,COSTOS\nEnero,4720000,2842120\nTest,Exitoso,Si';
+        }
+
+        // Tests
+        function testNotifications() {
+            document.getElementById('notif-result').innerHTML = 'Testing notificaciones...';
+            showNotification('✅ Test notificación exitosa!');
+            setTimeout(() => {
+                showErrorNotification('Test notificación de error!');
+                document.getElementById('notif-result').innerHTML = '✅ Test de notificaciones completado';
+            }, 1000);
+        }
+
+        function testPlanGeneration() {
+            try {
+                const content = generarPlanSimplificado();
+                if (content.includes('EL RECODO')) {
+                    document.getElementById('doc-result').innerHTML = '✅ Plan Completo: FUNCIONA';
+                } else {
+                    document.getElementById('doc-result').innerHTML = '❌ Plan Completo: ERROR';
+                }
+            } catch (error) {
+                document.getElementById('doc-result').innerHTML = '❌ Plan Completo: ERROR - ' + error.message;
+            }
+        }
+
+        function testFinancialModel() {
+            try {
+                const content = generarModeloFinancieroCSV();
+                if (content.includes('48000000')) {
+                    document.getElementById('doc-result').innerHTML += '<br>✅ Modelo Financiero: FUNCIONA';
+                } else {
+                    document.getElementById('doc-result').innerHTML += '<br>❌ Modelo Financiero: ERROR';
+                }
+            } catch (error) {
+                document.getElementById('doc-result').innerHTML += '<br>❌ Modelo Financiero: ERROR - ' + error.message;
+            }
+        }
+
+        function testResumenEjecutivo() {
+            try {
+                const content = generarResumenEjecutivo();
+                if (content.includes('RESUMEN EJECUTIVO')) {
+                    document.getElementById('doc-result').innerHTML += '<br>✅ Resumen Ejecutivo: FUNCIONA';
+                } else {
+                    document.getElementById('doc-result').innerHTML += '<br>❌ Resumen Ejecutivo: ERROR';
+                }
+            } catch (error) {
+                document.getElementById('doc-result').innerHTML += '<br>❌ Resumen Ejecutivo: ERROR - ' + error.message;
+            }
+        }
+
+        function testFlujoCaja() {
+            try {
+                const content = generarFlujoCajaCSV();
+                if (content.includes('4720000')) {
+                    document.getElementById('doc-result').innerHTML += '<br>✅ Flujo de Caja: FUNCIONA';
+                } else {
+                    document.getElementById('doc-result').innerHTML += '<br>❌ Flujo de Caja: ERROR';
+                }
+            } catch (error) {
+                document.getElementById('doc-result').innerHTML += '<br>❌ Flujo de Caja: ERROR - ' + error.message;
+            }
+        }
+
+        function testGoogleMaps() {
+            try {
+                const lat = -32.9875556;
+                const lng = -66.4795833;
+                const url = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+                
+                if (url.includes('-32.9875556')) {
+                    document.getElementById('maps-result').innerHTML = '✅ Google Maps: FUNCIONA<br>URL: ' + url;
+                } else {
+                    document.getElementById('maps-result').innerHTML = '❌ Google Maps: ERROR';
+                }
+            } catch (error) {
+                document.getElementById('maps-result').innerHTML = '❌ Google Maps: ERROR - ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+MODELO FINANCIERO DETALLADO - EL RECODO
+Fecha de actualización: 2025-08-06
+
+CRONOGRAMA DE INVERSIONES
+Año,Etapa,Período,Inversión,Descripción
+Año 1,Etapa 1 (Meses 1-6),"Club House + Primer Domo + Infraestructura básica",21000000
+Año 1,Etapa 2A (Meses 7-12),"Inicio Segundo Domo + Preparación terreno alfalfa",8000000
+Año 2,Etapa 2B (Meses 13-18),"Finalización Domo 2 + Cervecería + Siembra",7000000
+Año 2,Etapa 3A (Meses 19-24),"Tercer Domo + Sistema solar básico",6000000
+Año 3,Etapa 3B (Meses 25-36),"Consolidación + Ganadería + Infraestructura final",6000000
+
+GASTOS OPERATIVOS ANUALES
+Categoría,Concepto,Monto Anual
+sueldos,Peón rural permanente (2),21396720
+sueldos,Encargado/Capataz,14400000
+sueldos,Personal temporario turismo,4800000
+sueldos,Administrativo part-time,9600000
+sueldos,Total sueldos,50196720
+impuestos,Cargas sociales (30%),15059016
+impuestos,Ingresos Brutos (2.5%),0
+impuestos,IVA diferencial,800000
+impuestos,Impuesto inmobiliario,450000
+impuestos,Patentes vehículos,280000
+impuestos,Total impuestos,16589016
+insumos agricolas,Semillas alfalfa (25 ha),650000
+insumos agricolas,Fertilizantes NPK,890000
+insumos agricolas,Insecticidas/herbicidas,420000
+insumos agricolas,Correctores de suelo,380000
+insumos agricolas,Inoculantes,180000
+insumos agricolas,Total insumos agrícolas,0
+insumos agricolas,Total insumos agricolas,2520000
+insumos ganaderia,Alimento balanceado bovinos,1200000
+insumos ganaderia,Suplementos nutricionales,450000
+insumos ganaderia,Medicamentos veterinarios,380000
+insumos ganaderia,Vacunas obligatorias,220000
+insumos ganaderia,Sal mineral,180000
+insumos ganaderia,Total insumos ganadería,0
+insumos ganaderia,Total insumos ganaderia,2430000
+combustibles,Gasoil maquinaria,850000
+combustibles,Nafta vehículos,420000
+combustibles,GLP cocina/calefacción,380000
+combustibles,Total combustibles,1650000
+maquinaria herramientas,Mantenimiento tractor,450000
+maquinaria herramientas,Reparaciones implementos,280000
+maquinaria herramientas,Herramientas menores,180000
+maquinaria herramientas,Repuestos maquinaria,320000
+maquinaria herramientas,Total maquinaria,0
+maquinaria herramientas,Total maquinaria herramientas,1230000
+servicios,Energía eléctrica,650000
+servicios,Agua potable,280000
+servicios,Internet/telefonía,180000
+servicios,Seguros,850000
+servicios,Mantenimiento general,420000
+servicios,Total servicios,2380000
+insumos cerveceria,Malta,380000
+insumos cerveceria,Lúpulo,280000
+insumos cerveceria,Levaduras,120000
+insumos cerveceria,Envases/etiquetas,220000
+insumos cerveceria,Total cervecería,0
+insumos cerveceria,Total insumos cerveceria,1000000
+insumos turismo,Limpieza domos,180000
+insumos turismo,Ropa de cama,150000
+insumos turismo,Productos amenities,80000
+insumos turismo,Mantenimiento domos,280000
+insumos turismo,Total turismo,0
+insumos turismo,Total insumos turismo,690000

@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-07-26T22:12:22.889Z",
+    "prices": {
+      "alfalfa": 3845,
+      "beer": 1182,
+      "cabin": 35143,
+      "rural_tourism": 50000,
+      "firewood": 6300
+    }
+  }
+]

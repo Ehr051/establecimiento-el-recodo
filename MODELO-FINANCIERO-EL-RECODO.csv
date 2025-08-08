@@ -1,0 +1,92 @@
+RESUMEN EJECUTIVO - EL RECODO,,,,,
+Concepto,Valor,Unidad,Detalle,Formula,
+Inversión Total,48000000,ARS,Distribuida en 3 etapas,=SUM(Etapas),
+ROI 3 años,224.8,%,Calculado sobre utilidad acumulada,=(Utilidad3años/InversiónTotal)*100,
+Payback,1.8,años,Recuperación de inversión,=CALCULAR_PAYBACK(),
+VAN (TIR 15%),127850000,ARS,Valor actual neto,=VAN(15%;FlujoCaja1:36),
+TIR,142.3,%,Tasa interna de retorno,=TIR(FlujoCaja0:36),
+,,,,,
+ETAPA 1 - INFRAESTRUCTURA BÁSICA,21000000,ARS,Meses 1-6,,
+Club House 200m²,8500000,ARS,40.5% del total,,
+Primer Domo + Instalaciones,6200000,ARS,29.5% del total,,
+Infraestructura Productiva,3800000,ARS,18.1% del total,,
+Equipamiento Inicial,1200000,ARS,5.7% del total,,
+Capital de Trabajo,1300000,ARS,6.2% del total,,
+,,,,,
+ETAPA 2 - EXPANSIÓN SERVICIOS,15000000,ARS,Meses 7-18,,
+Segundo Domo Premium,6800000,ARS,45.3% del total,,
+Cervecería Artesanal,4200000,ARS,28.0% del total,,
+Mejoras Producción,2500000,ARS,16.7% del total,,
+Marketing y Posicionamiento,1500000,ARS,10.0% del total,,
+,,,,,
+ETAPA 3 - CONSOLIDACIÓN,12000000,ARS,Meses 19-36,,
+Tercer Domo + Mejoras,5800000,ARS,48.3% del total,,
+Sistema Solar Completo,3200000,ARS,26.7% del total,,
+Equipamiento Adicional,1800000,ARS,15.0% del total,,
+Reserva y Contingencias,1200000,ARS,10.0% del total,,
+,,,,,
+PROYECCIÓN INGRESOS ANUALES,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+Turismo Rural Premium,16800000,31200000,48304000,51519200,54095168
+Producción Alfalfa,3876000,7752000,12920000,13563200,14241360
+Cervecería Artesanal,2304000,6912000,11520000,12096000,12700800
+Eventos y Experiencias,920000,2760000,4600000,4830000,5071500
+Productos Locales,368000,1104000,1840000,1932000,2028600
+Consultoría,184000,552000,920000,966000,1014300
+TOTAL INGRESOS,24452000,50280000,80804000,84906400,89151728
+,,,,,
+ESTRUCTURA COSTOS ANUALES,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+Costos Fijos,15660000,20358000,26465400,28071876,29796310
+Costos Variables,5437260,11161800,17944560,18851424,19793695
+TOTAL COSTOS,21097260,31519800,44409960,46923300,49589005
+,,,,,
+RESULTADO OPERATIVO (EBITDA),,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+EBITDA,3354740,18760200,36394040,37983100,39562723
+Margen EBITDA,13.7%,37.3%,45.0%,44.7%,44.4%
+,,,,,
+GASTOS FINANCIEROS,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+Intereses CFI,0,7896000,7896000,5922000,3948000
+Intereses Banco Nación,0,6652800,6652800,5544000,4435200
+TOTAL GASTOS FINANCIEROS,0,14548800,14548800,11466000,8383200
+,,,,,
+RESULTADO NETO,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+Resultado antes Impuestos,3354740,4211400,21845240,26517100,31179523
+Impuestos (35%),1174159,1473990,7645834,9280985,10912833
+RESULTADO NETO,2180581,2737410,14199406,17236115,20266690
+Margen Neto,8.9%,5.4%,17.6%,20.3%,22.7%
+,,,,,
+FLUJO DE CAJA LIBRE,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+Resultado Neto,2180581,2737410,14199406,17236115,20266690
++ Depreciaciones,2400000,2760000,3120000,3480000,3840000
+- Inversiones,21000000,15000000,12000000,2000000,1500000
+- Amortización Capital,0,0,8280000,8280000,8280000
+FLUJO DE CAJA NETO,-16419419,-9502590,-2960594,10436115,14326690
+,,,,,
+RATIOS FINANCIEROS,,,,,
+,Año 1,Año 2,Año 3,Año 4,Año 5
+ROI,4.5%,10.2%,39.5%,75.4%,117.8%
+ROE,13.8%,15.2%,56.8%,86.2%,101.3%
+Liquidez Corriente,1.15,2.47,4.89,6.52,7.83
+Endeudamiento,0.78,0.65,0.42,0.28,0.15
+Cobertura Intereses,N/A,1.29,2.50,3.31,4.72
+,,,,,
+ANÁLISIS DE SENSIBILIDAD,,,,,
+Escenario,Factor,Ingresos Año 3,EBITDA Año 3,Resultado Neto,ROI
+Optimista,+20%,96964800,57572840,26239287,279.5%
+Base,100%,80804000,36394040,14199406,224.8%
+Pesimista,-15%,68683400,26834540,9669495,175.3%
+,,,,,
+INDICADORES CLAVE,,,,,
+Ocupación Promedio Año 3,85%,,,
+Precio Promedio Noche,42000,ARS,,
+Producción Alfalfa,3400,fardos/año,,
+Precio Fardo,3800,ARS,,
+Producción Cerveza,9600,litros/año,,
+Precio Litro Cerveza,1200,ARS,,
+Personal Fijo,4,personas,,
+Costo Personal Anual,14880000,ARS,,

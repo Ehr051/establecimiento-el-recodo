@@ -1,0 +1,648 @@
+[
+  {
+    "mes": 1,
+    "etapa": "0 - Leña",
+    "ingresos": 0,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 2500000,
+    "resultado": -2500000,
+    "acumulado": -2500000,
+    "dividendos": {},
+    "descripcion": "Setup inicial"
+  },
+  {
+    "mes": 2,
+    "etapa": "0 - Leña",
+    "ingresos": 0,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 0,
+    "resultado": 0,
+    "acumulado": -2500000,
+    "dividendos": {},
+    "descripcion": "Setup inicial"
+  },
+  {
+    "mes": 3,
+    "etapa": "0 - Leña",
+    "ingresos": 0,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 0,
+    "resultado": 0,
+    "acumulado": -2500000,
+    "dividendos": {},
+    "descripcion": "Setup inicial"
+  },
+  {
+    "mes": 4,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": -2015000,
+    "dividendos": {},
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 5,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": -1530000,
+    "dividendos": {},
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 6,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": -1045000,
+    "dividendos": {},
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 7,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": -560000,
+    "dividendos": {},
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 8,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": -75000,
+    "dividendos": {},
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 9,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": 410000,
+    "dividendos": {
+      "Socio A": 50925,
+      "Socio B": 50925,
+      "Socio C": 43650
+    },
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 10,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": 895000,
+    "dividendos": {
+      "Socio A": 50925,
+      "Socio B": 50925,
+      "Socio C": 43650
+    },
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 11,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": 1380000,
+    "dividendos": {
+      "Socio A": 50925,
+      "Socio B": 50925,
+      "Socio C": 43650
+    },
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 12,
+    "etapa": "0 - Leña",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 530000,
+      "combustibles": 225000,
+      "mantenimiento": 100000,
+      "materiales": 40000,
+      "otros": 60000
+    },
+    "costos": 955000,
+    "resultado": 485000,
+    "acumulado": 1865000,
+    "dividendos": {
+      "Socio A": 50925,
+      "Socio B": 50925,
+      "Socio C": 43650
+    },
+    "descripcion": "Producción leña"
+  },
+  {
+    "mes": 13,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1440000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -450000,
+    "acumulado": 1415000,
+    "dividendos": {},
+    "descripcion": "Construcción Club House"
+  },
+  {
+    "mes": 14,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1860000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -30000,
+    "acumulado": 1385000,
+    "dividendos": {},
+    "descripcion": "Operación 1 Domo"
+  },
+  {
+    "mes": 15,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1860000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -30000,
+    "acumulado": 1355000,
+    "dividendos": {},
+    "descripcion": "Operación 1 Domo"
+  },
+  {
+    "mes": 16,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1860000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -30000,
+    "acumulado": 1325000,
+    "dividendos": {},
+    "descripcion": "Operación 1 Domo"
+  },
+  {
+    "mes": 17,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1860000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -30000,
+    "acumulado": 1295000,
+    "dividendos": {},
+    "descripcion": "Operación 1 Domo"
+  },
+  {
+    "mes": 18,
+    "etapa": "1 - Turismo Inicial",
+    "ingresos": 1860000,
+    "costosDetallados": {
+      "empleados": 980000,
+      "combustibles": 120000,
+      "mantenimiento": 80000,
+      "servicios": 95000,
+      "marketing": 85000,
+      "administracion": 60000,
+      "otros": 45000
+    },
+    "costos": 1890000,
+    "resultado": -30000,
+    "acumulado": 1265000,
+    "dividendos": {},
+    "descripcion": "Operación 1 Domo"
+  },
+  {
+    "mes": 19,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 2520000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 20,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 3775000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 21,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 5030000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 22,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 6285000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 23,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 7540000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 24,
+    "etapa": "2 - Expansión",
+    "ingresos": 4095000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 1255000,
+    "acumulado": 8795000,
+    "dividendos": {
+      "Socio A": 175700,
+      "Socio B": 175700,
+      "Socio C": 150600
+    },
+    "descripcion": "Consolidación"
+  },
+  {
+    "mes": 25,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 11590000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 26,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 14385000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 27,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 17180000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 28,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 19975000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 29,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 22770000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  },
+  {
+    "mes": 30,
+    "etapa": "2 - Expansión",
+    "ingresos": 5635000,
+    "costosDetallados": {
+      "empleadosLeña": 530000,
+      "empleadosTurismo": 850000,
+      "empleadosAlfalfa": 400000,
+      "combustibles": 180000,
+      "mantenimiento": 120000,
+      "servicios": 140000,
+      "marketing": 120000,
+      "administracion": 95000,
+      "insumos": 320000,
+      "otros": 85000
+    },
+    "costos": 2840000,
+    "resultado": 2795000,
+    "acumulado": 25565000,
+    "dividendos": {
+      "Socio A": 391300,
+      "Socio B": 391300,
+      "Socio C": 335400
+    },
+    "descripcion": "Operación completa"
+  }
+]

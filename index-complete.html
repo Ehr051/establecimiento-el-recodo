@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establecimiento El Recodo - Plan de Inversión Integral</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="images/favicon.svg">
+    <meta name="description" content="Establecimiento El Recodo - Turismo rural auténtico en Paraje El Recodo, San Luis. Experiencias únicas de glamping con vista a las Sierras Centrales. Monte nativo y tradición rural.">
+    <meta name="keywords" content="turismo rural, glamping, paraje el recodo, san luis, sierras centrales, monte nativo, nogoli, la quebrada, cerveza artesanal, alfalfa">
+    <meta property="og:title" content="Establecimiento El Recodo - Donde el campo encuentra el lujo">
+    <meta property="og:description" content="Turismo Rural Auténtico • Monte Nativo • Tradición Familiar">
+    <meta property="og:image" content="images/logo.PNG">
+    <meta property="og:url" content="https://elrecodo.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 50%, #6b8e23 100%);
+            color: white;
+            padding: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M30,30 Q50,10 70,30 Q90,50 70,70 Q50,90 30,70 Q10,50 30,30 Z" fill="rgba(255,255,255,0.08)"/></svg>') repeat;
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(-10px, -10px) rotate(1deg); }
+            50% { transform: translate(10px, -5px) rotate(-1deg); }
+            75% { transform: translate(-5px, 10px) rotate(0.5deg); }
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            font-family: 'Georgia', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .brand-slogan {
+            font-size: 1.1rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            font-family: 'Georgia', serif;
+            color: #f7931e;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .header-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .header-stat {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(15px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 25px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d5016;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-item {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-item:hover {
+            background: linear-gradient(45deg, #2d5016, #4a7c59);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(45, 80, 22, 0.3);
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #2d5016;
+            transition: 0.3s;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2d5016;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            border-radius: 2px;
+        }
+        
+        /* NUEVO DASHBOARD FINANCIERO BALANCEADO */
+        .financial-dashboard {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 4rem 0;
+            border-radius: 30px;
+            margin: 3rem 0;
+        }
+        
+        .dashboard-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .dashboard-intro h3 {
+            color: #2d5016;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .dashboard-intro p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+        }
+        
+        .metric-value {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2d5016;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-detail {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* Crop Distribution */
+        .crop-distribution {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .crop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .crop-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .crop-item h4 {
+            color: #2d5016;
+            margin-bottom: 1rem;
+        }
+        
+        .crop-hectares {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+        }
+        
+        .crop-revenue {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        /* Guest Journey Section */
+        .guest-journey-section {
+            background: white;
+            padding: 4rem 0;
+            margin: 3rem 0;
+        }
+        
+        .journey-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+        
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #ff6b35, #f7931e);
+            transform: translateX(-50%);
+        }
+        
+        .journey-step {
+            display: flex;
+            align-items: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .journey-step:nth-child(odd) {
+            flex-direction: row;
+        }
+        
+        .journey-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .step-content {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 0 3rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .step-content h3 {
+            color: #2d5016;
+            margin-bottom: 1rem;
+        }
+        
+        .step-content p {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        
+        .step-visual {
+            flex: 0 0 150px;
+            margin: 0 2rem;
+        }
+        
+        .clickable-image {
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .clickable-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Marketing Section */
+        .marketing-section {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 4rem 0;
+            border-radius: 30px;
+            margin: 3rem 0;
+        }
+        
+        .marketing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .marketing-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .marketing-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .marketing-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .marketing-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .marketing-target {
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            padding: 4rem 0;
+            margin: 3rem 0;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .form-input {
+            padding: 1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #ff6b35;
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+            grid-column: 1 / -1;
+        }
+        
+        .submit-button {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d5016;
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ff6b35;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ff6b35;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .header-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .key-metrics {
+                grid-template-columns: 1fr;
+            }
+            
+            .journey-step {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .journey-step:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .step-visual {
+                margin: 1rem 0;
+            }
+        }
+        
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Floating CTA Button */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.PNG" alt="Logo El Recodo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <span>El Recodo</span>
+                </h1>
+                <p class="brand-slogan">"Donde el monte encuentra la tradición"</p>
+                <p class="tagline">Turismo Rural Auténtico • Monte Nativo • Tradición Familiar</p>
+                <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 15px; margin: 2rem auto; max-width: 500px; border: 2px solid rgba(255,255,255,0.2);">
+                    <h3 style="color: #f7931e; margin-bottom: 0.5rem; font-size: 1.2rem;">📍 Ubicación Real</h3>
+                    <p style="margin: 0; font-size: 1.1rem; font-weight: bold;">Ruta 15B Km 15,5</p>
+                    <p style="margin: 0; opacity: 0.9;">Paraje El Recodo, San Luis</p>
+                </div>
+                <div class="header-stats">
+                    <div class="header-stat">
+                        <div class="header-stat-number">$1.06M</div>
+                        <div>Ganancia/Hermano</div>
+                    </div>
+                    <div class="header-stat">
+                        <div class="header-stat-number">$10M</div>
+                        <div>Inversión Total</div>
+                    </div>
+                    <div class="header-stat">
+                        <div class="header-stat-number">15.22 ha</div>
+                        <div>Superficie Real</div>
+                    </div>
+                    <div class="header-stat">
+                        <div class="header-stat-number">1.3 meses</div>
+                        <div>Payback</div>
+                    </div>
+                </div>
+                <a href="#contact" class="cta-button">Conocer el Proyecto</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="nav-brand">
+                    <img src="images/logo.PNG" alt="Logo El Recodo" style="width: 40px; height: 40px; object-fit: cover; vertical-align: middle; margin-right: 8px; border-radius: 50%;">
+                    El Recodo
+                </a>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#alojamiento" class="nav-item">Alojamiento</a></li>
+                    <li><a href="#financiero" class="nav-item">Financiero</a></li>
+                    <li><a href="#guest-journey" class="nav-item">Experiencia</a></li>
+                    <li><a href="#marketing" class="nav-item">Marketing</a></li>
+                    <li><a href="#contact" class="nav-item">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- NUEVO DASHBOARD FINANCIERO BALANCEADO -->
+        <section id="financiero" class="financial-dashboard">
+            <div class="container">
+                <div class="dashboard-intro">
+                    <h3>💰 Modelo Financiero Balanceado y Realista</h3>
+                    <p>
+                        <strong>15.22 hectáreas diversificadas</strong> con cultivos estratégicos: alfalfa (6ha), cebada (4ha), maíz (3ha) y sorgo (2.22ha). 
+                        <strong>Operación con 1 empleado</strong> + hermano gerente. <strong>$2.5M por hermano</strong> ($10M total) con ganancia mensual de <strong>$1.059.522 por hermano</strong>.
+                    </p>
+                </div>
+                
+                <div class="key-metrics">
+                    <div class="metric-card reveal">
+                        <div class="metric-value">$4.238M</div>
+                        <div class="metric-label">Ganancia Mensual Total</div>
+                        <div class="metric-detail">$1.059.522 por hermano</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value">$47.762M</div>
+                        <div class="metric-label">Ingresos Anuales</div>
+                        <div class="metric-detail">Diversificación de cultivos</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value">1.3 meses</div>
+                        <div class="metric-label">Payback Period</div>
+                        <div class="metric-detail">Recuperación ultra rápida</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value">88.7%</div>
+                        <div class="metric-label">Margen Neto</div>
+                        <div class="metric-detail">Rentabilidad excepcional</div>
+                    </div>
+                </div>
+                
+                <div class="crop-distribution">
+                    <h3 style="color: #2d5016; text-align: center; margin-bottom: 2rem;">🌾 Distribución Estratégica de Cultivos</h3>
+                    <div class="crop-grid">
+                        <div class="crop-item">
+                            <h4>🌿 Alfalfa</h4>
+                            <div class="crop-hectares">6 ha</div>
+                            <div class="crop-revenue">$22.800.000/año</div>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Base estable de ingresos</p>
+                        </div>
+                        <div class="crop-item">
+                            <h4>🌾 Cebada</h4>
+                            <div class="crop-hectares">4 ha</div>
+                            <div class="crop-revenue">$11.200.000/año</div>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Ciclo complementario</p>
+                        </div>
+                        <div class="crop-item">
+                            <h4>🌽 Maíz</h4>
+                            <div class="crop-hectares">3 ha</div>
+                            <div class="crop-revenue">$9.450.000/año</div>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Alto valor comercial</p>
+                        </div>
+                        <div class="crop-item">
+                            <h4>🌾 Sorgo</h4>
+                            <div class="crop-hectares">2.22 ha</div>
+                            <div class="crop-revenue">$4.312.800/año</div>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Resistente a sequías</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">✅ Ventajas del Modelo Balanceado</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div>
+                                <strong>🎯 Superficie Real:</strong><br>
+                                15.22 hectáreas disponibles
+                            </div>
+                            <div>
+                                <strong>👥 Operación Eficiente:</strong><br>
+                                1 empleado + hermano gerente
+                            </div>
+                            <div>
+                                <strong>🌾 Diversificación:</strong><br>
+                                4 cultivos complementarios
+                            </div>
+                            <div>
+                                <strong>💰 ROI Excepcional:</strong><br>
+                                Payback en 1.3 meses
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="alojamiento" class="section">
+            <div class="container">
+                <h2 class="section-title">Complejo de Alojamiento Premium</h2>
+                
+                <div class="accommodation-overview">
+                    <h3 style="text-align: center; margin-bottom: 1rem; color: #2d5016; font-size: 1.8rem;">Nuestros Domos</h3>
+                    <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Cada domo cuenta con las mismas características excepcionales para garantizar una experiencia única
+                    </p>
+                    
+                    <div class="features-showcase" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                        <div class="feature-card reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+                            <div class="feature-image" style="margin-bottom: 1.5rem;">
+                                <img src="images/domo 1.PNG" alt="Vista al Este" class="clickable-image" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px;">
+                            </div>
+                            <h4 style="color: #2d5016; margin-bottom: 1rem; font-size: 1.3rem;">🌅 Vista al Este</h4>
+                            <p style="color: #666; line-height: 1.6;">Todos nuestros domos están orientados al este para disfrutar de espectaculares amaneceres serranos y la primera luz del día</p>
+                        </div>
+
+                        <div class="feature-card reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+                            <div class="feature-image" style="margin-bottom: 1.5rem;">
+                                <img src="images/privacidad.PNG" alt="Privacidad Total" class="clickable-image" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px;">
+                            </div>
+                            <h4 style="color: #2d5016; margin-bottom: 1rem; font-size: 1.3rem;">🌲 Privacidad Total</h4>
+                            <p style="color: #666; line-height: 1.6;">Cada domo está estratégicamente ubicado entre la vegetación nativa para garantizar máxima privacidad y conexión con la naturaleza</p>
+                        </div>
+
+                        <div class="feature-card reveal" style="text-align: center; padding: 2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+                            <div class="feature-image" style="margin-bottom: 1.5rem;">
+                                <img src="images/cielo nocturno.JPG" alt="Observación Astronómica" class="clickable-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+                            </div>
+                            <h4 style="color: #2d5016; margin-bottom: 1rem; font-size: 1.3rem;">🌙 Vista Astronómica</h4>
+                            <p style="color: #666; line-height: 1.6;">Techos transparentes en todos los domos para observación nocturna del cielo serrano, uno de los más limpios de Argentina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guest-journey-section" id="guest-journey">
+            <div class="container">
+                <h2 class="section-title">Journey de la Experiencia</h2>
+                
+                <div class="journey-timeline">
+                    <div class="journey-step reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>🚗 Llegada</h3>
+                            <p><strong>15:00</strong> - Check-in en Club House</p>
+                            <p>Bienvenida con mate cocido y productos locales. Tour de orientación por el establecimiento.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/club-house-domo-grande.jpg" alt="Llegada al Club House" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+
+                    <div class="journey-step reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>🏡 Acomodación</h3>
+                            <p><strong>16:00</strong> - Instalación en domo</p>
+                            <p>Presentación del alojamiento, explicación de amenities ecológicos y primera vista panorámica.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/domo 2.PNG" alt="Acomodación en Domo" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+
+                    <div class="journey-step reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>🌅 Experiencia</h3>
+                            <p><strong>17:30</strong> - Actividades rurales</p>
+                            <p>Participación en tareas del campo según temporada: cosecha, ordeñe, alimentación de animales.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/actividades-rurales.jpg" alt="Actividades Rurales" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+
+                    <div class="journey-step reveal">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>🍺 Degustación</h3>
+                            <p><strong>19:00</strong> - Del campo a la copa</p>
+                            <p>Proceso completo desde el grano hasta la cerveza, con degustación de productos propios.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/degustacion-cerveza.jpg" alt="Degustación de Cerveza" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+
+                    <div class="journey-step reveal">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>🌌 Observación Astronómica</h3>
+                            <p><strong>21:00</strong> - Cielo estrellado</p>
+                            <p>Experiencia única de observación astronómica desde el domo con techo transparente bajo el cielo más puro de las sierras.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/amanecer serrano.JPG" alt="Amanecer serrano en El Recodo" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+
+                    <div class="journey-step reveal">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>☀️ Amanecer</h3>
+                            <p><strong>06:30</strong> - Despertar natural</p>
+                            <p>Amanecer desde la cama con vista a las sierras, desayuno campestre con productos caseros.</p>
+                        </div>
+                        <div class="step-visual">
+                            <img src="images/atardecer.jpg" alt="Amanecer en las Sierras" class="clickable-image" style="width: 150px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #4a7c59;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marketing" class="marketing-section">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Estrategia de Marketing Digital</h2>
+                
+                <div class="marketing-grid">
+                    <div class="marketing-card reveal">
+                        <div class="marketing-icon">📱</div>
+                        <div class="marketing-title">Instagram</div>
+                        <div class="marketing-target">10K seguidores año 1</div>
+                        <div class="marketing-target">6-8% engagement rate</div>
+                        <div class="marketing-target">Stories diarias auténticas</div>
+                        <div class="marketing-target">#DelCampoALaCopa</div>
+                    </div>
+
+                    <div class="marketing-card reveal">
+                        <div class="marketing-icon">🎵</div>
+                        <div class="marketing-title">TikTok</div>
+                        <div class="marketing-target">Viral "Vida Rural"</div>
+                        <div class="marketing-target">Trends con paisajes</div>
+                        <div class="marketing-target">Colaboraciones influencers</div>
+                        <div class="marketing-target">#RuralLifeChallenge</div>
+                    </div>
+
+                    <div class="marketing-card reveal">
+                        <div class="marketing-icon">🏠</div>
+                        <div class="marketing-title">Airbnb</div>
+                        <div class="marketing-target">40% de reservas</div>
+                        <div class="marketing-target">Experiencias destacadas</div>
+                        <div class="marketing-target">Fotos 360° profesionales</div>
+                        <div class="marketing-target">Precios dinámicos</div>
+                    </div>
+
+                    <div class="marketing-card reveal">
+                        <div class="marketing-icon">🌐</div>
+                        <div class="marketing-title">Web Propia</div>
+                        <div class="marketing-target">30% reservas directas</div>
+                        <div class="marketing-target">Sin comisiones</div>
+                        <div class="marketing-target">Blog experiencias</div>
+                        <div class="marketing-target">Newsletter mensual</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto e Información</h2>
+                <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">
+                    ¿Interesado en conocer más detalles del proyecto o formar parte de esta iniciativa? Contáctanos para recibir información adicional y el plan de negocio completo.
+                </p>
+                
+                <!-- Mapa de Ubicación -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                        <h3 style="color: #2d5016; margin-bottom: 1.5rem; text-align: center;">📍 Ubicación Real del Establecimiento</h3>
+                        <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem;">
+                            <h4 style="color: #2d5016; margin-bottom: 1rem; font-size: 1.4rem;">🌾 Establecimiento El Recodo</h4>
+                            <p style="font-size: 1.2rem; font-weight: bold; color: #ff6b35; margin-bottom: 0.5rem;">
+                                📍 Ruta 15B Km 15,5
+                            </p>
+                            <p style="font-size: 1.1rem; color: #2d5016; margin-bottom: 1rem;">
+                                Paraje El Recodo, San Luis, Argentina
+                            </p>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 0.8rem;">
+                                <strong>Coordenadas exactas GPS:</strong><br>
+                                32°59'15.2"S 66°28'46.5"W
+                            </p>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                            <button onclick="abrirDirecciones()" style="background: linear-gradient(135deg, #4CAF50, #45a049); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 10px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                                🗺️ Cómo Llegar
+                            </button>
+                            <button onclick="abrirUbicacionExacta()" style="background: linear-gradient(135deg, #2196F3, #1976D2); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 10px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                                📍 Ver en Maps
+                            </button>
+                        </div>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                        <h3 style="color: #2d5016; margin-bottom: 1.5rem;">🎯 Ventajas de Ubicación</h3>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
+                                <span style="font-size: 1.5rem;">🚗</span>
+                                <div>
+                                    <strong>Desde Capital San Luis</strong><br>
+                                    <span style="color: #666;">35 minutos por Ruta 146</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
+                                <span style="font-size: 1.5rem;">✈️</span>
+                                <div>
+                                    <strong>Desde Aeropuerto</strong><br>
+                                    <span style="color: #666;">46 minutos directo</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
+                                <span style="font-size: 1.5rem;">🌄</span>
+                                <div>
+                                    <strong>Vista Privilegiada</strong><br>
+                                    <span style="color: #666;">Sierras Centrales al este</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Nombre completo" required>
+                        <input type="email" class="form-input" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Teléfono">
+                        <input type="text" class="form-input" placeholder="Empresa/Organización">
+                    </div>
+                    <select class="form-input" required>
+                        <option value="">Interés específico</option>
+                        <option value="inversion">Inversión en el proyecto</option>
+                        <option value="asesoria">Asesoría para proyecto similar</option>
+                        <option value="alianzas">Alianzas comerciales</option>
+                        <option value="turismo">Reservas turísticas</option>
+                        <option value="productos">Compra de productos</option>
+                    </select>
+                    <textarea class="form-input form-textarea" placeholder="Mensaje o consulta específica" required></textarea>
+                    <button type="submit" class="submit-button">Enviar Consulta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="floating-cta">
+        💬 Consultar Proyecto
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <img src="images/logo.PNG" alt="Logo El Recodo" style="width: 50px; height: 50px; object-fit: cover; vertical-align: middle; margin-right: 10px; border-radius: 50%;">
+                        Establecimiento El Recodo
+                    </h3>
+                    <p><em>"Donde el campo encuentra el lujo"</em></p>
+                    <p>Desarrollo rural sustentable con visión de futuro. Un proyecto integral que combina tradición, innovación y gestión financiera profesional.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Experiencias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#alojamiento">Glamping Premium</a></li>
+                        <li><a href="#guest-journey">Del Campo a la Copa</a></li>
+                        <li><a href="#guest-journey">Journey del Huésped</a></li>
+                        <li><a href="#marketing">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Financiero</h3>
+                    <ul class="footer-links">
+                        <li><a href="#financiero">$4.238M Ganancia Mensual</a></li>
+                        <li><a href="#financiero">88.7% Margen Neto</a></li>
+                        <li><a href="#financiero">1.3 meses Payback</a></li>
+                        <li><a href="#financiero">15.22 ha Diversificadas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#contact">📍 Ruta 15B Km 15,5</a></li>
+                        <li><a href="#contact">🗺️ Paraje El Recodo</a></li>
+                        <li><a href="#contact">San Luis, Argentina</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p>&copy; 2025 Establecimiento El Recodo • "Donde el campo encuentra el lujo" • Plan de Inversión Integral</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">📍 Ruta 15B Km 15,5 - Paraje El Recodo, San Luis, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when clicking on a nav item
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                if (hamburger) hamburger.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Reveal animations on scroll
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Check on page load
+
+        // Form submission
+        const submitButton = document.querySelector('.submit-button');
+        if (submitButton) {
+            submitButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formInputs = document.querySelectorAll('.form-input');
+                let formData = {};
+                let isValid = true;
+                
+                formInputs.forEach(input => {
+                    if (input.required && !input.value.trim()) {
+                        isValid = false;
+                        input.style.borderColor = '#ff6b35';
+                    } else {
+                        input.style.borderColor = '#e9ecef';
+                        formData[input.placeholder || input.name] = input.value;
+                    }
+                });
+                
+                if (isValid) {
+                    alert('¡Gracias por tu interés en El Recodo! Nos pondremos en contacto contigo pronto con información detallada del proyecto.');
+                    // Reset form
+                    formInputs.forEach(input => input.value = '');
+                } else {
+                    alert('Por favor, completa todos los campos requeridos.');
+                }
+            });
+        }
+
+        // Google Maps Navigation Functions
+        function abrirDirecciones() {
+            // Coordenadas exactas de El Recodo: 32°59'15.2"S 66°28'46.5"W
+            const lat = -32.9875556;
+            const lng = -66.4795833;
+            
+            // Detectar si está en dispositivo móvil
+            const esMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (esMobile) {
+                // En móvil, abrir la app de Google Maps directamente con coordenadas
+                const urlMaps = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+                window.open(urlMaps, '_blank');
+            } else {
+                // En desktop, abrir Google Maps web con coordenadas
+                const urlMaps = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+                window.open(urlMaps, '_blank');
+            }
+        }
+
+        function abrirUbicacionExacta() {
+            // Coordenadas exactas de El Recodo: 32°59'15.2"S 66°28'46.5"W
+            const lat = -32.9875556;
+            const lng = -66.4795833;
+            
+            // Abrir ubicación específica en Google Maps con coordenadas exactas
+            const urlMaps = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            window.open(urlMaps, '_blank');
+        }
+
+        // Enhanced click interactions
+        document.querySelectorAll('.clickable-image').forEach(img => {
+            img.addEventListener('click', function() {
+                // Simple lightbox effect
+                const overlay = document.createElement('div');
+                overlay.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.9);
+                    z-index: 9999;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                `;
+                
+                const enlargedImg = document.createElement('img');
+                enlargedImg.src = this.src;
+                enlargedImg.alt = this.alt;
+                enlargedImg.style.cssText = `
+                    max-width: 90%;
+                    max-height: 90%;
+                    object-fit: contain;
+                    border-radius: 10px;
+                    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+                `;
+                
+                overlay.appendChild(enlargedImg);
+                document.body.appendChild(overlay);
+                
+                overlay.addEventListener('click', () => {
+                    document.body.removeChild(overlay);
+                });
+            });
+        });
+
+        // Smooth reveal animations with intersection observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initialize on load
+        window.addEventListener('load', function() {
+            revealOnScroll();
+        });
+    </script>
+</body>
+</html>

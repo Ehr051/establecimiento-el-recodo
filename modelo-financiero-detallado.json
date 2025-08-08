@@ -1,0 +1,180 @@
+{
+  "fecha_actualizacion": "2025-08-06",
+  "cronograma_inversiones": {
+    "Año 1": {
+      "Etapa 1 (Meses 1-6)": {
+        "inversion": 21000000,
+        "descripcion": "Club House + Primer Domo + Infraestructura básica",
+        "activos": [
+          "Club House",
+          "Domo 1",
+          "Accesos",
+          "Servicios básicos"
+        ]
+      },
+      "Etapa 2A (Meses 7-12)": {
+        "inversion": 8000000,
+        "descripcion": "Inicio Segundo Domo + Preparación terreno alfalfa",
+        "activos": [
+          "Domo 2 (50%)",
+          "Preparación 25 hectáreas",
+          "Maquinaria básica"
+        ]
+      }
+    },
+    "Año 2": {
+      "Etapa 2B (Meses 13-18)": {
+        "inversion": 7000000,
+        "descripcion": "Finalización Domo 2 + Cervecería + Siembra",
+        "activos": [
+          "Domo 2 (100%)",
+          "Cervecería",
+          "Primera siembra alfalfa"
+        ]
+      },
+      "Etapa 3A (Meses 19-24)": {
+        "inversion": 6000000,
+        "descripcion": "Tercer Domo + Sistema solar básico",
+        "activos": [
+          "Domo 3",
+          "Paneles solares 50kW",
+          "Optimización energética"
+        ]
+      }
+    },
+    "Año 3": {
+      "Etapa 3B (Meses 25-36)": {
+        "inversion": 6000000,
+        "descripcion": "Consolidación + Ganadería + Infraestructura final",
+        "activos": [
+          "Feedlot bovino",
+          "Sistema cama profunda cerdos",
+          "Instalaciones caprinas"
+        ]
+      }
+    }
+  },
+  "gastos_operativos_anuales": {
+    "sueldos": {
+      "Peón rural permanente (2)": 21396720,
+      "Encargado/Capataz": 14400000,
+      "Personal temporario turismo": 4800000,
+      "Administrativo part-time": 9600000,
+      "Total sueldos": 50196720
+    },
+    "impuestos": {
+      "Cargas sociales (30%)": 15059016,
+      "Ingresos Brutos (2.5%)": 0,
+      "IVA diferencial": 800000,
+      "Impuesto inmobiliario": 450000,
+      "Patentes vehículos": 280000,
+      "Total impuestos": 16589016
+    },
+    "insumos_agricolas": {
+      "Semillas alfalfa (25 ha)": 650000,
+      "Fertilizantes NPK": 890000,
+      "Insecticidas/herbicidas": 420000,
+      "Correctores de suelo": 380000,
+      "Inoculantes": 180000,
+      "Total insumos agrícolas": 0,
+      "Total insumos agricolas": 2520000
+    },
+    "insumos_ganaderia": {
+      "Alimento balanceado bovinos": 1200000,
+      "Suplementos nutricionales": 450000,
+      "Medicamentos veterinarios": 380000,
+      "Vacunas obligatorias": 220000,
+      "Sal mineral": 180000,
+      "Total insumos ganadería": 0,
+      "Total insumos ganaderia": 2430000
+    },
+    "combustibles": {
+      "Gasoil maquinaria": 850000,
+      "Nafta vehículos": 420000,
+      "GLP cocina/calefacción": 380000,
+      "Total combustibles": 1650000
+    },
+    "maquinaria_herramientas": {
+      "Mantenimiento tractor": 450000,
+      "Reparaciones implementos": 280000,
+      "Herramientas menores": 180000,
+      "Repuestos maquinaria": 320000,
+      "Total maquinaria": 0,
+      "Total maquinaria herramientas": 1230000
+    },
+    "servicios": {
+      "Energía eléctrica": 650000,
+      "Agua potable": 280000,
+      "Internet/telefonía": 180000,
+      "Seguros": 850000,
+      "Mantenimiento general": 420000,
+      "Total servicios": 2380000
+    },
+    "insumos_cerveceria": {
+      "Malta": 380000,
+      "Lúpulo": 280000,
+      "Levaduras": 120000,
+      "Envases/etiquetas": 220000,
+      "Total cervecería": 0,
+      "Total insumos cerveceria": 1000000
+    },
+    "insumos_turismo": {
+      "Limpieza domos": 180000,
+      "Ropa de cama": 150000,
+      "Productos amenities": 80000,
+      "Mantenimiento domos": 280000,
+      "Total turismo": 0,
+      "Total insumos turismo": 690000
+    }
+  },
+  "proyecciones_ingresos": {
+    "Año 1": {
+      "Etapa 1": {
+        "Turismo (1 domo, 6 meses)": 8400000,
+        "Eventos privados": 1200000,
+        "Total": 9600000
+      },
+      "Etapa 2A": {
+        "Turismo (1.5 domos promedio)": 14000000,
+        "Eventos privados": 1800000,
+        "Total": 15800000
+      },
+      "Total Año 1": 25400000
+    },
+    "Año 2": {
+      "Etapa 2B": {
+        "Turismo (2 domos)": 26000000,
+        "Alfalfa (primera cosecha parcial)": 4500000,
+        "Cerveza artesanal": 2800000,
+        "Eventos privados": 2400000,
+        "Total": 35700000
+      },
+      "Etapa 3A": {
+        "Turismo (3 domos)": 38000000,
+        "Alfalfa (cosecha completa)": 12900000,
+        "Cerveza artesanal": 4200000,
+        "Eventos privados": 3200000,
+        "Total": 58300000
+      },
+      "Total Año 2": 94000000
+    },
+    "Año 3": {
+      "Consolidación": {
+        "Turismo (3 domos optimizado)": 45000000,
+        "Alfalfa (producción estabilizada)": 12900000,
+        "Cerveza artesanal": 5800000,
+        "Ganadería (feedlot/cerdos)": 8500000,
+        "Eventos privados": 4200000,
+        "Productos artesanales": 1500000,
+        "Total": 77900000
+      }
+    }
+  },
+  "resumen_financiero": {
+    "inversion_total": 48000000,
+    "gastos_operativos_anuales": 78685736,
+    "ingresos_ano_3": 77900000,
+    "margen_operativo": -785736,
+    "roi_proyectado": -1.63695
+  }
+}

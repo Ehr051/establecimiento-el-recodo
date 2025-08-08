@@ -1,0 +1,138 @@
+{
+  "fecha_actualizacion": "2025-08-06",
+  "titulo": "MODELO AUTOFINANCIABLE EL RECODO - COMENZANDO CON LEÑA",
+  "resumen_ejecutivo": {
+    "concepto": "Autofinanciamiento progresivo iniciando con venta de leña",
+    "inversion_inicial_minima": "$ 2.500.000 ARS ($2,5 millones de pesos argentinos)",
+    "recupero_inicial": "3,2 meses",
+    "estrategia": "Reinversión del 85% de utilidades, dividendos mínimos iniciales"
+  },
+  "etapa_leña": {
+    "descripcion": "Autofinanciamiento inicial mediante venta de leña",
+    "inversion_inicial_minima": 2500000,
+    "conceptos_inversion": {
+      "Motosierra profesional": 450000,
+      "Tractor usado básico": 800000,
+      "Remolque para leña": 320000,
+      "Herramientas (hachas, cuñas, etc.)": 180000,
+      "Reparación alambradas existentes": 650000,
+      "Capital de trabajo inicial": 100000
+    },
+    "objetivos_leña": {
+      "bolsas_mes_objetivo": 800,
+      "precio_bolsa_20kg": 1800,
+      "ingresos_mensuales_objetivo": 1440000,
+      "ingresos_anuales_objetivo": 17280000,
+      "costos_mensuales": {
+        "Combustible motosierra": 85000,
+        "Mantenimiento herramientas": 45000,
+        "Combustible tractor": 120000,
+        "Mano de obra (1 peón part-time)": 400000,
+        "Total costos mensuales": 650000
+      },
+      "margen_bruto_mensual": 790000,
+      "margen_bruto_anual": 9480000,
+      "meses_recupero_inversion": 4,
+      "beneficios_adicionales": {
+        "Apertura de picadas/cortafuegos": "Más superficie para pasturas",
+        "Limpieza monte": "Mejor aprovechamiento del campo",
+        "División lógica cuadros": "Manejo ganadero eficiente",
+        "Nuevas alambradas": "Control total del ganado"
+      }
+    }
+  },
+  "cronograma_autofinanciable": {
+    "Año 1 - Fase Leña": {
+      "mes_1_3": {
+        "inversion": 2500000,
+        "actividad": "Setup inicial leña + reparación alambradas",
+        "ingresos_acumulados": 0,
+        "resultado": -2500000
+      },
+      "mes_4_12": {
+        "ingresos_leña": 7110000,
+        "gastos_operativos": 5850000,
+        "resultado_neto": 1260000,
+        "dividendos_socios": 200000,
+        "reinversion_disponible": 1060000
+      },
+      "objetivo_ano_1": "Recuperar inversión inicial + generar capital para Etapa 1"
+    },
+    "Año 2 - Etapa 1 Turismo": {
+      "capital_inicial": 1060000,
+      "ingresos_leña_continuos": 9480000,
+      "inversion_club_house": 8500000,
+      "financiamiento_necesario": 7440000,
+      "ingresos_turismo_6_meses": 4200000,
+      "resultado_neto_combinado": 2180000,
+      "dividendos_socios": 300000,
+      "reinversion_disponible": 1880000
+    },
+    "Año 3 - Etapa 2 Expansión": {
+      "capital_acumulado": 1880000,
+      "ingresos_combinados": 15800000,
+      "inversion_domo_2_cerveceria": 12000000,
+      "financiamiento_adicional": 10120000,
+      "resultado_neto": 4500000,
+      "dividendos_socios": 800000,
+      "reinversion_disponible": 3700000
+    }
+  },
+  "kpis_claros": {
+    "Etapa 0 - Leña (Meses 1-12)": {
+      "Objetivo bolsas/mes": 800,
+      "Precio objetivo bolsa": "$ 1.800 ARS",
+      "Ingresos mensuales meta": "$ 1.440.000 ARS",
+      "Margen bruto mensual": "$ 790.000 ARS",
+      "Recupero inversión": "3,2 meses",
+      "Capital para Etapa 1": "$ 1.060.000 ARS"
+    },
+    "Etapa 1 - Club House (Meses 13-18)": {
+      "Inversión total": "$ 8.500.000 ARS",
+      "Financiamiento requerido": "$ 7.440.000 ARS",
+      "Ingresos turismo objetivo": "$ 4.200.000 ARS (6 meses)",
+      "Ingresos leña continuos": "$ 9.480.000 ARS/año",
+      "Recupero etapa": "18 meses",
+      "Capital para Etapa 2": "$ 1.880.000 ARS"
+    },
+    "Etapa 2 - Expansión (Meses 19-30)": {
+      "Inversión total": "$ 12.000.000 ARS",
+      "Financiamiento requerido": "$ 10.120.000 ARS",
+      "Ingresos combinados": "$ 15.800.000 ARS/año",
+      "Margen neto objetivo": "$ 4.500.000 ARS/año",
+      "Dividendos socios": "$ 800.000 ARS/año",
+      "Reinversión": "$ 3.700.000 ARS/año"
+    }
+  },
+  "plan_alambradas": {
+    "descripcion": "División lógica del campo para manejo eficiente",
+    "cuadros_propuestos": {
+      "Cuadro 1 - Turismo": "20 hectáreas cercanas al club house",
+      "Cuadro 2 - Alfalfa": "25 hectáreas mejores suelos",
+      "Cuadro 3 - Ganadería A": "50 hectáreas pastoreo rotativo",
+      "Cuadro 4 - Ganadería B": "50 hectáreas descanso/reserva",
+      "Cuadro 5 - Monte/Leña": "45 hectáreas monte nativo"
+    },
+    "inversion_alambradas": {
+      "Alambre galvanizado (25km)": 1800000,
+      "Postes quebracho (2500 unidades)": 950000,
+      "Varillas y tensores": 320000,
+      "Mano de obra alambrador": 850000,
+      "Total inversión alambradas": 3920000
+    },
+    "beneficios_alambradas": {
+      "Manejo rotativo ganado": "Mayor carga animal por hectárea",
+      "Control sanitario": "Facilita vacunaciones y tratamientos",
+      "Optimización pasturas": "Siembra dirigida por cuadro",
+      "Seguridad turismo": "Separación total área turística",
+      "Eficiencia operativa": "Menor tiempo en tareas ganaderas"
+    },
+    "financiamiento": "Con ingresos de leña del primer año (parte de los $9,48 millones)"
+  },
+  "aclaraciones_valores": {
+    "moneda": "Pesos Argentinos (ARS)",
+    "formato_millones": "Ej: $45M = $45.000.000 ARS (cuarenta y cinco millones de pesos)",
+    "formato_miles": "Ej: $2,5M = $2.500.000 ARS (dos millones quinientos mil pesos)",
+    "actualizacion_precios": "Agosto 2025 - Valores de mercado reales"
+  }
+}
