@@ -141,6 +141,27 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
+        .nav {
+            background: rgba(45, 80, 22, 0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
     </style>
 </head>
 <body>
@@ -151,6 +172,15 @@
             <p><strong>De 1 empleado rural a complejo turístico integral</strong></p>
         </div>
     </header>
+
+    <nav class="nav">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: center; gap: 2rem; padding: 0 2rem;">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="etapa-1-corregida.html">📋 FASE I Detallada</a>
+            <a href="etapa-2-corregida.html">🏕️ FASE II Detallada</a>
+            <a href="etapa-3.html">🌟 FASE III Detallada</a>
+        </div>
+    </nav>
 
     <main class="container">
         <!-- FASE I: ESTABLECIMIENTO RURAL -->
