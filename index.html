@@ -62,11 +62,6 @@
             color: var(--primary-green);
         }
 
-        .logo::before {
-            content: "🌾";
-            font-size: 2.5rem;
-        }
-
         /* Header Hero */
         .hero-header {
             min-height: 100vh;
@@ -303,7 +298,7 @@
             right: 0;
             width: 300px;
             height: 200px;
-            background: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') no-repeat;
+            background: url('images/amanecer serrano.JPG') no-repeat;
             background-size: cover;
             opacity: 0.1;
             border-radius: 0 20px 0 100px;
@@ -593,13 +588,95 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+
+        /* Lightbox para galería */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .lightbox-prev {
+            left: 2rem;
+        }
+
+        .lightbox-next {
+            right: 2rem;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .gallery-item {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="main-nav" id="mainNav">
         <div class="nav-container">
-            <div class="logo">El Recodo</div>
+            <div class="logo">
+                <img src="images/logo.PNG" alt="El Recodo" style="height: 40px; margin-right: 10px;">
+                <span style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">El Recodo</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#vision">Visión</a></li>
                 <li><a href="#etapas">Plan 4 Etapas</a></li>
@@ -613,10 +690,11 @@
     <!-- Hero Header -->
     <header class="hero-header">
         <div class="hero-content">
-            <div class="logo" style="justify-content: center; font-size: 3rem; margin-bottom: 2rem;">
-                El Recodo
+            <div class="logo" style="justify-content: center; font-size: 3rem; margin-bottom: 2rem; align-items: center;">
+                <img src="images/logo.PNG" alt="El Recodo" style="height: 60px; margin-right: 15px;">
+                <span style="color: #ffffff; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">El Recodo</span>
             </div>
-            <h1 class="hero-title">Plan Maestro El Recodo</h1>
+            <h1 class="hero-title" style="line-height: 1.2;">Plan Maestro<br>El Recodo</h1>
             <p class="hero-subtitle">3 FASES → 9 ETAPAS → 20 SUB-ETAPAS (2025-2035)</p>
             <p class="hero-description">
                 <strong>FASES → ETAPAS → SUB-ETAPAS:</strong> De 1 empleado cortando leña a equipo según necesidades. 
@@ -687,26 +765,71 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div style="text-align: center;">
                         <h4 style="color: #28a745; margin-bottom: 1rem;">🌾 FASE I: Campo Productivo</h4>
-                        <div style="height: 200px; background: url('images/del-campo-a-la-copa.svg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <div class="gallery-item" style="height: 200px; background: url('images/del-campo-a-la-copa.svg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/del-campo-a-la-copa.svg"></div>
                         <p style="margin-top: 1rem; color: #666;">Del campo a la copa - Producción aromáticas gin, cebada cervecera</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #007bff; margin-bottom: 1rem;">🏕️ FASE II: Domos Rurales</h4>
-                        <div style="height: 200px; background: url('images/domo 1.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <div class="gallery-item" style="height: 200px; background: url('images/domo 1.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/domo 1.PNG"></div>
                         <p style="margin-top: 1rem; color: #666;">Domos geodésicos reales - diseño y planificación</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 FASE III: Club House + Eventos</h4>
-                        <div style="height: 200px; background: url('images/club-house-domo-grande.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
+                        <div class="gallery-item" style="height: 200px; background: url('images/club-house-domo-grande.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/club-house-domo-grande.jpg"></div>
                         <p style="margin-top: 1rem; color: #666;">Club House central para eventos y actividades</p>
                     </div>
                     
                     <div style="text-align: center;">
-                        <h4 style="color: #6f42c1; margin-bottom: 1rem;">🌙 Experiencia Nocturna</h4>
-                        <div style="height: 200px; background: url('images/cielo nocturno.JPG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
-                        <p style="margin-top: 1rem; color: #666;">Cielos nocturnos únicos - turismo astronómico</p>
+                        <h4 style="color: #6f42c1; margin-bottom: 1rem;">🌙 Asados Bajo las Estrellas</h4>
+                        <div class="gallery-item" style="height: 200px; background: url('images/asado-estrellas.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/asado-estrellas.jpg"></div>
+                        <p style="margin-top: 1rem; color: #666;">Experiencias gastronómicas únicas bajo el cielo serrano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiencias Únicas El Recodo -->
+        <div class="container">
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 3rem; border-radius: 20px; margin: 4rem 0;">
+                <h3 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem; font-size: 2rem;">🌟 Experiencias Únicas El Recodo</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center;">
+                        <h4 style="color: #e67e22; margin-bottom: 1rem;">🌅 Amaneceres Serranos</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('images/amanecer serrano.JPG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/amanecer serrano.JPG"></div>
+                        <p style="margin-top: 1rem; color: #666;">Despertá con las mejores vistas de las sierras</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #f39c12; margin-bottom: 1rem;">🌇 Atardeceres Únicos</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('images/atardecer.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/atardecer.jpg"></div>
+                        <p style="margin-top: 1rem; color: #666;">Colores únicos en el horizonte sanluiseño</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #8e44ad; margin-bottom: 1rem;">🍺 Degustación Artesanal</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('images/degustacion-cerveza.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/degustacion-cerveza.jpg"></div>
+                        <p style="margin-top: 1rem; color: #666;">Cervezas y gin con ingredientes propios</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #27ae60; margin-bottom: 1rem;">🌿 Privacidad Total</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('images/privacidad.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/privacidad.PNG"></div>
+                        <p style="margin-top: 1rem; color: #666;">Desconexión real en entorno natural</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #2980b9; margin-bottom: 1rem;">⚡ Energía Solar</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"></div>
+                        <p style="margin-top: 1rem; color: #666;">45kW paneles solares + baterías</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #d35400; margin-bottom: 1rem;">🏗️ Planificación Detallada</h4>
+                        <div class="gallery-item" style="height: 180px; background: url('images/plano general.png') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/plano general.png"></div>
+                        <p style="margin-top: 1rem; color: #666;">Cada detalle pensado y proyectado</p>
                     </div>
                 </div>
             </div>
@@ -774,9 +897,19 @@
                                     <li><strong>Paneles solares:</strong> 45kW + baterías</li>
                                     <li><strong>Segundo pozo:</strong> 120m profundidad</li>
                                     <li>Planta procesamiento + certificaciones</li>
+                                    <li><strong>Casas alquiler:</strong> 2 unidades opcionales empleados</li>
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    <div style="background: #fff3cd; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #ffc107;">
+                        <h5 style="color: #856404; margin-bottom: 1rem;">💡 Modelo de Vivienda Empleados</h5>
+                        <p style="color: #856404; margin: 0;">
+                            <strong>Sin casa administrativa:</strong> Los empleados viajan diariamente. 
+                            <strong>Opción alquiler:</strong> 2 casas disponibles para empleados que prefieran reducir gastos de transporte. 
+                            Alquiler opcional, no descuento salarial.
+                        </p>
                     </div>
 
                     <div style="text-align: center;">
@@ -1049,7 +1182,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>🌾 Establecimiento El Recodo</h3>
+                    <h3 style="display: flex; align-items: center;">
+                        <img src="images/logo.PNG" alt="El Recodo" style="height: 30px; margin-right: 10px;">
+                        🌾 Establecimiento El Recodo
+                    </h3>
                     <p>Turismo Rural Premium en San Luis</p>
                     <p>Plan de inversión progresivo en 4 etapas</p>
                     <div class="social-links" style="margin-top: 1rem;">
@@ -1090,6 +1226,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <button class="lightbox-nav lightbox-prev" onclick="prevImage()">‹</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="lightbox-nav lightbox-next" onclick="nextImage()">›</button>
+    </div>
 
     <!-- JavaScript -->
     <script>
@@ -1202,7 +1346,61 @@
                     this.style.transform = 'translateY(0) scale(1)';
                 });
             });
+
+            // Galería Lightbox
+            setupGallery();
         });
+
+        // Galería y Lightbox
+        let galleryImages = [];
+        let currentImageIndex = 0;
+
+        function setupGallery() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryImages = Array.from(galleryItems).map(item => item.dataset.src);
+
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => openLightbox(index));
+            });
+
+            // Cerrar lightbox con ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'ArrowRight') nextImage();
+            });
+
+            // Cerrar lightbox al hacer click en el fondo
+            document.getElementById('lightbox').addEventListener('click', function(e) {
+                if (e.target === this) closeLightbox();
+            });
+        }
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            
+            img.src = galleryImages[currentImageIndex];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+        }
     </script>
 </body>
 </html>
