@@ -1108,9 +1108,11 @@
                             <div>
                                 <strong>1.2 - Consolidación:</strong>
                                 <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                    <li>Optimización alfalfa en 16ha disponibles</li>
-                                    <li><strong>Aromáticas gin:</strong> Enebro, cardamomo, cilantro</li>
-                                    <li><strong>Cebada/lúpulo:</strong> Variedades INTA</li>
+                                    <li>Optimización alfalfa: <strong>6ha para fardos + peleteado</strong></li>
+                                    <li><strong>Aromáticas gin:</strong> 2ha enebro, cardamomo, cilantro</li>
+                                    <li><strong>Cebada/lúpulo:</strong> 3ha variedades INTA cerveceras</li>
+                                    <li><strong>Sorgo/maíz:</strong> 4ha para peleteado exclusivo</li>
+                                    <li><strong>Pasturas rotativas:</strong> 1ha recuperación suelos</li>
                                 </ul>
                             </div>
                             <div>
@@ -1270,6 +1272,109 @@
                 </div>
             </div>
 
+            <!-- Selector Plan A vs Plan B -->
+            <div class="vision-section fade-in" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border: 3px solid var(--accent-gold);">
+                <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">🎯 Elige Tu Estrategia de Financiamiento</h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                    <!-- PLAN A: Autofinanciamiento -->
+                    <div style="background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 3rem; border-radius: 20px; border: 3px solid #28a745; position: relative; cursor: pointer;" onclick="selectPlan('A')">
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #28a745; color: white; padding: 0.5rem 2rem; border-radius: 25px; font-weight: bold;">PLAN A</div>
+                        <h4 style="color: #28a745; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🌱 AUTOFINANCIAMIENTO</h4>
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 2.5rem; color: #28a745; font-weight: bold;">$1.920M</div>
+                            <div style="color: #666; font-size: 1.1rem;">Inversión Total 10 Años</div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #28a745; font-size: 1.5rem; margin-right: 1rem;">✅</span>
+                                <span><strong>Sin deudas:</strong> Cada fase autofinancia la siguiente</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #28a745; font-size: 1.5rem; margin-right: 1rem;">✅</span>
+                                <span><strong>Crecimiento orgánico:</strong> 10 años desarrollo gradual</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #28a745; font-size: 1.5rem; margin-right: 1rem;">✅</span>
+                                <span><strong>Bajo riesgo:</strong> Sin presión financiera externa</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #28a745; font-size: 1.5rem; margin-right: 1rem;">✅</span>
+                                <span><strong>ROI final:</strong> 75% anual sobre patrimonio</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- PLAN B: Con Créditos -->
+                    <div style="background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 3rem; border-radius: 20px; border: 3px solid #ffc107; position: relative; cursor: pointer;" onclick="selectPlan('B')">
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #ffc107; color: #333; padding: 0.5rem 2rem; border-radius: 25px; font-weight: bold;">PLAN B</div>
+                        <h4 style="color: #e67e22; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🚀 CON FINANCIAMIENTO</h4>
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 2.5rem; color: #e67e22; font-weight: bold;">$1.200M</div>
+                            <div style="color: #666; font-size: 1.1rem;">Inversión Propia + $720M Créditos</div>
+                        </div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #e67e22; font-size: 1.5rem; margin-right: 1rem;">🚀</span>
+                                <span><strong>Desarrollo acelerado:</strong> 6-7 años vs 10 años</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #e67e22; font-size: 1.5rem; margin-right: 1rem;">🚀</span>
+                                <span><strong>Mayor escala:</strong> Infraestructura completa antes</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #e67e22; font-size: 1.5rem; margin-right: 1rem;">⚡</span>
+                                <span><strong>Aprovecha oportunidades:</strong> Mercado turismo actual</span>
+                            </li>
+                            <li style="margin: 1rem 0; display: flex; align-items: center;">
+                                <span style="color: #e67e22; font-size: 1.5rem; margin-right: 1rem;">💰</span>
+                                <span><strong>ROI mejorado:</strong> Mayor rentabilidad por escala</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comparativa Detallada -->
+                <div id="plan-comparison" style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h4 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem; font-size: 2rem;">📊 Comparativa Detallada</h4>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; text-align: center;">
+                        <div><strong style="color: var(--primary-green);">Aspecto</strong></div>
+                        <div><strong style="color: #28a745;">Plan A (Autofinanciado)</strong></div>
+                        <div><strong style="color: #e67e22;">Plan B (Con Créditos)</strong></div>
+                        
+                        <div style="border-top: 1px solid #eee; padding-top: 1rem;"><strong>Duración Total</strong></div>
+                        <div style="border-top: 1px solid #eee; padding-top: 1rem;">10 años</div>
+                        <div style="border-top: 1px solid #eee; padding-top: 1rem;">6-7 años</div>
+                        
+                        <div><strong>Capital Propio Requerido</strong></div>
+                        <div>$1.920M (100%)</div>
+                        <div>$1.200M (62.5%)</div>
+                        
+                        <div><strong>Financiamiento Externo</strong></div>
+                        <div>$0</div>
+                        <div>$720M (37.5%)</div>
+                        
+                        <div><strong>Ingresos Año 5</strong></div>
+                        <div>$25M/mes</div>
+                        <div>$45M/mes</div>
+                        
+                        <div><strong>Ingresos Finales</strong></div>
+                        <div>$58M/mes</div>
+                        <div>$75M/mes</div>
+                        
+                        <div><strong>ROI Final</strong></div>
+                        <div>75% anual</div>
+                        <div>95% anual</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button onclick="showPlanDetails('A')" class="btn" style="background: #28a745; margin: 0 1rem;">📋 Ver Plan A Detallado</button>
+                    <button onclick="showPlanDetails('B')" class="btn" style="background: #e67e22; margin: 0 1rem;">🚀 Ver Plan B con Créditos</button>
+                </div>
+            </div>
+
             <!-- Resumen Financiero Total -->
             <div class="vision-section fade-in" style="background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white;">
                 <h3 style="color: var(--accent-gold); text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">💰 Resumen Financiero Plan Maestro</h3>
@@ -1326,6 +1431,218 @@
             </div>
         </div>
     </section>
+
+    <!-- Sección Plan B - Financiamiento con Créditos -->
+    <section id="financiamiento" class="section" style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color: #e67e22;">🚀 Plan B: Estrategia con Financiamiento</h2>
+            
+            <div class="simulador-container fade-in" style="background: white; border: 3px solid #e67e22;">
+                <h3 style="color: #e67e22; text-align: center; margin-bottom: 2rem; font-size: 2rem;">💰 Opciones de Crédito Agropecuario disponibles</h3>
+                <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.2rem;">
+                    Análisis de alternativas de financiamiento para acelerar el desarrollo del proyecto
+                </p>
+
+                <!-- Créditos Agropecuarios -->
+                <div style="background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 3rem; border-radius: 20px; margin-bottom: 3rem; border: 2px solid #28a745;">
+                    <h4 style="color: #28a745; margin-bottom: 2rem; font-size: 1.8rem;">🌾 Créditos Agropecuarios</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <!-- Banco Nación -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #1f4e79; margin-bottom: 1rem;">🏛️ Banco Nación</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Crédito Agropecuario:</strong> Hasta $300M</li>
+                                <li><strong>Tasa:</strong> 35-45% anual (subsidios disponibles)</li>
+                                <li><strong>Plazo:</strong> 5-7 años</li>
+                                <li><strong>Garantías:</strong> Hipotecaria sobre campo</li>
+                                <li><strong>Destino:</strong> Infraestructura, maquinaria, capital de trabajo</li>
+                            </ul>
+                        </div>
+
+                        <!-- Banco Provincia -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #0066cc; margin-bottom: 1rem;">🏦 Banco Provincia</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Procampo:</strong> Línea específica productores</li>
+                                <li><strong>Tasa:</strong> 40-50% anual</li>
+                                <li><strong>Plazo:</strong> 3-5 años</li>
+                                <li><strong>Ventaja:</strong> Tarjeta compra insumos</li>
+                                <li><strong>Cobertura:</strong> San Luis incluido</li>
+                            </ul>
+                        </div>
+
+                        <!-- FONDAGAR -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #8b4513; margin-bottom: 1rem;">🌾 FONDAGAR</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Fondo Garantía:</strong> Avala hasta 80%</li>
+                                <li><strong>Tasa mejorada:</strong> 30-35% con garantía</li>
+                                <li><strong>PyMEs Agro:</strong> Hasta $250M</li>
+                                <li><strong>Ventaja:</strong> Menos garantías propias</li>
+                                <li><strong>Requisito:</strong> Proyecto productivo sólido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Créditos PyMEs y Desarrollo -->
+                <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); padding: 3rem; border-radius: 20px; margin-bottom: 3rem; border: 2px solid #2196f3;">
+                    <h4 style="color: #1976d2; margin-bottom: 2rem; font-size: 1.8rem;">🏢 Créditos PyMEs y Desarrollo</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <!-- BICE -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #8b4513; margin-bottom: 1rem;">🏭 BICE</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Inversión Productiva:</strong> Hasta $500M</li>
+                                <li><strong>Tasa:</strong> Badlar + 8-12 puntos</li>
+                                <li><strong>Plazo:</strong> 7-10 años</li>
+                                <li><strong>Especialidad:</strong> Proyectos complejos</li>
+                                <li><strong>Ventaja:</strong> Financiamiento integral</li>
+                            </ul>
+                        </div>
+
+                        <!-- CFI -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #673ab7; margin-bottom: 1rem;">🏛️ CFI</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Desarrollo Regional:</strong> Hasta $400M</li>
+                                <li><strong>Tasa subsidiada:</strong> 25-35%</li>
+                                <li><strong>Foco:</strong> Desarrollo provincial</li>
+                                <li><strong>San Luis:</strong> Programa especial</li>
+                                <li><strong>Ventaja:</strong> Tasas preferenciales</li>
+                            </ul>
+                        </div>
+
+                        <!-- Leasing -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <h5 style="color: #ff5722; margin-bottom: 1rem;">🚗 Leasing</h5>
+                            <ul style="margin-left: 1rem;">
+                                <li><strong>Maquinaria:</strong> 100% financiado</li>
+                                <li><strong>Tasa:</strong> 45-55% anual</li>
+                                <li><strong>Plazo:</strong> 3-5 años</li>
+                                <li><strong>Ventaja:</strong> Opción compra</li>
+                                <li><strong>Aplicación:</strong> Tractores, paneles solares</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estrategia Combinada Recomendada -->
+                <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 3rem; border-radius: 20px; border: 3px solid #ff9800;">
+                    <h4 style="color: #f57c00; text-align: center; margin-bottom: 2rem; font-size: 2rem;">🎯 Estrategia Recomendada Plan B</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                        <!-- Fase 1 Financiamiento -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border-left: 5px solid #4caf50;">
+                            <h5 style="color: #4caf50; margin-bottom: 1rem;">📅 AÑOS 1-2: Infraestructura Base</h5>
+                            <div style="background: #f1f8e9; padding: 1.5rem; border-radius: 10px; margin-bottom: 1rem;">
+                                <strong>Crédito FONDAGAR: $200M</strong>
+                                <ul style="margin: 1rem 0 0 1rem;">
+                                    <li>Tasa: 32% anual</li>
+                                    <li>Plazo: 5 años</li>
+                                    <li>Cuota: $5.2M/mes</li>
+                                </ul>
+                            </div>
+                            <strong>Destino:</strong>
+                            <ul style="margin-left: 1rem;">
+                                <li>🔧 Maquinaria básica</li>
+                                <li>⚡ Paneles solares 45kW</li>
+                                <li>💧 Segundo pozo 120m</li>
+                                <li>🌾 Infraestructura cultivos</li>
+                            </ul>
+                        </div>
+
+                        <!-- Fase 2 Financiamiento -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border-left: 5px solid #2196f3;">
+                            <h5 style="color: #2196f3; margin-bottom: 1rem;">📅 AÑOS 3-4: Desarrollo Turístico</h5>
+                            <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 10px; margin-bottom: 1rem;">
+                                <strong>CFI San Luis: $300M</strong>
+                                <ul style="margin: 1rem 0 0 1rem;">
+                                    <li>Tasa: 28% anual</li>
+                                    <li>Plazo: 7 años</li>
+                                    <li>Cuota: $6.1M/mes</li>
+                                </ul>
+                            </div>
+                            <strong>Destino:</strong>
+                            <ul style="margin-left: 1rem;">
+                                <li>🏡 4 Domos completos</li>
+                                <li>🍽️ Club House básico</li>
+                                <li>🔥 Infraestructura gastronómica</li>
+                                <li>📡 Conectividad y servicios</li>
+                            </ul>
+                        </div>
+
+                        <!-- Fase 3 Financiamiento -->
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border-left: 5px solid #ff9800;">
+                            <h5 style="color: #ff9800; margin-bottom: 1rem;">📅 AÑOS 5-6: Consolidación</h5>
+                            <div style="background: #fff3e0; padding: 1.5rem; border-radius: 10px; margin-bottom: 1rem;">
+                                <strong>Leasing + BICE: $220M</strong>
+                                <ul style="margin: 1rem 0 0 1rem;">
+                                    <li>Tasa promedio: 38% anual</li>
+                                    <li>Plazo: 5 años</li>
+                                    <li>Cuota: $5.8M/mes</li>
+                                </ul>
+                            </div>
+                            <strong>Destino:</strong>
+                            <ul style="margin-left: 1rem;">
+                                <li>🏆 Club House ampliado</li>
+                                <li>🚗 Vehículos operativos</li>
+                                <li>🌟 Equipamiento premium</li>
+                                <li>📈 Capital de trabajo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Resumen Financiero Plan B -->
+                    <div style="background: white; padding: 2rem; border-radius: 15px; margin-top: 3rem; border: 2px solid #4caf50;">
+                        <h5 style="color: #4caf50; text-align: center; margin-bottom: 2rem;">💰 Resumen Financiero Plan B</h5>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                            <div style="background: #f1f8e9; padding: 1.5rem; border-radius: 10px;">
+                                <div style="font-size: 2rem; color: #4caf50; font-weight: bold;">$720M</div>
+                                <div style="color: #666;">Total Créditos</div>
+                            </div>
+                            <div style="background: #f1f8e9; padding: 1.5rem; border-radius: 10px;">
+                                <div style="font-size: 2rem; color: #4caf50; font-weight: bold;">$1.200M</div>
+                                <div style="color: #666;">Capital Propio</div>
+                            </div>
+                            <div style="background: #f1f8e9; padding: 1.5rem; border-radius: 10px;">
+                                <div style="font-size: 2rem; color: #4caf50; font-weight: bold;">$17.1M</div>
+                                <div style="color: #666;">Cuota Máxima/Mes</div>
+                            </div>
+                            <div style="background: #f1f8e9; padding: 1.5rem; border-radius: 10px;">
+                                <div style="font-size: 2rem; color: #4caf50; font-weight: bold;">6-7</div>
+                                <div style="color: #666;">Años Desarrollo</div>
+                            </div>
+                        </div>
+
+                        <div style="background: #e8f5e8; padding: 2rem; border-radius: 10px; margin-top: 2rem;">
+                            <h6 style="color: #2e7d32; margin-bottom: 1rem;">✅ Ventajas Clave del Plan B:</h6>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <ul style="margin-left: 1rem; color: #2e7d32;">
+                                    <li>🚀 <strong>Acelerar:</strong> 3-4 años menos desarrollo</li>
+                                    <li>📈 <strong>Escalar:</strong> Ingresos $75M vs $58M</li>
+                                    <li>🎯 <strong>Aprovechar:</strong> Mercado turismo actual</li>
+                                </ul>
+                                <ul style="margin-left: 1rem; color: #2e7d32;">
+                                    <li>💪 <strong>Competir:</strong> Infraestructura completa antes</li>
+                                    <li>🔄 <strong>Diversificar:</strong> Múltiples fuentes ingreso</li>
+                                    <li>📊 <strong>ROI:</strong> 95% vs 75% anual final</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#simulador" class="btn" style="background: #e67e22; margin: 0 1rem;">🧮 Simular Plan B</a>
+                    <a href="plan-maestro-completo.html#plan-b" class="btn" style="background: #4caf50; margin: 0 1rem;">📋 Plan B Detallado</a>
+                    <a href="#contacto" class="btn btn-secondary" style="margin: 0 1rem;">📞 Asesoramiento</a>
+                </div>
+            </div>
+        </div>
 
     <!-- Simulador Financiero -->
     <section id="simulador" class="section">
@@ -2565,6 +2882,161 @@ Generado por: Simulador El Recodo v2.0
                     this.style.transform = 'translateY(0) scale(1)';
                 });
             });
+        });
+        
+        // Funciones para Plan A vs Plan B
+        function selectPlan(plan) {
+            // Remover selección anterior
+            document.querySelectorAll('[onclick*="selectPlan"]').forEach(el => {
+                el.style.transform = 'scale(1)';
+                el.style.boxShadow = el.style.boxShadow.replace(', 0 0 20px rgba(212, 175, 55, 0.6)', '');
+            });
+            
+            // Resaltar plan seleccionado
+            const selectedElement = event.target.closest('[onclick*="selectPlan"]');
+            selectedElement.style.transform = 'scale(1.02)';
+            selectedElement.style.boxShadow += ', 0 0 20px rgba(212, 175, 55, 0.6)';
+            
+            // Actualizar comparativa con datos del plan seleccionado
+            updatePlanComparison(plan);
+        }
+        
+        function updatePlanComparison(selectedPlan) {
+            const comparison = document.getElementById('plan-comparison');
+            
+            if (selectedPlan === 'A') {
+                comparison.innerHTML = `
+                    <h4 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem; font-size: 2rem;">📊 Plan A Seleccionado - Detalles</h4>
+                    
+                    <div style="background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 2rem; border-radius: 15px; border: 3px solid #28a745;">
+                        <h5 style="color: #28a745; margin-bottom: 2rem;">🌱 Cronología Autofinanciamiento</h5>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #1b5e20; margin-bottom: 1rem;">📅 Años 1-3: FASE I</h6>
+                                <ul style="margin-left: 1rem; color: #2e7d32;">
+                                    <li>Inversión: $650M (capital propio)</li>
+                                    <li>Ingresos finales: $18M/mes</li>
+                                    <li>Personal: 1 empleado</li>
+                                    <li>Productos: Leña + alfalfa + aromáticas</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #1b5e20; margin-bottom: 1rem;">📅 Años 4-6: FASE II</h6>
+                                <ul style="margin-left: 1rem; color: #2e7d32;">
+                                    <li>Inversión: $420M (de ingresos FASE I)</li>
+                                    <li>Ingresos finales: $31M/mes</li>
+                                    <li>Personal: 2 empleados</li>
+                                    <li>Productos: 4 domos + turismo</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #1b5e20; margin-bottom: 1rem;">📅 Años 7-10: FASE III</h6>
+                                <ul style="margin-left: 1rem; color: #2e7d32;">
+                                    <li>Inversión: $850M (de ingresos FASE II)</li>
+                                    <li>Ingresos finales: $58M/mes</li>
+                                    <li>Personal: Según demanda</li>
+                                    <li>Productos: 8 domos + club house</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f1f8e9; padding: 2rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                            <h6 style="color: #2e7d32; margin-bottom: 1rem;">✅ Beneficios Clave Plan A</h6>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div>
+                                    <strong>🛡️ Seguridad Financiera</strong>
+                                    <p style="color: #666; margin-top: 0.5rem;">Sin deudas, sin presión de pagos, crecimiento a tu ritmo</p>
+                                </div>
+                                <div>
+                                    <strong>📈 ROI Sostenible</strong>
+                                    <p style="color: #666; margin-top: 0.5rem;">75% anual final, todo el patrimonio libre de cargas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (selectedPlan === 'B') {
+                comparison.innerHTML = `
+                    <h4 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem; font-size: 2rem;">📊 Plan B Seleccionado - Detalles</h4>
+                    
+                    <div style="background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 2rem; border-radius: 15px; border: 3px solid #e67e22;">
+                        <h5 style="color: #e67e22; margin-bottom: 2rem;">🚀 Cronología Acelerada con Créditos</h5>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #d84315; margin-bottom: 1rem;">📅 Años 1-2: Base Acelerada</h6>
+                                <ul style="margin-left: 1rem; color: #e65100;">
+                                    <li>Capital propio: $400M</li>
+                                    <li>Crédito FONDAGAR: $200M</li>
+                                    <li>Total inversión: $600M</li>
+                                    <li>Infraestructura completa año 2</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #d84315; margin-bottom: 1rem;">📅 Años 3-4: Turismo Masivo</h6>
+                                <ul style="margin-left: 1rem; color: #e65100;">
+                                    <li>Capital propio: $500M</li>
+                                    <li>Crédito CFI: $300M</li>
+                                    <li>4 domos + club house operando</li>
+                                    <li>Ingresos: $45M/mes año 4</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                                <h6 style="color: #d84315; margin-bottom: 1rem;">📅 Años 5-7: Liderazgo</h6>
+                                <ul style="margin-left: 1rem; color: #e65100;">
+                                    <li>Capital propio: $300M</li>
+                                    <li>Leasing + BICE: $220M</li>
+                                    <li>8 domos + experiencias premium</li>
+                                    <li>Ingresos: $75M/mes año 7</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #fff3e0; padding: 2rem; border-radius: 10px; margin-top: 2rem;">
+                            <h6 style="color: #e65100; margin-bottom: 1rem; text-align: center;">⚡ Ventajas Competitivas Plan B</h6>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div>
+                                    <strong>🏆 Liderazgo Temprano</strong>
+                                    <p style="color: #666; margin-top: 0.5rem;">Primer complejo premium región, ventaja competitiva</p>
+                                </div>
+                                <div>
+                                    <strong>💰 ROI Superior</strong>
+                                    <p style="color: #666; margin-top: 0.5rem;">95% anual, mayor rentabilidad por escala</p>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #ffecb3; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; text-align: center;">
+                                <strong style="color: #ef6c00;">📊 Flujo de Caja: Ingresos cubren cuotas desde mes 18</strong>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function showPlanDetails(plan) {
+            if (plan === 'A') {
+                window.location.href = 'plan-maestro-completo.html#plan-a-autofinanciamiento';
+            } else if (plan === 'B') {
+                window.location.href = '#financiamiento';
+            }
+        }
+        
+        // Inicializar vista por defecto con Plan A seleccionado
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                updatePlanComparison('A');
+                const planAElement = document.querySelector('[onclick*="selectPlan(\'A\')"]');
+                if (planAElement) {
+                    planAElement.style.transform = 'scale(1.02)';
+                    planAElement.style.boxShadow += ', 0 0 20px rgba(40, 167, 69, 0.4)';
+                }
+            }, 500);
         });
     </script>
 </body>
