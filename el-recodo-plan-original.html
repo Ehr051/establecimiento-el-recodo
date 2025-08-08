@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Recodo - Plan Original Simplificado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2d5016, #4a7c59);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        /* Secciones */
+        .section {
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .section h2 {
+            color: #2d5016;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+        
+        .etapas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .etapa-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 5px solid;
+        }
+        
+        .etapa-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .etapa-1 { border-top-color: #4CAF50; }
+        .etapa-2 { border-top-color: #FF9800; }
+        .etapa-3 { border-top-color: #2196F3; }
+        .etapa-4 { border-top-color: #9C27B0; }
+        
+        .etapa-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .etapa-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .etapa-titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .etapa-inversion {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .etapa-details {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .etapa-details li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .etapa-payback {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        
+        .imagenes-principales {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .imagen-container {
+            text-align: center;
+        }
+        
+        .imagen-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid rgba(45, 80, 22, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .imagen-container img:hover {
+            transform: scale(1.05);
+        }
+        
+        .imagen-container h3 {
+            color: #2d5016;
+            margin: 1rem 0 0.5rem 0;
+        }
+        
+        .participantes-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .participantes-controls {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .participantes-controls select {
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background: white;
+        }
+        
+        .participantes-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .participante-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .participante-item input {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .participacion-display {
+            text-align: center;
+            font-weight: bold;
+            color: #4CAF50;
+            font-size: 1.1rem;
+        }
+        
+        .controles-participantes {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0 0.5rem;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #45a049;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .resumen-financiero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .filosofia-plan {
+            background: linear-gradient(135deg, #2d5016, #4a7c59);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .filosofia-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .filosofia-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+        
+        .filosofia-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .filosofia-titulo {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .imagenes-principales {
+                grid-template-columns: 1fr;
+            }
+            
+            .participante-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .etapas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.PNG" alt="Logo El Recodo">
+                El Recodo
+            </h1>
+            <p class="tagline">"Donde el monte encuentra la tradición" - Plan Original Simplificado</p>
+            
+            <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 15px; margin: 2rem auto; max-width: 500px; border: 2px solid rgba(255,255,255,0.2);">
+                <h3 style="color: #f7931e; margin-bottom: 0.5rem; font-size: 1.2rem;">📍 Ubicación Real</h3>
+                <p style="margin: 0; font-size: 1.1rem; font-weight: bold;">Ruta 15B Km 15,5</p>
+                <p style="margin: 0; opacity: 0.9;">Paraje El Recodo, San Luis • 15.22 hectáreas</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <!-- Imágenes Principales -->
+            <section class="section">
+                <h2>🗺️ El Terreno Real</h2>
+                <div class="imagenes-principales">
+                    <div class="imagen-container">
+                        <h3>Vista Aérea Sur</h3>
+                        <img src="images/vista aerea sur.JPG" alt="Vista Aérea El Recodo" onclick="window.open(this.src, '_blank')">
+                        <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">15.22 hectáreas disponibles</p>
+                    </div>
+                    <div class="imagen-container">
+                        <h3>Plano General</h3>
+                        <img src="images/plano general.png" alt="Plano General El Recodo" onclick="window.open(this.src, '_blank')">
+                        <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">Distribución estratégica</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Plan por Etapas -->
+            <section class="section">
+                <h2>🎯 Plan Original - 4 Etapas Progresivas</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666; font-size: 1.1rem;">
+                    <strong>Filosofía:</strong> Inversión mínima • Recuperación rápida • Riesgo controlado • Solo avanzamos si cada etapa es exitosa
+                </p>
+                
+                <div class="etapas-grid">
+                    <!-- ETAPA 1 -->
+                    <div class="etapa-card etapa-1">
+                        <div class="etapa-header">
+                            <div class="etapa-icon">🌱</div>
+                            <div class="etapa-titulo" style="color: #4CAF50;">ETAPA 1 - BASE</div>
+                            <div class="etapa-inversion" style="background: #4CAF50; color: white;">$500.000</div>
+                        </div>
+                        <ul class="etapa-details">
+                            <li><strong>🌾 Cultivos base:</strong> Alfalfa + Cebada</li>
+                            <li><strong>🏠 Casa existente:</strong> Acondicionamiento</li>
+                            <li><strong>🚜 Equipamiento:</strong> Básico agrícola</li>
+                            <li><strong>👥 Personal:</strong> 1 empleado + hermano</li>
+                            <li><strong>💰 Flujo mensual:</strong> $45K</li>
+                        </ul>
+                        <div class="etapa-payback" style="background: #e8f5e8; color: #4CAF50;">
+                            <strong>✅ Payback: 18 meses</strong><br>
+                            <small>Mínimo riesgo, base sólida</small>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 2 -->
+                    <div class="etapa-card etapa-2">
+                        <div class="etapa-header">
+                            <div class="etapa-icon">🏗️</div>
+                            <div class="etapa-titulo" style="color: #FF9800;">ETAPA 2 - TINGLADO</div>
+                            <div class="etapa-inversion" style="background: #FF9800; color: white;">+$300.000</div>
+                        </div>
+                        <ul class="etapa-details">
+                            <li><strong>🏭 Tinglado simple:</strong> 500m² con divisiones</li>
+                            <li><strong>🍺 Cervecería:</strong> Parte del tinglado</li>
+                            <li><strong>🌾 Procesamiento:</strong> Pellets + granos</li>
+                            <li><strong>📦 Almacenamiento:</strong> Productos</li>
+                            <li><strong>💰 Flujo adicional:</strong> +$25K/mes</li>
+                        </ul>
+                        <div class="etapa-payback" style="background: #fff3e0; color: #FF9800;">
+                            <strong>✅ Payback: 12 meses</strong><br>
+                            <small>Solo si Etapa 1 es exitosa</small>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 3 -->
+                    <div class="etapa-card etapa-3">
+                        <div class="etapa-header">
+                            <div class="etapa-icon">🏠</div>
+                            <div class="etapa-titulo" style="color: #2196F3;">ETAPA 3 - TURISMO</div>
+                            <div class="etapa-inversion" style="background: #2196F3; color: white;">+$400.000</div>
+                        </div>
+                        <ul class="etapa-details">
+                            <li><strong>🏡 Cabañas rurales:</strong> 4 unidades básicas</li>
+                            <li><strong>🍻 Degustaciones:</strong> Cerveza + productos</li>
+                            <li><strong>🚜 Actividades:</strong> Experiencias rurales</li>
+                            <li><strong>🍽️ Gastronomía:</strong> Productos propios</li>
+                            <li><strong>💰 Flujo adicional:</strong> +$35K/mes</li>
+                        </ul>
+                        <div class="etapa-payback" style="background: #e3f2fd; color: #2196F3;">
+                            <strong>✅ Payback: 15 meses</strong><br>
+                            <small>Etapas 1-2 consolidadas</small>
+                        </div>
+                    </div>
+
+                    <!-- ETAPA 4 -->
+                    <div class="etapa-card etapa-4">
+                        <div class="etapa-header">
+                            <div class="etapa-icon">🔮</div>
+                            <div class="etapa-titulo" style="color: #9C27B0;">ETAPA 4 - DOMOS</div>
+                            <div class="etapa-inversion" style="background: #9C27B0; color: white;">+$600.000</div>
+                        </div>
+                        <ul class="etapa-details">
+                            <li><strong>🏠 Domos geodésicos:</strong> 6 unidades premium</li>
+                            <li><strong>⭐ Club House:</strong> Experiencia de lujo</li>
+                            <li><strong>🌌 Astroturismo:</strong> Observación astronómica</li>
+                            <li><strong>🏇 Preparación ecuestre:</strong> Futuro club</li>
+                            <li><strong>💰 Flujo adicional:</strong> +$60K/mes</li>
+                        </ul>
+                        <div class="etapa-payback" style="background: #f3e5f5; color: #9C27B0;">
+                            <strong>✅ Payback: 10 meses</strong><br>
+                            <small>Todas las etapas exitosas</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filosofía del Plan -->
+                <div class="filosofia-plan">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">🎯 Filosofía del Plan Original</h3>
+                    <div class="filosofia-grid">
+                        <div class="filosofia-item">
+                            <div class="filosofia-icon">⚡</div>
+                            <div class="filosofia-titulo">Recuperación Rápida</div>
+                            <div style="font-size: 0.9rem;">Cada etapa se paga sola antes de la siguiente</div>
+                        </div>
+                        <div class="filosofia-item">
+                            <div class="filosofia-icon">🛡️</div>
+                            <div class="filosofia-titulo">Riesgo Controlado</div>
+                            <div style="font-size: 0.9rem;">Solo avanzamos con éxito comprobado</div>
+                        </div>
+                        <div class="filosofia-item">
+                            <div class="filosofia-icon">💰</div>
+                            <div class="filosofia-titulo">Inversión Mínima</div>
+                            <div style="font-size: 0.9rem;">Comenzamos con lo lógico y necesario</div>
+                        </div>
+                        <div class="filosofia-item">
+                            <div class="filosofia-icon">📈</div>
+                            <div class="filosofia-titulo">Crecimiento Orgánico</div>
+                            <div style="font-size: 0.9rem;">Cada etapa fortalece la siguiente</div>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2); margin-top: 2rem;">
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">✅ Total Inversión Progresiva: $1.8M en 4 etapas</div>
+                        <div style="font-size: 1rem;">Comenzamos con $500K • Agregamos solo si es exitoso • Llegamos a los domos con confianza</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Simulador de Participantes para Etapa 1 -->
+            <section class="section">
+                <h2>👥 Participantes - Etapa 1</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Configuración para la <strong>Etapa 1</strong> únicamente - $500.000 total
+                </p>
+                
+                <div class="participantes-section">
+                    <div class="participantes-controls">
+                        <label style="display: block; margin-bottom: 1rem; font-size: 1.2rem; font-weight: bold; color: #2d5016;">
+                            Cantidad de Socios para Etapa 1
+                        </label>
+                        <select id="cantidad-socios" onchange="configurarParticipantesEtapa1()">
+                            <option value="2">2 Socios</option>
+                            <option value="3">3 Socios</option>
+                            <option value="4" selected>4 Socios</option>
+                            <option value="5">5 Socios</option>
+                            <option value="6">6 Socios</option>
+                            <option value="8">8 Socios</option>
+                            <option value="10">10 Socios</option>
+                        </select>
+                    </div>
+                    
+                    <div id="participantes-grid" class="participantes-grid">
+                        <!-- Se genera dinámicamente -->
+                    </div>
+                    
+                    <div class="controles-participantes">
+                        <button onclick="distribuirParejoEtapa1()" class="btn">⚖️ Distribuir $500K Parejo</button>
+                        <button onclick="limpiarAportesEtapa1()" class="btn btn-secondary">🧹 Limpiar</button>
+                    </div>
+                    
+                    <div id="resumen-etapa1" class="resumen-financiero">
+                        <div class="metric-card" style="border-left-color: #4CAF50;">
+                            <div class="metric-value" style="color: #4CAF50;">$500K</div>
+                            <div class="metric-label">Inversión Total</div>
+                        </div>
+                        <div class="metric-card" style="border-left-color: #2196F3;">
+                            <div class="metric-value" style="color: #2196F3;">$45K</div>
+                            <div class="metric-label">Flujo Mensual</div>
+                        </div>
+                        <div class="metric-card" style="border-left-color: #FF9800;">
+                            <div class="metric-value" style="color: #FF9800;">18</div>
+                            <div class="metric-label">Meses Payback</div>
+                        </div>
+                        <div class="metric-card" style="border-left-color: #9C27B0;">
+                            <div class="metric-value" style="color: #9C27B0;" id="total-socios">4</div>
+                            <div class="metric-label">Socios</div>
+                        </div>
+                    </div>
+                    
+                    <div id="tabla-participantes" style="margin-top: 2rem;">
+                        <!-- Se genera dinámicamente -->
+                    </div>
+                    
+                    <div style="background: rgba(76, 175, 80, 0.1); padding: 2rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                        <h4 style="color: #4CAF50; margin-bottom: 1rem;">✅ Si la Etapa 1 es exitosa...</h4>
+                        <p style="color: #666; margin: 0;">Reinvertimos las ganancias del mes 19 en adelante para la <strong>Etapa 2</strong> (Tinglado Industrial)</p>
+                        <p style="color: #666; margin: 0.5rem 0 0 0; font-size: 0.9rem;"><em>Solo avanzamos si Etapa 1 demuestra ser rentable y sostenible</em></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        let participantesData = [];
+        
+        function configurarParticipantesEtapa1() {
+            const cantidad = parseInt(document.getElementById('cantidad-socios').value);
+            document.getElementById('total-socios').textContent = cantidad;
+            
+            participantesData = [];
+            for (let i = 1; i <= cantidad; i++) {
+                participantesData.push({
+                    nombre: `Socio ${i}`,
+                    aporte: 0
+                });
+            }
+            
+            actualizarGridParticipantes();
+            actualizarTablaParticipantes();
+        }
+        
+        function actualizarGridParticipantes() {
+            const grid = document.getElementById('participantes-grid');
+            grid.innerHTML = '';
+            
+            participantesData.forEach((participante, index) => {
+                const item = document.createElement('div');
+                item.className = 'participante-item';
+                item.innerHTML = `
+                    <input type="text" placeholder="Nombre del socio" value="${participante.nombre}" 
+                           onchange="actualizarNombre(${index}, this.value)">
+                    <input type="number" placeholder="Aporte ($)" value="${participante.aporte}" 
+                           onchange="actualizarAporte(${index}, this.value)" min="0" max="500000">
+                    <div class="participacion-display" id="participacion-${index}">0%</div>
+                `;
+                grid.appendChild(item);
+            });
+            
+            calcularParticipaciones();
+        }
+        
+        function actualizarNombre(index, nombre) {
+            participantesData[index].nombre = nombre;
+            actualizarTablaParticipantes();
+        }
+        
+        function actualizarAporte(index, aporte) {
+            participantesData[index].aporte = parseFloat(aporte) || 0;
+            calcularParticipaciones();
+            actualizarTablaParticipantes();
+        }
+        
+        function calcularParticipaciones() {
+            const totalAporte = participantesData.reduce((sum, p) => sum + p.aporte, 0);
+            
+            participantesData.forEach((participante, index) => {
+                const participacion = totalAporte > 0 ? (participante.aporte / totalAporte * 100) : 0;
+                document.getElementById(`participacion-${index}`).textContent = participacion.toFixed(1) + '%';
+            });
+        }
+        
+        function distribuirParejoEtapa1() {
+            const cantidad = participantesData.length;
+            const aportePorSocio = 500000 / cantidad;
+            
+            participantesData.forEach((participante, index) => {
+                participante.aporte = aportePorSocio;
+                const input = document.querySelector(`#participantes-grid .participante-item:nth-child(${index + 1}) input[type="number"]`);
+                if (input) input.value = aportePorSocio;
+            });
+            
+            calcularParticipaciones();
+            actualizarTablaParticipantes();
+        }
+        
+        function limpiarAportesEtapa1() {
+            participantesData.forEach((participante, index) => {
+                participante.aporte = 0;
+                const input = document.querySelector(`#participantes-grid .participante-item:nth-child(${index + 1}) input[type="number"]`);
+                if (input) input.value = 0;
+            });
+            
+            calcularParticipaciones();
+            actualizarTablaParticipantes();
+        }
+        
+        function actualizarTablaParticipantes() {
+            const tabla = document.getElementById('tabla-participantes');
+            const totalAporte = participantesData.reduce((sum, p) => sum + p.aporte, 0);
+            const flujomensual = 45000;
+            
+            let html = `
+                <h4 style="color: #2d5016; text-align: center; margin-bottom: 1rem;">📊 Distribución de Dividendos Mensuales (Mes 19+)</h4>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden;">
+                        <thead>
+                            <tr style="background: #4CAF50; color: white;">
+                                <th style="padding: 1rem; text-align: left;">Socio</th>
+                                <th style="padding: 1rem; text-align: right;">Aporte</th>
+                                <th style="padding: 1rem; text-align: right;">Participación</th>
+                                <th style="padding: 1rem; text-align: right;">Dividendo Mensual</th>
+                                <th style="padding: 1rem; text-align: right;">Dividendo Anual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+            
+            participantesData.forEach((participante, index) => {
+                const participacion = totalAporte > 0 ? (participante.aporte / totalAporte) : 0;
+                const dividendoMensual = flujomensual * participacion;
+                const dividendoAnual = dividendoMensual * 12;
+                
+                html += `
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 1rem; font-weight: bold;">${participante.nombre}</td>
+                        <td style="padding: 1rem; text-align: right;">$${participante.aporte.toLocaleString()}</td>
+                        <td style="padding: 1rem; text-align: right; color: #4CAF50; font-weight: bold;">${(participacion * 100).toFixed(1)}%</td>
+                        <td style="padding: 1rem; text-align: right; color: #2196F3; font-weight: bold;">$${dividendoMensual.toLocaleString()}</td>
+                        <td style="padding: 1rem; text-align: right; color: #FF9800; font-weight: bold;">$${dividendoAnual.toLocaleString()}</td>
+                    </tr>
+                `;
+            });
+            
+            html += `
+                        </tbody>
+                        <tfoot>
+                            <tr style="background: #f8f9fa; font-weight: bold;">
+                                <td style="padding: 1rem;">TOTAL</td>
+                                <td style="padding: 1rem; text-align: right;">$${totalAporte.toLocaleString()}</td>
+                                <td style="padding: 1rem; text-align: right;">100%</td>
+                                <td style="padding: 1rem; text-align: right; color: #2196F3;">$${flujomensual.toLocaleString()}</td>
+                                <td style="padding: 1rem; text-align: right; color: #FF9800;">$${(flujomensual * 12).toLocaleString()}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            `;
+            
+            if (totalAporte < 500000) {
+                html += `
+                    <div style="background: rgba(255, 152, 0, 0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem; text-align: center;">
+                        <strong style="color: #FF9800;">⚠️ Faltan $${(500000 - totalAporte).toLocaleString()} para completar la inversión de la Etapa 1</strong>
+                    </div>
+                `;
+            } else if (totalAporte > 500000) {
+                html += `
+                    <div style="background: rgba(244, 67, 54, 0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem; text-align: center;">
+                        <strong style="color: #f44336;">❌ Exceso de $${(totalAporte - 500000).toLocaleString()} - La Etapa 1 solo requiere $500.000</strong>
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div style="background: rgba(76, 175, 80, 0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem; text-align: center;">
+                        <strong style="color: #4CAF50;">✅ Inversión completa para la Etapa 1 - ¡Listos para comenzar!</strong>
+                    </div>
+                `;
+            }
+            
+            tabla.innerHTML = html;
+        }
+        
+        // Inicializar con 4 socios
+        document.addEventListener('DOMContentLoaded', function() {
+            configurarParticipantesEtapa1();
+        });
+    </script>
+</body>
+</html>

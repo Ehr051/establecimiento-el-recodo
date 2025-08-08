@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 2: Expansión - El Recodo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .nav {
+            background: rgba(0, 123, 255, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+        }
+
+        .prereq-box {
+            background: #e7f3ff;
+            border: 2px solid #007bff;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🏗️ ETAPA 2: EXPANSIÓN</h1>
+            <p>Duplicamos capacidad: 8 domos + experiencias gastronómicas</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">🏠 Inicio</a>
+        <a href="etapa-1.html">⬅️ Etapa 1</a>
+        <a href="etapa-3.html">➡️ Etapa 3</a>
+        <a href="simulador-completo.html">🧮 Simulador</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- PREREQUISITOS -->
+            <section class="prereq-box">
+                <h3 style="color: #007bff; margin-bottom: 1rem;">🔍 Prerequisitos para Iniciar Etapa 2</h3>
+                <p style="margin-bottom: 1rem;">
+                    <strong>Esta etapa solo se inicia cuando la Etapa 1 cumple los criterios de éxito:</strong>
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div>
+                        <ul>
+                            <li>✅ Ocupación sostenida > 60% por 6 meses</li>
+                            <li>✅ Ingresos mensuales > $8M constantes</li>
+                            <li>✅ Rating huéspedes > 4.5/5</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>✅ Capital acumulado: $300M disponibles</li>
+                            <li>✅ Procesos operativos optimizados</li>
+                            <li>✅ Lista de espera para reservas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESUMEN FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">💰 Resumen Financiero Etapa 2</h2>
+                
+                <div class="financial-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$300M</div>
+                        <div>Inversión Adicional</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">12</div>
+                        <div>Meses Duración</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">8</div>
+                        <div>Domos Total</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$18.2M</div>
+                        <div>Ingresos Mensuales Proyectados</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">🎯 OBJETIVO ETAPA 2</h3>
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">
+                        <strong>Duplicar la capacidad y diversificar la experiencia</strong>
+                    </div>
+                    <div style="opacity: 0.9;">
+                        De 4 a 8 domos + experiencias gastronómicas premium
+                    </div>
+                </div>
+            </section>
+
+            <!-- SUBETAPAS DETALLADAS -->
+            <section class="section">
+                <h2 class="section-title">🔨 Subetapas de Construcción</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <!-- SUBETAPA 2A -->
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 4px solid #007bff;">
+                        <h3 style="color: #007bff; margin-bottom: 1.5rem;">🏡 Subetapa 2A: Más Alojamiento</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📋 Construcciones:</h4>
+                            <ul style="margin: 1rem 0;">
+                                <li>4 domos adicionales de 50m² c/u</li>
+                                <li>Mejoras en los 4 domos existentes</li>
+                                <li>Área de fogones y asados común</li>
+                                <li>Red de senderos temáticos</li>
+                                <li>Zona de contemplación y descanso</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                            <h4 style="color: #007bff;">💰 Inversión: $200M</h4>
+                            <div style="margin-top: 1rem;">
+                                <div>Domos nuevos: $160M</div>
+                                <div>Mejoras existentes: $25M</div>
+                                <div>Áreas comunes: $15M</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 1rem; background: #e7f3ff; padding: 1rem; border-radius: 10px;">
+                            <strong>⏱️ Duración:</strong> 6-8 meses
+                        </div>
+                    </div>
+
+                    <!-- SUBETAPA 2B -->
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 4px solid #20c997;">
+                        <h3 style="color: #20c997; margin-bottom: 1.5rem;">🍷 Subetapa 2B: Experiencias</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📋 Construcciones:</h4>
+                            <ul style="margin: 1rem 0;">
+                                <li>Área gastronómica cubierta</li>
+                                <li>Bodega subterránea y cava</li>
+                                <li>Zona de eventos y celebraciones</li>
+                                <li>Cocina profesional para catering</li>
+                                <li>Actividades rurales organizadas</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                            <h4 style="color: #20c997;">💰 Inversión: $100M</h4>
+                            <div style="margin-top: 1rem;">
+                                <div>Área gastronómica: $45M</div>
+                                <div>Bodega y cava: $30M</div>
+                                <div>Equipamiento: $25M</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 1rem; background: #d1ecf1; padding: 1rem; border-radius: 10px;">
+                            <strong>⏱️ Duración:</strong> 4-6 meses (paralelo con 2A)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYECCIÓN DE INGRESOS -->
+            <section class="section">
+                <h2 class="section-title">📈 Proyección de Ingresos Post-Etapa 2</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="background: #007bff; color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4>🏡 Alojamiento</h4>
+                        <div style="font-size: 2rem; font-weight: bold; margin: 1rem 0;">$10.8M</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">8 domos × 65% ocupación</div>
+                    </div>
+                    
+                    <div style="background: #20c997; color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4>🍽️ Gastronomía</h4>
+                        <div style="font-size: 2rem; font-weight: bold; margin: 1rem 0;">$4.8M</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">Experiencias premium</div>
+                    </div>
+                    
+                    <div style="background: #ffc107; color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4>🎪 Eventos</h4>
+                        <div style="font-size: 2rem; font-weight: bold; margin: 1rem 0;">$2.6M</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">Celebraciones y grupos</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #007bff, #20c997); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">💰 TOTAL INGRESOS MENSUALES ETAPA 2</h3>
+                    <div style="font-size: 4rem; font-weight: bold; margin-bottom: 1rem;">$18.2M</div>
+                    <div style="font-size: 1.3rem; opacity: 0.9;">+115% vs Etapa 1 ($8.47M)</div>
+                </div>
+            </section>
+
+            <!-- CRONOGRAMA -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronograma Etapa 2 - 12 Meses</h2>
+                
+                <div style="display: grid; gap: 2rem;">
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #007bff;">
+                        <div style="background: #007bff; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">1-2</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #007bff;">🔍 Planificación y Preparación</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Análisis de resultados Etapa 1</li>
+                                <li>Ajustes al proyecto basados en experiencia</li>
+                                <li>Nuevos permisos para expansión</li>
+                                <li>Selección y contratación de proveedores</li>
+                            </ul>
+                            <div style="background: #e7f3ff; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $15M | <strong>Hito:</strong> Proyecto ajustado y aprobado
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #28a745;">
+                        <div style="background: #28a745; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">3-8</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🚧 Construcción Subetapa 2A</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Construcción de 4 domos adicionales</li>
+                                <li>Mejoras en domos existentes (sin interrumpir operación)</li>
+                                <li>Construcción de áreas comunes</li>
+                                <li>Red de senderos y paisajismo</li>
+                            </ul>
+                            <div style="background: #e8f5e8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $200M | <strong>Hito:</strong> 8 domos operativos
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #20c997;">
+                        <div style="background: #20c997; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">6-10</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #20c997;">🍷 Construcción Subetapa 2B</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Área gastronómica y eventos</li>
+                                <li>Bodega subterránea</li>
+                                <li>Cocina profesional</li>
+                                <li>Sistemas de climatización especializados</li>
+                            </ul>
+                            <div style="background: #d1ecf1; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $100M | <strong>Hito:</strong> Experiencias gastronómicas listas
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #ffc107;">
+                        <div style="background: #ffc107; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">11-12</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #e0a800;">🚀 Lanzamiento Integral</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Capacitación del equipo ampliado</li>
+                                <li>Campaña de relanzamiento</li>
+                                <li>Pruebas de todos los servicios</li>
+                                <li>Optimización de procesos expandidos</li>
+                            </ul>
+                            <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $15M | <strong>Hito:</strong> Operación completa al 100%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESTRATEGIA DE DIVIDENDOS -->
+            <section class="section">
+                <h2 class="section-title">💸 Estrategia de Dividendos Etapa 2</h2>
+                
+                <div style="background: #fff3cd; padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <h3 style="color: #856404; margin-bottom: 1rem;">📊 Política de Distribución Progresiva</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Durante la Etapa 2, la política de dividendos evoluciona hacia una <strong>distribución trimestral</strong> 
+                        con reinversión del <strong>60%</strong> para preparar la Etapa 3.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div style="background: #d4edda; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #155724; margin-bottom: 1rem;">💰 Distribución Trimestral</h4>
+                        <div style="margin-bottom: 1rem;">Ganancia neta estimada: <strong>$14.5M/mes</strong></div>
+                        <div style="margin-bottom: 1rem;">Reinversión (60%): <strong>$8.7M/mes</strong></div>
+                        <div style="margin-bottom: 1rem;">Dividendos (40%): <strong>$5.8M/mes</strong></div>
+                        <div style="background: #007bff; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Por socio/trimestre: $4.35M</strong>
+                        </div>
+                    </div>
+
+                    <div style="background: #e2e3e5; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #383d41; margin-bottom: 1rem;">🎯 Objetivos de Reinversión</h4>
+                        <ul>
+                            <li>Acumular capital para Etapa 3</li>
+                            <li>Optimizar operaciones existentes</li>
+                            <li>Fondo de contingencia</li>
+                            <li>Mejoras continuas</li>
+                            <li>Marketing y posicionamiento</li>
+                        </ul>
+                        <div style="background: #6c757d; color: white; padding: 1rem; border-radius: 10px; text-align: center; margin-top: 1rem;">
+                            <strong>Meta: $400M para Etapa 3</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRITERIOS PARA ETAPA 3 -->
+            <section class="section">
+                <h2 class="section-title">🎯 Criterios de Éxito para Pasar a Etapa 3</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div>
+                        <h3 style="color: #007bff; margin-bottom: 1.5rem;">📊 Métricas Financieras</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Ocupación sostenida > 70% en 8 domos
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Ingresos mensuales > $18M por 6 meses
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Margen neto > 80%
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Experiencias gastronómicas rentables
+                            </div>
+                            <div style="background: #007bff; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Capital acumulado: $400M disponibles</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #007bff; margin-bottom: 1.5rem;">🌟 Métricas de Mercado</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Rating huéspedes > 4.7/5
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Eventos corporativos regulares
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Lista de espera > 2 meses
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Reconocimiento en medios especializados
+                            </div>
+                            <div style="background: #20c997; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Demanda validada para expansión</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="etapa-1.html" class="btn">⬅️ Volver a Etapa 1</a>
+                <a href="index.html" class="btn">🏠 Plan General</a>
+                <a href="etapa-3.html" class="btn">➡️ Ver Etapa 3: Diversificación</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

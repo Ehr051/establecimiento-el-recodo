@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 4: Consolidación - El Recodo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .nav {
+            background: rgba(111, 66, 193, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #6f42c1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #6f42c1, #5a32a3);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #6f42c1, #5a32a3);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(111, 66, 193, 0.3);
+        }
+
+        .consolidation-box {
+            background: linear-gradient(135deg, #6f42c1, #5a32a3);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .prereq-box {
+            background: #f3e5f5;
+            border: 2px solid #6f42c1;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .payback-calculator {
+            background: #e8f5e8;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚀 ETAPA 4: CONSOLIDACIÓN</h1>
+            <p>Optimización máxima y dividendos plenos - Proyecto completado</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">🏠 Inicio</a>
+        <a href="etapa-3.html">⬅️ Etapa 3</a>
+        <a href="simulador-completo.html">🧮 Simulador</a>
+        <a href="plan-maestro.html">📋 Plan Maestro</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- PREREQUISITOS -->
+            <section class="prereq-box">
+                <h3 style="color: #6f42c1; margin-bottom: 1rem;">🏁 Prerequisitos para Iniciar Etapa 4</h3>
+                <p style="margin-bottom: 1rem;">
+                    <strong>Esta es la etapa final de consolidación y optimización máxima:</strong>
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div>
+                        <ul>
+                            <li>✅ 12 domos con ocupación > 75%</li>
+                            <li>✅ Ingresos mensuales > $32M constantes</li>
+                            <li>✅ Sector industrial rentable y estable</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>✅ Capital acumulado: $600M disponibles</li>
+                            <li>✅ Múltiples flujos de ingresos consolidados</li>
+                            <li>✅ Equipo profesionalizado y procesos escalables</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESUMEN FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">💰 Resumen Financiero Etapa 4</h2>
+                
+                <div class="financial-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$600M</div>
+                        <div>Inversión Final</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">15</div>
+                        <div>Meses Duración</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">100%</div>
+                        <div>Proyecto Completo</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$56.8M</div>
+                        <div>Ingresos Mensuales Finales</div>
+                    </div>
+                </div>
+
+                <div class="consolidation-box">
+                    <h3 style="text-align: center; margin-bottom: 1rem;">🎯 OBJETIVO ETAPA 4</h3>
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center;">
+                        <strong>Consolidación y optimización para máximo rendimiento</strong>
+                    </div>
+                    <div style="opacity: 0.9; text-align: center;">
+                        Tecnología avanzada + procesos optimizados + máxima rentabilidad
+                    </div>
+                </div>
+            </section>
+
+            <!-- SUBETAPAS DETALLADAS -->
+            <section class="section">
+                <h2 class="section-title">🔨 Subetapas de Consolidación</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <!-- SUBETAPA 4A -->
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 4px solid #17a2b8;">
+                        <h3 style="color: #17a2b8; margin-bottom: 1.5rem;">🎯 Subetapa 4A: Optimización</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📋 Tecnología y Sistemas:</h4>
+                            <ul style="margin: 1rem 0;">
+                                <li>Sistema integral de gestión (ERP)</li>
+                                <li>Automatización de procesos</li>
+                                <li>BI y analytics avanzados</li>
+                                <li>Marketing digital profesional</li>
+                                <li>Certificaciones internacionales</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                            <h4 style="color: #17a2b8;">💰 Inversión: $300M</h4>
+                            <div style="margin-top: 1rem;">
+                                <div>Tecnología y software: $120M</div>
+                                <div>Automatización: $100M</div>
+                                <div>Certificaciones y marketing: $80M</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 1rem; background: #d1ecf1; padding: 1rem; border-radius: 10px;">
+                            <strong>⏱️ Duración:</strong> 8-10 meses
+                        </div>
+                    </div>
+
+                    <!-- SUBETAPA 4B -->
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 4px solid #28a745;">
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">🚀 Subetapa 4B: Escalamiento</h3>
+                        <div style="margin-bottom: 2rem;">
+                            <h4>📋 Expansión y Redes:</h4>
+                            <ul style="margin: 1rem 0;">
+                                <li>Ampliación de capacidad operativa</li>
+                                <li>Nuevos canales de distribución</li>
+                                <li>Alianzas estratégicas</li>
+                                <li>Franquicia/licenciamiento</li>
+                                <li>Preparación para replicabilidad</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px;">
+                            <h4 style="color: #28a745;">💰 Inversión: $300M</h4>
+                            <div style="margin-top: 1rem;">
+                                <div>Expansión operativa: $150M</div>
+                                <div>Alianzas y distribución: $100M</div>
+                                <div>Desarrollo de franquicia: $50M</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 1rem; background: #e8f5e8; padding: 1rem; border-radius: 10px;">
+                            <strong>⏱️ Duración:</strong> 7-9 meses (paralelo con 4A)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYECCIÓN FINAL DE INGRESOS -->
+            <section class="section">
+                <h2 class="section-title">📈 Proyección Final de Ingresos - Proyecto Consolidado</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-bottom: 3rem;">
+                    <div style="background: #6f42c1; color: white; padding: 1.5rem; border-radius: 15px; text-align: center;">
+                        <h5>🏡 Alojamiento</h5>
+                        <div style="font-size: 1.6rem; font-weight: bold; margin: 0.5rem 0;">$22.8M</div>
+                        <div style="font-size: 0.7rem; opacity: 0.9;">12 domos optimizados</div>
+                    </div>
+                    
+                    <div style="background: #28a745; color: white; padding: 1.5rem; border-radius: 15px; text-align: center;">
+                        <h5>🍽️ Gastronomía</h5>
+                        <div style="font-size: 1.6rem; font-weight: bold; margin: 0.5rem 0;">$9.8M</div>
+                        <div style="font-size: 0.7rem; opacity: 0.9;">Premium completo</div>
+                    </div>
+                    
+                    <div style="background: #6c757d; color: white; padding: 1.5rem; border-radius: 15px; text-align: center;">
+                        <h5>🏭 Industrial</h5>
+                        <div style="font-size: 1.6rem; font-weight: bold; margin: 0.5rem 0;">$12.4M</div>
+                        <div style="font-size: 0.7rem; opacity: 0.9;">B2B consolidado</div>
+                    </div>
+                    
+                    <div style="background: #ffc107; color: white; padding: 1.5rem; border-radius: 15px; text-align: center;">
+                        <h5>🎪 Eventos</h5>
+                        <div style="font-size: 1.6rem; font-weight: bold; margin: 0.5rem 0;">$6.2M</div>
+                        <div style="font-size: 0.7rem; opacity: 0.9;">Corporativos premium</div>
+                    </div>
+                    
+                    <div style="background: #17a2b8; color: white; padding: 1.5rem; border-radius: 15px; text-align: center;">
+                        <h5>🤝 Franquicias</h5>
+                        <div style="font-size: 1.6rem; font-weight: bold; margin: 0.5rem 0;">$5.6M</div>
+                        <div style="font-size: 0.7rem; opacity: 0.9;">Licencias y royalties</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #6f42c1, #5a32a3); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">💰 TOTAL INGRESOS MENSUALES FINALES</h3>
+                    <div style="font-size: 4rem; font-weight: bold; margin-bottom: 1rem;">$56.8M</div>
+                    <div style="font-size: 1.3rem; opacity: 0.9; margin-bottom: 2rem;">+75% vs Etapa 3 ($32.5M)</div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <div>
+                            <div style="font-size: 2rem; font-weight: bold;">$681.6M</div>
+                            <div style="opacity: 0.9;">Ingresos Anuales</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: bold;">87.5%</div>
+                            <div style="opacity: 0.9;">Margen Neto</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: bold;">$49.7M</div>
+                            <div style="opacity: 0.9;">Ganancia Mensual</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CÁLCULO DE PAYBACK TOTAL -->
+            <section class="payback-calculator">
+                <h2 style="color: #28a745; text-align: center; margin-bottom: 2rem;">🧮 Cálculo de Payback Total del Proyecto</h2>
+                
+                <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+                        <div>
+                            <h3 style="color: #28a745; margin-bottom: 2rem;">💰 Inversión Total Acumulada</h3>
+                            <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
+                                    <div style="text-align: center; padding: 1rem; background: #28a745; color: white; border-radius: 10px;">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$500M</div>
+                                        <div>Etapa 1</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 1rem; background: #007bff; color: white; border-radius: 10px;">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$300M</div>
+                                        <div>Etapa 2</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 1rem; background: #ffc107; color: white; border-radius: 10px;">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$400M</div>
+                                        <div>Etapa 3</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 1rem; background: #6f42c1; color: white; border-radius: 10px;">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$600M</div>
+                                        <div>Etapa 4</div>
+                                    </div>
+                                </div>
+                                <div style="border-top: 3px solid #28a745; padding-top: 1rem; text-align: center;">
+                                    <div style="font-size: 3rem; font-weight: bold; color: #28a745;">$1.800M</div>
+                                    <div style="color: #666; font-size: 1.2rem;">Total Invertido</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 style="color: #28a745; margin-bottom: 2rem;">📊 Análisis de Recuperación</h3>
+                            <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                                <div style="margin-bottom: 1.5rem;">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                        <span>Ganancia mensual final:</span>
+                                        <strong>$49.7M</strong>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                        <span>Ganancia anual:</span>
+                                        <strong>$596.4M</strong>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                        <span>ROI anual:</span>
+                                        <strong>33.13%</strong>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: #28a745; color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                                    <h4 style="margin-bottom: 1rem;">⏱️ Payback Total</h4>
+                                    <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">36.2</div>
+                                    <div style="font-size: 1.2rem;">Meses para recuperar toda la inversión</div>
+                                    <div style="font-size: 1rem; opacity: 0.9; margin-top: 1rem;">
+                                        (3 años y 1 mes desde el inicio)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESTRATEGIA DE DIVIDENDOS PLENOS -->
+            <section class="section">
+                <h2 class="section-title">💎 Estrategia de Dividendos Plenos</h2>
+                
+                <div style="background: #e7f3ff; padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <h3 style="color: #0056b3; margin-bottom: 1rem;">🏆 Distribución Final Optimizada</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Una vez completada la Etapa 4, el proyecto genera <strong>dividendos mensuales plenos</strong> 
+                        con reinversión mínima del <strong>15%</strong> solo para mantenimiento y mejoras menores.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div style="background: #d4edda; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #155724; margin-bottom: 1rem;">💰 Distribución Mensual Plena</h4>
+                        <div style="margin-bottom: 1rem;">Ganancia neta: <strong>$49.7M/mes</strong></div>
+                        <div style="margin-bottom: 1rem;">Reinversión (15%): <strong>$7.5M/mes</strong></div>
+                        <div style="margin-bottom: 1rem;">Dividendos (85%): <strong>$42.2M/mes</strong></div>
+                        <div style="background: #6f42c1; color: white; padding: 1.5rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: bold;">$10.55M</div>
+                            <div>Por socio/mes</div>
+                        </div>
+                        <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center; margin-top: 1rem;">
+                            <strong>$126.6M por socio/año</strong>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #495057; margin-bottom: 1rem;">📈 Proyección a 5 Años</h4>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Año 1 post-consolidación:</strong>
+                            <div>Dividendos por socio: $126.6M</div>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Crecimiento anual conservador: 8%</strong>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Año 5:</strong>
+                            <div>Dividendos por socio: $175.5M/año</div>
+                        </div>
+                        <div style="background: #17a2b8; color: white; padding: 1rem; border-radius: 10px; text-align: center; margin-top: 1rem;">
+                            <strong>ROI individual: 25-35% anual sostenido</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRONOGRAMA FINAL -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronograma Etapa 4 - 15 Meses</h2>
+                
+                <div style="display: grid; gap: 2rem;">
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #6f42c1;">
+                        <div style="background: #6f42c1; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">1-2</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #6f42c1;">🔍 Análisis y Estrategia Final</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Análisis integral de todas las operaciones</li>
+                                <li>Identificación de oportunidades de optimización</li>
+                                <li>Estrategia de tecnología y automatización</li>
+                                <li>Plan de escalamiento y franquicias</li>
+                            </ul>
+                            <div style="background: #f3e5f5; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $30M | <strong>Hito:</strong> Estrategia de consolidación definida
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #17a2b8;">
+                        <div style="background: #17a2b8; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">3-10</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #17a2b8;">🎯 Implementación de Optimización</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Implementación de ERP y sistemas integrados</li>
+                                <li>Automatización de procesos críticos</li>
+                                <li>Certificaciones internacionales</li>
+                                <li>Optimización de todas las operaciones</li>
+                            </ul>
+                            <div style="background: #d1ecf1; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $300M | <strong>Hito:</strong> Operaciones automatizadas y certificadas
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 4px solid #28a745;">
+                        <div style="background: #28a745; color: white; border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Meses</div>
+                            <div style="font-size: 1.5rem;">8-15</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🚀 Escalamiento y Expansión</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Desarrollo de modelo de franquicia</li>
+                                <li>Alianzas estratégicas nacionales</li>
+                                <li>Expansión de canales de distribución</li>
+                                <li>Preparación para replicabilidad</li>
+                            </ul>
+                            <div style="background: #e8f5e8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $300M | <strong>Hito:</strong> Modelo escalable y replicable
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 2rem; background: linear-gradient(135deg, #6f42c1, #5a32a3); color: white; border-radius: 15px;">
+                        <div style="background: rgba(255,255,255,0.2); border-radius: 10px; padding: 1rem; text-align: center; font-weight: bold; height: fit-content;">
+                            <div>Final</div>
+                            <div style="font-size: 1.5rem;">✅</div>
+                        </div>
+                        <div>
+                            <h3>🏆 PROYECTO CONSOLIDADO</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Operación a máxima eficiencia</li>
+                                <li>Todos los sistemas integrados y optimizados</li>
+                                <li>Dividendos mensuales plenos</li>
+                                <li>Modelo preparado para escalamiento nacional</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Resultado:</strong> $56.8M/mes ingresos | $49.7M/mes ganancia | $10.55M/mes por socio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PREPARACIÓN PARA PLANES FUTUROS -->
+            <section class="section">
+                <h2 class="section-title">🔮 Preparación para Planes Futuros</h2>
+                
+                <div style="background: linear-gradient(135deg, #17a2b8, #138496); color: white; padding: 3rem; border-radius: 20px;">
+                    <h3 style="text-align: center; margin-bottom: 2rem;">🚀 Plataforma Lista para Expansión</h3>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 2rem;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                            <h4 style="margin-bottom: 1rem;">💰 Capacidad Financiera</h4>
+                            <ul>
+                                <li>Flujo mensual de $49.7M constante</li>
+                                <li>Capacidad de autofinanciación</li>
+                                <li>Acceso a capital externo validado</li>
+                                <li>Múltiples fuentes de ingresos</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                            <h4 style="margin-bottom: 1rem;">🏗️ Infraestructura Lista</h4>
+                            <ul>
+                                <li>Sistemas escalables implementados</li>
+                                <li>Procesos documentados y certificados</li>
+                                <li>Equipo profesionalizado</li>
+                                <li>Tecnología de punta operativa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 15px;">
+                        <h4 style="margin-bottom: 1rem;">🎯 A partir del Año 4: Planes Futuros</h4>
+                        <p style="margin-bottom: 1rem;">
+                            Con el proyecto base consolidado y generando dividendos plenos, se puede evaluar:
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 20px;">🐎 Club Ecuestre</span>
+                            <span style="background: rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 20px;">🏘️ Desarrollo Residencial</span>
+                            <span style="background: rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 20px;">🍯 Diversificación Productiva</span>
+                            <span style="background: rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 20px;">♻️ Sustentabilidad</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="etapa-3.html" class="btn">⬅️ Volver a Etapa 3</a>
+                <a href="index.html" class="btn">🏠 Plan General</a>
+                <a href="simulador-completo.html" class="btn">🧮 Simulador Completo</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

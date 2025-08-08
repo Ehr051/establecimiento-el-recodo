@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 1: Fundación - El Recodo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .nav {
+            background: rgba(40, 167, 69, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            padding: 3rem 0;
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 4px solid #28a745;
+        }
+
+        .timeline-number {
+            background: #28a745;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            height: fit-content;
+        }
+
+        .financial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .investment-breakdown {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+        }
+
+        .simulator-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .input-group input, .input-group select {
+            padding: 1rem;
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🏗️ ETAPA 1: FUNDACIÓN</h1>
+            <p>Infraestructura básica y primeros 4 domos premium</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">🏠 Inicio</a>
+        <a href="etapa-2.html">➡️ Etapa 2</a>
+        <a href="simulador-completo.html">🧮 Simulador</a>
+        <a href="plan-maestro.html">📋 Plan Maestro</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- RESUMEN FINANCIERO -->
+            <section class="section">
+                <h2 class="section-title">💰 Resumen Financiero Etapa 1</h2>
+                
+                <div class="financial-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$500M</div>
+                        <div>Inversión Total</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">18</div>
+                        <div>Meses Duración</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">4</div>
+                        <div>Domos Premium</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$8.5M</div>
+                        <div>Ingresos Mensuales Esperados</div>
+                    </div>
+                </div>
+
+                <div class="investment-breakdown">
+                    <h3 style="color: #28a745; margin-bottom: 1.5rem;">📊 Desglose de Inversión</h3>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span><strong>Subetapa 1A - Infraestructura:</strong></span>
+                            <span><strong>$200M (40%)</strong></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span><strong>Subetapa 1B - Primeros Domos:</strong></span>
+                            <span><strong>$300M (60%)</strong></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRONOGRAMA DETALLADO -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronograma Detallado - 18 Meses</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">1-3</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🔍 Fase de Planificación y Permisos</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Estudios de impacto ambiental</li>
+                                <li>Permisos municipales y provinciales</li>
+                                <li>Diseño definitivo y proyecto ejecutivo</li>
+                                <li>Licitación de contratistas</li>
+                            </ul>
+                            <div style="background: #e3f2fd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $20M | <strong>Hitos:</strong> Permisos aprobados, contratistas seleccionados
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">4-8</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🚧 Subetapa 1A: Infraestructura Básica</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Mejora de accesos y caminos internos</li>
+                                <li>Instalación de servicios (agua, electricidad, gas)</li>
+                                <li>Sistema de tratamiento de efluentes</li>
+                                <li>Construcción de recepción y administración</li>
+                                <li>Paisajismo y forestación básica</li>
+                            </ul>
+                            <div style="background: #e8f5e8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $180M | <strong>Hitos:</strong> Servicios operativos, recepción habilitada
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">9-15</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🏡 Subetapa 1B: Construcción de Domos</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Construcción de 4 domos de 50m² cada uno</li>
+                                <li>Equipamiento completo (mobiliario, electrodomésticos)</li>
+                                <li>Decks privados y áreas exteriores</li>
+                                <li>Senderos y conexiones</li>
+                                <li>Sistemas de calefacción y climatización</li>
+                            </ul>
+                            <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $300M | <strong>Hitos:</strong> 4 domos operativos y equipados
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">
+                            <div style="font-size: 1.2rem;">Meses</div>
+                            <div style="font-size: 1.5rem;">16-18</div>
+                        </div>
+                        <div>
+                            <h3 style="color: #28a745;">🚀 Lanzamiento y Operación Inicial</h3>
+                            <ul style="margin-top: 1rem;">
+                                <li>Pruebas finales y ajustes</li>
+                                <li>Capacitación del personal</li>
+                                <li>Marketing de lanzamiento</li>
+                                <li>Primeras reservas y operación comercial</li>
+                                <li>Optimización de procesos</li>
+                            </ul>
+                            <div style="background: #d1ecf1; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                                <strong>Inversión:</strong> $20M | <strong>Hitos:</strong> Operación comercial plena
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYECCIÓN DE INGRESOS -->
+            <section class="section">
+                <h2 class="section-title">📈 Proyección de Ingresos - Año 1 Operativo</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">🏡 Ingresos por Alojamiento</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>4 Domos × $65,000/noche</strong>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Ocupación promedio: 65%</strong>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                Noches ocupadas/mes: <strong>78 noches</strong>
+                            </div>
+                            <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Ingreso mensual: $5.07M</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">🍽️ Ingresos Complementarios</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                Desayunos y comidas: <strong>$1.8M/mes</strong>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                Actividades rurales: <strong>$0.9M/mes</strong>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                Productos del campo: <strong>$0.7M/mes</strong>
+                            </div>
+                            <div style="background: #20c997; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Total adicional: $3.4M/mes</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">💰 TOTAL INGRESOS MENSUALES ETAPA 1</h3>
+                    <div style="font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem;">$8.47M</div>
+                    <div style="font-size: 1.2rem; opacity: 0.9;">Proyección conservadora primer año operativo</div>
+                </div>
+            </section>
+
+            <!-- SIMULADOR DE OCUPACIÓN -->
+            <section class="simulator-section">
+                <h2 style="color: #28a745; text-align: center; margin-bottom: 2rem;">🧮 Simulador de Ocupación Etapa 1</h2>
+                
+                <div class="input-group">
+                    <div>
+                        <label>Ocupación Promedio (%)</label>
+                        <input type="range" id="ocupacion" min="40" max="90" value="65" oninput="actualizarSimulador()">
+                        <div style="text-align: center; font-weight: bold;" id="ocupacion-valor">65%</div>
+                    </div>
+                    <div>
+                        <label>Precio por Noche</label>
+                        <input type="number" id="precio" value="65000" oninput="actualizarSimulador()">
+                    </div>
+                    <div>
+                        <label>Temporada</label>
+                        <select id="temporada" onchange="actualizarSimulador()">
+                            <option value="1.0">Promedio Anual</option>
+                            <option value="1.3">Alta (Dic-Mar)</option>
+                            <option value="0.8">Media (Abr-Jul)</option>
+                            <option value="0.9">Baja (Ago-Nov)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="color: #28a745;">Noches Ocupadas/Mes</h4>
+                        <div style="font-size: 2rem; font-weight: bold;" id="noches-mes">78</div>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="color: #28a745;">Ingreso Alojamiento</h4>
+                        <div style="font-size: 2rem; font-weight: bold;" id="ingreso-aloj">$5.07M</div>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="color: #28a745;">Total con Extras</h4>
+                        <div style="font-size: 2rem; font-weight: bold;" id="ingreso-total">$8.47M</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESTRATEGIA DE DIVIDENDOS -->
+            <section class="section">
+                <h2 class="section-title">💸 Estrategia de Dividendos Etapa 1</h2>
+                
+                <div style="background: #fff3cd; padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <h3 style="color: #856404; margin-bottom: 1rem;">⚠️ Política de Reinversión Inicial</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Durante el primer año operativo, se implementará una política de <strong>reinversión del 80%</strong> 
+                        de las ganancias para acelerar el desarrollo de la Etapa 2.
+                    </p>
+                    <p>
+                        Los socios recibirán el <strong>20% restante</strong> como dividendos iniciales, 
+                        lo que permite validar el modelo de negocio mientras se prepara la expansión.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div style="background: #d4edda; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #155724; margin-bottom: 1rem;">💰 Distribución Mensual</h4>
+                        <div style="margin-bottom: 1rem;">Ganancia neta estimada: <strong>$6.8M</strong></div>
+                        <div style="margin-bottom: 1rem;">Reinversión (80%): <strong>$5.44M</strong></div>
+                        <div style="margin-bottom: 1rem;">Dividendos (20%): <strong>$1.36M</strong></div>
+                        <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <strong>Por socio (4 socios): $340K/mes</strong>
+                        </div>
+                    </div>
+
+                    <div style="background: #e2e3e5; padding: 2rem; border-radius: 15px;">
+                        <h4 style="color: #383d41; margin-bottom: 1rem;">📈 Beneficios de la Reinversión</h4>
+                        <ul>
+                            <li>Acelera desarrollo Etapa 2</li>
+                            <li>Reduce necesidad de capital externo</li>
+                            <li>Mantiene control total del proyecto</li>
+                            <li>Permite optimizar operaciones</li>
+                            <li>Genera confianza en inversores</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CRITERIOS DE ÉXITO -->
+            <section class="section">
+                <h2 class="section-title">🎯 Criterios de Éxito para Pasar a Etapa 2</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">📊 Métricas Financieras</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Ocupación sostenida > 60% por 6 meses
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Ingresos mensuales > $8M por 3 meses consecutivos
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Margen neto > 75%
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Flujo positivo constante
+                            </div>
+                            <div style="background: #28a745; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Capital acumulado para Etapa 2: $300M</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #28a745; margin-bottom: 1.5rem;">🌟 Métricas Operativas</h3>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Rating promedio huéspedes > 4.5/5
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Tasa de ocupación repetida > 30%
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Procesos operativos optimizados
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                ✅ Equipo capacitado y estable
+                            </div>
+                            <div style="background: #20c997; color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                                <strong>Lista de espera para nuevas reservas</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="index.html" class="btn">🏠 Volver al Plan General</a>
+                <a href="etapa-2.html" class="btn">➡️ Ver Etapa 2: Expansión</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function actualizarSimulador() {
+            const ocupacion = document.getElementById('ocupacion').value;
+            const precio = document.getElementById('precio').value;
+            const temporada = document.getElementById('temporada').value;
+            
+            // Mostrar valor de ocupación
+            document.getElementById('ocupacion-valor').textContent = ocupacion + '%';
+            
+            // Calcular métricas
+            const nochesDisponibles = 4 * 30; // 4 domos × 30 días
+            const nochesOcupadas = Math.round((nochesDisponibles * ocupacion) / 100);
+            const precioAjustado = precio * temporada;
+            const ingresoAlojamiento = nochesOcupadas * precioAjustado;
+            const extrasPromedio = ingresoAlojamiento * 0.67; // 67% adicional en servicios
+            const ingresoTotal = ingresoAlojamiento + extrasPromedio;
+            
+            // Actualizar displays
+            document.getElementById('noches-mes').textContent = nochesOcupadas;
+            document.getElementById('ingreso-aloj').textContent = '$' + (ingresoAlojamiento / 1000000).toFixed(2) + 'M';
+            document.getElementById('ingreso-total').textContent = '$' + (ingresoTotal / 1000000).toFixed(2) + 'M';
+        }
+
+        // Inicializar simulador
+        actualizarSimulador();
+    </script>
+</body>
+</html>
