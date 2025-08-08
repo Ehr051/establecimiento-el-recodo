@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Recodo - Plan Maestro Completo | Fases → Etapas → Sub-etapas</title>
+    <style>
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --accent-gold: #d4af37;
+            --warm-beige: #f5f2e8;
+            --forest-green: #1a3d0c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--warm-beige) 0%, #f0ede4 100%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .fase-container {
+            margin: 4rem 0;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .fase-header {
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .fase-1 { background: linear-gradient(135deg, #28a745, #20c997); }
+        .fase-2 { background: linear-gradient(135deg, #007bff, #0056b3); }
+        .fase-3 { background: linear-gradient(135deg, #ffc107, #e0a800); }
+
+        .etapa {
+            margin: 2rem;
+            border-left: 4px solid;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .etapa-1 { border-left-color: #28a745; }
+        .etapa-2 { border-left-color: #007bff; }
+        .etapa-3 { border-left-color: #ffc107; }
+
+        .etapa-header {
+            padding: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .etapa-1 .etapa-header { background: #28a745; }
+        .etapa-2 .etapa-header { background: #007bff; }
+        .etapa-3 .etapa-header { background: #ffc107; color: #333; }
+
+        .sub-etapa {
+            padding: 1.5rem;
+            margin: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #ddd;
+        }
+
+        .financial-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .metric {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .timeline {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .timeline-point {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            color: var(--forest-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .progression-flow {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        .highlight {
+            background: var(--accent-gold);
+            color: var(--forest-green);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🌾 EL RECODO - PLAN MAESTRO COMPLETO</h1>
+            <p>Estructura: FASES → ETAPAS → SUB-ETAPAS</p>
+            <p><strong>De 1 empleado rural a complejo turístico integral</strong></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- FASE I: ESTABLECIMIENTO RURAL -->
+        <div class="fase-container">
+            <div class="fase-header fase-1">
+                <h2>🌱 FASE I: ESTABLECIMIENTO RURAL (Años 1-3)</h2>
+                <p>Base productiva tradicional + infraestructura básica</p>
+                
+                <div class="financial-summary">
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$650M</div>
+                        <div>Inversión Total Fase</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$18M</div>
+                        <div>Ingresos/Mes Final</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">1→4</div>
+                        <div>Empleados</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">36</div>
+                        <div>Meses Duración</div>
+                    </div>
+                </div>
+
+                <div class="progression-flow">
+                    <div>🌲 Leña</div>
+                    <div>→</div>
+                    <div>🌾 Alfalfa</div>
+                    <div>→</div>
+                    <div>🌿 Aromáticas</div>
+                    <div>→</div>
+                    <div>⚡ Infraestructura</div>
+                </div>
+            </div>
+
+            <!-- ETAPA 1.1: INICIO OPERACIONES -->
+            <div class="etapa etapa-1">
+                <div class="etapa-header">
+                    ETAPA 1.1: INICIO OPERACIONES (Meses 1-8)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🌲 SUB-ETAPA 1.1.A: Explotación Forestal Inicial</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">1</div>
+                        <div><strong>Personal:</strong> 1 empleado + propietario</div>
+                    </div>
+                    <ul>
+                        <li><strong>Limpieza selectiva:</strong> Aprovechamiento leña existente</li>
+                        <li><strong>Especies objetivo:</strong> Quebracho, algarrobo, caldén muerto</li>
+                        <li><strong>Producción inicial:</strong> 1,500 m³ (8 meses)</li>
+                        <li><strong>Precio:</strong> $85,000/m³ estacionada</li>
+                        <li><strong>Ingreso:</strong> $127.5M (período completo)</li>
+                        <li><strong>Herramientas:</strong> Motosierra, hacha, cuñas</li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 1rem; background: #e8f5e8; border-radius: 5px;">
+                        <strong>💰 Resultado:</strong> Flujo inmediato para financiar siguiente sub-etapa
+                    </div>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>💧 SUB-ETAPA 1.1.B: Infraestructura Básica</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">2</div>
+                        <div><strong>Inversión:</strong> $180M</div>
+                    </div>
+                    <ul>
+                        <li><strong>Perforación agua:</strong> 80m + bomba solar básica</li>
+                        <li><strong>Energía:</strong> Conexión trifásica desde ruta</li>
+                        <li><strong>Caminos:</strong> Mejora acceso interno 2km</li>
+                        <li><strong>Galpón básico:</strong> 200m² (herramientas + almacén)</li>
+                        <li><strong>Casa administrativa:</strong> Básica para encargado</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🌾 SUB-ETAPA 1.1.C: Primera Siembra Alfalfa</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">3</div>
+                        <div><strong>Personal:</strong> +1 empleado (total 2)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Superficie inicial:</strong> 50 hectáreas</li>
+                        <li><strong>Preparación:</strong> Desmalezado + laboreo</li>
+                        <li><strong>Siembra:</strong> Alfalfa INTA variedad regional</li>
+                        <li><strong>Riego:</strong> Sistema básico por aspersión</li>
+                        <li><strong>Primer corte:</strong> Mes 6-7 (primavera)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 1.2: CONSOLIDACIÓN PRODUCTIVA -->
+            <div class="etapa etapa-1">
+                <div class="etapa-header">
+                    ETAPA 1.2: CONSOLIDACIÓN PRODUCTIVA (Meses 9-18)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🌾 SUB-ETAPA 1.2.A: Expansión Alfalfa</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">4</div>
+                        <div><strong>Personal:</strong> +1 empleado (total 3)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Ampliación:</strong> +100 hectáreas (total 150ha)</li>
+                        <li><strong>Maquinaria:</strong> Tractor 80HP + implementos</li>
+                        <li><strong>Rendimiento esperado:</strong> 12 tn/ha/año</li>
+                        <li><strong>Sistema corte:</strong> 8 cortes anuales optimizados</li>
+                        <li><strong>Comercialización:</strong> Contratos directos tambos</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🌿 SUB-ETAPA 1.2.B: Cultivos Aromáticas (Gin)</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">5</div>
+                        <div><strong>Innovación:</strong> Diversificación premium</div>
+                    </div>
+                    <ul>
+                        <li><strong>Especies INTA recomendadas:</strong></li>
+                        <li>• <span class="highlight">Enebro</span> (Juniperus communis) - 10 hectáreas</li>
+                        <li>• <span class="highlight">Cardamomo</span> (Elettaria cardamomum) - 5 hectáreas</li>
+                        <li>• <span class="highlight">Cilantro</span> (Coriandrum sativum) - 15 hectáreas</li>
+                        <li>• <span class="highlight">Angélica</span> (Angelica archangelica) - 8 hectáreas</li>
+                        <li><strong>Total aromáticas:</strong> 38 hectáreas</li>
+                        <li><strong>Mercado objetivo:</strong> Destilerías artesanales Argentina</li>
+                        <li><strong>Precio premium:</strong> $2,500-$8,000/kg según especie</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🍺 SUB-ETAPA 1.2.C: Cebada y Lúpulo Cervecero</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">6</div>
+                        <div><strong>Objetivo:</strong> Mercado cervecero artesanal</div>
+                    </div>
+                    <ul>
+                        <li><strong>Cebada maltera:</strong></li>
+                        <li>• Variedad: <span class="highlight">INTA Quilmes</span> (apta zona semiárida)</li>
+                        <li>• Superficie: 80 hectáreas</li>
+                        <li>• Rendimiento: 3,500 kg/ha</li>
+                        <li>• Precio: $650/kg malta artesanal</li>
+                        <li><strong>Lúpulo:</strong></li>
+                        <li>• Variedad: <span class="highlight">Cascade</span> + <span class="highlight">Spalt Select</span> (INTA aprobadas)</li>
+                        <li>• Superficie: 12 hectáreas</li>
+                        <li>• Sistema: Espalderas 4m altura</li>
+                        <li>• Rendimiento: 1,800 kg/ha lúpulo seco</li>
+                        <li>• Precio: $3,200/kg lúpulo artesanal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 1.3: OPTIMIZACIÓN -->
+            <div class="etapa etapa-1">
+                <div class="etapa-header">
+                    ETAPA 1.3: OPTIMIZACIÓN Y PREPARACIÓN (Meses 19-36)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>⚡ SUB-ETAPA 1.3.A: Infraestructura Avanzada</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">7</div>
+                        <div><strong>Personal:</strong> +1 empleado (total 4)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Sistema eléctrico:</strong></li>
+                        <li>• Paneles solares: 45kW instalados</li>
+                        <li>• Baterías: 150kWh almacenamiento</li>
+                        <li>• Inversor híbrido grid-tie</li>
+                        <li>• Autonomía: 72 horas sin sol</li>
+                        <li><strong>Sistema agua:</strong></li>
+                        <li>• Segundo pozo: 120m profundidad</li>
+                        <li>• Bomba solar sumergible 5HP</li>
+                        <li>• Tanque australiano: 500,000 litros</li>
+                        <li>• Red distribución: 8km tuberías</li>
+                        <li><strong>Comunicaciones:</strong></li>
+                        <li>• Starlink para internet rural</li>
+                        <li>• Repetidora celular propia</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏭 SUB-ETAPA 1.3.B: Procesamiento y Valor Agregado</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">8</div>
+                        <div><strong>Objetivo:</strong> Industrialización básica</div>
+                    </div>
+                    <ul>
+                        <li><strong>Galpón procesamiento:</strong> 800m² con cámaras</li>
+                        <li><strong>Secadero aromáticas:</strong> Sistema solar + ventilación</li>
+                        <li><strong>Planta deshidratado:</strong> Alfalfa pelletizada</li>
+                        <li><strong>Almacenes climatizados:</strong> 1,200m² total</li>
+                        <li><strong>Laboratorio básico:</strong> Control calidad</li>
+                        <li><strong>Certificaciones:</strong> Orgánico + BPM</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>📊 SUB-ETAPA 1.3.C: Estabilización Financiera</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">9</div>
+                        <div><strong>Meta:</strong> $18M/mes constantes</div>
+                    </div>
+                    <ul>
+                        <li><strong>Flujo mensual estable:</strong></li>
+                        <li>• Alfalfa: $6.75M/mes</li>
+                        <li>• Leña: $3.2M/mes</li>
+                        <li>• Aromáticas gin: $4.1M/mes</li>
+                        <li>• Cebada/lúpulo: $2.8M/mes</li>
+                        <li>• Productos procesados: $1.15M/mes</li>
+                        <li><strong>Total ingresos:</strong> $18M/mes</li>
+                        <li><strong>Costos operativos:</strong> $7.2M/mes</li>
+                        <li><strong>Utilidad neta:</strong> $10.8M/mes</li>
+                        <li><strong>Criterio avance Fase II:</strong> 12 meses consecutivos >$10M utilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASE II: TURISMO RURAL -->
+        <div class="fase-container">
+            <div class="fase-header fase-2">
+                <h2>🏕️ FASE II: TURISMO RURAL (Años 4-6)</h2>
+                <p>Incorporación gradual domos + experiencias rurales</p>
+                
+                <div class="financial-summary">
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$420M</div>
+                        <div>Inversión Fase</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$31M</div>
+                        <div>Ingresos/Mes Final</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">4→8</div>
+                        <div>Empleados</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">36</div>
+                        <div>Meses Duración</div>
+                    </div>
+                </div>
+
+                <div class="progression-flow">
+                    <div>🏠 2 Domos</div>
+                    <div>→</div>
+                    <div>🏡 4 Domos</div>
+                    <div>→</div>
+                    <div>🍽️ Gastronomía</div>
+                    <div>→</div>
+                    <div>🎯 Consolidación</div>
+                </div>
+            </div>
+
+            <!-- ETAPA 2.1: PRIMEROS DOMOS -->
+            <div class="etapa etapa-2">
+                <div class="etapa-header">
+                    ETAPA 2.1: PRIMEROS DOMOS (Meses 37-48)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏗️ SUB-ETAPA 2.1.A: Construcción Inicial</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">10</div>
+                        <div><strong>Personal:</strong> +2 empleados (total 6)</div>
+                    </div>
+                    <ul>
+                        <li><strong>2 Domos geodésicos:</strong></li>
+                        <li>• Diámetro: 8m (50m² c/u)</li>
+                        <li>• Estructura: Acero galvanizado + madera quebracho</li>
+                        <li>• Fundación: Pilotes hormigón</li>
+                        <li>• Configuración modular: Cama doble + cuchetas</li>
+                        <li>• Capacidad: 2-4 personas según reserva</li>
+                        <li>• Servicios: Baño completo + kitchenette</li>
+                        <li>• Energía: 100% solar con backup grid</li>
+                        <li>• Agua: Sistema presurizado propio</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🎯 SUB-ETAPA 2.1.B: Experiencias Rurales</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">11</div>
+                        <div><strong>Target:</strong> Parejas + familias + grupos corporativos</div>
+                    </div>
+                    <ul>
+                        <li><strong>Actividades incluidas:</strong></li>
+                        <li>• Recorrido campos productivos</li>
+                        <li>• Participación tareas rurales</li>
+                        <li>• Fogones nocturnos + asado</li>
+                        <li>• Degustación productos propios</li>
+                        <li>• Cabalgatas por el campo</li>
+                        <li>• Observación astronómica</li>
+                        <li><strong>Precios diferenciados:</strong></li>
+                        <li>• Turismo familiar: $35,000/noche</li>
+                        <li>• Paquetes corporativos: $52,500/noche (+50%)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 2.2: EXPANSIÓN DOMOS -->
+            <div class="etapa etapa-2">
+                <div class="etapa-header">
+                    ETAPA 2.2: EXPANSIÓN DOMOS (Meses 49-60)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏡 SUB-ETAPA 2.2.A: 2 Domos Adicionales</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">12</div>
+                        <div><strong>Total:</strong> 4 domos operativos</div>
+                    </div>
+                    <ul>
+                        <li><strong>Configuración optimizada:</strong></li>
+                        <li>• 2 Domos Standard: Familias/parejas</li>
+                        <li>• 2 Domos Premium: Ejecutivos/grupos</li>
+                        <li>• Ocupación objetivo: 75% anual</li>
+                        <li>• Capacidad: 90 noches/mes</li>
+                        <li>• Mix ingresos: 60% turismo + 40% corporativo</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🍽️ SUB-ETAPA 2.2.B: Servicios Gastronómicos</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">13</div>
+                        <div><strong>Personal:</strong> +2 empleados (total 8)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Quincho principal:</strong> 300m² cubiertos</li>
+                        <li><strong>Cocina profesional:</strong> 80m² equipada</li>
+                        <li><strong>Parrilla argentina:</strong> Capacidad 50 personas</li>
+                        <li><strong>Menú basado en producción propia:</strong></li>
+                        <li>• Carnes locales + vegetales orgánicos</li>
+                        <li>• Gin artesanal con aromáticas propias</li>
+                        <li>• Cerveza artesanal con cebada/lúpulo propio</li>
+                        <li>• Productos agroecológicos del establecimiento</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 2.3: CONSOLIDACIÓN TURÍSTICA -->
+            <div class="etapa etapa-2">
+                <div class="etapa-header">
+                    ETAPA 2.3: CONSOLIDACIÓN TURÍSTICA (Meses 61-72)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>📈 SUB-ETAPA 2.3.A: Optimización Operativa</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">14</div>
+                        <div><strong>Meta:</strong> Operación turística rentable estable</div>
+                    </div>
+                    <ul>
+                        <li><strong>Ingresos turísticos estabilizados:</strong></li>
+                        <li>• 4 domos × 22.5 noches/mes × $43,750 promedio = $3.94M/mes</li>
+                        <li>• Servicios adicionales (40% ingresos): $1.58M/mes</li>
+                        <li>• Eventos corporativos: $2.1M/mes</li>
+                        <li>• <strong>Total turismo: $7.62M/mes</strong></li>
+                        <li><strong>Producción rural continúa:</strong> $18M/mes</li>
+                        <li><strong>Ingresos totales combinados:</strong> $25.62M/mes</li>
+                        <li><strong>Utilidad neta objetivo:</strong> $13M/mes</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🎯 SUB-ETAPA 2.3.B: Preparación Fase III</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">15</div>
+                        <div><strong>Criterio avance:</strong> $13M utilidad × 12 meses</div>
+                    </div>
+                    <ul>
+                        <li><strong>Acumulación capital:</strong> $150M para Fase III</li>
+                        <li><strong>Validación mercado:</strong> Ocupación >75% sostenida</li>
+                        <li><strong>Equipo consolidado:</strong> 8 empleados entrenados</li>
+                        <li><strong>Procesos estandarizados:</strong> Calidad y eficiencia</li>
+                        <li><strong>Marca posicionada:</strong> Referente turismo rural San Luis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASE III: COMPLEJO INTEGRAL -->
+        <div class="fase-container">
+            <div class="fase-header fase-3">
+                <h2>🌟 FASE III: COMPLEJO INTEGRAL (Años 7-10)</h2>
+                <p>Desarrollo completo: 12 domos + servicios premium + eventos</p>
+                
+                <div class="financial-summary">
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$850M</div>
+                        <div>Inversión Fase</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">$58M</div>
+                        <div>Ingresos/Mes Final</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">8→15</div>
+                        <div>Empleados</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2rem; font-weight: bold;">48</div>
+                        <div>Meses Duración</div>
+                    </div>
+                </div>
+
+                <div class="progression-flow">
+                    <div>🏘️ 8 Domos</div>
+                    <div>→</div>
+                    <div>🏛️ 12 Domos</div>
+                    <div>→</div>
+                    <div>🎪 Eventos</div>
+                    <div>→</div>
+                    <div>🏆 Liderazgo</div>
+                </div>
+            </div>
+
+            <!-- ETAPA 3.1: EXPANSIÓN MAYOR -->
+            <div class="etapa etapa-3">
+                <div class="etapa-header">
+                    ETAPA 3.1: EXPANSIÓN MAYOR (Meses 73-96)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏘️ SUB-ETAPA 3.1.A: 4 Domos Adicionales</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">16</div>
+                        <div><strong>Total:</strong> 8 domos operativos</div>
+                    </div>
+                    <ul>
+                        <li><strong>Mix ampliado:</strong></li>
+                        <li>• 4 Domos Standard: Turismo familiar</li>
+                        <li>• 4 Domos Premium: Ejecutivo/lujo</li>
+                        <li>• Ocupación objetivo: 80%</li>
+                        <li>• Capacidad: 192 noches/mes</li>
+                        <li><strong>Servicios diferenciados por categoría</strong></li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🎪 SUB-ETAPA 3.1.B: Centro de Eventos</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">17</div>
+                        <div><strong>Personal:</strong> +3 empleados (total 11)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Salón eventos:</strong> 800m² capacidad 150 personas</li>
+                        <li><strong>Servicios corporativos:</strong></li>
+                        <li>• Retiros empresariales</li>
+                        <li>• Lanzamientos de productos</li>
+                        <li>• Team building intensivo</li>
+                        <li>• Conferencias rurales</li>
+                        <li><strong>Bodas y celebraciones rurales</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 3.2: DESARROLLO COMPLETO -->
+            <div class="etapa etapa-3">
+                <div class="etapa-header">
+                    ETAPA 3.2: DESARROLLO COMPLETO (Meses 97-108)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏛️ SUB-ETAPA 3.2.A: Domos Finales</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">18</div>
+                        <div><strong>Total:</strong> 12 domos operativos</div>
+                    </div>
+                    <ul>
+                        <li><strong>Configuración final:</strong></li>
+                        <li>• 6 Domos Standard</li>
+                        <li>• 4 Domos Premium</li>
+                        <li>• 2 Domos Suite Ejecutiva</li>
+                        <li>• Ocupación objetivo: 85%</li>
+                        <li>• Capacidad: 306 noches/mes</li>
+                    </ul>
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🌿 SUB-ETAPA 3.2.B: SPA Rural</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">19</div>
+                        <div><strong>Personal:</strong> +4 empleados (total 15)</div>
+                    </div>
+                    <ul>
+                        <li><strong>Instalaciones:</strong></li>
+                        <li>• 6 cabinas de tratamiento</li>
+                        <li>• Pileta climatizada</li>
+                        <li>• Sauna + jacuzzi</li>
+                        <li>• Tratamientos con productos naturales propios</li>
+                        <li><strong>Medicina natural basada en aromáticas del establecimiento</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ETAPA 3.3: LIDERAZGO SECTORIAL -->
+            <div class="etapa etapa-3">
+                <div class="etapa-header">
+                    ETAPA 3.3: LIDERAZGO SECTORIAL (Meses 109-120)
+                </div>
+
+                <div class="sub-etapa">
+                    <h4>🏆 SUB-ETAPA 3.3.A: Posicionamiento Premium</h4>
+                    <div class="timeline">
+                        <div class="timeline-point">20</div>
+                        <div><strong>Meta:</strong> Referente nacional turismo rural</div>
+                    </div>
+                    <ul>
+                        <li><strong>Ingresos consolidados:</strong></li>
+                        <li>• Producción rural: $22M/mes (crecimiento orgánico)</li>
+                        <li>• Turismo domos: $18.5M/mes</li>
+                        <li>• Eventos corporativos: $8.2M/mes</li>
+                        <li>• SPA y wellness: $4.8M/mes</li>
+                        <li>• Gastronomía premium: $4.5M/mes</li>
+                        <li>• <strong>Total: $58M/mes</strong></li>
+                        <li><strong>Utilidad neta objetivo:</strong> $31M/mes</li>
+                        <li><strong>ROI consolidado:</strong> 75% anual</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESUMEN EJECUTIVO -->
+        <div class="fase-container">
+            <div style="background: linear-gradient(135deg, var(--forest-green), var(--primary-green)); color: white; padding: 3rem; text-align: center;">
+                <h2>📊 RESUMEN EJECUTIVO PLAN MAESTRO</h2>
+                
+                <div class="financial-summary" style="margin: 2rem 0;">
+                    <div class="metric">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-gold);">$1.920M</div>
+                        <div>Inversión Total 10 Años</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-gold);">$58M</div>
+                        <div>Ingresos Mensuales Finales</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-gold);">1→15</div>
+                        <div>Evolución Personal</div>
+                    </div>
+                    <div class="metric">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent-gold);">75%</div>
+                        <div>ROI Anual Final</div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">🎯 PROGRESIÓN CLAVE</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: left;">
+                        <div>
+                            <h4>FASE I (Años 1-3)</h4>
+                            <p>• Base rural sólida</p>
+                            <p>• 1→4 empleados</p>
+                            <p>• $650M inversión</p>
+                            <p>• $18M/mes ingresos</p>
+                        </div>
+                        <div>
+                            <h4>FASE II (Años 4-6)</h4>
+                            <p>• Turismo rural</p>
+                            <p>• 4→8 empleados</p>
+                            <p>• $420M inversión</p>
+                            <p>• $31M/mes ingresos</p>
+                        </div>
+                        <div>
+                            <h4>FASE III (Años 7-10)</h4>
+                            <p>• Complejo integral</p>
+                            <p>• 8→15 empleados</p>
+                            <p>• $850M inversión</p>
+                            <p>• $58M/mes ingresos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.2rem; margin-top: 2rem;">
+                    <strong>De 1 empleado cortando leña a 15 empleados en complejo turístico líder</strong><br>
+                    <em>Crecimiento orgánico, autofinanciado, riesgo controlado</em>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
