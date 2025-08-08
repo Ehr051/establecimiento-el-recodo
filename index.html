@@ -588,85 +588,6 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-
-        /* Lightbox para galería */
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            cursor: pointer;
-        }
-
-        .lightbox.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            font-size: 2rem;
-            padding: 1rem;
-            cursor: pointer;
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-
-        .lightbox-nav:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-
-        .lightbox-prev {
-            left: 2rem;
-        }
-
-        .lightbox-next {
-            right: 2rem;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            font-size: 2rem;
-            padding: 1rem;
-            cursor: pointer;
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-
-        .lightbox-close:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-
-        .gallery-item {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -682,6 +603,8 @@
                 <li><a href="#etapas">Plan 4 Etapas</a></li>
                 <li><a href="#financiero">Financiero</a></li>
                 <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#cultivos">Cultivos</a></li>
+                <li><a href="#precios">Precios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
@@ -705,6 +628,7 @@
             <div style="margin: 3rem 0;">
                 <a href="plan-maestro-completo.html" class="btn" style="margin: 0 1rem;">📊 Plan Maestro Completo</a>
                 <a href="#simulador" class="btn btn-secondary" style="margin: 0 1rem;">🧮 Calcular Rentabilidad</a>
+                <a href="#cultivos" class="btn btn-secondary" style="margin: 0 1rem;">🌾 Simulador Cultivos</a>
             </div>
 
             <div class="social-links">
@@ -765,25 +689,25 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div style="text-align: center;">
                         <h4 style="color: #28a745; margin-bottom: 1rem;">🌾 FASE I: Campo Productivo</h4>
-                        <div class="gallery-item" style="height: 200px; background: url('images/del-campo-a-la-copa.png') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/del-campo-a-la-copa.png"></div>
+                        <div style="height: 200px; background: url('images/del-campo-a-la-copa.png') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Del campo a la copa - Producción aromáticas gin, cebada cervecera</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #007bff; margin-bottom: 1rem;">🏕️ FASE II: Domos Rurales</h4>
-                        <div class="gallery-item" style="height: 200px; background: url('images/domo 1.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/domo 1.PNG"></div>
+                        <div style="height: 200px; background: url('images/domo 1.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Domos geodésicos reales - diseño y planificación</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 FASE III: Club House + Eventos</h4>
-                        <div class="gallery-item" style="height: 200px; background: url('images/club-house-domo-grande.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/club-house-domo-grande.jpg"></div>
+                        <div style="height: 200px; background: url('images/club-house-domo-grande.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Club House central para eventos y actividades</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #6f42c1; margin-bottom: 1rem;">🌙 Asados Bajo las Estrellas</h4>
-                        <div class="gallery-item" style="height: 200px; background: url('images/asado-estrellas.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/asado-estrellas.jpg"></div>
+                        <div style="height: 200px; background: url('images/asado-estrellas.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Experiencias gastronómicas únicas bajo el cielo serrano</p>
                     </div>
                 </div>
@@ -798,37 +722,37 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
                     <div style="text-align: center;">
                         <h4 style="color: #e67e22; margin-bottom: 1rem;">🌅 Amaneceres Serranos</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('images/amanecer serrano.JPG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/amanecer serrano.JPG"></div>
+                        <div style="height: 180px; background: url('images/amanecer serrano.JPG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Despertá con las mejores vistas de las sierras</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #f39c12; margin-bottom: 1rem;">🌇 Atardeceres Únicos</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('images/atardecer.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/atardecer.jpg"></div>
+                        <div style="height: 180px; background: url('images/atardecer.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Colores únicos en el horizonte sanluiseño</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #8e44ad; margin-bottom: 1rem;">🍺 Degustación Artesanal</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('images/degustacion-cerveza.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/degustacion-cerveza.jpg"></div>
+                        <div style="height: 180px; background: url('images/degustacion-cerveza.jpg') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Cervezas y gin con ingredientes propios</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #27ae60; margin-bottom: 1rem;">🌿 Privacidad Total</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('images/privacidad.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/privacidad.PNG"></div>
+                        <div style="height: 180px; background: url('images/privacidad.PNG') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Desconexión real en entorno natural</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #2980b9; margin-bottom: 1rem;">⚡ Energía Solar</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"></div>
+                        <div style="height: 180px; background: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">45kW paneles solares + baterías</p>
                     </div>
                     
                     <div style="text-align: center;">
                         <h4 style="color: #d35400; margin-bottom: 1rem;">🏗️ Planificación Detallada</h4>
-                        <div class="gallery-item" style="height: 180px; background: url('images/plano general.png') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);" data-src="images/plano general.png"></div>
+                        <div style="height: 180px; background: url('images/plano general.png') no-repeat center; background-size: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"></div>
                         <p style="margin-top: 1rem; color: #666;">Cada detalle pensado y proyectado</p>
                     </div>
                 </div>
@@ -872,7 +796,7 @@
                     </div>
 
                     <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/actividades-rurales.jpg') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
                         <h4 style="color: #28a745; margin-bottom: 1rem;">🌲 Progresión Sub-etapas:</h4>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
                             <div>
@@ -947,7 +871,7 @@
                     </div>
 
                     <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/domo 2.PNG') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('https://images.unsplash.com/photo-1520637836862-4d197d17c55a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
                         <h4 style="color: #007bff; margin-bottom: 1rem;">🏡 Desarrollo Turístico:</h4>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
                             <div>
@@ -1012,7 +936,7 @@
                     </div>
 
                     <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0; position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('images/asado-estrellas.jpg') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
+                        <div style="position: absolute; top: 10px; right: 10px; width: 80px; height: 60px; background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') no-repeat; background-size: cover; border-radius: 8px; opacity: 0.3;"></div>
                         <h4 style="color: #ffc107; margin-bottom: 1rem;">🌟 Operación Premium:</h4>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
                             <div>
@@ -1026,8 +950,8 @@
                             <div>
                                 <strong>3.2 - Desarrollo Completo:</strong>
                                 <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                    <li>8 domos + Club House (configuración final)</li>
-                                    <li>Eventos en Club House</li>
+                                    <li>12 domos configuración flexible</li>
+                                    <li>SPA rural con tratamientos naturales</li>
                                     <li>Productos propios integrados</li>
                                 </ul>
                             </div>
@@ -1105,86 +1029,158 @@
         </div>
     </section>
 
-    <!-- Simulador de Rendimientos de Cultivos -->
-    <section id="simulador" class="section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <!-- Simulador Financiero -->
+    <section id="simulador" class="section">
         <div class="container">
-            <h2 class="section-title" style="color: #2d5016; text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title fade-in">🧮 Simulador Financiero</h2>
+            
+            <div class="simulador-container fade-in">
+                <h3 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem;">Calcula la Rentabilidad Según Diferentes Escenarios</h3>
+                
+                <div class="simulador-grid">
+                    <div class="input-group">
+                        <label for="ocupacion">Ocupación Promedio (%)</label>
+                        <input type="range" id="ocupacion" min="60" max="95" value="75" oninput="actualizarSimulador()">
+                        <div style="text-align: center; font-weight: bold; color: var(--primary-green);" id="ocupacion-valor">75%</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="precio-noche">Precio por Noche (ARS)</label>
+                        <input type="number" id="precio-noche" value="35000" min="25000" max="50000" oninput="actualizarSimulador()">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="temporada">Factor Estacional</label>
+                        <select id="temporada" onchange="actualizarSimulador()">
+                            <option value="1.0">Promedio Anual</option>
+                            <option value="1.25">Temporada Alta (Dic-Mar)</option>
+                            <option value="0.85">Temporada Media (Abr-Jul)</option>
+                            <option value="0.90">Temporada Baja (Ago-Nov)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="etapa-sim">Etapa a Simular</label>
+                        <select id="etapa-sim" onchange="actualizarSimulador()">
+                            <option value="2">Etapa 2 (4 domos)</option>
+                            <option value="3">Etapa 3 (8 domos)</option>
+                            <option value="4">Etapa 4 (12 domos)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="resultado-simulador">
+                    <h4 style="color: var(--primary-green); margin-bottom: 1rem;">📊 Resultados de la Simulación:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="background: var(--primary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="noches-mes">90</div>
+                            <div>Noches Ocupadas/Mes</div>
+                        </div>
+                        <div style="background: var(--secondary-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-mes">$3.15M</div>
+                            <div>Ingresos Alojamiento/Mes</div>
+                        </div>
+                        <div style="background: var(--accent-gold); color: var(--forest-green); padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="ingresos-total">$4.2M</div>
+                            <div>Ingresos Totales/Mes</div>
+                        </div>
+                        <div style="background: var(--forest-green); color: white; padding: 1rem; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: bold;" id="margen-neto">$2.8M</div>
+                            <div>Margen Neto/Mes</div>
+                        </div>
+                    </div>
+
+                    <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                        <p style="color: var(--primary-green); font-weight: bold; text-align: center;">
+                            💡 <span id="conclusion">Con estos parámetros, el proyecto genera un excelente retorno de inversión.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador de Rendimientos de Cultivos -->
+    <section id="cultivos" class="section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color: #2d5016; text-align: center; margin-bottom: 3rem;">
                 🌾 Simulador de Rendimientos de Cultivos
             </h2>
             
-            <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 3rem;">
-                <h3 style="color: #2d5016; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🎯 Análisis de Escenarios</h3>
+            <div class="simulador-container fade-in" style="background: white; border: 2px solid #28a745;">
+                <h3 style="color: #2d5016; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🎯 Análisis de Escenarios Productivos</h3>
                 <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem;">
-                    Simula diferentes condiciones climáticas y de mercado para evaluar el impacto en los ingresos
+                    Simula diferentes condiciones climáticas y de mercado para evaluar el impacto en los ingresos de cultivos
                 </p>
                 
                 <!-- Controles de Simulación -->
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 3rem;">
-                    <div style="text-align: center;">
-                        <h4 style="color: #2d5016; margin-bottom: 1rem;">🌿 Alfalfa (47 ha)</h4>
-                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Rendimiento:</label>
-                        <select id="alfalfa-select" onchange="actualizarSimulacion()" style="width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (47 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">50% - Sequía severa</option>
                             <option value="malo">70% - Condiciones adversas</option>
                             <option value="normal" selected>100% - Condiciones normales</option>
                             <option value="bueno">120% - Condiciones favorables</option>
                             <option value="excelente">150% - Año excepcional</option>
                         </select>
-                        <div id="alfalfa-resultado" style="margin-top: 1rem; padding: 1rem; background: #28a745; color: white; border-radius: 10px; font-weight: bold;">
+                        <div id="alfalfa-resultado" style="margin-top: 1rem; padding: 1rem; background: #28a745; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
                             $2.350.000/año
                         </div>
                     </div>
                     
-                    <div style="text-align: center;">
-                        <h4 style="color: #2d5016; margin-bottom: 1rem;">🌾 Cebada (4 ha)</h4>
-                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Rendimiento:</label>
-                        <select id="cebada-select" onchange="actualizarSimulacion()" style="width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                    <div style="text-align: center; background: linear-gradient(135deg, #fff8e1, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #ffc107;">
+                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (4 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="cebada-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">40% - Granizo/helada</option>
                             <option value="malo">70% - Condiciones adversas</option>
                             <option value="normal" selected>100% - Condiciones normales</option>
                             <option value="bueno">130% - Condiciones favorables</option>
                             <option value="excelente">160% - Año excepcional</option>
                         </select>
-                        <div id="cebada-resultado" style="margin-top: 1rem; padding: 1rem; background: #ffc107; color: white; border-radius: 10px; font-weight: bold;">
+                        <div id="cebada-resultado" style="margin-top: 1rem; padding: 1rem; background: #ffc107; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
                             $11.200.000/año
                         </div>
                     </div>
                     
-                    <div style="text-align: center;">
-                        <h4 style="color: #2d5016; margin-bottom: 1rem;">🌽 Maíz (3 ha)</h4>
-                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Rendimiento:</label>
-                        <select id="maiz-select" onchange="actualizarSimulacion()" style="width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                    <div style="text-align: center; background: linear-gradient(135deg, #fff3e0, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #fd7e14;">
+                        <h4 style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="maiz-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">30% - Sequía/plaga</option>
                             <option value="malo">70% - Condiciones adversas</option>
                             <option value="normal" selected>100% - Condiciones normales</option>
                             <option value="bueno">140% - Condiciones favorables</option>
                             <option value="excelente">180% - Año excepcional</option>
                         </select>
-                        <div id="maiz-resultado" style="margin-top: 1rem; padding: 1rem; background: #fd7e14; color: white; border-radius: 10px; font-weight: bold;">
+                        <div id="maiz-resultado" style="margin-top: 1rem; padding: 1rem; background: #fd7e14; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
                             $9.450.000/año
                         </div>
                     </div>
                     
-                    <div style="text-align: center;">
-                        <h4 style="color: #2d5016; margin-bottom: 1rem;">🌾 Sorgo (2.22 ha)</h4>
-                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Rendimiento:</label>
-                        <select id="sorgo-select" onchange="actualizarSimulacion()" style="width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                    <div style="text-align: center; background: linear-gradient(135deg, #f3e5f5, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #6f42c1;">
+                        <h4 style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2.22 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="sorgo-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">60% - Condiciones adversas</option>
                             <option value="malo">80% - Condiciones adversas</option>
                             <option value="normal" selected>100% - Condiciones normales</option>
                             <option value="bueno">120% - Condiciones favorables</option>
                             <option value="excelente">140% - Año excepcional</option>
                         </select>
-                        <div id="sorgo-resultado" style="margin-top: 1rem; padding: 1rem; background: #6f42c1; color: white; border-radius: 10px; font-weight: bold;">
+                        <div id="sorgo-resultado" style="margin-top: 1rem; padding: 1rem; background: #6f42c1; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
                             $4.314.000/año
                         </div>
                     </div>
                 </div>
                 
                 <!-- Resultado Total -->
-                <div style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
+                <div id="resultado-total-cultivos" style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
                     <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">💰 Resultado Total de Cultivos</h3>
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                         <div>
                             <div id="total-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$27.314.000</div>
                             <div style="font-size: 1.1rem; opacity: 0.9;">Ingresos Totales Cultivos</div>
@@ -1202,6 +1198,94 @@
                         <h4 style="margin-bottom: 1rem;">📊 Escenario Actual: Condiciones Normales</h4>
                         <p style="margin: 0; opacity: 0.9;">Los cultivos generan ingresos base bajo condiciones climáticas normales</p>
                     </div>
+                </div>
+
+                <!-- Información Adicional -->
+                <div style="margin-top: 3rem; background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 2rem; border-radius: 15px;">
+                    <h4 style="color: #2d5016; margin-bottom: 1rem; text-align: center;">📋 Detalles de Producción</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #28a745;">🌿 Alfalfa</h5>
+                            <p><strong>Superficie:</strong> 47 hectáreas</p>
+                            <p><strong>Uso:</strong> Forraje premium, exportación</p>
+                            <p><strong>Ciclo:</strong> Perenne, 5-7 años</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #f57c00;">🌾 Cebada</h5>
+                            <p><strong>Superficie:</strong> 4 hectáreas</p>
+                            <p><strong>Uso:</strong> Cervecera, malteado</p>
+                            <p><strong>Ciclo:</strong> Anual, invierno</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #e65100;">🌽 Maíz</h5>
+                            <p><strong>Superficie:</strong> 3 hectáreas</p>
+                            <p><strong>Uso:</strong> Grano, forraje</p>
+                            <p><strong>Ciclo:</strong> Anual, verano</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #4a148c;">🌾 Sorgo</h5>
+                            <p><strong>Superficie:</strong> 2.22 hectáreas</p>
+                            <p><strong>Uso:</strong> Grano, resistente sequía</p>
+                            <p><strong>Ciclo:</strong> Anual, verano tardío</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#precios" class="btn" style="background: var(--primary-green); color: white;">📊 Ver Precios Actualizados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios Actualizados -->
+    <section id="precios" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">📊 Precios Actualizados en Tiempo Real</h2>
+            
+            <div class="vision-section fade-in">
+                <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem;">🔗 SuperScrapper El Recodo</h3>
+                <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem;">
+                    Todos nuestros precios son scrapeados en tiempo real desde MercadoLibre, Agrofy y fuentes oficiales
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">🚜 Maquinaria</h4>
+                        <p>Tractores, implementos, procesadoras con enlaces directos a publicaciones</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Links verificados</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">🌱 Insumos</h4>
+                        <p>Semillas, fertilizantes, fitosanitarios con precios por unidad</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Actualizados hoy</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #ffc107, #e0a800); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">💰 Mercados</h4>
+                        <p>Precios leña, salarios, inmobiliario con enlaces a fuentes</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Datos reales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="precios-actualizados-el-recodo.html" class="btn" style="margin: 0 1rem;" target="_blank">📋 Ver Todos los Precios</a>
+                    <a href="js/api-precios-el-recodo.json" class="btn btn-secondary" style="margin: 0 1rem;" target="_blank">🔌 API JSON</a>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                    <p style="color: #666; margin: 0; font-size: 0.9rem;">
+                        <strong>📅 Última actualización:</strong> Hoy mismo | 
+                        <strong>🔄 Frecuencia:</strong> Datos actualizados diariamente |
+                        <strong>🌐 Fuentes:</strong> MercadoLibre, Agrofy, INTA, UATRE
+                    </p>
                 </div>
             </div>
         </div>
@@ -1257,14 +1341,6 @@
         </div>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">×</button>
-        <button class="lightbox-nav lightbox-prev" onclick="prevImage()">‹</button>
-        <img id="lightbox-img" src="" alt="">
-        <button class="lightbox-nav lightbox-next" onclick="nextImage()">›</button>
-    </div>
-
     <!-- JavaScript -->
     <script>
         // Navegación sticky
@@ -1307,6 +1383,62 @@
 
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
+        });
+
+        // Simulador Financiero
+        function actualizarSimulador() {
+            const ocupacion = document.getElementById('ocupacion').value;
+            const precioNoche = document.getElementById('precio-noche').value;
+            const temporada = document.getElementById('temporada').value;
+            const etapa = document.getElementById('etapa-sim').value;
+            
+            // Actualizar valor mostrado de ocupación
+            document.getElementById('ocupacion-valor').textContent = ocupacion + '%';
+            
+            // Calcular número de domos según etapa
+            const domos = etapa == 2 ? 4 : (etapa == 3 ? 8 : 12);
+            
+            // Calcular noches máximas por mes (30 días)
+            const nochesMaximas = domos * 30;
+            const nochesOcupadas = Math.round(nochesMaximas * (ocupacion / 100));
+            
+            // Calcular ingresos base
+            const precioConTemporada = precioNoche * temporada;
+            const ingresosAlojamiento = nochesOcupadas * precioConTemporada;
+            
+            // Ingresos adicionales (servicios, comidas, actividades) - 35% promedio
+            const ingresosAdicionales = ingresosAlojamiento * 0.35;
+            const ingresosTotales = ingresosAlojamiento + ingresosAdicionales;
+            
+            // Costos operativos (35% de ingresos totales)
+            const costosOperativos = ingresosTotales * 0.35;
+            const margenNeto = ingresosTotales - costosOperativos;
+            
+            // Actualizar valores en pantalla
+            document.getElementById('noches-mes').textContent = nochesOcupadas.toLocaleString();
+            document.getElementById('ingresos-mes').textContent = '$' + (ingresosAlojamiento / 1000000).toFixed(1) + 'M';
+            document.getElementById('ingresos-total').textContent = '$' + (ingresosTotales / 1000000).toFixed(1) + 'M';
+            document.getElementById('margen-neto').textContent = '$' + (margenNeto / 1000000).toFixed(1) + 'M';
+            
+            // Actualizar conclusión
+            let conclusion = '';
+            if (ocupacion >= 80) {
+                conclusion = 'Excelente! Con esta ocupación el proyecto genera retornos excepcionales.';
+            } else if (ocupacion >= 70) {
+                conclusion = 'Muy bueno! Ocupación sólida que asegura rentabilidad atractiva.';
+            } else if (ocupacion >= 60) {
+                conclusion = 'Aceptable. Ocupación conservadora pero rentable.';
+            } else {
+                conclusion = 'Ocupación baja. Considera estrategias de marketing más agresivas.';
+            }
+            
+            document.getElementById('conclusion').textContent = conclusion;
+        }
+
+        // Inicializar simulador
+        document.addEventListener('DOMContentLoaded', function() {
+            actualizarSimulador();
+            actualizarSimulacionCultivos();
         });
 
         // Simulador de Rendimientos de Cultivos - Datos y Funciones
@@ -1381,7 +1513,7 @@
             }).format(numero).replace('ARS', '$');
         }
         
-        function actualizarSimulacion() {
+        function actualizarSimulacionCultivos() {
             // Obtener valores seleccionados
             const alfalfaEscenario = document.getElementById('alfalfa-select').value;
             const cebadaEscenario = document.getElementById('cebada-select').value;
@@ -1474,13 +1606,8 @@
                 <p style="margin: 0; opacity: 0.9;">Impacto total: ${variacion >= 0 ? '+' : ''}${((variacion/totalBase)*100).toFixed(1)}% vs escenario base</p>`;
             
             // Actualizar color de fondo
-            document.getElementById('escenario-descripcion').parentElement.style.background = `linear-gradient(135deg, ${colorFondo}, ${colorFondo}dd)`;
+            document.getElementById('resultado-total-cultivos').style.background = `linear-gradient(135deg, ${colorFondo}, ${colorFondo}dd)`;
         }
-
-        // Inicializar simulador al cargar la página
-        document.addEventListener('DOMContentLoaded', function() {
-            actualizarSimulacion();
-        });
 
         // Mejorar interactividad
         document.addEventListener('DOMContentLoaded', function() {
@@ -1494,61 +1621,7 @@
                     this.style.transform = 'translateY(0) scale(1)';
                 });
             });
-
-            // Galería Lightbox
-            setupGallery();
         });
-
-        // Galería y Lightbox
-        let galleryImages = [];
-        let currentImageIndex = 0;
-
-        function setupGallery() {
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            galleryImages = Array.from(galleryItems).map(item => item.dataset.src);
-
-            galleryItems.forEach((item, index) => {
-                item.addEventListener('click', () => openLightbox(index));
-            });
-
-            // Cerrar lightbox con ESC
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') closeLightbox();
-                if (e.key === 'ArrowLeft') prevImage();
-                if (e.key === 'ArrowRight') nextImage();
-            });
-
-            // Cerrar lightbox al hacer click en el fondo
-            document.getElementById('lightbox').addEventListener('click', function(e) {
-                if (e.target === this) closeLightbox();
-            });
-        }
-
-        function openLightbox(index) {
-            currentImageIndex = index;
-            const lightbox = document.getElementById('lightbox');
-            const img = document.getElementById('lightbox-img');
-            
-            img.src = galleryImages[currentImageIndex];
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
-        }
-
-        function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-            document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
-        }
     </script>
 </body>
 </html>

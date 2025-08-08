@@ -603,6 +603,8 @@
                 <li><a href="#etapas">Plan 4 Etapas</a></li>
                 <li><a href="#financiero">Financiero</a></li>
                 <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#cultivos">Cultivos</a></li>
+                <li><a href="#precios">Precios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
@@ -626,6 +628,7 @@
             <div style="margin: 3rem 0;">
                 <a href="plan-maestro-completo.html" class="btn" style="margin: 0 1rem;">📊 Plan Maestro Completo</a>
                 <a href="#simulador" class="btn btn-secondary" style="margin: 0 1rem;">🧮 Calcular Rentabilidad</a>
+                <a href="#cultivos" class="btn btn-secondary" style="margin: 0 1rem;">🌾 Simulador Cultivos</a>
             </div>
 
             <div class="social-links">
@@ -1098,6 +1101,196 @@
         </div>
     </section>
 
+    <!-- Simulador de Rendimientos de Cultivos -->
+    <section id="cultivos" class="section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color: #2d5016; text-align: center; margin-bottom: 3rem;">
+                🌾 Simulador de Rendimientos de Cultivos
+            </h2>
+            
+            <div class="simulador-container fade-in" style="background: white; border: 2px solid #28a745;">
+                <h3 style="color: #2d5016; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🎯 Análisis de Escenarios Productivos</h3>
+                <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem;">
+                    Simula diferentes condiciones climáticas y de mercado para evaluar el impacto en los ingresos de cultivos
+                </p>
+                
+                <!-- Controles de Simulación -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
+                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (47 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
+                            <option value="pesimo">50% - Sequía severa</option>
+                            <option value="malo">70% - Condiciones adversas</option>
+                            <option value="normal" selected>100% - Condiciones normales</option>
+                            <option value="bueno">120% - Condiciones favorables</option>
+                            <option value="excelente">150% - Año excepcional</option>
+                        </select>
+                        <div id="alfalfa-resultado" style="margin-top: 1rem; padding: 1rem; background: #28a745; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
+                            $2.350.000/año
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; background: linear-gradient(135deg, #fff8e1, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #ffc107;">
+                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (4 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="cebada-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
+                            <option value="pesimo">40% - Granizo/helada</option>
+                            <option value="malo">70% - Condiciones adversas</option>
+                            <option value="normal" selected>100% - Condiciones normales</option>
+                            <option value="bueno">130% - Condiciones favorables</option>
+                            <option value="excelente">160% - Año excepcional</option>
+                        </select>
+                        <div id="cebada-resultado" style="margin-top: 1rem; padding: 1rem; background: #ffc107; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
+                            $11.200.000/año
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; background: linear-gradient(135deg, #fff3e0, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #fd7e14;">
+                        <h4 style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="maiz-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
+                            <option value="pesimo">30% - Sequía/plaga</option>
+                            <option value="malo">70% - Condiciones adversas</option>
+                            <option value="normal" selected>100% - Condiciones normales</option>
+                            <option value="bueno">140% - Condiciones favorables</option>
+                            <option value="excelente">180% - Año excepcional</option>
+                        </select>
+                        <div id="maiz-resultado" style="margin-top: 1rem; padding: 1rem; background: #fd7e14; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
+                            $9.450.000/año
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; background: linear-gradient(135deg, #f3e5f5, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #6f42c1;">
+                        <h4 style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2.22 ha)</h4>
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
+                        <select id="sorgo-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
+                            <option value="pesimo">60% - Condiciones adversas</option>
+                            <option value="malo">80% - Condiciones adversas</option>
+                            <option value="normal" selected>100% - Condiciones normales</option>
+                            <option value="bueno">120% - Condiciones favorables</option>
+                            <option value="excelente">140% - Año excepcional</option>
+                        </select>
+                        <div id="sorgo-resultado" style="margin-top: 1rem; padding: 1rem; background: #6f42c1; color: white; border-radius: 10px; font-weight: bold; font-size: 1.1rem;">
+                            $4.314.000/año
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultado Total -->
+                <div id="resultado-total-cultivos" style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">💰 Resultado Total de Cultivos</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                        <div>
+                            <div id="total-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$27.314.000</div>
+                            <div style="font-size: 1.1rem; opacity: 0.9;">Ingresos Totales Cultivos</div>
+                        </div>
+                        <div>
+                            <div id="variacion-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$0</div>
+                            <div style="font-size: 1.1rem; opacity: 0.9;">Variación vs Base</div>
+                        </div>
+                        <div>
+                            <div id="total-hermano-cultivos" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$6.828.500</div>
+                            <div style="font-size: 1.1rem; opacity: 0.9;">Por Hermano</div>
+                        </div>
+                    </div>
+                    <div id="escenario-descripcion" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h4 style="margin-bottom: 1rem;">📊 Escenario Actual: Condiciones Normales</h4>
+                        <p style="margin: 0; opacity: 0.9;">Los cultivos generan ingresos base bajo condiciones climáticas normales</p>
+                    </div>
+                </div>
+
+                <!-- Información Adicional -->
+                <div style="margin-top: 3rem; background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 2rem; border-radius: 15px;">
+                    <h4 style="color: #2d5016; margin-bottom: 1rem; text-align: center;">📋 Detalles de Producción</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #28a745;">🌿 Alfalfa</h5>
+                            <p><strong>Superficie:</strong> 47 hectáreas</p>
+                            <p><strong>Uso:</strong> Forraje premium, exportación</p>
+                            <p><strong>Ciclo:</strong> Perenne, 5-7 años</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #f57c00;">🌾 Cebada</h5>
+                            <p><strong>Superficie:</strong> 4 hectáreas</p>
+                            <p><strong>Uso:</strong> Cervecera, malteado</p>
+                            <p><strong>Ciclo:</strong> Anual, invierno</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #e65100;">🌽 Maíz</h5>
+                            <p><strong>Superficie:</strong> 3 hectáreas</p>
+                            <p><strong>Uso:</strong> Grano, forraje</p>
+                            <p><strong>Ciclo:</strong> Anual, verano</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #4a148c;">🌾 Sorgo</h5>
+                            <p><strong>Superficie:</strong> 2.22 hectáreas</p>
+                            <p><strong>Uso:</strong> Grano, resistente sequía</p>
+                            <p><strong>Ciclo:</strong> Anual, verano tardío</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#precios" class="btn" style="background: var(--primary-green); color: white;">📊 Ver Precios Actualizados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios Actualizados -->
+    <section id="precios" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">📊 Precios Actualizados en Tiempo Real</h2>
+            
+            <div class="vision-section fade-in">
+                <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem;">🔗 SuperScrapper El Recodo</h3>
+                <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem;">
+                    Todos nuestros precios son scrapeados en tiempo real desde MercadoLibre, Agrofy y fuentes oficiales
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">🚜 Maquinaria</h4>
+                        <p>Tractores, implementos, procesadoras con enlaces directos a publicaciones</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Links verificados</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">🌱 Insumos</h4>
+                        <p>Semillas, fertilizantes, fitosanitarios con precios por unidad</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Actualizados hoy</span>
+                        </div>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #ffc107, #e0a800); color: white; padding: 2rem; border-radius: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 1rem;">💰 Mercados</h4>
+                        <p>Precios leña, salarios, inmobiliario con enlaces a fuentes</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Datos reales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="precios-actualizados-el-recodo.html" class="btn" style="margin: 0 1rem;" target="_blank">📋 Ver Todos los Precios</a>
+                    <a href="api-precios-el-recodo.json" class="btn btn-secondary" style="margin: 0 1rem;" target="_blank">🔌 API JSON</a>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                    <p style="color: #666; margin: 0; font-size: 0.9rem;">
+                        <strong>📅 Última actualización:</strong> Hoy mismo | 
+                        <strong>🔄 Frecuencia:</strong> Datos actualizados diariamente |
+                        <strong>🌐 Fuentes:</strong> MercadoLibre, Agrofy, INTA, UATRE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer" id="contacto">
         <div class="container">
@@ -1245,7 +1438,176 @@
         // Inicializar simulador
         document.addEventListener('DOMContentLoaded', function() {
             actualizarSimulador();
+            actualizarSimulacionCultivos();
         });
+
+        // Simulador de Rendimientos de Cultivos - Datos y Funciones
+        const rendimientosCultivos = {
+            alfalfa: {
+                superficie: 47,
+                rendimientoBase: 50000,
+                escenarios: {
+                    pesimo: { factor: 0.5, descripcion: "50% - Sequía severa" },
+                    malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
+                    normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
+                    bueno: { factor: 1.2, descripcion: "120% - Condiciones favorables" },
+                    excelente: { factor: 1.5, descripcion: "150% - Año excepcional" }
+                }
+            },
+            cebada: {
+                superficie: 4,
+                rendimientoBase: 2800000,
+                escenarios: {
+                    pesimo: { factor: 0.4, descripcion: "40% - Granizo/helada" },
+                    malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
+                    normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
+                    bueno: { factor: 1.3, descripcion: "130% - Condiciones favorables" },
+                    excelente: { factor: 1.6, descripcion: "160% - Año excepcional" }
+                }
+            },
+            maiz: {
+                superficie: 3,
+                rendimientoBase: 3150000,
+                escenarios: {
+                    pesimo: { factor: 0.3, descripcion: "30% - Sequía/plaga" },
+                    malo: { factor: 0.7, descripcion: "70% - Condiciones adversas" },
+                    normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
+                    bueno: { factor: 1.4, descripcion: "140% - Condiciones favorables" },
+                    excelente: { factor: 1.8, descripcion: "180% - Año excepcional" }
+                }
+            },
+            sorgo: {
+                superficie: 2.22,
+                rendimientoBase: 1943243,
+                escenarios: {
+                    pesimo: { factor: 0.6, descripcion: "60% - Condiciones adversas" },
+                    malo: { factor: 0.8, descripcion: "80% - Condiciones adversas" },
+                    normal: { factor: 1.0, descripcion: "100% - Condiciones normales" },
+                    bueno: { factor: 1.2, descripcion: "120% - Condiciones favorables" },
+                    excelente: { factor: 1.4, descripcion: "140% - Año excepcional" }
+                }
+            }
+        };
+        
+        function calcularRendimiento(cultivo, escenario) {
+            const datos = rendimientosCultivos[cultivo];
+            const factor = datos.escenarios[escenario].factor;
+            const ingresoTotal = datos.superficie * datos.rendimientoBase * factor;
+            
+            return {
+                superficie: datos.superficie,
+                rendimientoBase: datos.rendimientoBase,
+                factor: factor,
+                descripcion: datos.escenarios[escenario].descripcion,
+                ingresoTotal: Math.round(ingresoTotal),
+                ingresoPorHa: Math.round(datos.rendimientoBase * factor)
+            };
+        }
+        
+        function formatearNumero(numero) {
+            return new Intl.NumberFormat('es-AR', {
+                style: 'currency',
+                currency: 'ARS',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(numero).replace('ARS', '$');
+        }
+        
+        function actualizarSimulacionCultivos() {
+            // Obtener valores seleccionados
+            const alfalfaEscenario = document.getElementById('alfalfa-select').value;
+            const cebadaEscenario = document.getElementById('cebada-select').value;
+            const maizEscenario = document.getElementById('maiz-select').value;
+            const sorgoEscenario = document.getElementById('sorgo-select').value;
+            
+            // Calcular rendimientos
+            const alfalfaResult = calcularRendimiento('alfalfa', alfalfaEscenario);
+            const cebadaResult = calcularRendimiento('cebada', cebadaEscenario);
+            const maizResult = calcularRendimiento('maiz', maizEscenario);
+            const sorgoResult = calcularRendimiento('sorgo', sorgoEscenario);
+            
+            // Actualizar displays individuales
+            document.getElementById('alfalfa-resultado').innerHTML = formatearNumero(alfalfaResult.ingresoTotal) + '/año';
+            document.getElementById('cebada-resultado').innerHTML = formatearNumero(cebadaResult.ingresoTotal) + '/año';
+            document.getElementById('maiz-resultado').innerHTML = formatearNumero(maizResult.ingresoTotal) + '/año';
+            document.getElementById('sorgo-resultado').innerHTML = formatearNumero(sorgoResult.ingresoTotal) + '/año';
+            
+            // Calcular totales
+            const totalCultivos = alfalfaResult.ingresoTotal + cebadaResult.ingresoTotal + maizResult.ingresoTotal + sorgoResult.ingresoTotal;
+            const totalBase = 27314000; // Base de 100% normal
+            const variacion = totalCultivos - totalBase;
+            const totalPorHermano = totalCultivos / 4;
+            
+            // Actualizar totales
+            document.getElementById('total-cultivos').innerHTML = formatearNumero(totalCultivos);
+            document.getElementById('variacion-cultivos').innerHTML = (variacion >= 0 ? '+' : '') + formatearNumero(variacion);
+            document.getElementById('total-hermano-cultivos').innerHTML = formatearNumero(totalPorHermano);
+            
+            // Actualizar descripción del escenario
+            const escenarios = [alfalfaEscenario, cebadaEscenario, maizEscenario, sorgoEscenario];
+            const escenariosUnicos = [...new Set(escenarios)];
+            
+            let descripcionEscenario = "";
+            let colorFondo = "#2d5016";
+            
+            if (escenariosUnicos.length === 1) {
+                // Todos los cultivos tienen el mismo escenario
+                switch(escenariosUnicos[0]) {
+                    case 'pesimo':
+                        descripcionEscenario = "🌪️ Escenario Crítico: Condiciones climáticas muy adversas";
+                        colorFondo = "#dc3545";
+                        break;
+                    case 'malo':
+                        descripcionEscenario = "⚠️ Escenario Adverso: Condiciones climáticas desfavorables";
+                        colorFondo = "#fd7e14";
+                        break;
+                    case 'normal':
+                        descripcionEscenario = "📊 Escenario Base: Condiciones climáticas normales";
+                        colorFondo = "#2d5016";
+                        break;
+                    case 'bueno':
+                        descripcionEscenario = "☀️ Escenario Favorable: Condiciones climáticas beneficiosas";
+                        colorFondo = "#007bff";
+                        break;
+                    case 'excelente':
+                        descripcionEscenario = "🌟 Escenario Excepcional: Año extraordinario para todos los cultivos";
+                        colorFondo = "#28a745";
+                        break;
+                }
+            } else {
+                descripcionEscenario = "🎯 Escenario Mixto: Condiciones variables por cultivo";
+                
+                // Determinar color promedio
+                const promedioFactores = escenarios.reduce((sum, esc, index) => {
+                    const cultivo = ['alfalfa', 'cebada', 'maiz', 'sorgo'][index];
+                    return sum + rendimientosCultivos[cultivo].escenarios[esc].factor;
+                }, 0) / 4;
+                
+                if (promedioFactores < 0.7) colorFondo = "#dc3545";
+                else if (promedioFactores < 0.9) colorFondo = "#fd7e14";
+                else if (promedioFactores < 1.1) colorFondo = "#2d5016";
+                else if (promedioFactores < 1.3) colorFondo = "#007bff";
+                else colorFondo = "#28a745";
+            }
+            
+            // Actualizar variación color
+            const variacionElement = document.getElementById('variacion-cultivos');
+            if (variacion > 0) {
+                variacionElement.style.color = '#28a745';
+            } else if (variacion < 0) {
+                variacionElement.style.color = '#dc3545';
+            } else {
+                variacionElement.style.color = '#f7931e';
+            }
+            
+            // Actualizar descripción
+            document.getElementById('escenario-descripcion').innerHTML = 
+                `<h4 style="margin-bottom: 1rem;">${descripcionEscenario}</h4>
+                <p style="margin: 0; opacity: 0.9;">Impacto total: ${variacion >= 0 ? '+' : ''}${((variacion/totalBase)*100).toFixed(1)}% vs escenario base</p>`;
+            
+            // Actualizar color de fondo
+            document.getElementById('resultado-total-cultivos').style.background = `linear-gradient(135deg, ${colorFondo}, ${colorFondo}dd)`;
+        }
 
         // Mejorar interactividad
         document.addEventListener('DOMContentLoaded', function() {
