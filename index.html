@@ -2,25 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Establecimiento El Recodo - Turismo Rural Premium San Luis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="El Recodo">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2d5016">
+    <title>Establecimiento El Recodo - Turismo Rural Auténtico San Luis</title>
     
     <!-- Meta tags para SEO y redes sociales -->
-    <meta name="description" content="Establecimiento El Recodo - Turismo rural auténtico en Paraje El Recodo, San Luis. Inversión progresiva: leña → alfalfa → pasturas → domos premium. Plan 4 etapas.">
-    <meta name="keywords" content="turismo rural, san luis, el recodo, domos premium, glamping, leña, alfalfa, inversión rural, paraje el recodo">
+    <meta name="description" content="Establecimiento El Recodo - Turismo rural auténtico en Paraje El Recodo, San Luis. Inversión progresiva: leña → alfalfa → pasturas → turismo rural. Plan 4 etapas en 16 hectáreas.">
+    <meta name="keywords" content="turismo rural, san luis, el recodo, turismo auténtico, domos rurales, leña, alfalfa, inversión rural, paraje el recodo, 16 hectáreas">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://elrecodo.com">
-    <meta property="og:title" content="Establecimiento El Recodo - Turismo Rural Premium">
-    <meta property="og:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta property="og:title" content="Establecimiento El Recodo - Turismo Rural Auténtico">
+    <meta property="og:description" content="Plan de inversión progresivo en 16 hectáreas: de la producción rural al turismo auténtico. 4-8 domos máximo, base sólida, crecimiento sostenible.">
     <meta property="og:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://elrecodo.com">
-    <meta name="twitter:title" content="Establecimiento El Recodo - Turismo Rural Premium">
-    <meta name="twitter:description" content="Plan de inversión progresivo: de la producción rural al turismo premium. 4 etapas, base sólida, crecimiento sostenible.">
+    <meta name="twitter:title" content="Establecimiento El Recodo - Turismo Rural Auténtico">
+    <meta name="twitter:description" content="Plan de inversión progresivo en 16 hectáreas: de la producción rural al turismo auténtico. 4-8 domos máximo, base sólida, crecimiento sostenible.">
     <meta name="twitter:image" content="https://elrecodo.com/images/el-recodo-preview.jpg">
 
     <!-- Favicon -->
@@ -549,6 +554,290 @@
             transform: translateY(0);
         }
 
+        /* ============================================ */
+        /*         OPTIMIZACIONES MÓVILES              */
+        /* ============================================ */
+        
+        /* Estilos base para móvil */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        /* Clases auxiliares para responsividad */
+        .touch-friendly {
+            -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        .desktop-only { display: block; }
+        .mobile-only { display: none; }
+        
+        /* Tablet y móvil */
+        @media (max-width: 768px) {
+            .desktop-only { display: none; }
+            .mobile-only { display: block; }
+            
+            /* Layout general */
+            .section { padding: 2rem 0; }
+            .container { padding: 0 1rem; max-width: 100%; }
+            
+            /* Header móvil */
+            .header { 
+                padding: 1rem 0; 
+                position: relative;
+            }
+            .logo { height: 50px; }
+            
+            /* Navegación móvil */
+            .nav-links { 
+                flex-direction: column; 
+                gap: 0;
+                background: rgba(45, 80, 22, 0.98);
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 85%;
+                height: 100vh;
+                padding: 4rem 1rem 2rem 1rem;
+                transition: left 0.3s ease;
+                z-index: 1000;
+                backdrop-filter: blur(10px);
+                overflow-y: auto;
+            }
+            .nav-links.active { left: 0; }
+            .nav-links a { 
+                padding: 1.2rem; 
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                font-size: 1.1rem;
+                display: block;
+                width: 100%;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+            }
+            .mobile-menu-toggle.active { 
+                position: fixed; 
+                top: 1rem; 
+                right: 1rem; 
+                transform: none;
+                color: white;
+                background: rgba(0,0,0,0.3);
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+            }
+            
+            /* Hero móvil */
+            .hero { 
+                padding: 3rem 0; 
+                min-height: 60vh;
+            }
+            .hero h1 { 
+                font-size: 2.2rem; 
+                margin-bottom: 1rem; 
+                line-height: 1.2;
+            }
+            .hero .subtitle { 
+                font-size: 1rem; 
+                margin-bottom: 2rem;
+            }
+            
+            /* Simulador móvil */
+            .simulador-container { 
+                padding: 1.5rem; 
+                margin: 1rem 0;
+            }
+            
+            /* Selector de escenario */
+            #escenario-desmonte { 
+                min-width: 100%; 
+                margin-bottom: 1rem; 
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            
+            /* Controles de hectáreas */
+            .control-hectareas { 
+                grid-template-columns: 1fr; 
+                gap: 1.5rem; 
+            }
+            
+            /* Sliders táctiles optimizados */
+            input[type="range"] {
+                width: 100%;
+                height: 40px;
+                -webkit-appearance: none;
+                appearance: none;
+                background: transparent;
+                cursor: pointer;
+                margin: 0.5rem 0;
+            }
+            input[type="range"]::-webkit-slider-track {
+                background: linear-gradient(to right, #ddd 0%, #28a745 0%, #28a745 50%, #ddd 50%);
+                height: 8px;
+                border-radius: 4px;
+                border: none;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                background: var(--primary-green);
+                cursor: pointer;
+                border: 3px solid white;
+                box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            }
+            input[type="range"]::-moz-range-thumb {
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                background: var(--primary-green);
+                cursor: pointer;
+                border: 3px solid white;
+                box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            }
+            
+            /* Botones y selects táctiles */
+            button, select, .btn, input[type="submit"] {
+                min-height: 48px;
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+                border-radius: 8px;
+                touch-action: manipulation;
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            /* Grids responsivos */
+            .grid-cultivos { 
+                grid-template-columns: 1fr; 
+                gap: 1.5rem; 
+            }
+            .grid-resultados { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 1rem; 
+                font-size: 0.9rem;
+            }
+            .grid-analisis { 
+                grid-template-columns: 1fr; 
+                gap: 1.5rem; 
+            }
+            
+            /* Tipografía móvil */
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+            h3 { font-size: 1.4rem; }
+            h4 { font-size: 1.2rem; }
+            
+            /* Espaciado compacto */
+            .section { margin-bottom: 1rem; }
+            .vision-item, .metric-card, .etapa-card { 
+                margin-bottom: 1rem; 
+                padding: 1.2rem;
+            }
+            
+            /* Botones de acción */
+            .action-buttons { 
+                flex-direction: column; 
+                gap: 1rem; 
+                margin-top: 1.5rem;
+            }
+            .action-buttons button {
+                width: 100%;
+                min-height: 52px;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+        
+        /* Móviles pequeños */
+        @media (max-width: 480px) {
+            .container { padding: 0 0.5rem; }
+            
+            .hero h1 { font-size: 1.9rem; }
+            .hero .subtitle { font-size: 0.95rem; }
+            
+            .grid-resultados { 
+                grid-template-columns: 1fr; 
+                gap: 1rem; 
+            }
+            
+            .simulador-container { 
+                padding: 1rem; 
+                margin: 0.5rem 0;
+            }
+            
+            /* Controles más compactos */
+            .control-hectareas > div {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            /* Botones extra grandes para dedos */
+            .action-buttons button {
+                min-height: 56px;
+                font-size: 1.1rem;
+                padding: 1rem;
+            }
+            
+            input[type="range"]::-webkit-slider-thumb {
+                height: 36px;
+                width: 36px;
+            }
+            input[type="range"]::-moz-range-thumb {
+                height: 36px;
+                width: 36px;
+            }
+        }
+        
+        /* Estados táctiles mejorados */
+        @media (hover: none) and (pointer: coarse) {
+            /* Eliminar hovers en dispositivos táctiles */
+            .btn:hover, button:hover, .nav-links a:hover { 
+                transform: none; 
+                background: inherit;
+            }
+            
+            /* Estados activos/presionados */
+            .btn:active, button:active { 
+                transform: scale(0.97);
+                transition: transform 0.1s;
+            }
+            
+            .nav-links a:active {
+                background: rgba(255,255,255,0.1);
+            }
+            
+            /* Feedback visual para sliders */
+            input[type="range"]:active::-webkit-slider-thumb {
+                transform: scale(1.2);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Optimizaciones de rendimiento */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in, .nav-links, .mobile-menu-toggle { 
+                transition: none;
+                animation: none;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-header {
@@ -598,14 +887,17 @@
                 <img src="images/logo.PNG" alt="El Recodo" style="height: 40px; margin-right: 10px;">
                 <span style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">El Recodo</span>
             </div>
+            <button class="mobile-menu-toggle touch-friendly" onclick="toggleMobileMenu()">
+                ☰
+            </button>
             <ul class="nav-links">
-                <li><a href="#vision">Visión</a></li>
-                <li><a href="#etapas">Plan 4 Etapas</a></li>
-                <li><a href="#financiero">Financiero</a></li>
-                <li><a href="#simulador">Simulador</a></li>
-                <li><a href="#cultivos">Cultivos</a></li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#vision" class="touch-friendly">Visión</a></li>
+                <li><a href="#etapas" class="touch-friendly">Plan 4 Etapas</a></li>
+                <li><a href="#financiero" class="touch-friendly">Financiero</a></li>
+                <li><a href="#simulador" class="touch-friendly">Simulador</a></li>
+                <li><a href="#cultivos" class="touch-friendly">Cultivos</a></li>
+                <li><a href="#precios" class="touch-friendly">Precios</a></li>
+                <li><a href="#contacto" class="touch-friendly">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -669,13 +961,19 @@
                     <div class="vision-item">
                         <span class="vision-icon">🌟</span>
                         <h3>FASE III: INTEGRAL (Años 7-10)</h3>
-                        <p>3 Domos + Club House → 6 Domos + Club House → 8 Domos máximo (según necesidades)</p>
+                        <p>4 Domos + Club House → 6 Domos + Club House → 8 Domos máximo (según demanda)</p>
                     </div>
 
                     <div class="vision-item">
                         <span class="vision-icon">📈</span>
                         <h3>Autofinanciamiento Total</h3>
                         <p>Cada fase financia la siguiente. De $18M/mes rurales a $58M/mes turísticos.</p>
+                    </div>
+                    
+                    <div class="vision-item">
+                        <span class="vision-icon">🍺</span>
+                        <h3>Producción Artesanal</h3>
+                        <p>Gin y cerveza caseros para huéspedes. Excedentes a Cervecería Nogolí (45km).</p>
                     </div>
                 </div>
             </div>
@@ -810,7 +1108,7 @@
                             <div>
                                 <strong>1.2 - Consolidación:</strong>
                                 <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                    <li>Expansión alfalfa 150ha</li>
+                                    <li>Optimización alfalfa en 16ha disponibles</li>
                                     <li><strong>Aromáticas gin:</strong> Enebro, cardamomo, cilantro</li>
                                     <li><strong>Cebada/lúpulo:</strong> Variedades INTA</li>
                                 </ul>
@@ -950,7 +1248,7 @@
                             <div>
                                 <strong>3.2 - Desarrollo Completo:</strong>
                                 <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                    <li>12 domos configuración flexible</li>
+                                    <li>4 domos rurales auténticos</li>
                                     <li>SPA rural con tratamientos naturales</li>
                                     <li>Productos propios integrados</li>
                                 </ul>
@@ -1064,7 +1362,7 @@
                         <select id="etapa-sim" onchange="actualizarSimulador()">
                             <option value="2">Etapa 2 (4 domos)</option>
                             <option value="3">Etapa 3 (8 domos)</option>
-                            <option value="4">Etapa 4 (12 domos)</option>
+                            <option value="4">Etapa 4 (4-8 domos según demanda)</option>
                         </select>
                     </div>
                 </div>
@@ -1116,16 +1414,16 @@
                 
                 <!-- Selector de Escenario de Desmonte -->
                 <div style="background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 2rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #ffc107;">
-                    <h4 style="color: #856404; text-align: center; margin-bottom: 1rem;">🚜 Escenario de Desmonte Inicial</h4>
+                    <h4 style="color: #856404; text-align: center; margin-bottom: 1rem;">🚜 Escenario de Aprovechamiento de Superficie</h4>
                     <div style="text-align: center;">
                         <select id="escenario-desmonte" onchange="actualizarEscenarioDesmonte()" style="padding: 1rem; border-radius: 8px; border: 2px solid #ffc107; font-size: 1.1rem; background: white; min-width: 300px;">
                             <option value="conservador">Conservador: 16 ha actuales</option>
-                            <option value="moderado">Moderado: 30 ha (+14 ha desmonte)</option>
-                            <option value="agresivo">Agresivo: 50 ha (+34 ha desmonte)</option>
+                            <option value="moderado">Moderado: Rotación optimizada 16 ha</option>
+                            <option value="agresivo">Agresivo: Máximo aprovechamiento + expansión futura</option>
                         </select>
                     </div>
                     <div id="info-desmonte" style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
-                        <strong>💰 Costo desmonte:</strong> <span id="costo-desmonte">$0</span> | 
+                        <strong>💰 Costo optimización:</strong> <span id="costo-desmonte">$0</span> | 
                         <strong>📈 ROI desmonte:</strong> <span id="roi-desmonte">-</span>
                     </div>
                 </div>
@@ -1141,7 +1439,7 @@
                                 <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
                                     Hectáreas: <span id="alfalfa-ha-display" style="color: #28a745; font-weight: bold;">8</span>
                                 </label>
-                                <input type="range" id="alfalfa-hectareas" min="4" max="30" value="8" step="1" 
+                                <input type="range" id="alfalfa-hectareas" min="4" max="12" value="8" step="1" 
                                        style="width: 100%; margin-bottom: 0.5rem;" 
                                        onchange="actualizarHectareas('alfalfa')" oninput="actualizarHectareas('alfalfa')">
                                 <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
@@ -1157,7 +1455,7 @@
                                 <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
                                     Hectáreas: <span id="cebada-ha-display" style="color: #f57c00; font-weight: bold;">3</span>
                                 </label>
-                                <input type="range" id="cebada-hectareas" min="2" max="8" value="3" step="1" 
+                                <input type="range" id="cebada-hectareas" min="2" max="4" value="3" step="1" 
                                        style="width: 100%; margin-bottom: 0.5rem;" 
                                        onchange="actualizarHectareas('cebada')" oninput="actualizarHectareas('cebada')">
                                 <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
@@ -1173,7 +1471,7 @@
                                 <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
                                     Hectáreas: <span id="maiz-ha-display" style="color: #e65100; font-weight: bold;">3</span>
                                 </label>
-                                <input type="range" id="maiz-hectareas" min="2" max="7" value="3" step="1" 
+                                <input type="range" id="maiz-hectareas" min="2" max="4" value="3" step="1" 
                                        style="width: 100%; margin-bottom: 0.5rem;" 
                                        onchange="actualizarHectareas('maiz')" oninput="actualizarHectareas('maiz')">
                                 <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
@@ -1189,7 +1487,7 @@
                                 <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">
                                     Hectáreas: <span id="sorgo-ha-display" style="color: #4a148c; font-weight: bold;">2</span>
                                 </label>
-                                <input type="range" id="sorgo-hectareas" min="1" max="5" value="2" step="1" 
+                                <input type="range" id="sorgo-hectareas" min="1" max="3" value="2" step="1" 
                                        style="width: 100%; margin-bottom: 0.5rem;" 
                                        onchange="actualizarHectareas('sorgo')" oninput="actualizarHectareas('sorgo')">
                                 <div style="font-size: 0.8rem; color: #666; line-height: 1.3;">
@@ -1241,11 +1539,11 @@
                 </div>
                 
                 <!-- Controles de Simulación -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                    <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
+                <div class="grid-cultivos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div class="touch-friendly" style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
                         <h4 id="titulo-alfalfa" style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (<span id="alfalfa-superficie">8</span> ha)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
-                        <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
+                        <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" class="touch-friendly" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">50% - Sequía severa</option>
                             <option value="malo">70% - Condiciones adversas</option>
                             <option value="normal" selected>100% - Condiciones normales</option>
@@ -1307,7 +1605,7 @@
                 <div style="background: linear-gradient(135deg, #fff9c4, #fff59d); padding: 2rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #ffa000;">
                     <h4 style="color: #e65100; text-align: center; margin-bottom: 1.5rem;">💡 Análisis Inteligente de Rentabilidad</h4>
                     
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="grid-analisis" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                         
                         <!-- Rentabilidad por Cultivo -->
                         <div style="background: rgba(255,255,255,0.9); padding: 1.5rem; border-radius: 10px;">
@@ -1339,7 +1637,7 @@
                 <!-- Resultado Total -->
                 <div id="resultado-total-cultivos" style="background: linear-gradient(135deg, #2d5016, #4a7c59); color: white; padding: 3rem; border-radius: 20px; text-align: center;">
                     <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">💰 Resultado Total de Cultivos</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <div class="grid-resultados" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                         <div>
                             <div id="total-cultivos" style="font-size: 2.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #f7931e;">$3.440.000</div>
                             <div style="font-size: 1rem; opacity: 0.9;">Ingresos Totales</div>
@@ -1366,14 +1664,14 @@
                         <p style="margin: 0; opacity: 0.9;">Los cultivos generan ingresos base bajo condiciones climáticas normales</p>
                         
                         <!-- Botones de Acción -->
-                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                            <button onclick="exportarResultados()" style="background: #28a745; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                        <div class="action-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <button onclick="exportarResultados()" class="touch-friendly" style="background: #28a745; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
                                 📊 Exportar Resultados
                             </button>
-                            <button onclick="reiniciarSimulador()" style="background: #6c757d; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                            <button onclick="reiniciarSimulador()" class="touch-friendly" style="background: #6c757d; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
                                 🔄 Reiniciar
                             </button>
-                            <button onclick="optimizarAutomaticamente()" style="background: #007bff; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                            <button onclick="optimizarAutomaticamente()" class="touch-friendly" style="background: #007bff; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
                                 🎯 Auto-Optimizar
                             </button>
                         </div>
@@ -1386,27 +1684,61 @@
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
                         <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
                             <h5 style="color: #28a745;">🌿 Alfalfa</h5>
-                            <p><strong>Superficie:</strong> 47 hectáreas</p>
-                            <p><strong>Uso:</strong> Forraje premium, exportación</p>
+                            <p><strong>Superficie:</strong> 8-12 hectáreas</p>
+                            <p><strong>Uso:</strong> Fardos para venta + sobras para paleteado</p>
                             <p><strong>Ciclo:</strong> Perenne, 5-7 años</p>
                         </div>
                         <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
-                            <h5 style="color: #f57c00;">🌾 Cebada</h5>
-                            <p><strong>Superficie:</strong> 4 hectáreas</p>
-                            <p><strong>Uso:</strong> Cervecera, malteado</p>
+                            <h5 style="color: #f57c00;">🌾 Cebada + Lúpulo</h5>
+                            <p><strong>Superficie:</strong> 2-4 hectáreas</p>
+                            <p><strong>Uso:</strong> Cerveza artesanal El Recodo + Cervecería Nogolí</p>
                             <p><strong>Ciclo:</strong> Anual, invierno</p>
                         </div>
                         <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
                             <h5 style="color: #e65100;">🌽 Maíz</h5>
-                            <p><strong>Superficie:</strong> 3 hectáreas</p>
-                            <p><strong>Uso:</strong> Grano, forraje</p>
+                            <p><strong>Superficie:</strong> 2-4 hectáreas</p>
+                            <p><strong>Uso:</strong> Paleteado (alimentación animal)</p>
                             <p><strong>Ciclo:</strong> Anual, verano</p>
                         </div>
                         <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
                             <h5 style="color: #4a148c;">🌾 Sorgo</h5>
-                            <p><strong>Superficie:</strong> 2.22 hectáreas</p>
-                            <p><strong>Uso:</strong> Grano, resistente sequía</p>
-                            <p><strong>Ciclo:</strong> Anual, verano tardío</p>
+                            <p><strong>Superficie:</strong> 1-3 hectáreas</p>
+                            <p><strong>Uso:</strong> Paleteado (resistente sequía)</p>
+                            <p><strong>Ciclo:</strong> Anual, verano</p>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 10px;">
+                            <h5 style="color: #8e44ad;">🌿 Aromáticas Gin</h5>
+                            <p><strong>Superficie:</strong> 1-2 hectáreas</p>
+                            <p><strong>Uso:</strong> Gin artesanal El Recodo (producción casera)</p>
+                            <p><strong>Especies:</strong> Enebro, cardamomo, cilantro</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Planificación de Rotación y Expansión -->
+                    <div style="background: linear-gradient(135deg, #fff9c4, #fff59d); padding: 2rem; border-radius: 15px; margin-top: 2rem; border: 2px solid #ffa000;">
+                        <h5 style="color: #e65100; margin-bottom: 1rem; text-align: center;">🔄 Planificación Inteligente</h5>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                            <div style="background: rgba(255,255,255,0.8); padding: 1.2rem; border-radius: 10px;">
+                                <h6 style="color: #2d5016; margin-bottom: 0.8rem;">📅 Rotación Estacional</h6>
+                                <p style="font-size: 0.9rem; margin: 0;">
+                                    <strong>16 hectáreas</strong> distribuidas inteligentemente según épocas del año y necesidades de rotación. 
+                                    Alfalfa perenne como base, cultivos anuales en rotación.
+                                </p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.8); padding: 1.2rem; border-radius: 10px;">
+                                <h6 style="color: #2d5016; margin-bottom: 0.8rem;">🚜 Expansión Futura</h6>
+                                <p style="font-size: 0.9rem; margin: 0;">
+                                    Si se necesita más superficie, <strong>desmonte secuencial</strong> a medida que sea necesario. 
+                                    Crecimiento ordenado y sostenible.
+                                </p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.8); padding: 1.2rem; border-radius: 10px;">
+                                <h6 style="color: #2d5016; margin-bottom: 0.8rem;">🍺 Producción Artesanal</h6>
+                                <p style="font-size: 0.9rem; margin: 0;">
+                                    Gin y cerveza <strong>caseros</strong> para huéspedes. Excedentes a 
+                                    <strong>Cervecería Nogolí</strong> (45km) y locales amigos.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     
@@ -1523,6 +1855,44 @@
 
     <!-- JavaScript -->
     <script>
+        // ============================================
+        //           FUNCIONES MÓVILES  
+        // ============================================
+        
+        // Función para toggle del menú móvil
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            
+            // Cambiar icono del menú
+            if (navLinks.classList.contains('active')) {
+                menuToggle.innerHTML = '✕';
+            } else {
+                menuToggle.innerHTML = '☰';
+            }
+        }
+
+        // Cerrar menú al hacer click en un enlace
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const nav = document.querySelector('.nav-links');
+                    const toggle = document.querySelector('.mobile-menu-toggle');
+                    nav.classList.remove('active');
+                    toggle.classList.remove('active');
+                    toggle.innerHTML = '☰';
+                });
+            });
+        });
+
+        // ============================================
+        //           NAVEGACIÓN Y SCROLL  
+        // ============================================
+
         // Navegación sticky
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('mainNav');
@@ -1633,20 +2003,20 @@
                 descripcion: "16 hectáreas actuales disponibles"
             },
             moderado: {
-                alfalfa: { superficie: 18, costo: 7000000 },  // +10 ha x $700k
-                cebada: { superficie: 5, costo: 1400000 },    // +2 ha x $700k
-                maiz: { superficie: 4, costo: 700000 },       // +1 ha x $700k
-                sorgo: { superficie: 3, costo: 700000 },      // +1 ha x $700k
-                costoDesmonte: 9800000,  // 14 ha x $700k
-                descripcion: "30 hectáreas (+14 ha desmonte)"
+                alfalfa: { superficie: 10, costo: 0 },        // Optimización dentro de 16ha
+                cebada: { superficie: 3, costo: 0 },    
+                maiz: { superficie: 2, costo: 0 },       
+                sorgo: { superficie: 1, costo: 0 },      
+                costoDesmonte: 0,  // Sin expansión, optimización actual
+                descripcion: "Rotación optimizada en 16 hectáreas disponibles"
             },
             agresivo: {
-                alfalfa: { superficie: 30, costo: 15400000 }, // +22 ha x $700k
-                cebada: { superficie: 8, costo: 3500000 },    // +5 ha x $700k
-                maiz: { superficie: 7, costo: 2800000 },      // +4 ha x $700k
-                sorgo: { superficie: 5, costo: 2100000 },     // +3 ha x $700k
-                costoDesmonte: 23800000, // 34 ha x $700k
-                descripcion: "50 hectáreas (+34 ha desmonte)"
+                alfalfa: { superficie: 10, costo: 0 }, // Máximo eficiente en 16ha
+                cebada: { superficie: 3, costo: 0 },    
+                maiz: { superficie: 2, costo: 0 },      
+                sorgo: { superficie: 1, costo: 0 },     
+                costoDesmonte: 0, // Sin desmonte - aprovechamiento máximo
+                descripcion: "Máximo aprovechamiento 16 ha + planificación expansión futura (incluye 1ha aromáticas)"
             }
         };
 
@@ -1728,11 +2098,10 @@
             const totalHectareas = Object.values(rendimientosCultivos).reduce((sum, cultivo) => sum + cultivo.superficie, 0);
             document.getElementById('total-hectareas').textContent = totalHectareas;
             
-            // Calcular hectáreas disponibles para expansión (basado en escenario de desmonte actual)
+            // Calcular hectáreas disponibles (máximo 16 hectáreas)
             const escenarioActual = document.getElementById('escenario-desmonte').value;
-            let hectareasMaximas = 16; // Conservador por defecto
-            if (escenarioActual === 'moderado') hectareasMaximas = 30;
-            if (escenarioActual === 'agresivo') hectareasMaximas = 50;
+            let hectareasMaximas = 16; // Siempre 16 hectáreas disponibles
+            // Los escenarios moderado y agresivo solo cambian la distribución, no el total
             
             const hectareasDisponibles = Math.max(0, hectareasMaximas - totalHectareas);
             document.getElementById('hectareas-disponibles').textContent = hectareasDisponibles;
