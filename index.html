@@ -1110,14 +1110,30 @@
             
             <div class="simulador-container fade-in" style="background: white; border: 2px solid #28a745;">
                 <h3 style="color: #2d5016; text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">🎯 Análisis de Escenarios Productivos</h3>
-                <p style="text-align: center; margin-bottom: 3rem; color: #666; font-size: 1.1rem;">
+                <p style="text-align: center; margin-bottom: 2rem; color: #666; font-size: 1.1rem;">
                     Simula diferentes condiciones climáticas y de mercado para evaluar el impacto en los ingresos de cultivos
                 </p>
+                
+                <!-- Selector de Escenario de Desmonte -->
+                <div style="background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 2rem; border-radius: 15px; margin-bottom: 3rem; border: 2px solid #ffc107;">
+                    <h4 style="color: #856404; text-align: center; margin-bottom: 1rem;">🚜 Escenario de Desmonte Inicial</h4>
+                    <div style="text-align: center;">
+                        <select id="escenario-desmonte" onchange="actualizarEscenarioDesmonte()" style="padding: 1rem; border-radius: 8px; border: 2px solid #ffc107; font-size: 1.1rem; background: white; min-width: 300px;">
+                            <option value="conservador">Conservador: 16 ha actuales</option>
+                            <option value="moderado">Moderado: 30 ha (+14 ha desmonte)</option>
+                            <option value="agresivo">Agresivo: 50 ha (+34 ha desmonte)</option>
+                        </select>
+                    </div>
+                    <div id="info-desmonte" style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
+                        <strong>💰 Costo desmonte:</strong> <span id="costo-desmonte">$0</span> | 
+                        <strong>📈 ROI desmonte:</strong> <span id="roi-desmonte">-</span>
+                    </div>
+                </div>
                 
                 <!-- Controles de Simulación -->
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                     <div style="text-align: center; background: linear-gradient(135deg, #f8f9fa, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #28a745;">
-                        <h4 style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (8 ha iniciales)</h4>
+                        <h4 id="titulo-alfalfa" style="color: #28a745; margin-bottom: 1rem;">🌿 Alfalfa (8 ha iniciales)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="alfalfa-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">50% - Sequía severa</option>
@@ -1132,7 +1148,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff8e1, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #ffc107;">
-                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (3 ha iniciales)</h4>
+                        <h4 id="titulo-cebada" style="color: #f57c00; margin-bottom: 1rem;">🌾 Cebada (3 ha iniciales)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="cebada-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">40% - Granizo/helada</option>
@@ -1147,7 +1163,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #fff3e0, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #fd7e14;">
-                        <h4 style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha rotación)</h4>
+                        <h4 id="titulo-maiz" style="color: #e65100; margin-bottom: 1rem;">🌽 Maíz (3 ha rotación)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="maiz-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">30% - Sequía/plaga</option>
@@ -1162,7 +1178,7 @@
                     </div>
                     
                     <div style="text-align: center; background: linear-gradient(135deg, #f3e5f5, #fff); padding: 1.5rem; border-radius: 15px; border: 2px solid #6f42c1;">
-                        <h4 style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2 ha sequía)</h4>
+                        <h4 id="titulo-sorgo" style="color: #4a148c; margin-bottom: 1rem;">🌾 Sorgo (2 ha sequía)</h4>
                         <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600;">Escenario:</label>
                         <select id="sorgo-select" onchange="actualizarSimulacionCultivos()" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 2px solid #ddd; font-size: 1rem;">
                             <option value="pesimo">60% - Condiciones adversas</option>
@@ -1438,10 +1454,38 @@
         // Inicializar simulador
         document.addEventListener('DOMContentLoaded', function() {
             actualizarSimulador();
+            actualizarEscenarioDesmonte(); // Inicializar escenario de desmonte
             actualizarSimulacionCultivos();
         });
 
         // Simulador de Rendimientos de Cultivos - Datos y Funciones
+        const escenariosBase = {
+            conservador: {
+                alfalfa: { superficie: 8, costo: 0 },
+                cebada: { superficie: 3, costo: 0 },
+                maiz: { superficie: 3, costo: 0 },
+                sorgo: { superficie: 2, costo: 0 },
+                costoDesmonte: 0,
+                descripcion: "16 hectáreas actuales disponibles"
+            },
+            moderado: {
+                alfalfa: { superficie: 18, costo: 7000000 },  // +10 ha x $700k
+                cebada: { superficie: 5, costo: 1400000 },    // +2 ha x $700k
+                maiz: { superficie: 4, costo: 700000 },       // +1 ha x $700k
+                sorgo: { superficie: 3, costo: 700000 },      // +1 ha x $700k
+                costoDesmonte: 9800000,  // 14 ha x $700k
+                descripcion: "30 hectáreas (+14 ha desmonte)"
+            },
+            agresivo: {
+                alfalfa: { superficie: 30, costo: 15400000 }, // +22 ha x $700k
+                cebada: { superficie: 8, costo: 3500000 },    // +5 ha x $700k
+                maiz: { superficie: 7, costo: 2800000 },      // +4 ha x $700k
+                sorgo: { superficie: 5, costo: 2100000 },     // +3 ha x $700k
+                costoDesmonte: 23800000, // 34 ha x $700k
+                descripcion: "50 hectáreas (+34 ha desmonte)"
+            }
+        };
+
         const rendimientosCultivos = {
             alfalfa: {
                 superficie: 8,
@@ -1513,6 +1557,54 @@
             }).format(numero).replace('ARS', '$');
         }
         
+        function actualizarEscenarioDesmonte() {
+            const escenario = document.getElementById('escenario-desmonte').value;
+            const datos = escenariosBase[escenario];
+            
+            // Actualizar superficies en el objeto de rendimientos
+            rendimientosCultivos.alfalfa.superficie = datos.alfalfa.superficie;
+            rendimientosCultivos.cebada.superficie = datos.cebada.superficie;
+            rendimientosCultivos.maiz.superficie = datos.maiz.superficie;
+            rendimientosCultivos.sorgo.superficie = datos.sorgo.superficie;
+            
+            // Actualizar títulos de las tarjetas
+            document.getElementById('titulo-alfalfa').innerHTML = `🌿 Alfalfa (${datos.alfalfa.superficie} ha)`;
+            document.getElementById('titulo-cebada').innerHTML = `🌾 Cebada (${datos.cebada.superficie} ha)`;
+            document.getElementById('titulo-maiz').innerHTML = `🌽 Maíz (${datos.maiz.superficie} ha)`;
+            document.getElementById('titulo-sorgo').innerHTML = `🌾 Sorgo (${datos.sorgo.superficie} ha)`;
+            
+            // Actualizar info de costos
+            document.getElementById('costo-desmonte').textContent = formatearNumero(datos.costoDesmonte);
+            
+            // Calcular ROI del desmonte (ingreso adicional / costo desmonte)
+            if (datos.costoDesmonte > 0) {
+                const ingresoAdicional = calcularIngresoAdicional(escenario);
+                const roiDesmonte = ((ingresoAdicional / datos.costoDesmonte) * 100).toFixed(1);
+                document.getElementById('roi-desmonte').textContent = roiDesmonte + '% anual';
+            } else {
+                document.getElementById('roi-desmonte').textContent = '-';
+            }
+            
+            // Actualizar simulación
+            actualizarSimulacionCultivos();
+        }
+        
+        function calcularIngresoAdicional(escenario) {
+            if (escenario === 'conservador') return 0;
+            
+            const conservador = escenariosBase.conservador;
+            const actual = escenariosBase[escenario];
+            
+            let ingresoAdicional = 0;
+            ['alfalfa', 'cebada', 'maiz', 'sorgo'].forEach(cultivo => {
+                const superficieAdicional = actual[cultivo].superficie - conservador[cultivo].superficie;
+                const rendimientoBase = rendimientosCultivos[cultivo].rendimientoBase;
+                ingresoAdicional += superficieAdicional * rendimientoBase;
+            });
+            
+            return ingresoAdicional;
+        }
+        
         function actualizarSimulacionCultivos() {
             // Obtener valores seleccionados
             const alfalfaEscenario = document.getElementById('alfalfa-select').value;
@@ -1534,7 +1626,7 @@
             
             // Calcular totales
             const totalCultivos = alfalfaResult.ingresoTotal + cebadaResult.ingresoTotal + maizResult.ingresoTotal + sorgoResult.ingresoTotal;
-            const totalBase = 27314000; // Base de 100% normal
+            const totalBase = 22136486; // Base actual: 8+3+3+2 ha
             const variacion = totalCultivos - totalBase;
             const totalPorHermano = totalCultivos / 4;
             
